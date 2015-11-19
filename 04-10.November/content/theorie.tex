@@ -1,0 +1,66 @@
+\section{Theoretische Grundlage}
+\label{sec:Theorie}
+Im folgenden Versuch soll die Wärmeleitfähigkeit verschiedener Stoffe bestimmt werden. Zur Wärmeleitung kommt es wenn ein Temperaturgefälle ($\partial T / \partial x$) auf dem Stab exsistiert. Dabei wird durch einen Querschnittsfläche $A$, in der Zeit $dt$ die Wärmemenge $dQ$ transportiert.
+\begin{equation}
+	\label{eqn:Q/t}
+	dQ = - \kappa A \frac{\partial T}{\partial x} dt
+\end{equation}
+$\kappa$ ist eine materialäbhängige Konstante und dient als Proportionalitätsfaktor. In Analogie zur Elektrodynamik definiert man sich eine Wärmestromdichte 
+\begin{equation}
+	j_w = - \kappa \frac{\partial T}{\partial x}
+\end{equation}
+die den Verschiebungsstrom zwischen den Temperaturdifferenzen wiedergibt. Damit lässt sich eine Kontinuitätsgleichung formulieren
+\begin{equation}
+	\label{eqn:KG}
+	\frac{\partial T}{\partial t} = \frac{\kappa}{\rho c} \frac{\partial^2 T}{\partial x^2} \ ,
+\end{equation}
+die die räumliche als auch zeitliche Entwicklung der Temperatur beschreibt. Aus der Formel \ref{eqn:KG} lässt sich eine Temperaturleitfähigkeit von
+\begin{equation}
+	\sigma T = \frac{\kappa}{\rho c}
+\end{equation}
+ablesen. Dies ist ein Maß dafür wie schnell sich Temperaturunterschiede ausgleichen. Wenn ein Stab mit der Periode $T$ abwechselnd erwärmt und gekühlt wird kommt es zu einer erzwungenen Schwingung der Form 
+\begin{equation}
+	T(x,t) = T_{max}e^{-\sqrt{\frac{\omega \rho c}{2 \kappa}}x}cos \left( \omega t - \sqrt{ \frac{\omega \rho c}{2 \kappa}}x \right) \ .
+\end{equation}
+Durch ablesen der Koeffizienten der Wellengeleichung und dem Zusammenhang das die Phasengeschwindigkeit gleich der Kreisfrequenz durch die Wellenzahl ist erhält man eine Geschwindikeit von
+\begin{equation}
+	\label{eqn:v}
+	v = \sqrt{ \frac{2 \kappa \omega}{\rho c}} \ .
+\end{equation}
+Den Dämpfungsfaktor erhält man aus dem Amplitudenverhältniss $A_{nah}$ und $A_{fern}$ sowie $\Delta x$
+\begin{equation}
+	\label{eqn:kappa}
+	\kappa = \frac{\rho c (\Delta x)^2}{2 \Delta t \, ln(A_{nah}/A_{fern})}
+\end{equation}
+
+\subsection{Fehlerrechnung}
+Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
+\subsubsection{Mittelwert}
+Der Mittelwert einer Messreihe $x_1, ... ,x_n$ lässt sich durch die Formel
+\begin{equation}
+	\label{eqn:Mittelwert}
+	\overline{x} = \frac{1}{N} \sum_{k=1}^N x_k
+\end{equation}
+berechnen. Die Standardabweichung des Mittelwertes beträgt 
+\begin{equation}
+	\label{eqn:Mittelwert_err}
+	\Delta \overline{x} = \sqrt{ \frac{1}{N(N-1)} \sum_{k=1}^N (x_k - \overline{x})^2}
+\end{equation}
+
+\subsubsection{Gauß'sche Fehlerfortpflanzung}
+Wenn $x_1, ..., x_n$ fehlerbehaftete Messgrößen im weiteren Verlauf benutzt werden, wird der neue Fehler $\Delta f$ mit Hilfe der Gaußschen Fehlerfortpflanzung angegeben.
+\begin{equation}
+	\Delta f = \sqrt{\sum_{k=1}^N \left( \frac{ \partial f}{\partial x_k} \right) ^2 \cdot (\Delta x_k)^2} \ .
+\end{equation}
+
+\subsubsection{Lineare Regression}
+Die Steigung und y-Achsenabschnitt einer Ausgleichsgeraden werden gegebenfalls mittels Linearen Regression berechnet. 
+\begin{equation}
+	y = m \cdot x + b
+\end{equation}
+\begin{equation}
+	m = \frac{ \overline{xy} - \overline{x} \overline{y} } {\overline{x^2} - \overline{x}^2}
+\end{equation}
+\begin{equation}
+	b = \frac{ \overline{x^2}\overline{y} - \overline{x} \, \overline{xy}} { \overline{x^2} - \overline{x}^2}
+\end{equation}
