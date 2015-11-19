@@ -1,0 +1,41 @@
+\section{Theoretische Grundlage}
+\label{sec:Theorie}
+
+%hier kann philip seine Ergebnisse eintragen
+
+
+
+
+
+
+\subsection{Fehlerrechnung}
+Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
+\subsubsection{Mittelwert}
+Der Mittelwert einer Messreihe $x_1, ... ,x_n$ lässt sich durch die Formel
+\begin{equation}
+	\overline{x} = \frac{1}{N} \sum_{k=1}^N x_k
+\end{equation}
+berechnen. Die Standardabweichung des Mittelwertes beträgt 
+\begin{equation}
+	\Delta \overline{x} = \sqrt{ \frac{1}{N(N-1)} \sum_{k=1}^N (x_k - \overline{x})^2}
+\end{equation}
+
+\subsubsection{Gauß'sche Fehlerfortpflanzung}
+Wenn $x_1, ..., x_n$ fehlerbehaftete Messgrößen im weiteren Verlauf benutzt werden, wird der neue Fehler $\Delta f$ mit Hilfe der Gaußschen Fehlerfortpflanzung angegeben.
+\begin{equation}
+	\Delta f = \sqrt{\sum_{k=1}^N \left( \frac{ \partial f}{\partial x_k} \right) ^2 \cdot (\Delta x_k)^2}
+\end{equation}
+
+\subsubsection{Lineare Regression}
+Die Steigung und y-Achsenabschnitt einer Ausgleichsgeraden werden gegebenfalls mittels Linearen Regression berechnet. 
+\begin{equation}
+	y = m \cdot x + b
+\end{equation}
+\begin{equation}
+	m = \frac{ \overline{xy} - \overline{x} \overline{y} } {\overline{x^2} - \overline{x}^2}
+\end{equation}
+\begin{equation}
+	b = \frac{ \overline{x^2}\overline{y} - \overline{x} \, \overline{xy}} { \overline{x^2} - \overline{x}^2}
+\end{equation}
+
+\cite{sample}
