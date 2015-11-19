@@ -1,21 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.linspace(0, 10, 1000)
-y = x ** np.sin(x)
-
-plt.subplot(1, 2, 1)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
-
-plt.subplot(1, 2, 2)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
-
-# in matplotlibrc leider (noch) nicht möglich
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-plt.savefig('build/plot.pdf')
+t, T1, pb, T2, pa, W = np.loadtxt('data.txt', unpack=True)
+plt.plot(t, T2, 'go', label=r'$T2$')
+plt.plot(t, T1, 'ro', label=r'$T1$')
+plt.xlabel(r'Zeit / s')
+plt.ylabel(r'Temperatur / K')
+plt.legend()
+plt.tight_layout()
+plt.savefig('build/TVerlauf.pdf')
