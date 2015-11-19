@@ -1,12 +1,66 @@
 \section{Theoretische Grundlage}
 \label{sec:Theorie}
 
-%hier kann philip seine Ergebnisse eintragen
+Der zweite Hauptsatz der Thermodynamik sagt, dass Wärme von einem wärmeren zu einem kälteren Reservoir fließt. Mithilfe einer Wärmepumpe lässt sich dieser Prozess umkehren, dazu wird weitere Energie benötigt, zum Beispiel mechanische Arbeit. Ziel des Veruches ist es eine Aussage über die Qualität der Wärmepumpe zu treffen, um dies zu realisieren werden die Güteziffer und der Massendurchsatz untersucht.
 
+\subsection{Güteziffer}
+Der erste Hauptsatz der Wärmelehre verlangt, dass die vom Transportmedium an das wärmere Reservoire abgegebene Wärmemenge $ Q_1 $ gleich der Summe der aus dem kälteren Reservoire entnommenen Wärmemenge $ Q_2 $ und der aufgewendeten Arbeit $ A $ ist, also
+\begin{equation}
+	\label{eqn:Q1}
+		Q_1 = Q_2 + A \ .
+\end{equation}
+Die Güteziffer $ \nu $ ist im idealisierten Fall, das Verhältniss zwischen der transportierten Wärmemenge $ Q_1 $ und der verrichteten mechanischen Arbeit $ A $:
+\begin{equation}
+	\label{eqn:nu}
+	\nu_{Ideal} = \frac{Q_1}{A} \ .
+\end{equation}
+Aus dem zweiten Hauptsatz der Thermodynamik lässt sich eine Beziehung zwischen den Wärmemengen $ Q_1 $ und $ Q_2 $ sowie den Temperaturen $ T_1 $ und $ T_2 $ der Reservoire herstellen
+\begin{equation}
+	\label{eqn:reversibel}
+	\frac{Q_1}{T_1} - \frac{Q_2}{T_2} = 0 \ .
+\end{equation}
+Allerdings ist die Gültigkeit der Formel \ref{eqn:reversibel} an eine wichtige Forderung geknüpft: Die Wärmeübertragung muss reversibel verlaufen. Das bedeutet, dass der Prozess jederzeit umgekehrt ablaufen kann, wodurch die investierte mechanische Arbeit zurück gewonnen werden kann. Für den realistischen, irreversiblen Fall gilt eine andere Beziehung
+\begin{equation}
+	\label{eqn:irreversibel}
+	\frac{Q_1}{T_1} - \frac{Q_2}{T_2} > 0 \ .
+\end{equation}
+Mit den Gleichungen \ref{eqn:Q1} und \ref{eqn:reversibel} folgt nun
+\begin{equation}
+	Q_1 = A + \frac{T_2}{T_1} * Q_1
+\end{equation}
+und für die Güteziffer einer idealen Wärmepumpe
+\begin{equation}
+	\nu_{Ideal} = \frac{Q_1}{A} = \frac{T_1}{T_1 - T_2} \ .
+\end{equation}
+Die Güteziffer für eine reale Wärmepumpe folgt mit \ref{eqn:Q1} und \ref{eqn:irreversibel}
+\begin{equation}
+	\nu_{real} < \frac{T_1}{T_1 - T_2} \ .
+\end{equation}
+Die reale Güteziffer wird im folgenden über
+\begin{equation}
+		\nu_{real} = \frac{\Delta Q_1}{\Delta t N} = (m_1 c_w + m_k c_k) \frac{\Delta T_1}{\Delta t N}
+\end{equation}
+ berechnet, wobei N := gemittelte Leistungsaufnahme des Kompressors.
 
+\subsection{Massendurchsatz}
+Der Massendurchsatz für die Wärmepumpe berechnet sich nach [1,S.5] über den Differentialquotienten:
+\begin{equation}
+	\label{eqn:kp1}
+	\frac{d Q_2}{d t} = (m_2 c_w + m_k c_k) \frac{\Delta T_2}{\Delta t N}
+\end{equation}
+und
+\begin{equation}
+	\label{eqn:kp2}
+	\frac{d Q_2}{d t} = L \frac{d m}{d t}
+\end{equation}
+nach einsetzen von \ref{eqn:kp1} in \ref{eqn:kp2} folgt:
+\begin{equation}
+	\frac{dm}{dt} = (m_2 c_w + m_k c_k) \frac{\Delta T_2}{\Delta t L}
+\end{equation}
+wobei L := bekannte Verdampfungswärme.
 
-
-
+\subsection{Mechanische Kompressorleistung}
+\subsection{Aufbau einer Wärmepumpe}
 
 
 
@@ -14,23 +68,23 @@
 \subsection{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
 \subsubsection{Mittelwert}
-Der Mittelwert einer Messreihe $x_1, ... ,x_n$ lässt sich durch die Formel
+Der Mittelwert einer Messreihe $x_1, ... ,x_\text{n}$ lässt sich durch die Formel
 \begin{equation}
-	\overline{x} = \frac{1}{N} \sum_{k=1}^N x_k
+	\overline{x} = \frac{1}{N} \sum_{k=1}^N x_\text{k}
 \end{equation}
-berechnen. Die Standardabweichung des Mittelwertes beträgt 
+berechnen. Die Standardabweichung des Mittelwertes beträgt
 \begin{equation}
-	\Delta \overline{x} = \sqrt{ \frac{1}{N(N-1)} \sum_{k=1}^N (x_k - \overline{x})^2}
+	\Delta \overline{x} = \sqrt{ \frac{1}{N(N-1)} \sum_{k=1}^N (x_\text{k} - \overline{x})^2}
 \end{equation}
 
 \subsubsection{Gauß'sche Fehlerfortpflanzung}
-Wenn $x_1, ..., x_n$ fehlerbehaftete Messgrößen im weiteren Verlauf benutzt werden, wird der neue Fehler $\Delta f$ mit Hilfe der Gaußschen Fehlerfortpflanzung angegeben.
+Wenn $x_1, ..., x_\text{n}$ fehlerbehaftete Messgrößen im weiteren Verlauf benutzt werden, wird der neue Fehler $\Delta f$ mit Hilfe der Gaußschen Fehlerfortpflanzung angegeben.
 \begin{equation}
-	\Delta f = \sqrt{\sum_{k=1}^N \left( \frac{ \partial f}{\partial x_k} \right) ^2 \cdot (\Delta x_k)^2}
+	\Delta f = \sqrt{\sum_{k=1}^N \left( \frac{ \partial f}{\partial x_\text{k}} \right) ^2 \cdot (\Delta x_\text{k})^2}
 \end{equation}
 
 \subsubsection{Lineare Regression}
-Die Steigung und y-Achsenabschnitt einer Ausgleichsgeraden werden gegebenfalls mittels Linearen Regression berechnet. 
+Die Steigung und y-Achsenabschnitt einer Ausgleichsgeraden werden gegebenfalls mittels Linearen Regression berechnet.
 \begin{equation}
 	y = m \cdot x + b
 \end{equation}
