@@ -103,3 +103,32 @@ Der Differentialquotient berechnet sich aus einmaligen Ableiten der Gleichung \r
   \frac{dT_{\text{i}}}{dt} = 2At + B
   \label{eqn:diffq}
 \end{equation}
+Aus der Funktion wird der Differentialqutient für $T1$ und $T2$ für vier verschieden Zeiten berechnet. Die Ergebnisse sind in Tabelle \ref{tab:diffQ} aufgeführt.
+\begin{table}
+  \centering
+  \begin{tabular}{c c c c c}
+  	\toprule
+	t / s & $T1$ / K & $\frac{dT1}{dt}$ $10^{-2}$ s/K & $T2$ / k & $\frac{dT2}{dt}$ $10^{-2}$ s/K \\
+	\midrule
+	60	& 294.7 & 2.16 & 294.0 & -1.62 \\
+	400	& 301.7 & 1.94 & 288.9 & -1.35 \\
+	1000	& 312.2 & 1.55 & 281.8 & -0.97 \\
+	1500	& 319.1 & 1.23 & 277.9 & -0.62 \\
+	\bottomrule
+  \end{tabular}
+  \caption{Differentialqoutient für T1 und T2}
+  \label{tab:diffQ}
+\end{table}
+
+\subsection{Bestimmung der Güteziffer}
+Mit Hilfe des Differentialqoutienten und der Wärmekapazität der mit Wasser befüllten Resoivare
+\begin{equation}
+  c_w \cdot m_w = 6230.64 \cdot \num{4000 +- 1.6} \, \frac{\text{J}}{\text{K}} = \num{24.9 +- 0.0} \cdot 10^6 \, \frac{\text{J}}{\text{K}}
+  \label{eqn:WC}
+\end{equation}
+soll die Güteziffer des Versuches bestimmt werden. Die Theoretische Güteziffer lässt sich mit hilfe der Gleichung ?? berechnen und ist in Tabelle ?? aufgeführt. Die praktisch bestimmte Güteziffer errechnet sich nach Gleichung ?? aus der Wärmekapazität der Resoirvare und der Aufbaues 
+\begin{equation}
+  c_k \cdot m_k = \num{750 +- 10} \, \frac{\text{J}}{\text{K}}
+  \label{eqn:Res}
+\end{equation}
+, der Leitung sowie denn in Tabelle 1 bestimmten Differentialquotienten, so wie der gemittelte Leistung

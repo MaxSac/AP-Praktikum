@@ -32,3 +32,13 @@ plt.ylabel(r'Temperatur / K')
 plt.legend()
 plt.tight_layout()
 plt.savefig('build/Ausgleichsgrade.pdf')
+
+#Differentialquotient
+def q1(t):
+    return 2*z1[0]*t + z1[1]
+def q2(t):
+    return 2*z2[0]*t + z2[1]
+
+print('DiffQ T1', '60: T', p1(60),' dq 60', q1(60), ', 400:', p1(400),' dq 400', q1(400), ', 1000:', p1(1000), 'dq 1000', q1(1000), ', 1500:', p1(1500),'dq 1500 ', q1(1500))
+print('DiffQ T2', '60: T', p2(60),' dq 60', q2(60), ', 400:', p2(400),' dq 400', q2(400), ', 1000:', p2(1000), 'dq 1000', q2(1000), ', 1500:', p2(1500),'dq 1500 ', q2(1500))
+
