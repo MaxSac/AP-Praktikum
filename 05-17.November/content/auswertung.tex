@@ -75,4 +75,31 @@ Mit einer nicht-linearen Ausgleichsgraden soll der Temperaturverlauf mit Hilfe d
   T(t) = At^2 + Bt +C
   \label{eqn:ausgleichsgrade}
 \end{equation}
-Die Ermittelung der Ausgleichsgraden erfolgtmit hilfe von Python 3.4.3. 
+Die Ermittelung der Ausgleichsgraden erfolgtmit hilfe von Python 3.4.3.
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{Ausgleichsgrade.pdf}
+  \caption{nicht-lineare Ausgleichsgrade}
+  \label{fig:ausg}
+\end{figure}
+Mittels einer fit Funktion werden die Koeffizienten bestimmt. Für die Temperatur $T1$ ergeben sich die Koeffizienten 
+\begin{eqnarray}
+  A =& -3.23 \cdot 10^{-6} \, \frac{\text{K}}{\text{s}^2}	\\ 
+  B =& 2.20 \cdot 10^{-2} \, \frac{\text{K}}{\text{s}} 	\\
+  C =& 2.93 \cdot 10^{2} \, \text{K} \\
+  \label{eqn:koefT1}
+\end{eqnarray}
+und für T2 
+\begin{eqnarray}
+  A =& 3.49 \cdot 10^{-6} \, \frac{\text{K}}{\text{s}^2} 	\\
+  B =& -1.67 \cdot 10^{-2} \, \frac{\text{K}}{\text{s}} 	\\
+  C =& 2.94 \cdot 10^2 \, \text{K}
+  \label{eqn:koefT2}
+\end{eqnarray}
+Dabei wird vernachlässigt das die Koeffizienten Fehlerbehaftet sind, dies jedoch nicht mittels fit Funktion nicht ermittelt werden kann.
+\subsection{Differentialquotient}
+Der Differentialquotient berechnet sich aus einmaligen Ableiten der Gleichung \ref{eqn:ausgleichsgrade} nach der Zeit.
+\begin{equation}
+  \frac{dT_{\text{i}}}{dt} = 2At + B
+  \label{eqn:diffq}
+\end{equation}

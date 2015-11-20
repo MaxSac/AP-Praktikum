@@ -14,7 +14,7 @@ plt.ylabel(r'Temperatur / K')
 plt.legend()
 plt.tight_layout()
 plt.savefig('build/TVerlauf.pdf')
-
+plt.close()
 
 
 #Ausgleichsgraden Plot
