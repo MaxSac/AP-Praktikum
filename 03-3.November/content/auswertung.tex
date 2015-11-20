@@ -2,11 +2,15 @@
 \label{sec:Auswertung}
 \subsection{Bestimmung der Winkelrichtgröße}
 
-Durch Aufstellung der Drehmomentsgleichung der Drillachse und dem Umstellen nach der Winkelrichtgröße folgt 
-\begin{equation} 
-	D = \frac{ |F| \cdot |r|}{\varphi} .
+Durch Aufstellung der Drehmomentsgleichung der Drillachse und dem Umstellen nach der Winkelrichtgröße folgt
+\begin{equation}
+	D = \frac{ |F| \cdot |r|}{\varphi} \ .
 \end{equation}
-Für die verwendete Torsionsfeder folgt, für die gemessenen Kräfte und einem Radius von $(\num{90.7 +- 0.4})$ mm Winkelrichtgrößen von
+Für die verwendete Torsionsfeder folgt, für die gemessenen Kräfte und einem Radius von
+\begin{align*}
+	r = (\num{90.7 +- 0.4}) \, \text{mm}
+\end{align*}
+Winkelrichtgrößen von
 
 \begin{table}[ht]
 	\centering
@@ -14,7 +18,7 @@ Für die verwendete Torsionsfeder folgt, für die gemessenen Kräfte und einem R
 	\label{tab:winkelrichtgröße}
 	\begin{tabular}{c c c c}
 		\toprule
-		$\varphi$ [Grad] & $\varphi$ [rad] & $F$ [$10^{-1}$N] & $D$ [$10^{-2}$NM] \\
+		$\varphi$ / Grad & $\varphi$ / rad & $F$ / $10^{-1}$ N & $D$ / $10^{-2}$ Nm \\
 		\midrule
 		15 & 0.26 & 0.6 & \num{2.1 +- 1.4} \\
 		30 & 0.52 & 1.2 & \num{2.1 +- 0.7} \\
@@ -28,35 +32,42 @@ Für die verwendete Torsionsfeder folgt, für die gemessenen Kräfte und einem R
 		135& 2.36 & 5.6 & \num{2.2 +- 0.2} \\
 		\bottomrule
 	\end{tabular}
-\end{table}	
+\end{table}
 
 Die Messunsicherheit berechnet sich aus einem Ablesefehler des Winkels von $\le 3^\circ $ und der Kraft von $\le 0.02$ N. Nach Mittelung der Werte und Fehlerfortpflanzung (siehe Formel \ref{eqn:Gauß}) erhält man eine Winkelrichtgröße von
 \begin{align*}
-	D_0 = (\num{2.16 +- 0.19}) \, 10^{-2} \, \text{Nm} \ .
+	D_\text{0} = (\num{2.16 +- 0.19}) \cdot 10^{-2} \, \text{Nm} \ .
 \end{align*}
 
 
 \subsection{Bestimmung des Eigenträgheitsmoments}
-Um das Trägheitsmoment der Drillachse $I_D$ zu berechnen muss zuerst einmal das Trägheitsmoment des nahezu masselosen Stabes $I_S$ bestimmt werden. Zusätzlich muss das Trägheitsmoment der beiden am Stab befestigten Gewichte $2 \cdot I_G$ berechnet werden. Das Trägheitsmoment des Stabes beträgt in dem gewählten Versuchsaufbau bei einer Masse von 96,26 g und einer Länge von 60 cm
-\begin{equation}
-	I_S = \frac{ml^2}{12}= 2.85 \cdot 10^{-3} \, \text{ kg \cdot m .}
-\end{equation} 
-Für die vom Schwerpunkt um die Strecke $a$ verschobene Zylinder ergibt sich nach Formel \ref{eqn:Steiner} ein Trägheitsmoment $I_G$ von (siehe Tabelle \ref{tab:I_D}) 
-\begin{equation}
-	I_G = I_{Schwerpunkt}+ I_{Steiner} = m (\frac{R^2}{4} + \frac{h^2}{12}) + m \cdot a^{2}
-\end{equation}
-Mit Hilfe linearer Regression soll das Trägheitsmoment der Drillachse bestimmt werden. Dafür wird Formel \ref{eqn:Schwingungsdauer} quadriert und das Trägheitsmoment 
+Um das Trägheitsmoment der Drillachse $I_\text{D}$ zu berechnen muss zuerst einmal das Trägheitsmoment des nahezu masselosen Stabes $I_\text{S}$ bestimmt werden. Zusätzlich muss das Trägheitsmoment der beiden am Stab befestigten Gewichte $2 \cdot I_\text{G}$ berechnet werden. Das Trägheitsmoment des Stabes beträgt in dem gewählten Versuchsaufbau bei einer Masse von
 \begin{align*}
-	I_{ges} = I_D + I_S + 2 \cdot I_G
+	m = 96,26 \, \text{g}
 \end{align*}
-in die Formel eingesetzt. 
+und einer Länge von
+\begin{align*}
+	l = 60 \, \text{cm}
+\end{align*}
+\begin{equation}
+	I_\text{S} = \frac{ml^2}{12}= 2.85 \cdot 10^{-3} \, \text{kg m} \ .
+\end{equation}
+Für die vom Schwerpunkt um die Strecke $a$ verschobene Zylinder ergibt sich nach Formel \ref{eqn:Steiner} ein Trägheitsmoment $I_\text{G}$ von (siehe Tabelle \ref{tab:I_D})
+\begin{equation}
+	I_\text{G}= I_\text{Schwerpunkt}+ I_\text{Steiner} = m (\frac{R^2}{4} + \frac{h^2}{12}) + m \cdot a^{2}
+\end{equation}
+Mit Hilfe linearer Regression soll das Trägheitsmoment der Drillachse bestimmt werden. Dafür wird Formel \ref{eqn:Schwingungsdauer} quadriert und das Trägheitsmoment
+\begin{align*}
+	I_\text{ges} = I_\text{D} + I_\text{S} + 2 \cdot I_\text{G}
+\end{align*}
+in die Formel eingesetzt.
 \begin{table}[ht]
         \centering
         \caption{Abstände der Gewichte von der Drehachse und fünfache Periodendauer}
         \label{tab:I_D}
         \begin{tabular}{c c}
                 \toprule
-                $a$ [mm] & $T$ [s]  \\
+                $a$ / mm & $T$ / s  \\
                 \midrule
                 40 & 2.53  \\
                 65 & 2.95  \\
@@ -74,23 +85,23 @@ in die Formel eingesetzt.
 \end{table}
 Um einen Koeffizientenvergleich zwischen der Regression und der quadratischen Schwingungsdauer zu machen, werden die Therme wie folgt sortiert.
 \begin{equation}
-	\underbrace{T^2}_y = \underbrace{\frac{8 \pi^2 m_G}{D}}_m \underbrace{a^2}_x + \underbrace{\frac{4 \pi^2 I_D}{D} + \frac{8\pi^2 m_G}{D} \left( \frac{R^2}{4} + \frac{h^2}{12} \right) + \frac{m_S l^2}{12}}_b
+	\underbrace{T^2}_y = \underbrace{\frac{8 \pi^2 m_\text{G}}{D}}_m \underbrace{a^2}_x + \underbrace{\frac{4 \pi^2 I_\text{D}}{D} + \frac{8\pi^2 m_\text{G}}{D} \left( \frac{R^2}{4} + \frac{h^2}{12} \right) + \frac{m_\text{S} l^2}{12}}_b
 \end{equation}
-Die Steigung m berechnet sich nach Formel \ref{eqn:m} und der Koeffizeientvergleich ergibt 
+Die Steigung $m$ berechnet sich nach Formel \ref{eqn:m} und der Koeffizeientvergleich ergibt
 \begin{align}
-	m = \num{798+- 6} = \frac{8 \pi^2 m_G}{D} 
+	m = \num{798+- 6} = \frac{8 \pi^2 m_\text{G}}{D}
 \end{align}
-Daraus ergibt sich eine Winkelrichtgröße von 
+Daraus ergibt sich eine Winkelrichtgröße von
 \begin{align}
-	D = (\num{2.19 +- 0.02}) \cdot 10^{-2} \text{Nm} \ .
+	D = (\num{2.19 +- 0.02}) \cdot 10^{-2} \, \text{Nm} \ .
 \end{align}
 Das Trägheitsmoment der Drillachse errechnet sich aus dem vergleich zwischen dem errechnetem Wert der Regression und der gemmesenen Werte.
 \begin{align}
-	b = \frac{4 \pi^2 I_D}{D} + \frac{8\pi^2 m_G}{D} \left( \frac{R^2}{4} + \frac{h^2}{12} \right) + \frac{m_S l^2}{12} = 5.48
+	b = \frac{4 \pi^2 I_\text{D}}{D} + \frac{8\pi^2 m_\text{G}}{D} \left( \frac{R^2}{4} + \frac{h^2}{12} \right) + \frac{m_\text{S} l^2}{12} = 5.48
 \end{align}
-Nach umstellen der Formel nach $I_D$, beträgt das Trägheitsmoment der Drillachse
+Nach Umstellen der Formel nach $I_\text{D}$, beträgt das Trägheitsmoment der Drillachse
 \begin{align*}
-	I_D = -4.22 \cdot 10^{-4} \text{kg \cdot m$^2$} \ .
+	I_\text{D} = -4.22 \cdot 10^{-4} \text{kg m}^2 \ .
 \end{align*}
 
 
@@ -102,65 +113,73 @@ Durch Mittelung und Gauß'scher Fehlerfortpfortpflanzung (siehe Kapitel \ref{sec
 \begin{equation}
 	d = (\num{137.44 +- 0.022}) \, \text{mm} \ .
 \end{equation}
-Das Trägheitsmoment einer Kugel berechnet sich aus 
+Das Trägheitsmoment einer Kugel berechnet sich aus
 \begin{align}
-	I_K = \frac{2}{5} mr^2 \ .
+	I_\text{K,theo} = \frac{2}{5} mr^2 \ .
 \end{align}
-Bei einer Masse von $0.8126$  kg beträgt das theoretische Trägheitsmoment der Kugel 
+Bei einer Masse von
+\begin{align*}
+	m = 0.8126 \, \text{kg}
+\end{align*}
+beträgt das theoretische Trägheitsmoment der Kugel
 \begin{align}
-	I_K = 1.53 \, \text{kg \cdot m$^2$ \ .}
+	I_\text{K,theo} = 1.53 \, \text{kg m}^2 \ .
 \end{align}
-Das experimentell ermittelte Trägheitsmoment errechnet sich durch Umformung der Formel \ref{eqn:Schwingungsdauer} und ergibt nach Mittelung der Periodendauer 
+Das experimentell ermittelte Trägheitsmoment errechnet sich durch Umformung der Formel \ref{eqn:Schwingungsdauer} und ergibt nach Mittelung der Periodendauer
 \begin{equation}
 	\label{eqn:T_K}
-	I_K = \left( \frac{T}{2 \pi} \right) ^2 \cdot D = (\num{1.62 +- 0.14})10^{-3} \, \text{kg \cdot m$^2$}
-\end{equation} 
+	I_\text{K,exp} = \left( \frac{T}{2 \pi} \right) ^2 \cdot D = (\num{1.62 +- 0.14}) \cdot 10^{-3} \, \text{kg m}^2
+\end{equation}
 
 \subsubsection{Zylinder}
-Das theoretische Trägheitsmoment des Zylinders wird aus 
-\begin{align} 
-	I_Z = \frac{1}{2} \text{mr$^2$}
-\end{align}
-berechnet. Durch Einsetzen des Radius von $(\num{4.0 +- 0.0}) \cdot 10^{-2}$ \, m ergibt sich ein Trägheitsmoment von 
+Das theoretische Trägheitsmoment des Zylinders wird aus
 \begin{align}
-	I_Z = 1.58 \cdot 10^{-3} \, \text{kg \cdot m}^2 \ .
+	I_\text{Z,theo} = \frac{1}{2} mr^2
 \end{align}
-Das experimentelle Trägheitsmoment berechnet sich analog zur Kugel (siehe Formel \ref{eqn:T_K}) und beträgt 
+berechnet. Durch Einsetzen des Radius von
+\begin{align*}
+	r = (\num{4.0 +- 0.0}) \cdot 10^{-2} \, \text{m}
+\end{align*}
+ergibt sich ein Trägheitsmoment von
 \begin{align}
-	I_Z = (\num{1.54 +- 0.13}) \cdot 10^{-3} \, \text{kg \cdot m}^2 \ .
+	I_\text{Z,theo} = 1.58 \cdot 10^{-3} \, \text{kg m}^2 \ .
+\end{align}
+Das experimentelle Trägheitsmoment berechnet sich analog zur Kugel (siehe Formel \ref{eqn:T_K}) und beträgt
+\begin{align}
+	I_\text{Z,exp} = (\num{1.54 +- 0.13}) \cdot 10^{-3} \, \text{kg m}^2 \ .
 \end{align}
 
 \subsection{Trägheitsmoment der Puppe}
-Durch Einteilen der Puppe in verschieden große Zylinder soll das Trägheitsmoment der Puppe bestimmt werden. Dafür werden mehrere Maße der einzelnen Zylinder genommen um einen möglichst genauen Mittelwert zu erlangen. Die Maße, Massen und Trägheitsmomente der Zylinder sind der Tabelle zu entnehmen. 
+Durch Einteilen der Puppe in verschieden große Zylinder soll das Trägheitsmoment der Puppe bestimmt werden. Dafür werden mehrere Maße der einzelnen Zylinder genommen um einen möglichst genauen Mittelwert zu erlangen. Die Maße, Massen und Trägheitsmomente der Zylinder sind der Tabelle zu entnehmen.
 \begin{table}
 	\centering
 	\caption{Maße, Gewicht und Trägheitsmomente der Körperteile}
 	\label{tab:Puppe}
 	\begin{tabular}{l c c c c}
-		\toprule	
+		\toprule
 		$  $ & $Kopf$ & $Rumpf$ & $Bein$ & $Arm$ \\
 		\midrule
 		Durchmesser 	$10^{-3}$ \, m	& \num{24.5 +- 7.1}	&\num{35.0 +- 5.8}      &\num{15.5 +- 2.8}	&\num{13.1 +- 3.1}	\\
 		Höhe 		$10^{-3}$ \, m	& \num{56.0 +- 0.5}	&\num{97.2 +- 2.5}      &\num{150.0 +- 4.0}	&\num{139.6 +- 0.8}	\\
 		Volumen		$10^{-5}$ \, m$^3$& \num{2.2 +- 1.3}	&\num{9.4 +-3.1}	&\num{2.8 +- 1}		&\num{1.9 +- 0.9}	\\
-		Masse		$10^{-2}$ \, kg	& \num{2.0 +- 1.2}      &\num{7.1 +- 2.8}       &\num{2.1 +- 0.9}       &\num{1.4 +- 0.7}       \\	
+		Masse		$10^{-2}$ \, kg	& \num{2.0 +- 1.2}      &\num{7.1 +- 2.8}       &\num{2.1 +- 0.9}       &\num{1.4 +- 0.7}       \\
 		Trägheitsmoment			&	&	&	&	\\
 		angelegt	$10^{-6}$ \, kg \cdot m$^2$	& \num{1.5 +- 1.3}     	&\num{10.9 +- 5.6}       &\num{1.9 +- 1.0}       &\num{5.3 +- 3.1}      \\
 		ausgestreckt	$10^{-6}$ \, kg \cdot m$^2$	& \num{1.5 +- 1.3}    	&\num{10.9 +- 5.6}       &\num{1.9 +- 1.0}       &\num{110 +- 60}       \\
 		\bottomrule
 	\end{tabular}
 \end{table}
-Dabei wird angenommen, dass die Puppe eine homogene Dichte und die Masse besitzt. Aus der Beziehung 
-\begin{align} 
-	M = \varrho \cdot V = 162.7 \text{g}
-\end{align}
-lassen sich die Massen der unterschiedlichen Zylinder bestimmen. Die einzelnen Trägheitsmomente setzen sich jeweils aus den Schwerpunktsträgheitsmomenten der Zylinder zusammen und dem Steiner Anteil. Daraus ergeben sich nach Summe der einzelnen Trägheitsmomente aus Tabelle \ref{tab:Puppe} ein Gesamtträgheitsmoment für die Puppe mit angelegten Armen von 
+Dabei wird angenommen, dass die Puppe eine homogene Dichte und die Masse besitzt. Aus der Beziehung
 \begin{align}
-	I_{an} = (\num{2.7 +- 1.0})10^{-5} \, \text{kg \cdot m$^2$}
+	M = \varrho \cdot V = 162.7 \, \text{g}
 \end{align}
-und für die Puppe mit ausgestreckten Armen von 
+lassen sich die Massen der unterschiedlichen Zylinder bestimmen. Die einzelnen Trägheitsmomente setzen sich jeweils aus den Schwerpunktsträgheitsmomenten der Zylinder zusammen und dem Steiner Anteil. Daraus ergeben sich nach Summe der einzelnen Trägheitsmomente aus Tabelle \ref{tab:Puppe} ein Gesamtträgheitsmoment für die Puppe mit angelegten Armen von
 \begin{align}
-	I_{aus} = (\num{2.5 +- 1.2}) 10^{-4} \, kg \cdot m^2.
+	I_\text{an} = (\num{2.7 +- 1.0}) \cdot 10^{-5} \, \text{kg m}^2
+\end{align}
+und für die Puppe mit ausgestreckten Armen von
+\begin{align}
+	I_\text{aus} = (\num{2.5 +- 1.2}) \cdot 10^{-4} \, \text{kg m}^2 \ .
 \end{align}
 \ \\
 Die praktische Bestimmung des Trägheitsmoments der Puppe erfolgt durch die Messung der Schwingungsdauer.
@@ -170,7 +189,7 @@ Die praktische Bestimmung des Trägheitsmoments der Puppe erfolgt durch die Mess
 	\caption{Fünfache Periodendauer der Puppe}
 	\begin{tabular}{c c}
 		\toprule
-		angelegte Arme [s]& ausgestreckte Arme [s] \\
+		$t_\text{an}$ / s & $t_\text{aus}$ / s \\
 		\midrule
 		2.80&3.84\\
 		3.00&3.64\\
@@ -180,13 +199,13 @@ Die praktische Bestimmung des Trägheitsmoments der Puppe erfolgt durch die Mess
 		\bottomrule
 	\end{tabular}
 \end{table}
-Durch Anwendung der Formel \ref{eqn:T_K} ergibt sich ein Trägheitsmoment $I_{aus}$ für die gesamte Puppe mit ausgestreckten Armen von 
+Durch Anwendung der Formel \ref{eqn:T_K} ergibt sich ein Trägheitsmoment $I_\text{aus}$ für die gesamte Puppe mit ausgestreckten Armen von
 \begin{equation}
-	I_{aus} = (\num{3.17 +- 0.30}) 10^{-4} \, \text{kg $\cdot$ m}^2
+	I_\text{aus} = (\num{3.17 +- 0.30}) \cdot 10^{-4} \, \text{kg m}^2
 \end{equation}
-Die Berechnung des Trägheitsmomentes mit angelegten Armen folgt analog und beträgt 
+Die Berechnung des Trägheitsmomentes mit angelegten Armen folgt analog und beträgt
 \begin{align}
-	I_{an} = (\num{1.86 +- 0.19}) 10^{-4} \, \text{kg $\cdot$ m}^2 \ .
+	I_\text{an} = (\num{1.86 +- 0.19}) \cdot 10^{-4} \, \text{kg m}^2 \ .
 \end{align}
 
 %\begin{figure}
