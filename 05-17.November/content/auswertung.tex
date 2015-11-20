@@ -57,15 +57,22 @@ Wasser befüllt. Desweiteren werden die Temperatur T1 und T2, der Druck $p_{\tex
 
 Zu beachten ist das alle Messgrößen einen Messunsicherheit besitzen, einerseits eine Ablesefehler bei analogen Messinstrumenten als auch einen Technischen.
 \begin{eqnarray*}
-  \Delta p = 10 \text{kp}				\\
-  \Delta C = 10 \frac{\text{J}}{\text{K}}		\\
-  \Delta V = 1.6 \text{mL}				\\
-  \Delta \rho = \+- 13 \frac{\text{kg}}{\text{m$^2$}}	\\
+  \Delta p =& &\pm 10 \text{kp}				\\
+  \Delta C =& &\pm 10 \frac{\text{J}}{\text{K}}		\\
+  \Delta V =& &\pm 1.6 \text{mL}				\\
+  \Delta \rho =& &\pm 13 \frac{\text{kg}}{\text{m$^2$}}	\\
 \end{eqnarray*}
-Die Messunsicherheit von der Dichte für Wasser kommt daraus zu stande das Wasser bei verschiedenen Temperatruren seine Dichte ändert.
+Die Messunsicherheit der Dichte für Wasser kommt daraus zu stande, dass Wasser bei verschiedenen Temperatruren seine Dichte ändert.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{TVerlauf.pdf}
-  \caption{Das Pep-Logo.}
-  \label{fig:peplogo}
+  \caption{Temperaturverläufe T1 und T2}
+  \label{fig:T1&T2}
 \end{figure}
+\subsection{Näherungsfunktion}
+Mit einer nicht-linearen Ausgleichsgraden soll der Temperaturverlauf mit Hilfe der Gleichung approximiert werden. Eine Approximation soll mittels eines Polynoms 2-Grades erfolgen.
+\begin{equation}
+  T(t) = At^2 + Bt +C
+  \label{eqn:ausgleichsgrade}
+\end{equation}
+Die Ermittelung der Ausgleichsgraden erfolgtmit hilfe von Python 3.4.3. 
