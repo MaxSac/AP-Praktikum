@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import uncertainties.unumpy as unp
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
@@ -33,6 +34,7 @@ plt.ylabel(r'Temperatur / K')
 plt.legend()
 plt.tight_layout()
 plt.savefig('build/Ausgleichsgrade.pdf')
+plt.close()
 
 print("-----------------------------------------------------------")
 
@@ -54,3 +56,23 @@ qg = mw*cw + qr
 wk = ufloat(np.mean(W), np.std(W))
 wk = wk*100
 print("Güte nach 60 sec : ", qg*q1(60)*(1/wk),", Güte nach 400 sec : ", qg*q1(400)*(1/wk),", Güte nach 1000 sec : ", qg*q1(1000)*(1/wk), "Güte nach 1500 sec : ", qg*q1(1500)*(1/wk))
+
+print("----------------------------------------------------------")
+
+#Dampfdruckkurve
+bar = [4,5,6,7,8,9,10]
+T = [8,14,23,28,33,39,42]
+for b in range(7):
+    T[b] += 273.2
+def f(x, a, b):
+    return a * x + b
+params, covariance = curve_fit(f, T, (1/np.log(bar)))
+errors = np.sqrt(np.diag(covariance))
+print('Steigung: ', params[0], ' +- ', errors[0])
+print('Steigung: ', params[1], ' +- ', errors[1])
+plt.plot(T, 1/np.log(bar), 'rx')
+x_plot = np.linspace(280, 330)
+plt.plot(x_plot, f(x_plot, *params), 'b-', label='linearer Fit')
+plt.tight_layout()
+plt.savefig('build/Dampfdruck.pdf')
+plt.close()
