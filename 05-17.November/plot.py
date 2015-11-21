@@ -64,14 +64,17 @@ bar = [4,5,6,7,8,9,10]
 T = [8,14,23,28,33,39,42]
 for b in range(7):
     T[b] += 273.2
+    T[b] = 1/T[b]
 def f(x, a, b):
     return a * x + b
-params, covariance = curve_fit(f, T, (1/np.log(bar)))
+params, covariance = curve_fit(f, T, np.log(bar))
 errors = np.sqrt(np.diag(covariance))
 print('Steigung: ', params[0], ' +- ', errors[0])
 print('Steigung: ', params[1], ' +- ', errors[1])
-plt.plot(T, 1/np.log(bar), 'rx')
-x_plot = np.linspace(280, 330)
+plt.plot(T, np.log(bar), 'rx')
+x_plot = np.linspace(0.003, 0.0036)
+plt.xlabel(r'1/T')
+plt.ylabel(r'log(p/p$_0$)')
 plt.plot(x_plot, f(x_plot, *params), 'b-', label='linearer Fit')
 plt.tight_layout()
 plt.savefig('build/Dampfdruck.pdf')

@@ -373,6 +373,17 @@ INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/
 INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT TVerlauf.pdf
 INPUT Ausgleichsgrade.pdf
+INPUT Dampfdruck.pdf
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT build/main.aux

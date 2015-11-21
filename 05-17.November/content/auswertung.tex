@@ -150,13 +150,18 @@ soll die Güteziffer des Versuches bestimmt werden. Die Theoretische Güteziffer
 Gründe für die Abweichung zwischen der theoretischen Güteziffer und der praktisch bestimmten werden in der Diskussion aufgeführt.
 \subsection{Massendurchsatz}
 \subsubsection{Dampfdruckkurve}
-Die Verdampfungswärme L wird mit einer Verdampfungskurve ermittelt. Dafür wurde
+Die Verdampfungswärme L wird mit einer Verdampfungskurve ermittelt. Dafür wird
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{Dampfdruck.pdf}
   \caption{Dampfdruckkurve}
   \label{fig:dampfdruck}
 \end{figure}
+$1/T$ gegen $log(p/p_0)$ aufgetragen und in die Steigung der Graden in die Formel eingesetzt 
+\begin{equation}
+  L = log \left( \frac{p}{p_o} \right) \cdot T \cdot \frac{1}{R} 
+  \label{eqn:dampfgl}
+\end{equation}
 
 \begin{table}
   \centering
