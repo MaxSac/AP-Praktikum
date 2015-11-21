@@ -123,12 +123,28 @@ Aus der Funktion wird der Differentialqutient für $T1$ und $T2$ für vier versc
 \subsection{Bestimmung der Güteziffer}
 Mit Hilfe des Differentialqoutienten und der Wärmekapazität der mit Wasser befüllten Resoivare
 \begin{equation}
-  c_w \cdot m_w = 6230.64 \cdot \num{4000 +- 1.6} \, \frac{\text{J}}{\text{K}} = \num{24.9 +- 0.0} \cdot 10^6 \, \frac{\text{J}}{\text{K}}
+  c_w \cdot m_w = 6230.64 \cdot (\num{4000 +- 1.6}) \, \frac{\text{J}}{\text{K}} = (\num{24.9 +- 0.0}) \cdot 10^6 \, \frac{\text{J}}{\text{K}}
   \label{eqn:WC}
 \end{equation}
-soll die Güteziffer des Versuches bestimmt werden. Die Theoretische Güteziffer lässt sich mit hilfe der Gleichung ?? berechnen und ist in Tabelle ?? aufgeführt. Die praktisch bestimmte Güteziffer errechnet sich nach Gleichung ?? aus der Wärmekapazität der Resoirvare und der Aufbaues 
+soll die Güteziffer des Versuches bestimmt werden. Die Theoretische Güteziffer lässt sich mit hilfe der Gleichung \ref{eqn:nureal} berechnen und ist in Tabelle \ref{tab:gueteziffer} aufgeführt. Die praktisch bestimmte Güteziffer errechnet sich nach Gleichung \ref{eqn:nureal} aus der Wärmekapazität der Resoirvare und der Aufbaues 
 \begin{equation}
-  c_k \cdot m_k = \num{750 +- 10} \, \frac{\text{J}}{\text{K}}
+  c_{\text{k}} \cdot m_{\text{k}} = (\num{750 +- 10}) \, \frac{\text{J}}{\text{K}}
   \label{eqn:Res}
 \end{equation}
-, der Leitung sowie denn in Tabelle 1 bestimmten Differentialquotienten, so wie der gemittelte Leistung
+, der Leitung sowie denn in Tabelle 1 bestimmten Differentialquotienten, so wie der nach Formel \ref{eqn:ave} und \ref{eqn:var} gemittelte Leistung.
+\begin{table}
+  \centering
+  \begin{tabular}{c c c}
+    \toprule
+    $t$ / s & Güteziffer (theoretisch) & Güteziffer (praktisch) \\
+    \midrule
+    60	 & 421.0 & \num{3.2 +- 0.6} 	\\
+    400  & 23.6	 & \num{2.8 +- 0.5} 	\\
+    1000 & 10.3	 & \num{2.3 +- 0.4}	\\
+    1500 & 7.6	 & \num{1.8 +- 0.3} 	\\
+    \bottomrule
+  \end{tabular}
+  \caption{theoretische und praktisch bestimmte Güteziffer}
+  \label{tab:gueteziffer}
+\end{table}
+Gründe für die Abweichung zwischen der theoretischen Güteziffer und der praktisch bestimmten werden in der Diskussion aufgeführt.
