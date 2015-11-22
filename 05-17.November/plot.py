@@ -60,9 +60,9 @@ print("Güte nach 60 sec : ", qg*q1(60)*(1/wk),", Güte nach 400 sec : ", qg*q1(
 print("----------------------------------------------------------")
 
 #Dampfdruckkurve
-bar = [4,5,6,7,8,9,10]
-T = [8,14,23,28,33,39,42]
-for b in range(7):
+bar = [1,2,3,4,5,6,7,8,9,10]
+T = [-30,-12,-1,8,15,23,28,33,39,42]
+for b in range(10):
     T[b] += 273.2
     T[b] = 1/T[b]
 def f(x, a, b):
@@ -71,11 +71,19 @@ params, covariance = curve_fit(f, T, np.log(bar))
 errors = np.sqrt(np.diag(covariance))
 print('Steigung: ', params[0], ' +- ', errors[0])
 print('Steigung: ', params[1], ' +- ', errors[1])
+L = ufloat(params[0], errors[0])
+L *= 8.314
 plt.plot(T, np.log(bar), 'rx')
-x_plot = np.linspace(0.003, 0.0036)
+x_plot = np.linspace(0.0031, 0.0042)
 plt.xlabel(r'1/T')
 plt.ylabel(r'log(p/p$_0$)')
 plt.plot(x_plot, f(x_plot, *params), 'b-', label='linearer Fit')
 plt.tight_layout()
 plt.savefig('build/Dampfdruck.pdf')
 plt.close()
+
+print("----------------------------------------------------------")
+
+#Massendurchsatz
+print("Massendurchsatz nach 60 sec : ", qg*q2(60)*(1/L),", nach 400 sec : ", qg*q2(400)*(1/L),", nach 1000 sec : ", qg*q2(1000)*(1/L), " nach 1500 sec : ", qg*q2(1500)*(1/L))
+

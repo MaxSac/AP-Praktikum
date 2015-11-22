@@ -148,26 +148,60 @@ soll die Güteziffer des Versuches bestimmt werden. Die Theoretische Güteziffer
   \label{tab:gueteziffer}
 \end{table}
 Gründe für die Abweichung zwischen der theoretischen Güteziffer und der praktisch bestimmten werden in der Diskussion aufgeführt.
-\subsection{Massendurchsatz}
-\subsubsection{Dampfdruckkurve}
-Die Verdampfungswärme L wird mit einer Verdampfungskurve ermittelt. Dafür wird
+\subsection{Dampfdruckkurve}
+Die Verdampfungswärme L wird mit einer Verdampfungskurve ermittelt. Dafür wird im Diagramm \ref{fig:dampfdruck} 
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{Dampfdruck.pdf}
   \caption{Dampfdruckkurve}
   \label{fig:dampfdruck}
 \end{figure}
-$1/T$ gegen $log(p/p_0)$ aufgetragen und in die Steigung der Graden in die Formel eingesetzt 
+$1/T$ gegen $log(p/p_0)$ aufgetragen und in die Steigung der Graden in die Formel \ref{eqn:damüfgl} eingesetzt.
 \begin{equation}
   L = log \left( \frac{p}{p_o} \right) \cdot T \cdot \frac{1}{R} 
   \label{eqn:dampfgl}
 \end{equation}
-
+Die Steigung der Ausgleichsgraden wird mittels einer linearen Regression berechnet und beträgt 
+\begin{equation*}
+  m = \num{-2430 +- 20} \ .
+\end{equation*}
+Daraus ergibt sich eine Verdampfungswärme von 
+\begin{equation}
+  L = \num{20200 +- 170} \, \frac{\text{Js}}{\text{molK}} \ .
+\end{equation}
+\subsection{Massendurchsatz}
+Die Verdampfungswärme wird nun in Formel ?? eingesetzt und damit der Massendurchsatz ermittelt. Die Massendurchsätze der verschiedenen Zeiten sind in Tabelle \ref{tab:dm/dt} aufgetragen. 
 \begin{table}
   \centering
   \begin{tabular}{c c c}
     \toprule
+    $T$ / s & $\frac{dm}{dt}$ / (mol/s) & $\frac{dm}{dt}$ / (g/s) \\
+    \midrule	
+    60   & \num{0.0140 +- 0.001} & \num{1.69 +- 0.1}\\
+    400  & \num{0.0120 +- 0.001} & \num{1.45 +- 0.1}\\
+    1000 & \num{0.0083 +- 0.001} & \num{1.00 +- 0.1}\\
+    1500 & \num{0.0053 +- 0.001} & \num{0.64 +- 0.1}\\
+    \bottomrule
   \end{tabular}
   \caption{Massendurchsatz $dm/dt$}
   \label{tab:dm/dt}
 \end{table}
+Für die weiteren Rechnungen wird der Massendurchsatz durch Multiplikation mit der Molaren Masse in die SI-Einheit umgerechent.
+\subsection{mechanische Kompressorleistung}
+Aus der idealten Gasgleichung lässt sich die Dichte in den Rohren berechnen. Dafür muss jedoch die Dichte zu Bestimmungen bekannt sein. Die dichte von Dichlordifluormethan beträgt bei normal Druck und 273 Kelvin 
+\begin{equation}
+  \rho_0 =  5.51 \frac{\text{g}}{\text{l}} \ .
+  \label{rho}
+\end{equation}
+Zusätzlich wird gefordert, dass
+\begin{equation}
+  nR = konstant
+\end{equation}
+sowie das die Dichte homogen ist. Daraus lässt sich die Ideale Gasgleichung umstellen und man erhält
+\begin{eqnarray*}
+  \frac{pV}{T} =nR =& konst \\ 
+  \frac{p_0 V_0}{T_0} = \frac{p_2 V_2}{T_2}  \Leftrightarrow&  \frac{p_0 m}{\rho_0 T_0} = \frac{p_2 m}{T_2 \rho_2} \\
+  \frac{p_0}{\rho_0 T_0} = \frac{p_2}{T_2 \rho} \Leftrightarrow& \rho = \frac{\rho_o T_o P_2}{T_2 P_0}
+  \label{eqn:rho}
+\end{eqnarray*}
+einen Ausdruck für die Dichte in Abhängingkeit der Temperaturen und Drücke.
