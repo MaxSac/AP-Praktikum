@@ -49,7 +49,7 @@ print("Die Winkelrichtgröße D ist :", D)
 
 #Mittelwert Durchmesser Masseloser Stab
 M_S = unp.uarray([5.00, 4.62, 5.00, 5.00, 5.00],[0.02,0.02,0.02,0.02,0.02])
-M_S = sum(M_S)/len(M_S) 
+M_S = sum(M_S)/len(M_S)
 print("Mittelwert Masseloser Stab", M_S)
 	# Mittelwert kleiner Zylinder
 kZ = unp.uarray([34.92,35,34.94,34.98],0.02)
@@ -79,8 +79,8 @@ I_Di = unp.uarray([0,0,0,0,0,0,0,0,0,0],0)
 I_S = 2.85*10**(-3)
 print("D =", D," T: ", T[0]," I_G[0] ", I_G[0], "I_S", I_S)
 for x in range(10):
-	I_Di[x] = ((D * ((T[x] / (2*np.pi))**2)) - I_S -  (2*I_G[x]))
-	I_Di[x] = I_Di[x]
+	I_Di[x] = ((D * ((T[x] / (2*np.pi))**2)) -  (2*I_G[x]))
+	# I_Di[x] = I_Di[x]
 	print(x,"Trägheitsmoment der Drillachse: ", I_Di[x])
 I_D = sum(I_Di)/10
 print("Mittelwert des Trägheitsmoment: ", I_D)
@@ -142,9 +142,9 @@ def vol(h , d):
 	d /= 1000
 	k = np.pi/4*h
 	l = d**2
-	return k*l 
+	return k*l
 
-def ave(x):	
+def ave(x):
 	xm = sum(x)/len(x)
 	xv = np.sqrt(np.var(x))
 	return ufloat(xm, xv)
@@ -171,7 +171,7 @@ print("RAdius Z5",ave(z5_d))
 print("Volumen z5!",vol(ave(z5_h),ave(z5_d)))
 volg = ( vol(ave(z1_h),ave(z1_d)) + vol(ave(z2_h),ave(z2_d)) + 2*vol(ave(z3_h),ave(z3_d)) + 2*vol(ave(z5_h),ave(z5_d)))
 print("Gesamtvolumen", volg)
-M = 0.1627 
+M = 0.1627
 rho = M / volg
 m1= rho*vol(ave(z1_h),ave(z1_d))
 m2= rho*vol(ave(z2_h),ave(z2_d))
@@ -186,7 +186,7 @@ z3= 0.125*m3*(ave(z3_d)**2) + 0.25*m3*(ave(z3_d)**2)
 z5= 0.125*m5*(ave(z5_d)**2) + 0.25*m5*(ave(z5_d)**2) + 0.25*m5*(ave(z2_d)**2)
 z5_= m5*((ave(z5_d)**2)/16+ ((ave(z5_h)**2)/48)) +m5*0.25*((ave(z5_h)+ave(z2_d))**2)
 zges = (z1 + z2 + 2*z3 + 2*z5)*(10**(-6))
-zges_= (z1 + z2 + 2*z3 + 2*z5_)*(10**(-6)) 
+zges_= (z1 + z2 + 2*z3 + 2*z5_)*(10**(-6))
 print( z1, z2, z3, z5, zges)
 print( z1, z2, z3, z5_, zges_)
 
@@ -201,4 +201,3 @@ I_PmaA = D*((ave(T_Pan)/(5*2*np.pi))**2)
 print("Experimentelles Trägheitsomoment I_PmaA", I_PmaA)
 I_PmauA = D*((ave(T_Pau)/(5*2*np.pi))**2)
 print("Experimentelles Trägheitsomoment I_PmauA", I_PmauA)
-
