@@ -19,7 +19,7 @@ Aus dem zweiten Hauptsatz der Thermodynamik lässt sich eine Beziehung zwischen 
 	\label{eqn:reversibel}
 	\frac{Q_\text{1}}{T_\text{1}} - \frac{Q_\text{2}}{T_\text{2}} = 0 \ .
 \end{equation}
-Allerdings ist die Gültigkeit der Formel \ref{eqn:reversibel} an eine wichtige Forderung geknüpft: Die Wärmeübertragung muss reversibel verlaufen. Das bedeutet, dass der Prozess jederzeit umgekehrt ablaufen kann, wodurch die investierte mechanische Arbeit zurück gewonnen werden kann. Für den realistischen, irreversiblen Fall gilt eine andere Beziehung
+Allerdings ist die Gültigkeit der Formel \ref{eqn:reversibel} an die Forderung, dass die Wärmeübertragung reversibel verläuft, geknüpft. Dies bedeutet, dass der Prozess jederzeit umgekehrt ablaufen kann, wodurch die investierte mechanische Arbeit zurück gewonnen werden kann. Für den realistischen, irreversiblen Fall gilt eine andere Beziehung
 \begin{equation}
 	\label{eqn:irreversibel}
 	\frac{Q_\text{1}}{T_\text{1}} - \frac{Q_\text{2}}{T_\text{2}} > 0 \ .
@@ -33,7 +33,7 @@ und für die Güteziffer einer idealen Wärmepumpe
 	\nu_\text{ideal} = \frac{Q_\text{1}}{A} = \frac{T_\text{1}}{T_\text{1} - T_\text{2}} \ .
 	\label{eqn:nuideal}
 \end{equation}
-Die Güteziffer für eine reale Wärmepumpe folgt mit \ref{eqn:Q1} und \ref{eqn:irreversibel} zu
+Die Güteziffer für eine reale Wärmepumpe folgt aus \ref{eqn:Q1} und \ref{eqn:irreversibel} zu
 \begin{equation}
 	\nu_\text{real} < \frac{T_\text{1}}{T_\text{1} - T_\text{2}} \ .
 \end{equation}
@@ -58,8 +58,9 @@ und
 nach einsetzen von \ref{eqn:kp1} in \ref{eqn:kp2} folgt:
 \begin{equation}
 	\frac{dm}{dt} = (m_\text{2} c_\text{w} + m_\text{k} c_\text{k}) \frac{\Delta T_\text{2}}{\Delta t L}
+	\label{eqn:dm/dt}
 \end{equation}
-wobei $L$ := bekannte Verdampfungswärme.
+Wobei $L$ := bekannte Verdampfungswärme.
 
 \subsection{Mechanische Kompressorleistung}
 Wenn ein Kompressor ein Gasvolumen $V_\text{a}$ auf das Volumen $V_\text{b}$ verringert, leistet dieser die Arbeit $A_\text{m}$
@@ -87,10 +88,10 @@ Im folgenden wird die prinzipielle Funktionsweise einer Wärmepumpe beschrieben.
 
 % Bild einfügen
 
-Für die Wärmepumpe wird ein reales Gas verwendet, welches Wärme beim Verdampfen aufnimmt und beim Kondensieren wieder abgibt. Die Wärme wird also in Form von Phasenumwandlungsenergie des Gases transportiert. Daraus folgt, dass das verwendete Gas eine sehr hohe Kondensationswärme haben sollte. Der Kompressor $K$ komprimiert das Gas adiabatisch und erzeugt einen Kreislauf des Mediums. Zwischen den Reservoiren ist ein Drosselventil $D$ angebracht, welches das Gas bei einem bestimmten Druck passieren lässt. Dadurch entsteht ein Druckunterschied $p_\text{b} - p_\text{a}$. Das Gas mit dem Druck $p_\text{a}$ und der Temperatur $T_\text{2}$ ist gasförmig, während es auf der anderen Seite bei $p_\text{b}$ mit der Temperatur $T_\text{1}$ flüssig ist. Nachdem das flüssige Medium durch das Druckventil geströmt ist, verdampft dieses im Reservoir 2 und entzieht diesem die Verdampfungswärme $L$ pro Gramm Substanz. Das zweite Reservoir ist damit das kältere und Wärme abgebende Reservoir. In dem Kompressor $K$ wird das Gas komprimiert, wodurch es sich erwärmt. Durch die Erwärmung steigt der Druck $p_\text{a}$ im Reservoir 1, bis sich das Gas verflüssigt, wodurch Wärme an die Umgebung abgegeben wird. \\
+Für die Wärmepumpe wird ein reales Gas verwendet, welches Wärme beim Verdampfen aufnimmt und beim Kondensieren wieder abgibt. Die Wärme wird also in Form von Phasenumwandlungsenergie des Gases transportiert. Daraus folgt, dass das verwendete Gas eine hohe Kondensationswärme haben sollte. Der Kompressor $K$ komprimiert das Gas adiabatisch und erzeugt einen Kreislauf des Mediums. Zwischen den Reservoiren ist ein Drosselventil $D$ angebracht, welches das Gas bei einem bestimmten Druck passieren lässt. Dadurch entsteht ein Druckunterschied $p_\text{b} - p_\text{a}$. Das Gas mit dem Druck $p_\text{a}$ und der Temperatur $T_\text{2}$ ist gasförmig, während es auf der anderen Seite bei $p_\text{b}$ mit der Temperatur $T_\text{1}$ flüssig ist. Nachdem das flüssige Medium durch das Druckventil geströmt ist, verdampft dieses im Reservoir 2 und entzieht diesem die Verdampfungswärme $L$ pro Gramm Substanz. Das zweite Reservoir ist damit das kältere und Wärme abgebende Reservoir. In dem Kompressor $K$ wird das Gas komprimiert, wodurch es sich erwärmt. Durch die Erwärmung steigt der Druck $p_\text{a}$ im Reservoir 1, bis sich das Gas verflüssigt, wodurch Wärme an die Umgebung abgegeben wird. \\
 Wichtig ist, dass nur Gase in den Kompressor gelangen. Erreicht wird das mit diesen Apparaten:
 \begin{itemize}
-\item mit dem Reiniger $R$, der Gasreste und damit Blasen entfernt
+\item mit dem Reiniger $R$, werden Gasreste und damit Blasen entfernt
 \item mit der Steuervorrichtung $S$, die das Drosselventil $D$ reguliert
 \end{itemize}
 

@@ -1,9 +1,9 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Messgrößen und Fehler}
-Die Reservoire werden jeweils mit 4 Liter Wasser befüllt. Desweiteren werden die Temperatur $T_\text{1}$ und $T_\text{2}$, der Druck $p_{\text{b}}$ und $p_{\text{a}}$ sowie die Leistung des Kompressors jede Minute von den Messinstrumenten abgelesen. Die Messdaten werden in Tabelle \ref{tab:Daten} aufgelistet. Die Wärmekapazität der Reservoire beträgt
+Die Reservoire werden jeweils mit 4 Liter Wasser befüllt. Die Messdaten werden in Tabelle \ref{tab:Daten} aufgelistet. Die Wärmekapazität der Reservoire beträgt
 \begin{equation}
-  C_{\text{Reservoire}} = 750 \frac{\text{J}}{\text{K}}
+  C_{\text{Reservoire}} = \num{750 +- 10} \frac{\text{J}}{\text{K}}
   \label{eqn:c_re}
 \end{equation}
 
@@ -17,12 +17,12 @@ Die Reservoire werden jeweils mit 4 Liter Wasser befüllt. Desweiteren werden di
     1 	& 294.7 & 608	& 294.3	& 425	& 1.18	\\
     2 	& 295.9 & 618	& 293.2	& 446	& 1.2	  \\
     3 	& 296.9 & 638	& 292.5	& 466	& 1.25	\\
-    4	  & 298.2	& 628	& 291.3	& 466	& 1.25	\\
-    5	  & 299.4 & 709	& 290.2	& 466	& 1.25	\\
-    6	  & 300.7 & 730	& 289.3	& 466	& 1.25	\\
-    7	  & 302.0 & 760	& 288.5	& 455	& 1.25	\\
-    8	  & 303.2	& 790	& 287.7	& 445	& 1.25	\\
-    9	  & 304.4 & 812	& 287.0	& 425	& 1.24	\\
+    4	& 298.2	& 628	& 291.3	& 466	& 1.25	\\
+    5	& 299.4 & 709	& 290.2	& 466	& 1.25	\\
+    6	& 300.7 & 730	& 289.3	& 466	& 1.25	\\
+    7	& 302.0 & 760	& 288.5	& 455	& 1.25	\\
+    8	& 303.2	& 790	& 287.7	& 445	& 1.25	\\
+    9	& 304.4 & 812	& 287.0	& 425	& 1.24	\\
     10	& 305.5 & 820	& 286.3	& 425	& 1.24	\\
     11 	& 306.6 & 840	& 285.6	& 415	& 1.23	\\
     12	& 307.6	& 861	& 284.9	& 405	& 1.23	\\
@@ -55,7 +55,7 @@ Zu beachten ist, dass alle Messgrößen eine Messunsicherheit besitzen, einersei
   \Delta p =& &\pm 10 \text{kp}				\\
   \Delta C =& &\pm 10 \frac{\text{J}}{\text{K}}		\\
   \Delta V =& &\pm 1.6 \text{mL}				\\
-  \Delta \rho =& &\pm 13 \frac{\text{kg}}{\text{m$^2$}}	\\
+  \Delta \rho =& &\pm 13 \frac{\text{kg}}{\text{m$^3$}}	\\
 \end{eqnarray*}
 Die Messunsicherheit der Dichte für Wasser kommt dadurch zu stande, dass Wasser bei verschiedenen Temperaturen seine Dichte ändert.
 \begin{figure}
@@ -65,7 +65,7 @@ Die Messunsicherheit der Dichte für Wasser kommt dadurch zu stande, dass Wasser
   \label{fig:T1&T2}
 \end{figure}
 \subsection{Näherungsfunktion}
-Mit einer nicht-linearen Ausgleichsgeraden soll der Temperaturverlauf mit Hilfe der Gleichung ?? approximiert werden. Eine Approximation soll mittels eines Polynoms zweiten Grades erfolgen.
+Mit einer nicht-linearen Ausgleichsgeraden soll der Temperaturverlauf mit Hilfe der Gleichung \ref{eqn:ausgleichsgrade} approximiert werden.
 \begin{equation}
   T(t) = At^2 + Bt +C
   \label{eqn:ausgleichsgrade}
@@ -78,19 +78,19 @@ Die Ermittlung der Ausgleichsgeraden erfolgt mit Hilfe von Python 3.4.3.
   \label{fig:ausg}
 \end{figure}
 Mittels einer fit Funktion werden die Koeffizienten bestimmt. Für die Temperatur $T_\text{1}$ ergeben sich die Koeffizienten
-\begin{eqnarray}
+\begin{eqnarray*}
   A =& -3.23 \cdot 10^{-6} \, \frac{\text{K}}{\text{s}^2}	\\
   B =& 2.20 \cdot 10^{-2} \, \frac{\text{K}}{\text{s}} 	\\
-  C =& 2.93 \cdot 10^{2} \, \text{K} \\
+  C =& 2.93 \cdot 10^{2} \, \text{K} 
   \label{eqn:koefT1}
-\end{eqnarray}
+\end{eqnarray*}
 und für $T_\text{2}$
-\begin{eqnarray}
+\begin{eqnarray*}
   A =& 3.49 \cdot 10^{-6} \, \frac{\text{K}}{\text{s}^2} 	\\
   B =& -1.67 \cdot 10^{-2} \, \frac{\text{K}}{\text{s}} 	\\
   C =& 2.94 \cdot 10^2 \, \text{K}
   \label{eqn:koefT2}
-\end{eqnarray}
+\end{eqnarray*}
 Dabei wird vernachlässigt, dass die Koeffizienten fehlerbehaftet sind, weil dies nicht mittels fit Funktion ermittelt werden kann.
 \subsection{Differentialquotient}
 Der Differentialquotient berechnet sich aus einmaligem Ableiten der Gleichung \ref{eqn:ausgleichsgrade} nach der Zeit.
@@ -144,14 +144,14 @@ sowie mit den in Tabelle 1 bestimmten Differentialquotienten, sowie mit der nach
 \end{table}
 Gründe für die Abweichung zwischen der theoretischen Güteziffer und der experimentell ermittelten Güteziffer werden in der Diskussion aufgeführt.
 \subsection{Dampfdruckkurve}
-Die Verdampfungswärme $L$ wird mit einer Verdampfungskurve ermittelt. Dafür wird im Diagramm \ref{fig:dampfdruck}
+Die Verdampfungswärme $L$ wird mit Hilfe einer Verdampfungskurve ermittelt. Dafür wird im Diagramm \ref{fig:dampfdruck}
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{Dampfdruck.pdf}
   \caption{Dampfdruckkurve}
   \label{fig:dampfdruck}
 \end{figure}
-$1/T$ gegen $log(p/p_0)$ aufgetragen und die Steigung der Graden in die Formel \ref{eqn:damüfgl} eingesetzt.
+$1/T$ gegen $log(p/p_0)$ aufgetragen und die Steigung der Graden in die Formel \ref{eqn:dampfgl} eingesetzt.
 \begin{equation}
   L = log \left( \frac{p}{p_o} \right) \cdot T \cdot \frac{1}{R}
   \label{eqn:dampfgl}
@@ -183,7 +183,7 @@ Die Verdampfungswärme wird nun in Formel ?? eingesetzt und damit der Massendurc
 \end{table}
 Für die weiteren Rechnungen wird der Massendurchsatz durch Multiplikation mit der Molaren Masse in die SI-Einheit umgerechnet.
 \subsection{Mechanische Kompressorleistung}
-Aus der idealen Gasgleichung lässt sich die Dichte in den Rohren berechnen. Dafür muss jedoch die Dichte von Dichlorfluormethan bei 1 Bar Druck und 273 Kelvin bekannt sein.
+Aus der idealen Gasgleichung lässt sich die Dichte in den Rohren berechnen. Dafür muss jedoch die Dichte von Dichlordifluormethan bei 1 Bar Druck und 273 Kelvin bekannt sein.
 \begin{equation}
   \rho_\text{0} =  5.51 \frac{\text{g}}{\text{l}} \ .
   \label{rho}
@@ -194,7 +194,7 @@ Zusätzlich wird gefordert, dass
 \end{equation}
 ist und das die Dichte homogen verteilt ist. Daraus lässt sich die ideale Gasgleichung umstellen und man erhält
 \begin{eqnarray*}
-  \frac{pV}{T} =nR =& konst \\
+  \frac{pV}{T} =nR =& konstant \\
   \frac{p_0 V_0}{T_0} = \frac{p_2 V_2}{T_\text{2}}  \Leftrightarrow&  \frac{p_0 m}{\rho_0 T_0} = \frac{p_2 m}{T_\text{2} \rho_2} \\
   \frac{p_0}{\rho_0 T_0} = \frac{p_2}{T_\text{2} \rho} \Leftrightarrow& \rho = \frac{\rho_o T_o P_2}{T_\text{2} P_0}
   \label{eqn:rho}
@@ -217,5 +217,5 @@ einen Ausdruck für die Dichte in Abhängigkeit der Temperaturen und Drücke. Di
 \end{table}
 Die Leistung wird nach Formel \ref{eqn:ave} gemittelt und der Fehler mit Formel \ref{eqn:var} ermittelt.
 \begin{equation}
-  N_{\text{mech}} = ( \num{17 +- 2} ) \, \frac{N}{W} \ .
+  N_{\text{mech}} = ( \num{17 +- 2} ) \, \text{W} \ .
 \end{equation}
