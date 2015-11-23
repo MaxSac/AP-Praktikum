@@ -199,22 +199,23 @@ ist und das die Dichte homogen verteilt ist. Daraus lässt sich die ideale Gasgl
   \frac{p_0}{\rho_0 T_0} = \frac{p_2}{T_\text{2} \rho} \Leftrightarrow& \rho = \frac{\rho_o T_o P_2}{T_\text{2} P_0}
   \label{eqn:rho}
 \end{eqnarray*}
-einen Ausdruck für die Dichte in Abhängigkeit der Temperaturen und Drücke. Dies wird in Formel \ref{eqn:nmech} eingesetzt und die Ergebnisse für die verschiedenen Zeitpunkte in Tabelle \ref{tab:LdK} eingetragen. Für das verwendete Gas beträgt die Wärmeleitfähikeit 
-\begin{align*}
-  \kappa = 0.0808 \frac{mW}{cm K}
-\end{align*}
+einen Ausdruck für die Dichte in Abhängigkeit der Temperaturen und Drücke. Dies wird in Formel \ref{eqn:nmech} eingesetzt und die Ergebnisse für die verschiedenen Zeitpunkte in Tabelle \ref{tab:LdK} eingetragen.
 \begin{table}
   \centering
   \begin{tabular}{c c c}
     \toprule
-    $t$ \ s & $\rho$ $\frac{10^{-3}kg}{m^3}$ & Leistung N/W \\
+    $t /$ s & $\rho /$ $\frac{10^{-3}kg}{l}$ & Leistung / (N/W) \\
     \midrule
-    60   & 16.37 &  	\\
-    400  & 18.27 &	\\
-    1000 & 14.98 &	\\
-    1500 & 13.55 &	\\
+    60   & 16.37 & 13.86 \\
+    400  & 18.27 & 16.51 \\
+    1000 & 14.98 & 21.58 \\
+    1500 & 13.55 & 18.38 \\
     \bottomrule
   \end{tabular}
   \caption{Leistung des Kompressors}
   \label{tab:LdK}
 \end{table}
+Die Leistung wird nach Formel \ref{eqn:ave} gemittelt und der Fehler mit Formel \ref{eqn:var} ermittelt.
+\begin{equation}
+  N_{\text{mech}} = ( \num{17 +- 2} ) \, \frac{N}{W} \ .
+\end{equation}

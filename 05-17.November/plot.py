@@ -87,3 +87,8 @@ print("----------------------------------------------------------")
 #Massendurchsatz
 print("Massendurchsatz nach 60 sec : ", qg*q2(60)*(1/L),", nach 400 sec : ", qg*q2(400)*(1/L),", nach 1000 sec : ", qg*q2(1000)*(1/L), " nach 1500 sec : ", qg*q2(1500)*(1/L))
 
+print("----------------------------------------------------------")
+
+#Leistung
+Le = [13.86, 16.51, 21.58, 18.38]
+print("Die Leistung der Kompressors beträgt ", np.mean(Le), ' +- ', np.std(Le))
