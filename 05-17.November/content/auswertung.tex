@@ -1,12 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Messgrößen und Fehler}
-Die Reserviore werden jeweils mit
-\begin{equation}
-  V_{\text{Reservior}} = 4 \text{L}
-  \label{eqn:v}
-\end{equation}
-Wasser befüllt. Desweiteren werden die Temperatur $T_\text{1}$ und $T_\text{2}$, der Druck $p_{\text{b}}$ und $p_{\text{a}}$ sowie die Leistung des Kompressors jede Minute von den Messinstrumenten abgelesen. Die Messdaten werden in Tabelle \ref{tab:Daten} aufgelistet. Die Wärmekapazität der Reservoire beträgt
+Die Reservoire werden jeweils mit 4 Liter Wasser befüllt. Desweiteren werden die Temperatur $T_\text{1}$ und $T_\text{2}$, der Druck $p_{\text{b}}$ und $p_{\text{a}}$ sowie die Leistung des Kompressors jede Minute von den Messinstrumenten abgelesen. Die Messdaten werden in Tabelle \ref{tab:Daten} aufgelistet. Die Wärmekapazität der Reservoire beträgt
 \begin{equation}
   C_{\text{Reservoire}} = 750 \frac{\text{J}}{\text{K}}
   \label{eqn:c_re}
@@ -55,14 +50,14 @@ Wasser befüllt. Desweiteren werden die Temperatur $T_\text{1}$ und $T_\text{2}$
   \label{tab:Daten}
 \end{table}
 
-Zu beachten ist das alle Messgrößen einen Messunsicherheit besitzen, einerseits eine Ablesefehler bei analogen Messinstrumenten als auch einen Technischen.
+Zu beachten ist, dass alle Messgrößen eine Messunsicherheit besitzen, einerseits einen Ablesefehler bei analogen Messinstrumenten als auch einen technischen.
 \begin{eqnarray*}
   \Delta p =& &\pm 10 \text{kp}				\\
   \Delta C =& &\pm 10 \frac{\text{J}}{\text{K}}		\\
   \Delta V =& &\pm 1.6 \text{mL}				\\
   \Delta \rho =& &\pm 13 \frac{\text{kg}}{\text{m$^2$}}	\\
 \end{eqnarray*}
-Die Messunsicherheit der Dichte für Wasser kommt daraus zu stande, dass Wasser bei verschiedenen Temperaturen seine Dichte ändert.
+Die Messunsicherheit der Dichte für Wasser kommt dadurch zu stande, dass Wasser bei verschiedenen Temperaturen seine Dichte ändert.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{TVerlauf.pdf}
@@ -70,12 +65,12 @@ Die Messunsicherheit der Dichte für Wasser kommt daraus zu stande, dass Wasser 
   \label{fig:T1&T2}
 \end{figure}
 \subsection{Näherungsfunktion}
-Mit einer nicht-linearen Ausgleichsgraden soll der Temperaturverlauf mit Hilfe der Gleichung ?? approximiert werden. Eine Approximation soll mittels eines Polynoms 2-Grades erfolgen.
+Mit einer nicht-linearen Ausgleichsgeraden soll der Temperaturverlauf mit Hilfe der Gleichung ?? approximiert werden. Eine Approximation soll mittels eines Polynoms zweiten Grades erfolgen.
 \begin{equation}
   T(t) = At^2 + Bt +C
   \label{eqn:ausgleichsgrade}
 \end{equation}
-Die Ermittelung der Ausgleichsgraden erfolgt mit hilfe von Python 3.4.3.
+Die Ermittlung der Ausgleichsgeraden erfolgt mit Hilfe von Python 3.4.3.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{Ausgleichsgrade.pdf}
@@ -96,14 +91,14 @@ und für $T_\text{2}$
   C =& 2.94 \cdot 10^2 \, \text{K}
   \label{eqn:koefT2}
 \end{eqnarray}
-Dabei wird vernachlässigt das die Koeffizienten Fehlerbehaftet sind, weil dies nicht mittels fit Funktion ermittelt werden kann.
+Dabei wird vernachlässigt, dass die Koeffizienten fehlerbehaftet sind, weil dies nicht mittels fit Funktion ermittelt werden kann.
 \subsection{Differentialquotient}
-Der Differentialquotient berechnet sich aus einmaligen Ableiten der Gleichung \ref{eqn:ausgleichsgrade} nach der Zeit.
+Der Differentialquotient berechnet sich aus einmaligem Ableiten der Gleichung \ref{eqn:ausgleichsgrade} nach der Zeit.
 \begin{equation}
   \frac{dT_\text{i}}{dt} = 2At + B
   \label{eqn:diffq}
 \end{equation}
-Aus der Funktion wird der Differentialqutient für $T_\text{1}$ und $T_\text{2}$ für vier verschieden Zeiten berechnet. Die Ergebnisse sind in Tabelle \ref{tab:diffQ} aufgeführt.
+Aus der Funktion wird der Differentialquotient für $T_\text{1}$ und $T_\text{2}$ für vier verschiedene Zeiten berechnet. Die Ergebnisse sind in Tabelle \ref{tab:diffQ} aufgeführt.
 \begin{table}
   \centering
   \begin{tabular}{c c c c c}
@@ -116,22 +111,22 @@ Aus der Funktion wird der Differentialqutient für $T_\text{1}$ und $T_\text{2}$
 	1500	& 319.1   & 1.23 & 277.9 & -0.62 \\
 	\bottomrule
   \end{tabular}
-  \caption{Differentialqoutient für $T_\text{1}$ und $T_\text{2}$}
+  \caption{Differentialquotient für $T_\text{1}$ und $T_\text{2}$}
   \label{tab:diffQ}
 \end{table}
 
 \subsection{Güteziffer}
-Mit Hilfe des Differentialqoutienten und der Wärmekapazität der mit Wasser befüllten Reservoire
+Mit Hilfe des Differentialquotienten und der Wärmekapazität der mit Wasser befüllten Reservoire
 \begin{equation}
   c_\text{w} m_\text{w} = 6230.64 \cdot (\num{4000 +- 1.6}) \, \frac{\text{J}}{\text{K}} = (\num{24.9 +- 0.0}) \cdot 10^6 \, \frac{\text{J}}{\text{K}}
   \label{eqn:WC}
 \end{equation}
-soll die Güteziffer des Versuches bestimmt werden. Die Theoretische Güteziffer lässt sich mit hilfe der Gleichung \ref{eqn:nureal} berechnen und ist in Tabelle \ref{tab:gueteziffer} aufgeführt. Die praktisch bestimmte Güteziffer errechnet sich nach Gleichung \ref{eqn:nureal} aus der Wärmekapazität der Reservoire und der Wärmekapazität der Leitungen
+soll die Güteziffer der Wärmepumpe bestimmt werden. Die theoretische Güteziffer lässt sich mit Hilfe der Gleichung \ref{eqn:nureal} berechnen und ist in Tabelle \ref{tab:gueteziffer} aufgeführt. Die praktisch bestimmte Güteziffer errechnet sich nach Gleichung \ref{eqn:nureal} aus der Wärmekapazität der Reservoire und der Wärmekapazität der Leitungen
 \begin{equation}
   c_\text{k} m_\text{k} = (\num{750 +- 10}) \, \frac{\text{J}}{\text{K}} \ ,
   \label{eqn:Res}
 \end{equation}
-sowie denn in Tabelle 1 bestimmten Differentialquotienten, so wie der nach Formel \ref{eqn:ave} und \ref{eqn:var} gemittelte Leistung.
+sowie mit den in Tabelle 1 bestimmten Differentialquotienten, sowie mit der nach Formel \ref{eqn:ave} und \ref{eqn:var} gemittelten Leistung.
 \begin{table}
   \centering
   \begin{tabular}{c c c}
@@ -156,12 +151,12 @@ Die Verdampfungswärme $L$ wird mit einer Verdampfungskurve ermittelt. Dafür wi
   \caption{Dampfdruckkurve}
   \label{fig:dampfdruck}
 \end{figure}
-$1/T$ gegen $log(p/p_0)$ aufgetragen und in die Steigung der Graden in die Formel \ref{eqn:damüfgl} eingesetzt.
+$1/T$ gegen $log(p/p_0)$ aufgetragen und die Steigung der Graden in die Formel \ref{eqn:damüfgl} eingesetzt.
 \begin{equation}
   L = log \left( \frac{p}{p_o} \right) \cdot T \cdot \frac{1}{R}
   \label{eqn:dampfgl}
 \end{equation}
-Die Steigung der Ausgleichsgraden wird mittels einer linearen Regression berechnet und beträgt
+Die Steigung der Ausgleichsgeraden wird mittels einer linearen Regression berechnet und beträgt
 \begin{equation*}
   m = \num{-2430 +- 20} \ .
 \end{equation*}
@@ -186,8 +181,8 @@ Die Verdampfungswärme wird nun in Formel ?? eingesetzt und damit der Massendurc
   \caption{Massendurchsatz $dm/dt$}
   \label{tab:dm/dt}
 \end{table}
-Für die weiteren Rechnungen wird der Massendurchsatz durch Multiplikation mit der Molaren Masse in die SI-Einheit umgerechent.
-\subsection{mechanische Kompressorleistung}
+Für die weiteren Rechnungen wird der Massendurchsatz durch Multiplikation mit der Molaren Masse in die SI-Einheit umgerechnet.
+\subsection{Mechanische Kompressorleistung}
 Aus der idealen Gasgleichung lässt sich die Dichte in den Rohren berechnen. Dafür muss jedoch die Dichte von Dichlorfluormethan bei 1 Bar Druck und 273 Kelvin bekannt sein.
 \begin{equation}
   \rho_\text{0} =  5.51 \frac{\text{g}}{\text{l}} \ .
@@ -197,11 +192,11 @@ Zusätzlich wird gefordert, dass
 \begin{equation}
   nR = konstant
 \end{equation}
-ist und das die Dichte homogen verteilt ist. Daraus lässt sich die Ideale Gasgleichung umstellen und man erhält
+ist und das die Dichte homogen verteilt ist. Daraus lässt sich die ideale Gasgleichung umstellen und man erhält
 \begin{eqnarray*}
   \frac{pV}{T} =nR =& konst \\
   \frac{p_0 V_0}{T_0} = \frac{p_2 V_2}{T_\text{2}}  \Leftrightarrow&  \frac{p_0 m}{\rho_0 T_0} = \frac{p_2 m}{T_\text{2} \rho_2} \\
   \frac{p_0}{\rho_0 T_0} = \frac{p_2}{T_\text{2} \rho} \Leftrightarrow& \rho = \frac{\rho_o T_o P_2}{T_\text{2} P_0}
   \label{eqn:rho}
 \end{eqnarray*}
-einen Ausdruck für die Dichte in Abhängingkeit der Temperaturen und Drücke.
+einen Ausdruck für die Dichte in Abhängigkeit der Temperaturen und Drücke.

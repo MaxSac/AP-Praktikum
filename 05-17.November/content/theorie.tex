@@ -1,15 +1,15 @@
 \section{Theoretische Grundlage}
 \label{sec:Theorie}
 
-Der zweite Hauptsatz der Thermodynamik sagt, dass Wärme von einem wärmeren zu einem kälteren Reservoir fließt. Mithilfe einer Wärmepumpe lässt sich dieser Prozess umkehren, dazu wird weitere Energie benötigt, zum Beispiel mechanische Arbeit. Ziel des Veruches ist es eine Aussage über die Qualität der Wärmepumpe zu treffen, um dies zu realisieren werden die Güteziffer und der Massendurchsatz untersucht.
+Der zweite Hauptsatz der Thermodynamik sagt, dass Wärme von einem wärmeren zu einem kälteren Reservoir fließt. Mithilfe einer Wärmepumpe lässt sich dieser Prozess umkehren. Dazu wird weitere Energie benötigt, zum Beispiel mechanische Arbeit. Ziel des Versuches ist es, eine Aussage über die Qualität der Wärmepumpe zu treffen. Um dies zu realisieren, werden die Güteziffer und der Massendurchsatz untersucht.
 
 \subsection{Güteziffer}
-Der erste Hauptsatz der Wärmelehre verlangt, dass die vom Transportmedium an das wärmere Reservoire abgegebene Wärmemenge $Q_\text{1}$ gleich der Summe der aus dem kälteren Reservoire entnommenen Wärmemenge $Q_\text{2}$ und der aufgewendeten Arbeit $A$ ist, also
+Der erste Hauptsatz der Wärmelehre verlangt, dass die vom Transportmedium an das wärmere Reservoir abgegebene Wärmemenge $Q_\text{1}$ gleich der Summe der aus dem kälteren Reservoir entnommenen Wärmemenge $Q_\text{2}$ und der aufgewendeten Arbeit $A$ ist, also
 \begin{equation}
 	\label{eqn:Q1}
 		Q_\text{1} = Q_\text{2} + A \ .
 \end{equation}
-Die Güteziffer $\nu$ ist im idealisierten Fall, das Verhältniss zwischen der transportierten Wärmemenge $Q_\text{1}$ und der verrichteten mechanischen Arbeit $A$:
+Die Güteziffer $\nu$ ist im idealisierten Fall das Verhältnis zwischen der transportierten Wärmemenge $Q_\text{1}$ und der verrichteten mechanischen Arbeit $A$:
 \begin{equation}
 	\label{eqn:nu}
 	\nu_\text{ideal} = \frac{Q_\text{1}}{A} \ .
@@ -33,7 +33,7 @@ und für die Güteziffer einer idealen Wärmepumpe
 	\nu_\text{ideal} = \frac{Q_\text{1}}{A} = \frac{T_\text{1}}{T_\text{1} - T_\text{2}} \ .
 	\label{eqn:nuideal}
 \end{equation}
-Die Güteziffer für eine reale Wärmepumpe folgt mit \ref{eqn:Q1} und \ref{eqn:irreversibel}
+Die Güteziffer für eine reale Wärmepumpe folgt mit \ref{eqn:Q1} und \ref{eqn:irreversibel} zu
 \begin{equation}
 	\nu_\text{real} < \frac{T_\text{1}}{T_\text{1} - T_\text{2}} \ .
 \end{equation}
@@ -42,7 +42,7 @@ Die reale Güteziffer wird im folgenden über
 	\nu_\text{real} = \frac{\Delta Q_\text{1}}{\Delta t N} = (m_\text{1} c_\text{w} + m_\text{k} c_\text{k}) \frac{\Delta T_\text{1}}{\Delta t N}
 	\label{eqn:nureal}
 \end{equation}
- berechnet, wobei $N$ := gemittelte Leistungsaufnahme des Kompressors.
+berechnet, wobei $N$ := gemittelte Leistungsaufnahme des Kompressors.
 
 \subsection{Massendurchsatz}
 Der Massendurchsatz für die Wärmepumpe berechnet sich nach [1,S.5] über den Differentialquotienten:
@@ -62,7 +62,7 @@ nach einsetzen von \ref{eqn:kp1} in \ref{eqn:kp2} folgt:
 wobei $L$ := bekannte Verdampfungswärme.
 
 \subsection{Mechanische Kompressorleistung}
-Wenn ein Kompressor ein Gasvolumen $V_\text{a}$ auf das Volumen $V_\text{b}$ verringert, Leistet der Kompressor die Arbeit $A_\text{m}$
+Wenn ein Kompressor ein Gasvolumen $V_\text{a}$ auf das Volumen $V_\text{b}$ verringert, leistet dieser die Arbeit $A_\text{m}$
 \begin{equation}
 	A_\text{m} = - \int_{V_\text{a}}^{V_\text{b}} p \, dV \ .
 \end{equation}
@@ -70,7 +70,7 @@ Mit der Annahme, dass die Kompression adiabatisch verläuft, gilt die Poissonsch
 \begin{equation}
 	p_\text{a} V_\text{a}^\kappa = p_\text{b} V_\text{b}^\kappa = p V^\kappa \ .
 \end{equation}
-Eine adiabatische Zustandsänderung ist ein Prozess, bei dem ein System von einem Zustand in einen anderen übergeht, ohne Wärme mit der Umgebung auszutauschen.
+Eine adiabatische Zustandsänderung ist ein Prozess, bei dem ein System von einem Zustand in einen anderen übergeht, ohne Wärme mit der Umgebung auszutauschen. \\
 Mit der Poissonschen Gleichung und
 \begin{align*}
 	N_\text{mech} = \frac{dA_\text{m}}{dt} \ ,
@@ -82,11 +82,11 @@ folgt $N_\text{mech}$ zu:
 mit der Dichte $\rho$ und dem Druck $p_\text{a}$.
 
 \subsection{Allgemeiner Aufbau einer Wärmepumpe}
-Im folgenden wird die prinzipielle Funktionsweise einer Wärmepumpe beschrieben, diese kann schematisch wie folgt dargestellt werden:
+Im folgenden wird die prinzipielle Funktionsweise einer Wärmepumpe beschrieben. Diese kann schematisch wie folgt dargestellt werden:
 
 % Bild einfügen
 
-Für die Wärmepumpe wird ein reales Gas verwendet, welches Wärme beim Verdampfen aufnimmt und beim Kondensieren wieder abgibt. Die Wärme wird also in Form von Phasenumwandlungsenergie des Gases transportiert. Daraus folgt das das verwendete Gas eine sehr hohe Kondensationswärme haben sollte. Der Kompressor $K$, komprimiert das Gas adiabatisch und erzeugt ein Kreislauf des Mediums. Zwischen den Reservoiren ist ein Drosselventil $D$ angebracht, welches das Gas bei einem bestimmten Druck passieren lässt. Dadurch entsteht ein Druckunterschied $p_\text{b} - p_\text{a}$. Das Gas mit dem Druck $p_\text{a}$ und der Temperatur $T_\text{2}$ ist gasförmig, während es auf der anderen Seite bei $p_\text{b}$ mit der Temperatur $T_\text{1}$ flüssig ist. Nachdem das flüssige Medium durch das Druckventil geströmt ist, verdampft dieses im Reservoir 2 und entzieht diesem die Verdampfungswärme $L$ pro Gramm Substand. Das zweite Reservoir ist damit das kältere und Wärme abgebende Reservoir. In dem Kompressor $K$ wird das Gas komprimiert, wodurch es sich erwärmt. Durch die Erwärmung steigt der Druck $p_\text{a}$ im Reservoir 1, bis sich das Gas verflüssigt wodurch Wärme an die Umgebung abgegeben wird. \\
+Für die Wärmepumpe wird ein reales Gas verwendet, welches Wärme beim Verdampfen aufnimmt und beim Kondensieren wieder abgibt. Die Wärme wird also in Form von Phasenumwandlungsenergie des Gases transportiert. Daraus folgt, dass das verwendete Gas eine sehr hohe Kondensationswärme haben sollte. Der Kompressor $K$ komprimiert das Gas adiabatisch und erzeugt einen Kreislauf des Mediums. Zwischen den Reservoiren ist ein Drosselventil $D$ angebracht, welches das Gas bei einem bestimmten Druck passieren lässt. Dadurch entsteht ein Druckunterschied $p_\text{b} - p_\text{a}$. Das Gas mit dem Druck $p_\text{a}$ und der Temperatur $T_\text{2}$ ist gasförmig, während es auf der anderen Seite bei $p_\text{b}$ mit der Temperatur $T_\text{1}$ flüssig ist. Nachdem das flüssige Medium durch das Druckventil geströmt ist, verdampft dieses im Reservoir 2 und entzieht diesem die Verdampfungswärme $L$ pro Gramm Substanz. Das zweite Reservoir ist damit das kältere und Wärme abgebende Reservoir. In dem Kompressor $K$ wird das Gas komprimiert, wodurch es sich erwärmt. Durch die Erwärmung steigt der Druck $p_\text{a}$ im Reservoir 1, bis sich das Gas verflüssigt, wodurch Wärme an die Umgebung abgegeben wird. \\
 Wichtig ist, dass nur Gase in den Kompressor gelangen. Erreicht wird das mit diesen Apparaten:
 \begin{itemize}
 \item mit dem Reiniger $R$, der Gasreste und damit Blasen entfernt
