@@ -1,0 +1,22 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Theoretische Grundlagen}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Versuch}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Fehlerrechnung}{3}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Mittelwert}{4}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Gauß'sche Fehlerfortpflanzung}{4}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Lineare Regression}{4}{subsubsection.1.2.3}
+\contentsline {section}{\numberline {2}Durchführung und Aufbau}{5}{section.2}
+\contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Bestimmung der Winkelrichtgröße}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Bestimmung des Eigenträgheitsmoments}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Trägheitsmomente verschiedener Objekte}{8}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Kugel}{8}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Zylinder}{8}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Trägheitsmoment der Puppe}{9}{subsection.3.4}
+\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Drillachse}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Verschiedene Objekte}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Puppe}{10}{subsection.4.3}
+\contentsline {section}{\nonumberline Literatur}{10}{section*.7}

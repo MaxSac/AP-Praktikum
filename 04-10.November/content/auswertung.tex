@@ -50,8 +50,8 @@ Um den Wärmestrom von Messing zu berechnen, wird  $T_2 - T_1$ für den breiten 
                 \caption{breiter Messingstab}
         \end{subfigure}
 \end{figure}
-Beide Graphen steigen zu beginn in etwa gleich schnell an. Der Edelstahlstab erreicht nach fast 200 Sekunden seinen Grenzwert von 8 Kelvin. Der Messingstab hat nach ca. 50 Sekunden einen Peak und flacht danach gegen seinen Grenzwert von ca. 2.4 Kelvin ab. Der Peak lässt sich dadurch erklären, dass das an dem Peltier Element nahe Thermoelement schon von dem Wärmestrom erhitzt wird und das ferne Thermoelemt noch nicht.
-Die Wärmemenge pro Zeit lässt sich durch division der Gleichung \ref{eqn:Q/t} durch $dt$ berechnen. Dafür wurde der Wert $\kappa$ aus der Literatur entnommen und der Querschnitt der Versuchsanleitung entnommen.
+Beide Graphen steigen zu beginn in etwa gleich schnell an. Der Edelstahlstab erreicht nach fast 200 Sekunden seinen Grenzwert von 8 Kelvin. Der Messingstab hat nach ca. 50 Sekunden einen Peak und flacht danach gegen seinen Grenzwert von ca. 2.4 Kelvin ab. Der Peak lässt sich dadurch erklären, dass das an dem Peltier Element nahe Thermoelement schon von dem Wärmestrom erhitzt wird und das ferne Thermoelemt noch nicht. Aufgrund der höheren Wärmeleitfähigkeit von Messing breitet sich die Temperatur schneller auf dem Stab aus und daraus resultiert eine geringere Differenz der Temperaturen. 
+Die Wärmemenge pro Zeit lässt sich durch Division der Gleichung \ref{eqn:Q/t} durch $dt$ berechnen. Dafür wurde der Wert $\kappa$ aus der Literatur entnommen und der Querschnitt der Versuchsanleitung entnommen.
 \begin{eqnarray*} 
 		 \kappa_{Messing} 	& =& 120 \frac{\text{W}}{\text{m K}}  		\\
 		 A_{Messing} 		& =& 4.8 \cdot 10^{-5} \text{m}^2		\\
@@ -80,7 +80,7 @@ Die Messergebnisse des Wärmestrom pro Zeit wurden in Tabelle \ref{tab:wärmestr
 
 \subsection{Dynamische Methode}
 \subsubsection{Aluminium und Messing}
-Mit hilfe periodischem Heizen soll nun die Materialkonstante $\kappa$ bestimmt werden. Die beiden graphischen Verläufe beider Thermoelemente sind in Diagramm \ref{fig:Tdiff} \subref{fig:Graph1} und \subref{fig:Graph2} zu sehen. Durch bestimmung des Amplitudenverhältnisses $A_{nah}$ und $A_{fern}$ und der Phasendifferenz $\Delta t$ lässt sich durch einsetzen in Gleichung \ref{eqn:kappa} die Materialkonstante $\kappa$ bestimmen. 
+Mit Hilfe von periodischen Heizen soll nun die Materialkonstante $\kappa$ bestimmt werden. Die graphischen Verläufe beider Thermoelemente sind in Diagramm \ref{fig:Tdiff} \subref{fig:Graph1} und \subref{fig:Graph2} zu sehen. Durch bestimmung des Amplitudenverhältnisses $A_{nah}$ und $A_{fern}$ und der Phasendifferenz $\Delta t$ lässt sich durch einsetzen in Gleichung \ref{eqn:kappa} die Materialkonstante $\kappa$ bestimmen. 
 \begin{figure}
         \centering
         \caption{Temperatur der Thermoelemente bei periodischem Heizem}
@@ -106,7 +106,7 @@ Für Aluminium und Messing sind in Tabelle \ref{tab:AuP} deren Amplituden, Ampli
 	\begin{tabular}{c c c c c c c c}
 		\toprule
 		\multicolumn{4}{c}{Aluminium} & \multicolumn{4}{c}{Messing}\\
-		$A_{nah}$ [K] & $A_{fern}$ [K] & $10^{-1}$ ln $ \left(\frac{A_{nah}}{A_{fern}} \right)$ & $\Delta t$ & $A_{nah}$ [K] & $A_{fern}$ [K] & ln $ \left( \frac{A_{nah}}{A_{fern}} \right) $& $\Delta t$ \\
+		$A_{nah}$ [K] & $A_{fern}$ [K] & $10^{-1}$ ln $ \left(\frac{A_{nah}}{A_{fern}} \right)$ & $\Delta t$ / s & $A_{nah}$ [K] & $A_{fern}$ [K] & ln $ \left( \frac{A_{nah}}{A_{fern}} \right) $& $\Delta t$ / s \\
 		\midrule
 		2.86 & 3.10 & -0.8 & 8  & 6.66 & 3.54 & 0.63 & 4 \\
 		5.00 & 2.62 &  6.4 & 8  & 7.07 & 2.91 & 0.89 & 4 \\
