@@ -1,26 +1,125 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\begin{figure}
+\subsection{Bestimmung des Emissionsvermögens}
+Das Emissionsvermögen der einzelnen Oberflächen wird bestimmt, in dem die Thermospannnung als Funktion von $T^4 - T_0^4$ aufgetragen wird. Aus der Steigung der Ausgleichsgeraden lässt sich dann $\epsilon$ bestimmen. \\
+Die gemessene Raumtemperatur beträgt
+\begin{align*}
+  T_0 = 294.26 \, \text{K} \ .
+\end{align*}
+Die Thermospannungen bei den Temperaturen sind in Tabelle \ref{tab:Daten} aufgeführt.
+\begin{table}
+  \centering
+  \begin{tabular}{c c c c c}
+    \toprule
+    	& \multicolumn{1}{c}{weiß} & \multicolumn{1}{c}{messingfarben} &	\multicolumn{1}{c}{schwarz} & \multicolumn{1}{c}{glänzend} \\
+    $T$ / K & $U_\text{1}$ / mV & $U_\text{2}$ / mV & $U_\text{3}$ / V & $U_\text{4}$ / mV \\
+    \midrule
+      368.15	&  1.09	&  0.20	 & 1.13  & 0.084 \\
+      363.15	&  1.04	&  0.17	 & 1.05  & 0.068 \\
+      358.15	&  0.93	&  0.16	 & 0.94  & 0.061 \\
+      353.15	&  0.84	&  0.14	 & 0.85  & 0.047 \\
+      348.15	&  0.73	&  0.12	 & 0.75  & 0.050 \\
+      343.15	&  0.65	&  0.11	 & 0.66  & 0.041 \\
+      338.15	&  0.56 &  0.092 & 0.57  & 0.033 \\
+      333.15	&  0.48	&  0.086 & 0.49  & 0.037 \\
+      328.15	&  0.40	&  0.072 & 0.41  & 0.026 \\
+      323.15	&  0.33	&  0.057 & 0.34  & 0.023 \\
+      318.15	&  0.26	&  0.047 & 0.26  & 0.021 \\
+      313.15	&  0.19	&  0.032 & 0.19  & 0.022 \\
+      308.15	&  0.13	&  0.024 & 0.13  & 0.015 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Die Thermospannung bei verschiedenen Temperaturen}
+  \label{tab:Daten}
+\end{table}
+
+Die Offsetspannung vor und nach dem Versuch ist in Tabelle \ref{tab:Offset} aufgeführt und wird zu $U_\text{0}$ gemittelt.
+
+\begin{table}
+  \centering
+  \begin{tabular}{c c c}
+    \toprule
+      & $U_\text{vor}$ & $U_\text{nach}$  \\
+      $U$ / mV      & 0.013 & 0.006       \\
+      $U_\text{0}$  & 0.007 &             \\
+    \bottomrule
+  \end{tabular}
+  \caption{Die gemittelte Offsetspannnung}
+  \label{tab:Offset}
+\end{table}
+
+Mit den Tabellen \ref{tab:Daten} und \ref{tab:Offset}, sowie $T_0$ ergeben sich die Abbildungen \ref{fig:ThermoW} bis \ref{fig:ThermoG}.
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ThermoW.pdf}
-  \caption{ThermospannungW}
+  \caption{Ausgleichsgerade der Messwerte für die weiße Oberfläche}
+  \label{fig:ThermoW}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ThermoM.pdf}
-  \caption{ThermospannungM}
+  \caption{Ausgleichsgerade der Messwerte für die messingfarbene Oberfläche}
+  \label{fig:ThermoM}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ThermoS.pdf}
-  \caption{ThermospannungS}
+  \caption{Ausgleichsgerade der Messwerte für die schwarze Oberfläche}
+  \label{fig:ThermoS}
 \end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{ThermoG.pdf}
+  \caption{Ausgleichsgerade der Messwerte für die glänzende Oberfläche}
+  \label{fig:ThermoG}
+\end{figure}
+Die Steigung der Ausgleichsgeraden wird mit der linearer Regression ermittelt und ist im folgenden aufgelistet.
+\begin{align*}
+  m_\text{weiß}     &= 10.63 \cdot 10^{-14}  \\
+  m_\text{messing}  &= 1.82  \cdot 10^{-14}  \\
+  m_\text{schwarz}  &= 10.87 \cdot 10^{-14}  \\
+  m_\text{glänzend} &= 0.66  \cdot 10^{-14}  \\
+\end{align*}
+Mit der Annahme, dass die schwarze Oberfläche ein Schwarzer Körper ist($\epsilon_\text{schwarz} = 1$), folgt für die anderen Oberflächen ein Emissionsvermögen von:
+\begin{align*}
+  \epsilon_\text{schwarz}  \, &= 1     \\
+  \epsilon_\text{weiß}     \, &= 0.978 \\
+  \epsilon_\text{messing}  \, &= 0.167 \\
+  \epsilon_\text{glänzend} \, &= 0.061 \\
+\end{align*}
+
+\newpage
+\subsection{Thermospannunng im Verhältniss zum Abstand}
+Die Thermospannung der weißen Oberfläche gegen den Abstand aufgetragen ergibt Abbildung \ref{fig:Abstand}. Die dazu gehörigen Messwerte sind in Tabelle \ref{tab:Abstand} aufgelistet.
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c c}
+      A / cm & U / mV \\
+    \midrule
+      10.0  &  0.247 \\
+      12.5	&  0.238 \\
+      15.0	&  0.228 \\
+      17.5	&  0.217 \\
+      20.0	&  0.202 \\
+      22.5	&  0.189 \\
+      25.0	&  0.177 \\
+      27.5	&  0.162 \\
+      30.0	&  0.149 \\
+      32.5	&  0.137 \\
+      35.0	&  0.128 \\
+  \end{tabular}
+  \caption{Messergebnisse für das Verhältnis zwischen Thermospannung und dem Abstand}
+  \label{tab:Abstand}
+\end{table}
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{ThermoG.pdf}
-  \caption{ThermospannungG}
+  \includegraphics[width=\textwidth]{ThermoAbstand.pdf}
+  \caption{Abstand}
+  \label{fig:Abstand}
 \end{figure}
+\newpage
