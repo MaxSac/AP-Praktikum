@@ -7,30 +7,63 @@ from scipy import stats
 
 #Einlesen der Daten und auf SI-Einheit bringen
 T, W, M, S, G = np.genfromtxt('data.txt', unpack=True)
+T[0] = 95
 T = T + 273.15
 
-#Stefan-Boltzmann-Konstante
+#Wichtige Werte
 SB = 5.67 * 10**(-8)
-
-#Offsetspannung "gemittel"
 offs = ((0.013 + 0.006)/2) * 10**(-3)
-
-#T_0 bestimmen
 T_0 = 294.26
-print("T0:", 294.26)
-print("T:", T[0], T[1], T[2], T[3], T[4], T[5], T[6], T[7], T[8], T[9], T[10], T[11], T[12])
-
-
-#Thermospannung gegen Temperatur
 x = T**4 - T_0**4
-plt.plot(x, W)
-plt.xlabel(r'T**4 - T0**4 / K')
-plt.ylabel(r'U1 / mV')
-plt.legend()
+
+#Thermospannung gegen Temperatur(Weiß)
+zW = np.polyfit(x, W, 1)
+print('Koeffizienten zu Weiß: ', zW)
+pW = np.poly1d(zW)
+plt.plot(x, W, 'g.', label='Messwerte')
+plt.plot(x, pW(x), 'b-', label='Ausgleichsgerade')
+plt.xlabel(r'$T^4 - T_0^4$ / K$^4$')
+plt.ylabel(r'U / $10^{-3}$ V')
+plt.legend(loc='upper left')
 plt.tight_layout()
-plt.savefig('build/ThermospannungW.pdf')
+plt.savefig('build/ThermoW.pdf')
 plt.close()
 
-#lineare Regression
-slope, intercept, r_value, p_value, std_err = stats.linregress(x, W)
-print('Steigung: ', slope, intercept, r_value, p_value, std_err)
+#Thermospannung gegen Temperatur(Messing)
+zM = np.polyfit(x, M, 1)
+print('Koefizienten zu Messing: ', zM)
+pM = np.poly1d(zM)
+plt.plot(x, M, 'g.', label='Messwerte')
+plt.plot(x, pM(x), 'b-', label='Ausgleichsgerade')
+plt.xlabel(r'$T^4 - T_0^4$ / K$^4$')
+plt.ylabel(r'U / $10^{-3}$ V')
+plt.legend(loc='upper left')
+plt.tight_layout()
+plt.savefig('build/ThermoM.pdf')
+plt.close()
+
+#Thermospannung gegen Temperatur(Schwarz)
+zS = np.polyfit(x, S, 1)
+print('Koefizienten zu Schwarz: ', zS)
+pS = np.poly1d(zS)
+plt.plot(x, S, 'g.', label='Messwerte')
+plt.plot(x, pS(x), 'b-', label='Ausgleichsgerade')
+plt.xlabel(r'$T^4 - T_0^4$ / K$^4$')
+plt.ylabel(r'U / $10^{-3}$ V')
+plt.legend(loc='upper left')
+plt.tight_layout()
+plt.savefig('build/ThermoS.pdf')
+plt.close()
+
+#Thermospannung gegen Temperatur(Glänzend)
+zG = np.polyfit(x, G, 1)
+print('Koefizienten zu Glänzend: ', zG)
+pG = np.poly1d(zG)
+plt.plot(x, G, 'g.', label='Messwerte')
+plt.plot(x, pG(x), 'b-', label='Ausgleichsgerade')
+plt.xlabel(r'$T^4 - T_0^4$ / K$^4$')
+plt.ylabel(r'U / $10^{-3}$ V')
+plt.legend(loc='upper left')
+plt.tight_layout()
+plt.savefig('build/ThermoG.pdf')
+plt.close()

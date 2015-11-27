@@ -371,7 +371,10 @@ INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
-INPUT ThermospannungW.pdf
+INPUT ThermoW.pdf
+INPUT ThermoM.pdf
+INPUT ThermoS.pdf
+INPUT ThermoG.pdf
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT build/main.aux
