@@ -2,6 +2,7 @@
 \defcounter {refsection}{0}\relax 
 \select@language {german}
 \contentsline {section}{\numberline {1}Theoretische Grundlage}{3}{section.1}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {1.1}Fehlerrechnung}{3}{subsection.1.1}
 \contentsline {subsubsection}{\numberline {1.1.1}Mittelwert}{3}{subsubsection.1.1.1}
 \contentsline {subsubsection}{\numberline {1.1.2}Gauß'sche Fehlerfortpflanzung}{3}{subsubsection.1.1.2}
@@ -14,3 +15,17 @@
 \contentsline {subsection}{\numberline {3.4}Signal-Abstandsrealtion einer LED}{6}{subsection.3.4}
 \contentsline {section}{\numberline {4}Diskussion}{7}{section.4}
 \contentsline {section}{\nonumberline Literatur}{7}{section*.7}
+=======
+\contentsline {subsection}{\numberline {1.1}Fehlerrechnung}{5}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Mittelwert}{5}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Gauß'sche Fehlerfortpflanzung}{5}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}Lineare Regression}{5}{subsubsection.1.1.3}
+\contentsline {section}{\numberline {2}Durchführung und Aufbau}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Teilversuch 1}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Photodetektorschaltung}{7}{subsection.2.2}
+\contentsline {section}{\numberline {3}Auswertung}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Funktionengenerator}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Phasenabhängigkeit der Ausgangsspannung}{8}{subsection.3.2}
+\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
+\contentsline {section}{\nonumberline Literatur}{9}{section*.10}
+>>>>>>> ac2eaf4ac012ec14f592a51843dbd4c482030a7b
