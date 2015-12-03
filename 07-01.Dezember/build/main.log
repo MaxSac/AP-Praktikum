@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.10.18)  2 DEC 2015 21:06
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.10.18)  3 DEC 2015 18:52
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -278,7 +278,7 @@ Lua-only attribute luaotfload@cursbase = 6
 Lua-only attribute luaotfload@curscurs = 7
 Lua-only attribute luaotfload@cursdone = 8
 Lua-only attribute luaotfload@state = 9
-luaotfload | main : fontloader loaded in 0.017 seconds
+luaotfload | main : fontloader loaded in 0.018 seconds
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
@@ -1932,7 +1932,11 @@ Package biblatex Info: ... file 'german.lbx' found.
 File: german.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 ) (./build/main.aux
 luatex-hyphen: loading patterns and exceptions for: ngerman (\language31)
-luatex-hyphen: info: no hyphenation exceptions for this language)
+luatex-hyphen: info: no hyphenation exceptions for this language
+
+LaTeX Warning: Label `fig:Spannungsverlauf' multiply defined.
+
+)
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -2129,7 +2133,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 \openout4 = main.toc
  [2
 
-] (./content/theorie.tex(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc)) (./content/durchfuehrung.tex) (./content/auswertung.tex [3] <picture/1.JPG, id=61, 642.4pt x 481.8pt>
+] (./content/theorie.tex(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc)) (./content/durchfuehrung.tex) (./content/auswertung.tex [3] <picture/1.JPG, id=65, 642.4pt x 481.8pt>
 File: picture/1.JPG Graphic file (type jpg)
  <use picture/1.JPG>
 Package pdftex.def Info: picture/1.JPG used on input line 9.
@@ -2151,22 +2155,31 @@ luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman7-regular.luc)(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) <Spannungsverlauf.pdf, id=63, 417.7206pt x 258.00488pt>
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman7-regular.luc)(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) <Spannungsverlauf.pdf, id=68, 417.7206pt x 258.00488pt>
 File: Spannungsverlauf.pdf Graphic file (type pdf)
  <use Spannungsverlauf.pdf>
 Package pdftex.def Info: Spannungsverlauf.pdf used on input line 44.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
-) (./content/diskussion.tex [4<./picture/1.JPG>] [5<build/Spannungsverlauf.pdf>])
+ [4<./picture/1.JPG>] [5<build/Spannungsverlauf.pdf>] <Spannungsverlauf2.pdf, id=106, 417.7206pt x 258.00488pt>
+File: Spannungsverlauf2.pdf Graphic file (type pdf)
+ <use Spannungsverlauf2.pdf>
+Package pdftex.def Info: Spannungsverlauf2.pdf used on input line 76.
+(pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
+ [6<build/Spannungsverlauf2.pdf>]) (./content/diskussion.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [6]
+ [7]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 149C3CB9AF817504B075969A2ED8A15D;7329.
+(rerunfilecheck)             Checksum: 94C12BBACF36A1CBCA2C59C788CA8F25;9557.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 83B5437AAB1445057FF725762796DC7D;1066.
+(rerunfilecheck)             Checksum: CFD414B94F19DFEF50C1901C3E71F476;1304.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -2174,19 +2187,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43926 strings out of 494897
+ 43942 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 546 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 9 kern, 14 attribute, 68 glue_spec, 14 attribute_list, 1 write nodes
-   avail lists: 1:3,2:5206,3:109,4:766,5:167,6:1684,7:105,8:17,9:203,10:208,11:1
- 46298 multiletter control sequences out of 65536+600000
- 117 fonts using 35635019 bytes
+ 567 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 11 kern, 15 attribute, 68 glue_spec, 15 attribute_list, 1 write nodes
+   avail lists: 1:1,2:7831,3:123,4:929,5:180,6:2547,7:126,8:17,9:203,10:346,11:1
+ 46307 multiletter control sequences out of 65536+600000
+ 117 fonts using 35634847 bytes
  69i,13n,104p,1248b,2073s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (6 pages, 136649 bytes).
+Output written on main.pdf (7 pages, 150637 bytes).
 
-PDF statistics: 202 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 131072)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 246 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 131072)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
