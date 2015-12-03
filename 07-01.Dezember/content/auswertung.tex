@@ -38,18 +38,13 @@ Nach Formel ?? werden die theoretischen und praktischen Spannungswerte ausgerech
   \caption{$U_{\text{out}}$ bei verschiedenen Phasen.}
   \label{tab:Uphase}
 \end{table}
-<<<<<<< HEAD
 Abbildung \ref{fig:Spannungsverlauf} kann man entnehmen das die Gemessene Spannung den Theoretischen Erwatungswert qualitativ erfüllt.
-=======
-Der Abbildung \ref{fig:Spannungsverlauf} kann man entnehmen, dass die gemessene Spannung qualitativ erfüllt. % was willst du sagen? :)
->>>>>>> ac2eaf4ac012ec14f592a51843dbd4c482030a7b
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{Spannungsverlauf.pdf}
   \caption{Spannungsverlauf}
   \label{fig:Spannungsverlauf}
 \end{figure}
-<<<<<<< HEAD
 \subsection{Phasenabhängigkeit der Ausgangsspannung unter Einfluss einer Störfrequenz}
 Für diesen Versuchsteil wird der Noisgenerator eingeschaltet. Dieser mischt Störfrequenzen der Gleichen Amplitude bei und erzeugt somit ein Stark verrauschtes Signal. Der Bandpass filtert schon ein Großteil der Störfrequenzen raus. Nach dem Mischen mit der Referenzspannung und der anschließenden Integration durch den Tiefpass, ergibt sich wieder eine zeitlich Konstante Spannung, falls der Integrationszeitraum hinreichend groß gewählt wurde. Die des Aufbaus entnommene Messwerte werden analog zum vorherigen Aufgabenteil ausgewertet und die Spannungen werden in Tabelle \ref{tab:Uphase2} ausgegeben und in Grafik \ref{fig:Spannungsverlauf} gegen die Phasenverschiebung aufgetragen.
 
@@ -83,6 +78,40 @@ Für diesen Versuchsteil wird der Noisgenerator eingeschaltet. Dieser mischt St�
   \label{fig:Spannungsverlauf}
 \end{figure}
 
+Für die verschiedenen Phasen ergibt es durch die Multiplikation der Rechteckspannung mit der Sinusspannung verschieden Graphen welche nach Formel \ref{eqn:foye} mittels einer Fourierentwicklung berrechnen lässt. Die zu den verschiedenen Phasen entsprechenden Graphen sind in Abblidung \ref{fig:graph1} und \ref{fig:graph2} zu sehen.
+
+\begin{figure}
+  \centering
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=5cm]{picture/2.JPG}
+    \caption{$\phi = 60$}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=5cm]{picture/3.JPG}
+    \caption{$\phi = 120$}
+  \end{subfigure}
+  \caption{Fourierreihe für 60 und 120 grad Phasendifferenz}
+  \label{fig:graph1}
+\end{figure}
+\begin{figure}
+  \centering
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=5cm]{picture/4.JPG}
+    \caption{$\phi = 180$}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=5cm]{picture/3.JPG}
+    \caption{$\phi = 240$}
+  \end{subfigure}
+  \caption{Fourierreihe für 180 und 240 grad Phasendifferenz}
+  \label{fig:graph2}
+\end{figure}
+
+
 \subsection{Signal-Abstandsrealtion einer LED}
 Aufgabe dieses Versuches ist die Signalstärke in Abhängigkeit des Abstandes zu messen. Der Lock-In-Verstärker dient dazu das durch die Umgebung verrauschte Signal zu filtern. Die LED wird mittels einer Rechteckspannung von 300 Hz betrieben. Durch justieren der Phasendifferenz soll die Spannung maximiert werden.Durch eine offset Messung, soll die Spannung der Photodiode vernachlässigt werden. Sie beträgt 
 \begin{equation}
@@ -94,5 +123,11 @@ Die gemessenen Spannungen, deren Verstärkung und der Abstand sind in Tabelle ??
   U_{\text{ber}} = \frac{U_{\text{out}}}{Gain} - \frac{U_{0}}{1000}
   \label{Uber}
 \end{equation}
-=======
->>>>>>> ac2eaf4ac012ec14f592a51843dbd4c482030a7b
+
+\begin{figure}
+  \centering
+  \includegraphics[height=5cm]{Abstand.pdf}
+  \caption{Abstandsspannungsrelation} 
+  \label{fig:rU}
+\end{figure}
+
