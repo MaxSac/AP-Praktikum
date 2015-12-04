@@ -13,11 +13,11 @@
 \contentsline {section}{\numberline {2}Durchführung und Aufbau}{7}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{8}{section.3}
 \contentsline {subsection}{\numberline {3.1}Messgrößen und Fehler}{8}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Näherungsfunktion}{10}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Differentialquotient}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.2}Näherungsfunktion}{8}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Differentialquotient}{10}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Güteziffer}{11}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Dampfdruckkurve}{12}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.5}Dampfdruckkurve}{11}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Massendurchsatz}{12}{subsection.3.6}
 \contentsline {subsection}{\numberline {3.7}Mechanische Kompressorleistung}{13}{subsection.3.7}
-\contentsline {section}{\numberline {4}Diskussion}{14}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{14}{section.5}
+\contentsline {section}{\numberline {4}Diskussion}{13}{section.4}
+\contentsline {section}{\nonumberline Literatur}{14}{section*.12}
