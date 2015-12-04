@@ -1,15 +1,15 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'build/main.blg'
-[26] biber:276> INFO - === Fr Dez  4, 2015, 13:14:54
-[26] Biber.pm:333> INFO - Reading 'build/main.bcf'
-[105] Biber.pm:645> INFO - Found 2 citekeys in bib section 0
-[121] Biber.pm:2977> INFO - Processing section 0
-[135] Biber.pm:3115> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[136] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[137] bibtex.pm:895> INFO - Found BibTeX data source 'lit.bib'
-[208] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[208] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[208] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[208] Biber.pm:2858> INFO - No sort tailoring available for locale 'de-DE'
-[211] bbl.pm:505> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[211] bbl.pm:596> INFO - Output to build/main.bbl
+[29] biber:276> INFO - === Fr Dez  4, 2015, 15:37:12
+[30] Biber.pm:333> INFO - Reading 'build/main.bcf'
+[141] Biber.pm:645> INFO - Found 2 citekeys in bib section 0
+[162] Biber.pm:2977> INFO - Processing section 0
+[185] Biber.pm:3115> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[186] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[186] bibtex.pm:895> INFO - Found BibTeX data source 'lit.bib'
+[225] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[225] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[225] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[225] Biber.pm:2858> INFO - No sort tailoring available for locale 'de-DE'
+[228] bbl.pm:505> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[228] bbl.pm:596> INFO - Output to build/main.bbl

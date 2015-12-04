@@ -55,9 +55,7 @@ Zu beachten ist, dass alle Messgrößen eine Messunsicherheit besitzen, einersei
   \Delta p =& &\pm 10 \cdot 10^{3} \text{p}				\\
   \Delta C =& &\pm 10 \frac{\text{J}}{\text{K}}		\\
   \Delta V =& &\pm 1.6 \cdot 10^{-3} \text{l}				\\
-  \Delta \rho_{Wasser} =& &\pm 13 \frac{\text{kg}}{\text{m$^3$}}	\\
 \end{eqnarray*}
-Die Messunsicherheit der Dichte für Wasser kommt dadurch zu stande, dass Wasser bei verschiedenen Temperaturen seine Dichte ändert.
 \subsection{Näherungsfunktion}
 Mit einer nicht-linearen Ausgleichsgeraden soll der Temperaturverlauf mit Hilfe der Gleichung \ref{eqn:ausgleichsgrade} approximiert werden.
 \begin{equation}
@@ -85,7 +83,6 @@ und für $T_\text{2}$
   C_2 =& (\num{294.97 +- 0.09}) \cdot \, \text{K}
   \label{eqn:koefT2}
 \end{eqnarray*}
-Dabei wird vernachlässigt, dass die Koeffizienten fehlerbehaftet sind, weil dies nicht mittels fit Funktion ermittelt werden kann.
 \subsection{Differentialquotient}
 Der Differentialquotient berechnet sich aus einmaligem Ableiten der Gleichung \ref{eqn:ausgleichsgrade} nach der Zeit.
 \begin{equation}
@@ -112,7 +109,7 @@ Aus der Funktion wird der Differentialquotient für $T_\text{1}$ und $T_\text{2}
 \subsection{Güteziffer}
 Mit Hilfe des Differentialquotienten und der Wärmekapazität der mit Wasser befüllten Reservoire
 \begin{equation}
-  c_\text{w} m_\text{w} = 4186.8 \cdot (\num{4 +- 0.0016}) \, \frac{\text{J}}{\text{K}} = (\num{24.9 +- 0.0}) \cdot 10^3 \, \frac{\text{J}}{\text{K}}
+  c_\text{w} m_\text{w} = 4186.8 \cdot (\num{4 +- 0.0016}) \, \frac{\text{J}}{\text{K}} = (\num{16.7 +- 0.7}) \cdot 10^3 \, \frac{\text{J}}{\text{K}}
   \label{eqn:WC}
 \end{equation}
 soll die Güteziffer der Wärmepumpe bestimmt werden. Die theoretische Güteziffer lässt sich mit Hilfe der Gleichung \ref{eqn:nureal} berechnen und ist in Tabelle \ref{tab:gueteziffer} aufgeführt. Die praktisch bestimmte Güteziffer errechnet sich nach Gleichung \ref{eqn:nureal} aus der Wärmekapazität der Reservoire und der Wärmekapazität der Leitungen sowie mit den in Tabelle 1 bestimmten Differentialquotienten, sowie mit der nach Formel \ref{eqn:ave} und \ref{eqn:var} gemittelten Leistung.
@@ -200,7 +197,7 @@ Für die weiteren Rechnungen wird der Massendurchsatz durch Multiplikation mit d
 \subsection{Mechanische Kompressorleistung}
 Aus der idealen Gasgleichung lässt sich die Dichte in den Rohren berechnen. Dafür muss jedoch die Dichte von Dichlordifluormethan bei 1 Bar Druck und 273 Kelvin bekannt sein.
 \begin{equation}
-  \rho_\text{0} =  5.51 \, \frac{\text{g}}{\text{l}} \ \text{\cite{rho}} \ .
+  \rho_\text{0} =  5.51 \, \frac{\text{g}}{\text{l}} \ \text{\cite{Abb}} \ .
   \label{rho}
 \end{equation}
 Zusätzlich wird gefordert, dass
@@ -230,3 +227,38 @@ einen Ausdruck für die Dichte in Abhängigkeit der Temperaturen und Drücke. Di
   \caption{Leistung des Kompressors}
   \label{tab:LdK}
 \end{table}
+
+\subsection{Ermittlung der Messunsicherheiten}
+
+Der Fehler der Ausgleichsgraden wird mittels einer Fitfunktion berechnet.
+
+Der Fehler des Differentialquotienten ergibt sich aus
+\begin{equation}
+  \Delta \frac{dT_{\text{i}}}{dt} = \sqrt{4A^2 \cdot \left( \Delta T_{\text{i}} \right)^2 }
+\end{equation}
+
+Der Fehler für die Theoretische Güteziffer berechnet sich aus
+\begin{equation}
+  \Delta \nu_{\text{theo}} = \sqrt{\left( \frac{T_2}{(T_1 - T_2)^2} \right)^2 \cdot (\Delta T_1)^2 + \left( \frac{T_1}{(T_1 - T_2)^2} \right)^2 \cdot (\Delta T_2)^2}
+\end{equation}
+
+\begin{equation}
+    \Delta v_{\text{real}} = \sqrt{ \left( \partial_{\text{m1}} \cdot v_{\text{real}} \right)^2 \cdot (\Delta m_1)^2 + \left( \partial_{\text{mc}} \cdot v_{\text{real}} \right)^2 \cdot (\Delta m_{\text{k}} c_{\text{k}})^2  \atop + \left( \partial_{\frac{\Delta T_1}{\Delta t}} \cdot v_{\text{real}} \right)^2 \cdot \left( \Delta \frac{\Delta T_1}{\Delta t} \right)^2 + \left( \partial_{\text{N}} \cdot v_{\text{real}} \right)^2 \cdot (\Delta N)^2}
+\end{equation}
+
+Der Fehler der Verdampfungswärme wurde von Python mittels Linearer Regression ermittelt.
+
+\begin{equation}
+  \Delta \frac{dm}{dt} = \sqrt{ \left( \partial_{\text{m2}} \cdot \frac{dm}{dt} \right)^2 \cdot (\Delta m_2)^2 + \left( \partial_{\text{mc}} \cdot \frac{dm}{dt} \right)^2 \cdot (\Delta m_{\text{k}} c_{\text{k}})^2  \atop + \left( \partial_{\frac{\Delta T_2}{\Delta t}} \cdot \frac{dm}{dt} \right)^2 \cdot \left( \Delta \frac{\Delta T_2}{\Delta t} \right)^2 + \left( \partial_{\text{L}} \cdot \frac{dm}{dt} \right)^2 \cdot (\Delta L)^2}
+\end{equation}
+
+\begin{equation}
+  \Delta \rho = \sqrt{ \left( \frac{\rho_0 T_0}{T_2 P_0} \right)^2 \cdot (\Delta P_2)^2 + \left( \frac{\rho_0 T_0 P_2}{(T_2)^2 P_0} \right)^2 \cdot (\Delta T_2)^2}
+\end{equation}
+
+\begin{equation}
+  \Delta N_\text{mech} = \sqrt{ \left( \partial_{pb} \cdot N_\text{mech} \right)^2 \cdot 
+  (\Delta p_{\text{b}})^2 + \left( \partial_{pa} \cdot N_\text{mech} \right)^2 \cdot
+  (\Delta p_{\text{a}})^2 \atop + \left( \partial_{\rho} N_\text{mech} \right)^2 \cdot (\Delta \rho)^2 
+  + \left( \partial_{\frac{dm}{dt}} \cdot N_{\text{mech}} \right)^2 \cdot (\Delta \frac{dm}{dt})^2}
+\end{equation}

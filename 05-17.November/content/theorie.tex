@@ -42,7 +42,7 @@ Die reale Güteziffer wird im folgenden über
 	\nu_\text{real} = \frac{\Delta Q_\text{1}}{\Delta t N} = (m_\text{1} c_\text{w} + m_\text{k} c_\text{k}) \frac{\Delta T_\text{1}}{\Delta t N}
 	\label{eqn:nureal}
 \end{equation}
-berechnet, wobei $N$ := gemittelte Leistungsaufnahme des Kompressors.
+berechnet, wobei $N$ definiert ist, als gemittelte Leistungsaufnahme des Kompressors.
 
 \subsection{Massendurchsatz}
 Der Massendurchsatz für die Wärmepumpe berechnet sich nach [1,S.5] über den Differentialquotienten:
@@ -60,7 +60,7 @@ nach einsetzen von \ref{eqn:kp1} in \ref{eqn:kp2} folgt:
 	\frac{dm}{dt} = (m_\text{2} c_\text{w} + m_\text{k} c_\text{k}) \frac{\Delta T_\text{2}}{\Delta t L}
 	\label{eqn:dm/dt}
 \end{equation}
-Wobei $L$ := bekannte Verdampfungswärme.
+Wobei $L$ die bekannte Verdampfungswärme ist.
 
 \subsection{Mechanische Kompressorleistung}
 Wenn ein Kompressor ein Gasvolumen $V_\text{a}$ auf das Volumen $V_\text{b}$ verringert, leistet dieser die Arbeit $A_\text{m}$
@@ -88,7 +88,7 @@ Im folgenden wird die prinzipielle Funktionsweise einer Wärmepumpe beschrieben.
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=7cm]{Allgemeine_Waermepumpe.png}
-	\caption{Allgemeiner Aufbau einer Wärmepumpe [1]}
+	\caption{Allgemeiner Aufbau einer Wärmepumpe \cite{Abb}}
 \end{figure}
 
 Für die Wärmepumpe wird ein reales Gas verwendet, welches Wärme beim Verdampfen aufnimmt und beim Kondensieren wieder abgibt. Die Wärme wird also in Form von Phasenumwandlungsenergie des Gases transportiert. Daraus folgt, dass das verwendete Gas eine hohe Kondensationswärme haben sollte. Der Kompressor $K$ komprimiert das Gas adiabatisch und erzeugt einen Kreislauf des Mediums. Zwischen den Reservoiren ist ein Drosselventil $D$ angebracht, welches das Gas bei einem bestimmten Druck passieren lässt. Dadurch entsteht ein Druckunterschied $p_\text{b} - p_\text{a}$. Das Gas mit dem Druck $p_\text{a}$ und der Temperatur $T_\text{2}$ ist gasförmig, während es auf der anderen Seite bei $p_\text{b}$ mit der Temperatur $T_\text{1}$ flüssig ist. Nachdem das flüssige Medium durch das Druckventil geströmt ist, verdampft dieses im Reservoir 2 und entzieht diesem die Verdampfungswärme $L$ pro Gramm Substanz. Das zweite Reservoir ist damit das kältere und Wärme abgebende Reservoir. In dem Kompressor $K$ wird das Gas komprimiert, wodurch es sich erwärmt. Durch die Erwärmung steigt der Druck $p_\text{a}$ im Reservoir 1, bis sich das Gas verflüssigt, wodurch Wärme an die Umgebung abgegeben wird. \\
