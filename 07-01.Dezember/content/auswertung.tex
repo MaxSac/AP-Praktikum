@@ -3,11 +3,11 @@
 \subsection{Funktionengenerator}
 Zunächst wird das Signal des Funktionengenerators auf dem Osziloskop ausgegeben. Dort wird die Frequenz der gewählten Sinusfunktion auf 1 kHz justiert und eine Spannung von 52 mV gewählt. Anschließend wird der Aufbau wie in der Beschreibung beschrieben aufgebaut. Dabei werden die Filter der Frequenz entsprechend auf 1 kHz angepasst und die Verstärkung am Low-Pass Amplifier auf 200 eingestellt. Der Noise Generator wird zunächst einmal überbrückt indem er auf off gestellt wird.
 \subsection{Phasenabhängigkeit der Ausgangsspannung}
-Ziel des Teilversuchs ist es die Abhängigkeit der Ausgangsspannung $U_{\text{out}}$ von der Phasendifferenz $\phi$ der Eingangsspannung $U_{\text{sig}}$ und der Referenzsspannung $U_{\text{ref}}$ genauer zu beobachten. Zunächst wird eine offset Messung der Phasenverschiebung der beiden Spannungen durchgeführt. Dafür wird der Phasenwinkel solange justiert bis ein Oszilloskopausschlag wie in Bild \ref{fig:phi0} erscheint, was einem Phasenwinkel von $\phi = 0^{\circ}$ entspricht.
+Ziel des Teilversuchs ist es die Abhängigkeit der Ausgangsspannung $U_{\text{out}}$ von der Phasendifferenz $\phi$ der Eingangsspannung $U_{\text{sig}}$ und der Referenzsspannung $U_{\text{ref}}$ genauer zu untersuchen. Zunächst wird eine offset Messung der Phasenverschiebung der beiden Spannungen durchgeführt. Dafür wird der Phasenwinkel solange justiert bis ein Oszilloskopausschlag wie in Bild \ref{fig:phi0} erscheint, was einem Phasenwinkel von $\phi = 0^{\circ}$ entspricht.
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{picture/1.JPG}
-  \caption{$\phi = 0$ , offset Messung.}
+  \caption{$\phi = 0^{\circ}$ , offset Messung.}
   \label{fig:phi0}
 \end{figure}
 Daran wird die Phasenskala für den weiteren Versuchsverlauf ausgerichtet. Mittels eines Tiefpasses wird die Spannung, durch den Innenwiederstand integriert und die Zeitlich gemittelte Spannung auf einem Messgerät ausgegeben. Nach Berücksichtigung der Verstärkung ergibt sich nach Formel \ref{eqn:Uout} für eine Phasenverschiebung von $\phi = 0^{\circ}$ eine Spannung von
@@ -78,7 +78,7 @@ Für diesen Versuchsteil wird der Noisgenerator eingeschaltet. Dieser mischt St�
   \label{fig:Spannungsverlauf}
 \end{figure}
 
-Für die verschiedenen Phasen ergibt es durch die Multiplikation der Rechteckspannung mit der Sinusspannung verschieden Graphen welche nach Formel \ref{eqn:foye} mittels einer Fourierentwicklung berrechnen lässt. Die zu den verschiedenen Phasen entsprechenden Graphen sind in Abblidung \ref{fig:graph1} und \ref{fig:graph2} zu sehen.
+Für die verschiedenen Phasen ergibt es durch die Multiplikation der Rechteckspannung mit der Sinusspannung verschiedene Graphen welche sich nach Formel \ref{eqn:foye} mittels einer Fourierentwicklung berrechnen lassen. Die zu den verschiedenen Phasen entsprechenden Graphen sind in Abbildung \ref{fig:graph1} und \ref{fig:graph2} zu sehen.
 
 \begin{figure}
   \centering
@@ -92,7 +92,7 @@ Für die verschiedenen Phasen ergibt es durch die Multiplikation der Rechteckspa
     \includegraphics[height=5cm]{picture/3.JPG}
     \caption{$\phi = 120$}
   \end{subfigure}
-  \caption{Fourierreihe für 60 und 120 grad Phasendifferenz}
+  \caption{Fourierreihe für $60^{\circ}$ und $120^{\circ}$ Phasendifferenz}
   \label{fig:graph1}
 \end{figure}
 \begin{figure}
@@ -107,7 +107,7 @@ Für die verschiedenen Phasen ergibt es durch die Multiplikation der Rechteckspa
     \includegraphics[height=5cm]{picture/3.JPG}
     \caption{$\phi = 240$}
   \end{subfigure}
-  \caption{Fourierreihe für 180 und 240 grad Phasendifferenz}
+  \caption{Fourierreihe für $180^{\circ}$ und $240^\circ$ Phasendifferenz}
   \label{fig:graph2}
 \end{figure}
 
@@ -118,16 +118,56 @@ Aufgabe dieses Versuches ist die Signalstärke in Abhängigkeit des Abstandes zu
   U_{offset}= \frac{-1}{1000} \, Volt
   \label{Uoffset}
 \end{equation}
-Die gemessenen Spannungen, deren Verstärkung und der Abstand sind in Tabelle ?? Aufgelistet. Dabei werden die gemessene Werte mit ihrer Verstärkung multipliziert und  die Offsetspannung von den Werten abgezogen.
+Die gemessenen Spannungen, deren Verstärkung und der Abstand $r$ sind in Tabelle \ref{tab:Signalabstandsrelation} aufgelistet. Dabei werden die gemessene Werte mit ihrer Verstärkung multipliziert und  die Offsetspannung von den Werten abgezogen.
 \begin{equation}
   U_{\text{ber}} = \frac{U_{\text{out}}}{Gain} - \frac{U_{0}}{1000}
   \label{Uber}
 \end{equation}
 
+\begin{table}
+  \centering
+  \begin{tabular}{c c}
+    \toprule
+    $r$ / m & Signal / ($10^{-4}$ \cdot V) \\
+    \midrule
+    0.2  & 60.76	\\
+    0.25 & 49.75	\\
+    0.3  & 42.24	\\
+    0.35 & 36.80	\\
+    0.4  & 32.65	\\
+    0.5  & 26.73	\\
+    0.6  & 22.70	\\
+    0.7  & 19.77	\\
+    0.8  & 17.54	\\
+    0.9  & 15.78	\\
+    1.0  & 14.36	\\
+    1.1  & 13.19	\\
+    1.2  & 12.20	\\
+    1.3  & 11.35	\\
+    1.4  & 10.62	\\
+    1.5  & 9.99		\\
+    1.6  & 9.42		\\
+    1.7  & 8.93		\\
+    1.8  & 8.48		\\
+    \bottomrule
+  \end{tabular}
+  \caption{Signalabstandsrelation}
+  \label{tab:LED}
+\end{table}
+Mit Hilfe einer Fitfunktion wird eine Ausgleichsrechnung der Einzelnen Messpunkten durchgeführt. Die Koeffizienten der Ausgleichsgraden 
+\begin{equation}
+  y = \alpha x + \beta
+\end{equation}
+sind, 
+\begin{eqnarray}
+  \alpha = \num{-0.90 +- 0.07} \\
+  \beta = \num{-6.55 +- 0.05}
+  \label{eqn:Koef}
+\end{eqnarray}
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{Abstand.pdf}
-  \caption{Abstandsspannungsrelation} 
+  \caption{Signalabstandsrelation} 
   \label{fig:rU}
 \end{figure}
 

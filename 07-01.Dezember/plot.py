@@ -47,7 +47,6 @@ U_3 = [4,5.5,2,2,2,1,1,6.5,5.0,4.0,3.0,2.5,2,3,2.5,2,5.5,5.0,4.5]
 gain_3 = [500, 1000, 500, 1000, 1000, 1000, 2000, 10000, 10000, 10000, 10000, 10000, 10000, 20000, 20000, 20000, 50000, 50000, 50000]
 U_null = -1/1000 
 for x in range(19):
-    r[x] *= 100
     U_3[x] /= gain_3[x]
     U_3[x] -= U_null
 def f(x, a, b):
@@ -65,5 +64,5 @@ plt.savefig('build/Abstand.pdf')
 plt.close()
 errors = np.sqrt(np.diag(covariance))
 print('Steigung der Ausgleichsgrade', params[0], '±', errors[0], 'y-achsen Abschnitt ', params[1], '±', errors[1])
-
+print("U_ber = ", U_ber)
 print("---------------------------------------------------------------")
