@@ -20,7 +20,7 @@ Nach Formel ?? werden die theoretischen und praktischen Spannungswerte ausgerech
   \centering
   \begin{tabular}{c c c}
     \toprule
-    $\phi$ & $U_{\text{theoretisch}} / 10^{-3} \cdot $ V & $U_{\text{praktisch}} / 10^{-3} \cdot $ V \\
+    $\phi$ & $U_{\text{theoretisch}}$ / $10^{-3} \cdot $ V & $U_{\text{praktisch}}$ / $10^{-3} \cdot $ V \\
     \midrule
     0	  &  33.1  &  32.5	\\
     30	&  28.6  &  27.5	\\
@@ -52,20 +52,20 @@ Für diesen Versuchsteil wird der Noisgenerator eingeschaltet. Dieser mischt St�
     \centering
     \begin{tabular}{c c c}
     	\toprule
-    	$\phi$ & $U_{\text{theoretisch}} / 10^{-3} \cdot $ V & $U_{\text{praktisch}} / 10^{-3} \cdot $ V \\
+    	$\phi$ & $U_{\text{theoretisch}}$ / $10^{-3} \cdot $ V & $U_{\text{praktisch}}$ / $10^{-3} \cdot $ V \\
     	\midrule
     	0   &  33.1  &  32.5        \\
     	30  &  28.6  &  27.5        \\
-   	60  &  16.5  &  10.0       \\
+   	  60  &  16.5  &  10.0       \\
     	90  &  0.0   &   0.0        \\
-    	120 & -16.5  & -17.5        \\ 
+    	120 & -16.5  & -17.5        \\
     	150 & -28.6  & -30.0        \\
     	180 & -33.1  & -35.0        \\
     	210 & -28.6  & -30.0        \\
     	240 & -16.5  & -15.0        \\
     	270 &  0.0   &  2.5         \\
     	300 &  16.5  &  17.5        \\
-  	330 &  28.6  &  30.0        \\
+  	  330 &  28.6  &  30.0        \\
     	\end{tabular}
     \caption{$U_{\text{out}}$ bei verschiedenen Phasen.}
     \label{tab:Uphase2}
@@ -85,12 +85,12 @@ Für die verschiedenen Phasen ergibt es durch die Multiplikation der Rechteckspa
   \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[height=5cm]{picture/2.JPG}
-    \caption{$\phi = 60$}
+    \caption{$\phi = 60^{\circ}$}
   \end{subfigure}
   \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[height=5cm]{picture/3.JPG}
-    \caption{$\phi = 120$}
+    \caption{$\phi = 120^{\circ}$}
   \end{subfigure}
   \caption{Fourierreihe für $60^{\circ}$ und $120^{\circ}$ Phasendifferenz}
   \label{fig:graph1}
@@ -100,12 +100,12 @@ Für die verschiedenen Phasen ergibt es durch die Multiplikation der Rechteckspa
   \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[height=5cm]{picture/4.JPG}
-    \caption{$\phi = 180$}
+    \caption{$\phi = 180^{\circ}$}
   \end{subfigure}
   \begin{subfigure}{0.48\textwidth}
     \centering
     \includegraphics[height=5cm]{picture/3.JPG}
-    \caption{$\phi = 240$}
+    \caption{$\phi = 240^{\circ}$}
   \end{subfigure}
   \caption{Fourierreihe für $180^{\circ}$ und $240^\circ$ Phasendifferenz}
   \label{fig:graph2}
@@ -113,22 +113,22 @@ Für die verschiedenen Phasen ergibt es durch die Multiplikation der Rechteckspa
 
 
 \subsection{Signal-Abstandsrealtion einer LED}
-Aufgabe dieses Versuches ist die Signalstärke in Abhängigkeit des Abstandes zu messen. Der Lock-In-Verstärker dient dazu das durch die Umgebung verrauschte Signal zu filtern. Die LED wird mittels einer Rechteckspannung von 300 Hz betrieben. Durch justieren der Phasendifferenz soll die Spannung maximiert werden.Durch eine offset Messung, soll die Spannung der Photodiode vernachlässigt werden. Sie beträgt 
+Aufgabe dieses Versuches ist die Signalstärke in Abhängigkeit des Abstandes zu messen. Der Lock-In-Verstärker dient dazu das durch die Umgebung verrauschte Signal zu filtern. Die LED wird mittels einer Rechteckspannung von 300 Hz betrieben. Durch justieren der Phasendifferenz soll die Spannung maximiert werden. Durch eine offset Messung, soll die Spannung der Photodiode vernachlässigt werden. Sie beträgt
 \begin{equation}
-  U_{offset}= \frac{-1}{1000} \, Volt
-  \label{Uoffset}
+  U_{offset}= \frac{-1}{1000} \, \text{V}
+  \label{eqn:Uoffset}
 \end{equation}
-Die gemessenen Spannungen, deren Verstärkung und der Abstand $r$ sind in Tabelle \ref{tab:Signalabstandsrelation} aufgelistet. Dabei werden die gemessene Werte mit ihrer Verstärkung multipliziert und  die Offsetspannung von den Werten abgezogen.
+Die gemessenen Spannungen, deren Verstärkung und der Abstand $r$ sind in Tabelle \ref{tab:LED} aufgelistet. Dabei werden die gemessene Werte mit ihrer Verstärkung multipliziert und  die Offsetspannung von den Werten abgezogen.
 \begin{equation}
   U_{\text{ber}} = \frac{U_{\text{out}}}{Gain} - \frac{U_{0}}{1000}
-  \label{Uber}
+  \label{eqn:Uber}
 \end{equation}
 
 \begin{table}
   \centering
   \begin{tabular}{c c}
     \toprule
-    $r$ / m & Signal / ($10^{-4}$ \cdot V) \\
+    $r$ / m & $U_\text(sig)$ / $10^{-4}$ \cdot V \\
     \midrule
     0.2  & 60.76	\\
     0.25 & 49.75	\\
@@ -154,11 +154,11 @@ Die gemessenen Spannungen, deren Verstärkung und der Abstand $r$ sind in Tabell
   \caption{Signalabstandsrelation}
   \label{tab:LED}
 \end{table}
-Mit Hilfe einer Fitfunktion wird eine Ausgleichsrechnung der Einzelnen Messpunkten durchgeführt. Die Koeffizienten der Ausgleichsgraden 
+Mit Hilfe einer Fitfunktion wird eine Ausgleichsrechnung der Einzelnen Messpunkten durchgeführt. Die Koeffizienten der Ausgleichsgraden
 \begin{equation}
   y = \alpha x + \beta
 \end{equation}
-sind, 
+sind,
 \begin{eqnarray}
   \alpha = \num{-0.90 +- 0.07} \\
   \beta = \num{-6.55 +- 0.05}
@@ -167,7 +167,6 @@ sind,
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{Abstand.pdf}
-  \caption{Signalabstandsrelation} 
+  \caption{Signalabstandsrelation}
   \label{fig:rU}
 \end{figure}
-

@@ -386,6 +386,15 @@ INPUT C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman7-regular.
 INPUT C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc
 INPUT Spannungsverlauf.pdf
 INPUT Spannungsverlauf2.pdf
+INPUT picture/2.JPG
+INPUT picture/3.JPG
+INPUT picture/4.JPG
+INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT Abstand.pdf
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT build/main.aux
