@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.11.18)  27 NOV 2015 11:43
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.11.18)  10 DEC 2015 19:53
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -278,7 +278,7 @@ Lua-only attribute luaotfload@cursbase = 6
 Lua-only attribute luaotfload@curscurs = 7
 Lua-only attribute luaotfload@cursdone = 8
 Lua-only attribute luaotfload@state = 9
-luaotfload | main : fontloader loaded in 0.031 seconds
+luaotfload | main : fontloader loaded in 0.016 seconds
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
@@ -2134,37 +2134,60 @@ luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [3]) (./content/durchfuehrung.tex) (./content/auswertung.tex <ThermoW.pdf, id=59, 417.7206pt x 258.00488pt>
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [3]) (./content/durchfuehrung.tex [4]) (./content/auswertung.tex <ThermoW.pdf, id=83, 417.7206pt x 258.00488pt>
 File: ThermoW.pdf Graphic file (type pdf)
  <use ThermoW.pdf>
-Package pdftex.def Info: ThermoW.pdf used on input line 6.
+Package pdftex.def Info: ThermoW.pdf used on input line 55.
 (pdftex.def)             Requested size: 418.25555pt x 258.33493pt.
- <ThermoM.pdf, id=60, 417.7206pt x 258.00488pt>
+ [5] <ThermoM.pdf, id=94, 417.7206pt x 258.00488pt>
 File: ThermoM.pdf Graphic file (type pdf)
  <use ThermoM.pdf>
-Package pdftex.def Info: ThermoM.pdf used on input line 12.
+Package pdftex.def Info: ThermoM.pdf used on input line 62.
 (pdftex.def)             Requested size: 418.25555pt x 258.33493pt.
- <ThermoS.pdf, id=61, 417.7206pt x 258.00488pt>
+ <ThermoS.pdf, id=95, 417.7206pt x 258.00488pt>
 File: ThermoS.pdf Graphic file (type pdf)
  <use ThermoS.pdf>
-Package pdftex.def Info: ThermoS.pdf used on input line 18.
+Package pdftex.def Info: ThermoS.pdf used on input line 69.
 (pdftex.def)             Requested size: 418.25555pt x 258.33493pt.
- <ThermoG.pdf, id=62, 417.7206pt x 258.00488pt>
+ [6<build/ThermoW.pdf><build/ThermoM.pdf>] <ThermoG.pdf, id=168, 417.7206pt x 258.00488pt>
 File: ThermoG.pdf Graphic file (type pdf)
  <use ThermoG.pdf>
-Package pdftex.def Info: ThermoG.pdf used on input line 24.
+Package pdftex.def Info: ThermoG.pdf used on input line 76.
 (pdftex.def)             Requested size: 418.25555pt x 258.33493pt.
-) (./content/diskussion.tex [4] [5<build/ThermoW.pdf><build/ThermoM.pdf>] [6<build/ThermoS.pdf><build/ThermoG.pdf>])
+ [7<build/ThermoS.pdf><build/ThermoG.pdf>] [8]
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 7.01247pt on input line 119.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 4.9808pt on input line 119.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 7.01224pt on input line 119.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 4.98067pt on input line 119.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" <ThermoAbstand.pdf, id=249, 417.7206pt x 258.00488pt>
+File: ThermoAbstand.pdf Graphic file (type pdf)
+ <use ThermoAbstand.pdf>
+Package pdftex.def Info: ThermoAbstand.pdf used on input line 125.
+(pdftex.def)             Requested size: 418.25555pt x 258.33493pt.
+ [9<build/ThermoAbstand.pdf>]) (./content/diskussion.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [7]
+ [10]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: E5087D0CABF7C68D9AB5185C220ECE2A;7596.
+(rerunfilecheck)             Checksum: DCD9007DA3D6EC44A4173E60E3231BF2;11242.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 1C4ABD784972B9D419FDF45117E83BBC;1098.
+(rerunfilecheck)             Checksum: F3D67DCF34F790BCCDB282166AF035D6;1395.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -2172,19 +2195,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43919 strings out of 494897
+ 44009 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 580 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 12 kern, 16 attribute, 68 glue_spec, 16 attribute_list, 1 write nodes
-   avail lists: 1:2,2:6741,3:139,4:662,5:194,6:2173,7:38,8:16,9:218,10:282,11:1
- 46298 multiletter control sequences out of 65536+600000
- 105 fonts using 22411627 bytes
- 69i,8n,104p,1248b,2073s stack positions out of 5000i,500n,10000p,200000b,100000s
-<c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (7 pages, 94928 bytes).
+ 617 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 13 kern, 18 attribute, 68 glue_spec, 18 attribute_list, 1 write nodes
+   avail lists: 1:2,2:6206,3:154,4:992,5:199,6:2031,7:54,8:17,9:220,10:261,11:1
+ 46357 multiletter control sequences out of 65536+600000
+ 125 fonts using 27889163 bytes
+ 69i,14n,104p,1248b,2071s stack positions out of 5000i,500n,10000p,200000b,100000s
+<c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (10 pages, 119321 bytes).
 
-PDF statistics: 318 PDF objects out of 1000 (max. 8388607)
- 227 compressed objects within 3 object streams
- 35 named destinations out of 1000 (max. 131072)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 413 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 131072)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

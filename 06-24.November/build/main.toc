@@ -9,6 +9,9 @@
 \contentsline {section}{\numberline {2}Durchführung und Aufbau}{4}{section.2}
 \contentsline {subsection}{\numberline {2.1}Strahlungsleistung als Funktion der Temperatur}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Strahlungsleistung als Funktion des Abstandes}{4}{subsection.2.2}
-\contentsline {section}{\numberline {3}Auswertung}{4}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{7}{section.4}
-\contentsline {section}{\nonumberline Literatur}{7}{section*.6}
+\contentsline {subsection}{\numberline {2.3}Thermosäule nach Moll}{4}{subsection.2.3}
+\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Bestimmung des Emissionsvermögens}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Thermospannunng im Verhältniss zum Abstand}{9}{subsection.3.2}
+\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
+\contentsline {section}{\nonumberline Literatur}{10}{section*.10}
