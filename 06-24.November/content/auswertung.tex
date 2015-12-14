@@ -96,7 +96,6 @@ Mit der Annahme, dass die schwarze Oberfläche ein Schwarzer Körper ist($\epsil
   \epsilon_\text{glänzend} \, &= (\num{0.061 +- 0.004}) \\
 \end{align*}
 
-\newpage
 \subsection{Thermospannunng im Verhältniss zum Abstand}
 Die Thermospannung der weißen Oberfläche gegen $\frac{1}{A^2}$ aufgetragen ergibt Abbildung \ref{fig:Abstand}. Die dazu gehörigen Messwerte sind in Tabelle \ref{tab:Abstand} aufgelistet.
 \begin{table}[H]
@@ -120,11 +119,18 @@ Die Thermospannung der weißen Oberfläche gegen $\frac{1}{A^2}$ aufgetragen erg
   \label{tab:Abstand}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{ThermoAbstand.pdf}
   \caption{Graph für das Verhältnis zwischen Thermospannung und $\frac{1}{A^2}$}
   \label{fig:Abstand}
 \end{figure}
-
-\newpage
+In Abbildung \ref{tab:Abstand} wird deutlich, dass die Ausgleichskurve folgender Funktion entspricht:
+\begin{equation}
+  y = \frac{a}{x^2} + b \ .
+\end{equation}
+Die Parameter $a$ und $b$ der Funktion werden mit Python 3.4.3 berechnet.
+\begin{align}
+  a &= (\num{-1.09 +- 0.05}) \cdot 10^{-3} \, \frac{\text{V}}{\text{m}^2} \\
+  b &= (\num{2.41 +- 0.04}) \cdot 10^{-4} \, \text{V}
+\end{align}
