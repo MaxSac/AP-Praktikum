@@ -95,9 +95,9 @@ Mit der Annahme, dass die schwarze Oberfläche ein Schwarzer Körper ist($\epsil
   \epsilon_\text{messing}  \, &= (\num{0.167 +- 0.004}) \\
   \epsilon_\text{glänzend} \, &= (\num{0.061 +- 0.004}) \\
 \end{align*}
-Die Fehlerformel von $\varepsilon_\text{i}$ folgt mit Formel \ref{eqn:var} zu:
+Die Fehlerformel von $\epsilon_\text{i}$ folgt mit Formel \ref{eqn:var} zu:
 \begin{equation}
-  \Delta \varepsilon_\text{i} = \frac{\Delta m_\text{i}}{m_\text{schwarz}} \ .
+  \Delta \epsilon_\text{i} = \sqrt{\left(\frac{\partial \epsilon_\text{i}}{\partial m_\text{i}} \right)^2 \cdot (\Delta m_\text{i})^2 + \left(\frac{\partial \epsilon_\text{i}}{\partial m_\text{schwarz}} \right)^2 \cdot (\Delta m_\text{schwarz})^2} \ .
 \end{equation}
 
 \subsection{Thermospannunng im Verhältnis zum Abstand}
@@ -107,7 +107,7 @@ Die Thermospannung der weißen Oberfläche gegen $\frac{1}{A^2}$ aufgetragen erg
   \begin{tabular}{c c c}
       A / m & $\frac{1}{A^2}$ / $\frac{1}{\text{m}^2}$ & $U_\text{weiß}$ / mV \\
     \midrule
-      0.100  & 100.0 & 0.247 \\
+      0.100 & 100.0  & 0.247 \\
       0.125	& 64.0   & 0.238 \\
       0.150	& 44.4   & 0.228 \\
       0.175	& 32.7   & 0.217 \\
