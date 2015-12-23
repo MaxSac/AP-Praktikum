@@ -9,9 +9,9 @@ Mit Hilfe der Wheatston'schen Brückeschaltung werden zwei unbekannte Wiederstä
     \toprule
     $R_2$ / $\Omega$ & $R_3$ / $\Omega$ & $R_4$ / $\Omega$ & $R_{13}$ / $\Omega$ & $\overline{R_{13}}$ / $\Omega$ \\
     \midrule
-    332 & 735 & 265 & \num{322.8 +- 1.6} &  \\
-    500 & 648 & 352 & \num{321.0 +- 1.6} &  \num{326.6 +- 0.9}\\
-    664 & 582 & 418 & \num{336.0 +- 1.7} &  \\
+    332 & 735 & 265 & \num{322.8 +- 1.7} &  \\
+    500 & 648 & 352 & \num{321.0 +- 1.7} &  \num{326.6 +- 1.0}\\
+    664 & 582 & 418 & \num{336.0 +- 1.8} &  \\
   \end{tabular}
   \caption{Werte für die Bestimmung von $R_{13}$.}
   \label{tab:Wheat1}
@@ -23,24 +23,24 @@ Mit Hilfe der Wheatston'schen Brückeschaltung werden zwei unbekannte Wiederstä
     \toprule
     $R_2$ / $\Omega$ & $R_3$ / $\Omega$ & $R_4$ / $\Omega$ & $R_{14}$ / $\Omega$ & $\overline{R_{14}}$ / $\Omega$ \\
     \midrule
-    332 & 493 & 507 & \num{920.8 +- 4.6} &  \\
-    500 & 391 & 609 & \num{920.5 +- 4.6} &  \num{921.9 +- 2.7}\\
-    664 & 336 & 664 & \num{924.5 +- 4.6} &  \\
+    332 & 493 & 507 & \num{920.8 +- 5.0} &  \\
+    500 & 391 & 609 & \num{920.5 +- 5.0} &  \num{921.9 +- 2.9}\\
+    664 & 336 & 664 & \num{924.5 +- 5.0} &  \\
   \end{tabular}
   \caption{Werte für die Bestimmung von $R_{14}$.}
   \label{tab:Wheat2}
 \end{table}
 
 \subsection{Kapazitätsmessbrücke}
-Mit Hilfe der Kapazitätsmessbrücke werden drei unbekannte Kapazitäten $C_2$ = Wert2, $C_3$ = Wert3 und $C_8$ = Wert8 bestimmt. Dies geschieht mit Formel ??, die Werte und Ergebnisse sind in den Tabellen \ref{tab:Kapa1} bis \ref{tab:Kapa3} aufgeführt. $\overline{C_\text{2,3,8}}$ entspricht hierbei den gemittelten Werten für die gesuchten Kapazitäten.
+Mit Hilfe der Kapazitätsmessbrücke werden zwei unbekannte verlustfreie Kapazitäten \\ $C_2$ = Wert2 und $C_3$ = Wert3 und eine verlustbehaftete Kapazität $C_8$ = Wert8 bestimmt. Dies geschieht mit Formel ?? für $C_2$, $C_3$ und mit den Formeln ??, ?? für $C_8$ und $R_8$. Die Messwerte und Ergebnisse sind in den Tabellen \ref{tab:Kapa1} bis \ref{tab:Kapa3} aufgeführt. $\overline{C_\text{2,3,8}}$ entspricht hierbei den gemittelten Werten für die gesuchten Kapazitäten.
 \begin{table}[H]
   \centering
   \begin{tabular}{c c c c c}
     \toprule
-    $C_2$ / nF & $R_3$ / $\Omega$ & $R_4$ / $\Omega$ & $C_2$ / 10$^{-6}$ \cdot F & $\overline{C_2}$ / 10$^{-6}$ \cdot F \\
+    $C_2$ / nF & $R_3$ / $\Omega$ & $R_4$ / $\Omega$ & $C_2$ / $\mu$F & $\overline{C_2}$ / $\mu$F \\
     \midrule
-    597 & 285 & 715 & \num{1.498 +- 0.007} &  \\
-    750 & 329 & 671 & \num{1.530 +- 0.008} &  \num{1.517 +- 0.004}  \\
+    597 & 285 & 715 & \num{1.498 +- 0.008} &  \\
+    750 & 329 & 671 & \num{1.530 +- 0.008} &  \num{1.517 +- 0.005}  \\
     994 & 395 & 605 & \num{1.522 +- 0.008} &  \\
   \end{tabular}
   \caption{Werte für die Bestimmung von $C_2$.}
@@ -51,17 +51,65 @@ Mit Hilfe der Kapazitätsmessbrücke werden drei unbekannte Kapazitäten $C_2$ =
   \centering
   \begin{tabular}{c c c c c}
     \toprule
-    $C_2$ / nF & $R_3$ / $\Omega$ & $R_4$ / $\Omega$ & $C_3$ / 10$^{-6}$ \cdot F & $\overline{C_3}$ / 10$^{-6}$ \cdot F \\
+    $C_2$ / nF & $R_3$ / $\Omega$ & $R_4$ / $\Omega$ & $C_3$ / $\mu$F & $\overline{C_3}$ / $\mu$F \\
     \midrule
-    597 & 593 & 607 & \num{4.091 +- 0.020} &  \\
-    750 & 639 & 361 & \num{4.237 +- 0.021} &  \num{4.165 +- 0.012}  \\
-    994 & 705 & 295 & \num{4.159 +- 0.021} &  \\
+    597 & 593 & 607 & \num{40.97 +- 0.22} &  \\
+    750 & 639 & 361 & \num{42.37 +- 0.23} &  \num{41.65 +- 0.13}  \\
+    994 & 705 & 295 & \num{41.59 +- 0.22} &  \\
   \end{tabular}
   \caption{Werte für die Bestimmung von $C_3$.}
   \label{tab:Kapa2}
 \end{table}
 
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c c c c c c c c}
+    \toprule
+    $C_2$ / nF & $R_2$ / $\Omega$ & $R_3$ / $\Omega$ & $R_4$ / $\Omega$ & $C_8$ / $\mu$F & $R_8$ / $\Omega$ & $\overline{C_8}$ / $\mu$F & $\overline{R_8}$ / $\Omega$ \\
+    \midrule
+    597 & 304 & 671 & 329 & \num{29.27 +- 0.16} & \num{149.1 +- 4.5} & & \\
+    750 & 228 & 722 & 278 & \num{28.88 +- 0.16} & \num{87.8 +- 2.7} & \num{29.11 +- 0.09} & \num{96.5 +- 1.8} \\
+    994 & 179 & 773 & 227 & \num{29.19 +- 0.16} & \num{52.6 +- 1.6} & & \\
+  \end{tabular}
+  \caption{Werte für die Bestimmung von $C_8$ und $R_8$.}
+  \label{tab:Kapa3}
+\end{table}
 
+\subsection{Induktivitätsmessbrücke}
+Mit Hilfe der Induktivitätsmessbrücke wird die Induktivität $L_{19}$ = Wert19 einer unbekannten Spule bestimmt. Dies geschieht mit Formel ??. Die Messwerte und Ergebnisse sind in der Tabelle \ref{tab:Induk1} aufgeführt.
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c c c c c c c c}
+    \toprule
+    $L_2$ / mH & $R_2$ / $\Omega$ & $R_3$ / $\Omega$ & $R_4$ / $\Omega$ & $L_{19}$ / mH & $R_{19}$ / $\Omega$ & $\overline{L_{19}}$ / mH & $\overline{R_{19}}$ / $\Omega$ \\
+    \midrule
+    14.6 & 286 & 281 & 719 & \num{5.706 +- 0.029} & \num{111.8 +- 0.6} & & \\
+    20.1 & 287 & 287 & 713 & \num{8.090 +- 0.040} & \num{115.5 +- 0.6} & \num{6.898 +- 0.025} & \num{113.6 +- 0.4} \\
+  \end{tabular}
+  \caption{Werte für die Bestimmung von $L_{19}$ und $R_{19}$.}
+  \label{tab:Induk1}
+\end{table}
+
+\subsection{Maxwell-Brücke}
+Mit Hilfe der Maxwell-Brücke soll die gleiche Spule untersucht werden welche auch für die Induktivitätsmessbrücke verwendet wurde. Dadurch erhält man einen referenz Wert und kann die beiden Ergebnisse vergleichen. Die verwendete Kapazität $C_4$ = 750 nF bleibt für die gesamte Messung unverändert. Durch einsetzen in die Formeln ??, ?? erhält man $L_{19}$ und $R_{19}$. Die Messwerte und Ergebnisse sind in Tabelle \ref{tab:Induk2} aufgelistet.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c c c c c c c}
+    \toprule
+    $R_2$ / $\Omega$ & $R_3$ / $\Omega$ & $R_4$ / $\Omega$ & $L_{19}$ / mH & $R_{19}$ / $\Omega$ & $\overline{L_{19}}$ / mH & $\overline{R_{19}}$ / $\Omega$ \\
+    \midrule
+    332 & 215 & 655 & \num{53.5 +- 1.6} & \num{109.0 +- 4.6} & & \\
+    664 & 95 & 538 & \num{47.3 +- 1.4} & \num{117.2 +- 5.0} & \num{57.6 +- 1.0} & \num{115.6 +- 2.8} \\
+    1000 & 96 & 796 & \num{72.0 +- 2.2} & \num{120.6 +- 5.1} & & \\
+  \end{tabular}
+  \caption{Werte für die Bestimmung von $L_{19}$ und $R_{19}$.}
+  \label{tab:Induk2}
+\end{table}
+
+\subsection{TT-Brücke}
+
+$f_{0,\text{theo}}$ = (\num{382.1 +- 1.2}) Hz
 
 \begin{table}[H]
   \centering
@@ -69,35 +117,35 @@ Mit Hilfe der Kapazitätsmessbrücke werden drei unbekannte Kapazitäten $C_2$ =
     \toprule
     f / Hz & $U_\text{br}$ / V \\
     \midrule
-      20	  &  2.28  \\
-      70	  &  1.88  \\
-      180	  &  0.89  \\
-      200	  &  0.76  \\
-      220	  &  0.64  \\
-      240	  &  0.54  \\
-      260	  &  0.44  \\
-      280	  &  0.35  \\
-      300	  &  0.28  \\
-      320	  &  0.20  \\
-      340	  &  0.13  \\
-      360	  &  0.07  \\
-      380	  &  0.01  \\
-      400	  &  0.11  \\
-      420	  &  0.12  \\
-      440	  &  0.17  \\
-      460	  &  0.22  \\
-      480	  &  0.26  \\
-      500	  &  0.31  \\
-      520	  &  0.35  \\
-      540	  &  0.39  \\
-      560	  &  0.44  \\
-      580	  &  0.48  \\
-      700	  &  0.69  \\
-      1000	&  1.07  \\
-      2000	&  1.63  \\
-      7000	&  1.95  \\
-      15000	&  1.96  \\
-      30000	&  1.96  \\
+      20	  &  4.56  \\
+      70	  &  3.76  \\
+      180	  &  1.78  \\
+      200	  &  1.51  \\
+      220	  &  1.28  \\
+      240	  &  1.07  \\
+      260	  &  0.88  \\
+      280	  &  0.70  \\
+      300	  &  0.56  \\
+      320	  &  0.40  \\
+      340	  &  0.26  \\
+      360	  &  0.14  \\
+      380	  &  0.02  \\
+      400	  &  0.21  \\
+      420	  &  0.23  \\
+      440	  &  0.33  \\
+      460	  &  0.43  \\
+      480	  &  0.52  \\
+      500	  &  0.61  \\
+      520	  &  0.70  \\
+      540	  &  0.78  \\
+      560	  &  0.87  \\
+      580	  &  0.96  \\
+      700	  &  1.37  \\
+      1000	&  2.14  \\
+      2000	&  3.26  \\
+      7000	&  3.90  \\
+      15000	&  3.92  \\
+      30000	&  3.92  \\
   \end{tabular}
   \caption{Brückenspannung gegen die Frequenz aufgetragen.}
   \label{tab:Brückenspannung}
@@ -109,3 +157,4 @@ Mit Hilfe der Kapazitätsmessbrücke werden drei unbekannte Kapazitäten $C_2$ =
   \caption{Brückenschaltung}
   \label{fig:AufgabeE}
 \end{figure}
+Der experimentelle und der theoretische Wert liegen im Durchschnitt um 5,5\% auseinander.
