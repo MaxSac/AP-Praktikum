@@ -101,13 +101,42 @@ sowie für den fiktiven Wiederstand
 \end{equation}
 
 \subsection{TT-Brücke}
-
+Mittels einer TT-Brücke soll die Funktion des elektrischen Filters genauer bestimmt werden. Dafür wird die Schaltung Abbildung \ref{fig:TT} entsprechend aufgebaut.
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{picture/7.png}
   \caption{Messung der Induktivität durch eine TT-Brücke}
   \label{fig:TT}
 \end{figure}
+Das Spannungverhältniss $U_\text{Br}$ zu $U_\text{S}$ zu berechnen werden die Ströme an den Knoten 1, 2 und 3 betrachtet. Für den ersten Knoten ergibt sich nach der Kirchhoffschen Knotenregel
+\begin{equation}
+  \frac{U_1 - U_\text{S}}{R} + \frac{U_1 - U_\text{Br}}{R} = 2 j \omega C U_1 \ .
+  \label{eqn:M1}
+\end{equation}
+Mit Hilfe der Ströme an dem zweiten 
+\begin{equation}
+  \left( U_\text{S} - U_2 \right) j \omega C + \left( U_\text{Br} - U_2 \right)j \omega C = \frac{2}{R} U_2
+  \label{eqn:M2}
+\end{equation}
+und dritten Knoten
+\begin{equation}
+  \left( U_2 - U_\text{Br} \right)j \omega C + \frac{U_q - U_\text{Br}}{R} = 0
+  \label{eqn:M3}
+\end{equation}
+lässt sich durch Auflösen der Gleichungen \ref{eqn:M1}, \ref{eqn:M2} nach $U_1$ und $U_2$ und deren Ergebnisse in \ref{eqn:M3} eingesetzt, die Brückenspannung ermitteln.
+\begin{equation}
+  U_\text{Br} = U_\text{S} \frac{1 - \omega^2 R^2 C^2}{1 - \omega^2 R^2 C^2 + 4 j \omega R C}
+  \label{eqn:Ubr}
+\end{equation}
+Als Spannungsverhältniss erhält man durch umstellen der Gleichung \ref{eqn:Ubr} und der Einführung von 
+\begin{equation*}
+  \Omega = \omega R C
+\end{equation*}
+die Form 
+\begin{equation}
+  \frac{U_\text{Br}}{U_\text{S}} = \frac{1 - \Omega^2}{1 - \Omega^2 + 4 j \Omega} \ .
+  \label{BrS}
+\end{equation}
 
 \subsection{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
