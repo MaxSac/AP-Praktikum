@@ -19,12 +19,12 @@ Die zweite Regel besagt, dass bei einer Geschlossenen Masche sich alle Teilspann
   Maschenregel : \sum_{\text{k=1}}^\text{n} U_\text{k} = 0
   \label{eqn:K2}
 \end{equation}
-Unter Berücksichtigung der Kirchhoffschen Gesetzen ergibt sich für die einfachste Brückschaltung eine Brückenspannung $U_\text{Br}$ von 
+Unter Berücksichtigung der Kirchhoffschen Gesetzen ergibt sich für die einfachste Brückschaltung eine Brückenspannung $U_\text{Br}$ von
 \begin{equation}
-  U_\text{Br} = \frac{R_2 R_3 - R_1 R_4}{(R_3 + R_4)(R_1 + R_2)} 
-  \label{eqn:Ubr} 
+  U_\text{Br} = \frac{R_2 R_3 - R_1 R_4}{(R_3 + R_4)(R_1 + R_2)}
+  \label{eqn:Ubr}
 \end{equation}
-Es wird das Wiederstandverhältnis so gewählt das die Brückenspannung minimal wird. Daraus ergibt sich die Abgleichsbedingung 
+Es wird das Wiederstandverhältnis so gewählt das die Brückenspannung minimal wird. Daraus ergibt sich die Abgleichsbedingung
 \begin{equation}
   R_2 R_3 = R_1 R_4 \ .
   \label{eqn:R}
@@ -32,14 +32,14 @@ Es wird das Wiederstandverhältnis so gewählt das die Brückenspannung minimal 
 Dabei können die Wiederstände auch komplex sein. Dabei kommt es jedoch zu Phasenverschiebungen.
 
 \subsection{Wheatstone Brücke}
-Die Wheatsonte Brücke besteht ausschließlich aus Wiederständen. Sie ist dafür gedacht einen Unbekannten Wiederstand $R_\text{x}$ mittels der oben genannten Abgleichmethode zu bestimmen. Der Schematische Aufbau einer Wheatsone Brücke ist in Abbildung \ref{fig:widerstand} zu sehen. 
+Die Wheatsonte Brücke besteht ausschließlich aus Wiederständen. Sie ist dafür gedacht einen Unbekannten Wiederstand $R_\text{x}$ mittels der oben genannten Abgleichmethode zu bestimmen. Der Schematische Aufbau einer Wheatsone Brücke ist in Abbildung \ref{fig:widerstand} zu sehen.
 \begin{figure}
       \centering
       \includegraphics[height=5cm]{picture/2.png}
       \caption{wesentlicher Aufbau einer Brückenschaltung}
       \label{fig:widerstand}
 \end{figure}
-Durch umstellen der Gleichung \ref{eqn:R} erhält man für die den gesuchten Wiederstand $R_\text{x}$ die Formel, 
+Durch umstellen der Gleichung \ref{eqn:R} erhält man für die den gesuchten Wiederstand $R_\text{x}$ die Formel,
 \begin{equation}
   R_x = R_2 \frac{R_3}{R_4} \ .
   \label{eqn:R_x}
@@ -53,14 +53,14 @@ Mit dieser Messbrücke soll die Kapazität des Kondensators bestimmt werden. Die
   \caption{Messung der Kapazität eines realen Kondensators}
   \label{fig:C}
 \end{figure}
-Mittels der Abgleichbedingung gibt sich analog zu Formel \ref{eqn:R_x} ein Widerstand von 
+Mittels der Abgleichbedingung gibt sich analog zu Formel \ref{eqn:R_x} ein Widerstand von
 \begin{equation*}
     R_x = R_2 \frac{R_3}{R_4} \ ,
 \end{equation*}
 und für den Kondensator unter berücksichtigung der Scheinwiderstände
 \begin{equation}
   C_x = C_2 \frac{R_4}{R_3} \ .
-  \label{C_x}
+  \label{eqn:C_x}
 \end{equation}
 
 \subsection{Induktivitätsmessbrücke}
@@ -78,8 +78,8 @@ Mittels der Abgleichbedingung gibt sich analog zu Formel \ref{eqn:R_x} ein Wider
 \end{equation*}
 und für den Kondensator unter berücksichtigung der Scheinwiderstände
 \begin{equation}
-   L_x = L_2 \frac{R_4}{R_3} \ .
-   \label{C_x}
+   L_x = L_2 \frac{R_3}{R_4} \ .
+   \label{eqn:L_x}
 \end{equation}
 \subsection{Maxwell-Brücke}
 Es soll die Induktivität einer Spule mit Hilfe der Maxwell-Brücke bestimmt werden. Dafür wird anstelle einer Spule, wie im vorherigen Kapitel beschrieben, ein Kondensator verwendet und wie in Abbildung \ref{fig:Max-Br} aufgebaut. Es muss darauf geachtet werden, dass einerseits, die Frequenz hoch genug ist, damit sich der Einschwingvorgang hinreichend schnell einstellt und andererseits die Frequenz niedrig genug ist, damit die Streukapazitäten niedrig genug sind um einen Abgleich zu ermöglichen.
@@ -89,16 +89,15 @@ Es soll die Induktivität einer Spule mit Hilfe der Maxwell-Brücke bestimmt wer
   \caption{Messung der Induktivität durch eine Maxwell-Brücke}
   \label{fig:Max-Br}
 \end{figure}
-Mit Hilfe der Maschenregel ergeben sich die Gleichungen zu Bestimmung der Induktion 
+Mit Hilfe der Maschenregel ergeben sich die Gleichungen zu Bestimmung der Induktion
 \begin{equation}
   L_x = R_2 R_3 C_4
-  \label{eqn:L_x}
+  \label{eqn:L_m}
 \end{equation}
 sowie für den fiktiven Wiederstand
-\begin{equation}
-  R_x = \frac{R_2 R_3}{R_4}
-  \label{eqn:R_M}
-\end{equation}
+\begin{equation*}
+  R_x = R_2 \frac{R_3}{R_4}
+\end{equation*}
 
 \subsection{TT-Brücke}
 Mittels einer TT-Brücke soll die Funktion des elektrischen Filters genauer bestimmt werden. Dafür wird die Schaltung Abbildung \ref{fig:TT} entsprechend aufgebaut.
@@ -113,7 +112,7 @@ Das Spannungverhältniss $U_\text{Br}$ zu $U_\text{S}$ zu berechnen werden die S
   \frac{U_1 - U_\text{S}}{R} + \frac{U_1 - U_\text{Br}}{R} = 2 j \omega C U_1 \ .
   \label{eqn:M1}
 \end{equation}
-Mit Hilfe der Ströme an dem zweiten 
+Mit Hilfe der Ströme an dem zweiten
 \begin{equation}
   \left( U_\text{S} - U_2 \right) j \omega C + \left( U_\text{Br} - U_2 \right)j \omega C = \frac{2}{R} U_2
   \label{eqn:M2}
@@ -128,20 +127,25 @@ lässt sich durch Auflösen der Gleichungen \ref{eqn:M1}, \ref{eqn:M2} nach $U_1
   U_\text{Br} = U_\text{S} \frac{1 - \omega^2 R^2 C^2}{1 - \omega^2 R^2 C^2 + 4 j \omega R C}
   \label{eqn:Ubr}
 \end{equation}
-Als Spannungsverhältniss erhält man durch umstellen der Gleichung \ref{eqn:Ubr} und der Einführung von 
+Als Spannungsverhältniss erhält man durch umstellen der Gleichung \ref{eqn:Ubr} und der Einführung von
 \begin{equation*}
   \Omega = \omega R C
 \end{equation*}
-die Form 
-\begin{equation}
+die Form
+\begin{equation*}
   \frac{U_\text{Br}}{U_\text{S}} = \frac{1 - \Omega^2}{1 - \Omega^2 + 4 j \Omega} \ .
-  \label{BrS}
+\end{equation*}
+Hieraus erhält man durch Multiplikation mit dem konjugiert komplexen Wert
+des Nenners den Ausdruck:
+\begin{equation}
+  \left| \frac{U_\text{Br}}{U_\text{S}} \right|^2 = \frac{(1 - \Omega^2)^2}{(1 - \Omega^2)^2 + 16 \cdot \Omega^2} \ .
+  \label{eqn:BrS}
 \end{equation}
 
 \subsection{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
 \subsubsection{Mittelwert}
-Der Mittelwert einer Messreihe $x_\text{1}, ... ,x_\text{n}$ lässt sich durch die Formel
+Der Mittelwert einer Messreihe $x_1, ... ,x_\text{n}$ lässt sich durch die Formel
 \begin{equation}
 	\overline{x} = \frac{1}{N} \sum_{\text{k}=1}^\text{N} x_k
 	\label{eqn:ave}
@@ -153,7 +157,7 @@ berechnen. Die Standardabweichung des Mittelwertes beträgt
 \end{equation}
 
 \subsubsection{Gauß'sche Fehlerfortpflanzung}
-Wenn $x_\text{1}, ..., x_\text{n}$ fehlerbehaftete Messgrößen im weiteren Verlauf benutzt werden, wird der neue Fehler $\Delta f$ mit Hilfe der Gaußschen Fehlerfortpflanzung angegeben.
+Wenn $x_1, ..., x_\text{n}$ fehlerbehaftete Messgrößen im weiteren Verlauf benutzt werden, wird der neue Fehler $\Delta f$ mit Hilfe der Gaußschen Fehlerfortpflanzung angegeben.
 \begin{equation}
 	\Delta f = \sqrt{\sum_{\text{k}=1}^\text{N} \left( \frac{ \partial f}{\partial x_\text{k}} \right) ^2 \cdot (\Delta x_\text{k})^2}
 	\label{eqn:var}
