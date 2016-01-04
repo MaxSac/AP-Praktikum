@@ -26,3 +26,4 @@
 \contentsline {subsection}{\numberline {3.4}Maxwell-Brücke}{11}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}TT-Brücke}{12}{subsection.3.5}
 \contentsline {section}{\numberline {4}Diskussion}{14}{section.4}
+\contentsline {section}{\nonumberline Literatur}{14}{section*.17}
