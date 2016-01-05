@@ -2,8 +2,9 @@
 \label{sec:Auswertung}
 
 \subsection{Wheatston'sche Brückeschaltung}
-Mit Hilfe der Wheatston'schen Brückeschaltung werden zwei unbekannte Wiederstände $R_{13}$ = Wert13 und $R_{14}$ = Wert14 bestimmt. Dies geschieht mit Formel ??, die Werte und Ergebnisse sind in den Tabellen \ref{tab:Wheat1} und \ref{tab:Wheat2} aufgeführt. $\overline{R_\text{13,14}}$ entspricht hierbei den gemittelten Werten für die gesuchten Widerstände.
-\begin{table}[H]
+Mit Hilfe der Wheatston'schen Brückenschaltung werden zwei unbekannte Wiederstände $R_{13}$ = Wert13 und $R_{14}$ = Wert14 bestimmt. Dies geschieht mit Formel \ref{eqn:R_x}, die Werte und Ergebnisse sind in den Tabellen \ref{tab:Wheat1} und \ref{tab:Wheat2} aufgeführt. $\overline{R_\text{13,14}}$ entspricht hierbei den gemittelten Werten für die gesuchten Widerstände. Der Wert $R_2$ hat eine Toleranz von 0.2\% und $\frac{R_3}{R_4}$ hat eine Toleranz von 0.5\%.
+
+\begin{table}[H] %R13
   \centering
   \begin{tabular}{c c c c c}
     \toprule
@@ -17,7 +18,7 @@ Mit Hilfe der Wheatston'schen Brückeschaltung werden zwei unbekannte Wiederstä
   \label{tab:Wheat1}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[H] %R14
   \centering
   \begin{tabular}{c c c c c}
     \toprule
@@ -32,8 +33,10 @@ Mit Hilfe der Wheatston'schen Brückeschaltung werden zwei unbekannte Wiederstä
 \end{table}
 
 \subsection{Kapazitätsmessbrücke}
-Mit Hilfe der Kapazitätsmessbrücke werden zwei unbekannte verlustfreie Kapazitäten \\ $C_2$ = Wert2 und $C_3$ = Wert3 und eine verlustbehaftete Kapazität $C_8$ = Wert8 bestimmt. Dies geschieht mit Formel ?? für $C_2$, $C_3$ und mit den Formeln ??, ?? für $C_8$ und $R_8$. Die Messwerte und Ergebnisse sind in den Tabellen \ref{tab:Kapa1} bis \ref{tab:Kapa3} aufgeführt. $\overline{C_\text{2,3,8}}$ entspricht hierbei den gemittelten Werten für die gesuchten Kapazitäten.
-\begin{table}[H]
+Mit Hilfe der Kapazitätsmessbrücke werden zwei unbekannte verlustfreie Kapazitäten \\ $C_2$ = Wert2 und $C_3$ = Wert3 und eine verlustbehaftete Kapazität $C_8$ = Wert8 bestimmt. Dies geschieht mit Formel \ref{eqn:R_x} für $C_2$, $C_3$ und mit den Formeln \ref{eqn:R_x}, \ref{eqn:C_x} für $C_8$ und $R_8$. Die Messwerte und Ergebnisse sind in den Tabellen \ref{tab:Kapa1} bis \ref{tab:Kapa3} aufgeführt. $\overline{C_\text{2,3,8}}$ entspricht hierbei den gemittelten Werten für die gesuchten Kapazitäten.
+Der Wert $C_2$ hat eine Toleranz von 0.2\% und $\frac{R_3}{R_4}$ hat eine Toleranz von 0.5\%, allerdings hat $R_2$ nun eine Toleranz von 3\%.
+
+\begin{table}[H] %C2
   \centering
   \begin{tabular}{c c c c c}
     \toprule
@@ -47,7 +50,7 @@ Mit Hilfe der Kapazitätsmessbrücke werden zwei unbekannte verlustfreie Kapazit
   \label{tab:Kapa1}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[H] %C3
   \centering
   \begin{tabular}{c c c c c}
     \toprule
@@ -61,7 +64,7 @@ Mit Hilfe der Kapazitätsmessbrücke werden zwei unbekannte verlustfreie Kapazit
   \label{tab:Kapa2}
 \end{table}
 
-\begin{table}[H]
+\begin{table}[H] %C8 R8
   \centering
   \begin{tabular}{c c c c c c c c}
     \toprule
@@ -75,9 +78,12 @@ Mit Hilfe der Kapazitätsmessbrücke werden zwei unbekannte verlustfreie Kapazit
   \label{tab:Kapa3}
 \end{table}
 
+\newpage
 \subsection{Induktivitätsmessbrücke}
-Mit Hilfe der Induktivitätsmessbrücke wird die Induktivität $L_{19}$ = Wert19 einer unbekannten Spule bestimmt. Dies geschieht mit Formel ??. Die Messwerte und Ergebnisse sind in der Tabelle \ref{tab:Induk1} aufgeführt.
-\begin{table}[H]
+\label{sec:Induk}
+Mit Hilfe der Induktivitätsmessbrücke wird die verlustbehaftete Induktivität $L_{19}, R_{19}$ = Wert19 einer unbekannten Spule bestimmt. Dies geschieht mit den Formeln \ref{eqn:R_x} und \ref{eqn:L_x}. Die Messwerte und Ergebnisse sind in der Tabelle \ref{tab:Induk1} aufgeführt. Die baubedingten Fehler von $R_2$ und $\frac{R_3}{R_4}$ sind die gleichen wie im vorangegangenen Kapitel, der Fehler von$L_2$ beträgt 0.2\%.
+
+\begin{table}[H] %L19 R19
   \centering
   \begin{tabular}{c c c c c c c c}
     \toprule
@@ -91,9 +97,10 @@ Mit Hilfe der Induktivitätsmessbrücke wird die Induktivität $L_{19}$ = Wert19
 \end{table}
 
 \subsection{Maxwell-Brücke}
-Mit Hilfe der Maxwell-Brücke soll die gleiche Spule untersucht werden welche auch für die Induktivitätsmessbrücke verwendet wurde. Dadurch erhält man einen referenz Wert und kann die beiden Ergebnisse vergleichen. Die verwendete Kapazität $C_4$ = 750 nF bleibt für die gesamte Messung unverändert. Durch einsetzen in die Formeln ??, ?? erhält man $L_{19}$ und $R_{19}$. Die Messwerte und Ergebnisse sind in Tabelle \ref{tab:Induk2} aufgelistet.
+\label{sec:Maxwell}
+Mit Hilfe der Maxwell-Brücke soll die gleiche Spule untersucht werden welche auch für die Induktivitätsmessbrücke verwendet wurde, dadurch erhält man einen vergleichbaren Wert. Die verwendete Kapazität $C_4$ = 750 nF bleibt für die gesamte Messung unverändert. Durch einsetzen in die Formeln \ref{eqn:R_x}, \ref{eqn:L_m} erhält man $L_{19}$ und $R_{19}$. Die Messwerte und Ergebnisse sind in Tabelle \ref{tab:Induk2} aufgelistet.
 
-\begin{table}[H]
+\begin{table}[H] %L19 R19
   \centering
   \begin{tabular}{c c c c c c c}
     \toprule
@@ -107,11 +114,17 @@ Mit Hilfe der Maxwell-Brücke soll die gleiche Spule untersucht werden welche au
   \label{tab:Induk2}
 \end{table}
 
+\newpage
 \subsection{TT-Brücke}
+Wie man in der Tabelle \ref{tab:TT-Brucke} erkennen kann, wird die Brückenspannung bei ca. 380 Hz minimal und beträgt in etwa 0.02 V. \\
+Der theoretische minimal Wert lässt sich mit folgender Formel berechnen:
+\begin{align*}
+  f_{0,\text{theo}} & = \frac{1}{RC} = (\num{382.1 +- 1.2}) \, \text{Hz} \\
+  R & = 1000 \, \Omega \\
+  C & = (\num{4.165 +- 0.013}) \cdot 10^{-7} \, \text{F}.
+\end{align*}
 
-$f_{0,\text{theo}}$ = (\num{382.1 +- 1.2}) Hz
-
-\begin{table}[H]
+\begin{table}[H] %f gegen U
   \centering
   \begin{tabular}{c c}
     \toprule
@@ -147,15 +160,35 @@ $f_{0,\text{theo}}$ = (\num{382.1 +- 1.2}) Hz
       15000	&  3.92  \\
       30000	&  3.92  \\
   \end{tabular}
-  \caption{Brückenspannung gegen die Frequenz aufgetragen.}
-  \label{tab:Brückenspannung}
+  \caption{Messwerte der Brückenspannung und der Frequenz von der TT-Brückenschaltung.}
+  \label{tab:TT-Brucke}
 \end{table}
 
-%\begin{figure}
-%  \centering
-  %die zeile funktioniert net
-%  \includegraphics[width=\textwidth]{AufgabeE.pdf}
-%  \caption{Brückenschaltung}
-%  \label{fig:AufgabeE}
-%\end{figure}
-Der experimentelle und der theoretische Wert liegen im Durchschnitt um 5,5\% auseinander.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{AufgabeE.pdf}
+  \caption{Theoretische und experimentelle Werte der TT-Brückenschaltung.}
+  \label{fig:AufgabeE}
+\end{figure}
+
+Für die Bestimmung des Klirrfaktors $k$ wird zunächst genähert, dass die Summe der
+Oberwellen nur von dem Term der zweiten Oberwelle bestimmt wird. Damit folgt, dass
+\begin{align}
+  k = & \frac{\sqrt{{U_2}^2 + {U_3}^2 + ...}}{U_1} = \frac{U_2}{U_1}  \\
+  U_1 & = 4.5 \, \text{V}    \\
+  U_2 & = \frac{U_\text{br}}{f(2)}    \\
+      & U_\text{br} = 0.02 \, \text{V}   \\
+      & f(2) = \frac{(1 - 2^2)^2}{(1 - 2^2)^2 + 16 \cdot 2^2} = 0.1233  \\
+  U_2 & = \frac{0.02 \text{V}}{0.1233} = 0.1622 \, \text{V}  \\
+  k = & \frac{0.1622 \text{V}}{4.5 \, \text{V}} = 0.036
+\end{align}
+ist.
+
+
+
+
+
+
+
+
+.
