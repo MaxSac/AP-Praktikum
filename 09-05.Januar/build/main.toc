@@ -2,6 +2,7 @@
 \defcounter {refsection}{0}\relax 
 \select@language {german}
 \contentsline {section}{\numberline {1}Theoretische Grundlage}{3}{section.1}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {1.1}Fehlerrechnung}{3}{subsection.1.1}
 \contentsline {subsubsection}{\numberline {1.1.1}Mittelwert}{3}{subsubsection.1.1.1}
 \contentsline {subsubsection}{\numberline {1.1.2}Gauß'sche Fehlerfortpflanzung}{3}{subsubsection.1.1.2}
@@ -12,3 +13,19 @@
 \contentsline {subsection}{\numberline {3.2}Dämpfungswiederstand des Aperiodischen Grenzfalls}{5}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Frequenzabhängigkeit der Kondensatorspannung eines Serienresonanzkreis}{5}{subsection.3.3}
 \contentsline {section}{\numberline {4}Diskussion}{5}{section.4}
+=======
+\contentsline {subsection}{\numberline {1.1}Ziel des Versuches}{3}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Differentialgleichung für die gedämpfte Schwingung}{3}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Differentialgleichung für die erzwungene Schwingung}{5}{subsubsection.1.1.2}
+\contentsline {subsection}{\numberline {1.2}Fehlerrechnung}{6}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Mittelwert}{6}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Gauß'sche Fehlerfortpflanzung}{7}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Lineare Regression}{7}{subsubsection.1.2.3}
+\contentsline {section}{\numberline {2}Durchführung und Aufbau}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}Zeitabhängigkeit der Schwingungsamplitude}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Bestimmung des aperiodischen Grenzwiderstandes}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Frequenzabhängigkeit der Kondensatorspannung und der Phasenverschiebung}{8}{subsection.2.3}
+\contentsline {section}{\numberline {3}Auswertung}{9}{section.3}
+\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
+\contentsline {section}{\nonumberline Literatur}{9}{section*.8}
+>>>>>>> 2364fb128ead8e0c5f0c2ea1f67dcfba832948dd
