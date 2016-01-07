@@ -4,20 +4,18 @@
 \subsection{Ziel des Versuches}
 In den folgenden Versuchen wird die Amplitude und der effektive Dämpfungswiderstand eines gedämpften Schwingkreises untersucht. Zusätzlich wird ermittelt bei welchem Widerstand der aperiodische Grenzfall eintritt. Zuletzt wird bei einer erzwungenen Schwingung die Frequenzabhängigkeit der Spannung und der Phasenverschiebung untersucht.
 
-\subsection{Theorie}
+\subsubsection{Differentialgleichung für die gedämpfte Schwingung}
 Ein Schwingkreis besteht im Idealfall aus  einer Spule mit der Induktivität $L$ und einem Kondensator mit der Kapazität $C$, die in diesem System eingespeicherte Energiemenge wird immer wieder zwischen dem Kondensator und der Spule ausgetauscht. Während sich der Kondensator entlädt, entsteht in der Spule durch Induktion ein Magnetfeld. Sobald das Magnetfeld zusammenbricht wird der Kondensator wieder aufgeladen und der Vorgang beginnt erneut. \\
 Anders ist das bei einem gedämpften oder realen Schwingkreis, da dieser noch einen Widerstand $R$ besitzt. Über diesen Widerstand wird laufend Energie in Wärme umgewandelt und geht entsprechend in dem Schwingkreis verloren. Daraus folgt das $R$ als Dämpfungsfaktor anzusehen ist.
-
-\subsubsection{Differentialgleichung für die gedämpfte Schwingung}
 
 \begin{figure}
 	\centering
 	\includegraphics[height=4.5cm]{picture/Theorie1.PNG}
-	\caption{Schematischer Aufbau eines RCL-Schwingkreises \cite[1]{sample}}
+	\caption{Schematischer Aufbau eines RCL-Schwingkreises \cite[284]{sample}.}
 	\label{fig:RCL}
 \end{figure}
 
-Die in der Abbildung \ref{fig:RCL} eingezeichneten Spannungen $U_\text{R}$, $U_\text{C}$ und $U_\text{L}$ sind die Spannungen die über die entsprechenden Bauteile abfallen. Das zweite Kirchhoffsche Gesetzt besagt das alle Teilspannungen einer Masche sich zu null addieren, damit folgt:
+Die in der Abbildung \ref{fig:RCL} eingezeichneten Spannungen $U_\text{R}$, $U_\text{C}$ und $U_\text{L}$ sind die Spannungen die über die entsprechenden Bauteile abfallen. Das zweite Kirchhoffsche Gesetzt besagt das sich alle Teilspannungen einer Masche zu null addieren, damit folgt:
 \begin{equation}
 	U_\text{R}(t) + U_\text{C}(t) + U_\text{L}(t) = 0 \ .
 \end{equation}
@@ -43,17 +41,12 @@ wobei die Abkürzungen
 \end{align*}
 verwendet wurden. \\
 Im folgenden müssen nun zwei Fälle unterschieden werden.
-
-\begin{table}
-	\centering
-	\begin{tabular}{c | c}
-		erster Fall & zweiter Fall \\
-		\midrule
-		$\frac{1}{LC} < \frac{R^2}{4L^2}$ & $\frac{1}{LC} > \frac{R^2}{4L^2}$ \\
-	\end{tabular}
-\end{table}
-
-\textbf{Erster Fall:} \\
+\newline
+\newline
+\textbf{Erster Fall:}
+\begin{align*}
+	\frac{1}{LC} < \frac{R^2}{4L^2}
+\end{align*}
 Im reelen Fall, lässt sich Formel \ref{eqn:I} mit Hilfe der Eulerschen Formel zu
 \begin{equation}
 	I(t) = C e^{-2 \pi \mu t} \cos(2 \pi \nu t + \eta)
@@ -65,7 +58,10 @@ umformen. Unter der genannten Bedingung ist zu erkennen das es sich um eine ged�
 Nach der Abklingdauer hat sich die Amplitude auf den e-ten Teil ihres ursprünglischen Wertes verringert.
 \newline
 \newline
-\textbf{Zweiter Fall:} \\
+\textbf{Zweiter Fall:}
+\begin{align*}
+	\frac{1}{LC} > \frac{R^2}{4L^2}
+\end{align*}
 Im imaginären Fall, kann Formel \ref{eqn:I}, nach einer hinreichend großen Zeit zu
 \begin{equation}
 	I(t) \propto e^{-(2 \pi \mu - i2 \pi \nu)t}
@@ -85,7 +81,7 @@ In diesem Versuch wird ein von außen angeregter RCL-Schwingkreis untersucht. Da
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=4cm]{picture/Theorie2.PNG}
-	\caption{Schematischer Aufbau eines angeregten RCL-Schwingkreises \cite[6]{sample}}
+	\caption{Schematischer Aufbau eines angeregten RCL-Schwingkreises \cite[289]{sample}.}
 	\label{fig:aRCL}
 \end{figure}
 
