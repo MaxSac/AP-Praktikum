@@ -62,10 +62,90 @@ Der im Experiment bestimmte Widerstand, bei dem der Aperiodische Grenzfall eintr
 \end{equation}
 Der Theoretische Widerstand wird mittels Formel ?? ausgerechnet und beträgt 
 \begin{equation}
-  T_\text{Theorie} = ??? \, \Omega \ .
+  T_\text{Theorie} = (\num{2.75 +- 0.23}) , \Omega \ .
   \label{eqn:Rthe}
 \end{equation}
-Zwischen dem theoretischen und praktisch ermittelten ist eine Differenz von ??? $\Omega$. Mögliche Ursachen für den Fehler sind, die vernachlässigte Impedanz des Aufbaus, als auch die Schwierigkeit den Punkt des Aperiodischen Grenzfalls zu treffen, da keine wesentliche Änderung erkennen zu sind. 
+Zwischen dem theoretischen und praktisch ermittelten ist eine Differenz von 1.5 $\Omega$. Mögliche Ursachen für den Fehler sind, die vernachlässigte Impedanz des Aufbaus, als auch die Schwierigkeit den Punkt des Aperiodischen Grenzfalls zu treffen, da keine wesentliche Änderung erkennen zu sind. 
 \subsection{Frequenzabhängigkeit der Kondensatorspannung eines  Serienresonanzkreis}
+In Tabelle \ref{tab:U_c} sind die Spannung am Kondensator und die entsprechenden Frequenzen hinterlegt.
+\begin{table}
+  \centering
+  \begin{tabular}{c c}
+	\toprule
+	f / Hz & U / V \\
+	\midrule
+	9	& 5.6	\\
+	12	& 6.4	\\
+	16	& 6.8	\\
+	23	& 7.2	\\
+	35	& 7.2	\\
+	61	& 7.6	\\
+	162	& 7.6	\\
+	307	& 7.6	\\
+	500	& 7.6	\\
+	905	& 7.6	\\
+	1604	& 7.8	\\
+	2509	& 7.8	\\
+	4025	& 7.8	\\
+	5615	& 8.0	\\
+	8970	& 9.0	\\
+ 	12030	& 10.0	\\
+ 	15400	& 11.2	\\
+ 	17610	& 13.0	\\
+ 	20000	& 15.6	\\
+ 	22520	& 20.4	\\
+ 	24000	& 24.8	\\
+	24490	& 26.0	\\
+	25180	& 27.6	\\
+	25570	& 28.0	\\
+	26300	& 28.4	\\
+	27060	& 27.2	\\
+ 	27610	& 26.0	\\
+ 	28100	& 24.2	\\
+ 	29970	& 18.0	\\
+ 	32540	& 12.4	\\
+	35660	& 8.6	\\
+	40030 	& 5.4	\\
+	42580 	& 4.4	\\
+	45000	& 3.7	\\
+	50180	& 2.7	\\
+	52430 	& 2.4	\\
+	55010	& 2.2	\\
+	\bottomrule
+ 	\end{tabular}
+  \caption{Frequanzabhängigkeit der Kondensatorspannung}
+  \label{tab:U_c}
+\end{table}
+Anhand derer und der Abbildung \ref{fig:logUc} lässt sich der maximalwert der Güte ablesen. Er beträgt
+\begin{equation}
+  q_\text{exp} = 28.4 \ .
+  \label{eqn:qexp}
+\end{equation}
+Anhand Formel ?? lässt sich der theoretische Güte ausrechnen. Sie beträgt 
+\begin{equation}
+  q_\text{theo} = (\num{4.18 +- 0.01})
+  \label{eqn:qtheo}
+\end{equation} 
+und ist somit 579 \% größer als der Praktisch ermittelte Wert. Mittels eines linearen Plot (siehe Abbildung \ref{fig:fUc}) soll die breite der Resonanzkurve bestimmt werden. Durch Ablesen wird die Breite der Resonanzkurve bestimmt welche 
+\begin{equation}
+  v_+ - v_- = 6.72 \, \text{kHz} 
+\end{equation}
+entspricht. Die theoretische breite berechnet sich nach Formel ?? berechnet. Sie beträgt 
+\begin{equation}
+v_+ - v_- = (\num{6.47 +- 0.04}) \, \text{kHz} \ .
+\end{equation}
+Der experimentell bestimmte weicht vom theoretischen Wert um 3.9 \% ab.
+\begin{figure}
+  \centering
+  \includegraphics[height=5cm]{plot1.pdf}
+  \caption{Halblogaritmisch aufgetragene Kondensatorspannung gegen die Frequenz}
+  \label{fig:logUc}
+\end{figure}
 
+\begin{figure}
+  \centering
+  \includegraphics[height=5cm]{plot2.pdf}
+  \caption{Frequenzabhängige Kondensatorspannung}
+  \label{fig:fUc}
+\end{figure}
 
