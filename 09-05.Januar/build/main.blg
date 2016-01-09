@@ -1,15 +1,15 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'build/main.blg'
-[28] biber:276> INFO - === Fr Jan  8, 2016, 19:12:48
+[29] biber:276> INFO - === Sa Jan  9, 2016, 12:11:59
 [29] Biber.pm:333> INFO - Reading 'build/main.bcf'
-[104] Biber.pm:645> INFO - Found 2 citekeys in bib section 0
-[118] Biber.pm:2977> INFO - Processing section 0
-[130] Biber.pm:3115> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[130] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[131] bibtex.pm:895> INFO - Found BibTeX data source 'lit.bib'
-[161] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[161] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[161] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[161] Biber.pm:2858> INFO - No sort tailoring available for locale 'de-DE'
-[165] bbl.pm:505> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[167] bbl.pm:596> INFO - Output to build/main.bbl
+[102] Biber.pm:645> INFO - Found 2 citekeys in bib section 0
+[116] Biber.pm:2977> INFO - Processing section 0
+[128] Biber.pm:3115> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[131] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[132] bibtex.pm:895> INFO - Found BibTeX data source 'lit.bib'
+[154] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[154] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[154] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[154] Biber.pm:2858> INFO - No sort tailoring available for locale 'de-DE'
+[156] bbl.pm:505> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[157] bbl.pm:596> INFO - Output to build/main.bbl

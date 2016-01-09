@@ -17,5 +17,6 @@
 \contentsline {subsection}{\numberline {3.1}Zeitabhänigkeit der Amplitude und Dämpfungswiederstand einer Gedämpften Schwingung}{9}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Dämpfungswiederstand des Aperiodischen Grenzfalls}{11}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Frequenzabhängigkeit der Kondensatorspannung eines Serienresonanzkreis}{11}{subsection.3.3}
-\contentsline {section}{\numberline {4}Diskussion}{14}{section.4}
-\contentsline {section}{\nonumberline Literatur}{14}{section*.13}
+\contentsline {subsection}{\numberline {3.4}Frequenzabhängigkeit der Phase zwischen Erreger und Kondensatorspannung}{13}{subsection.3.4}
+\contentsline {section}{\numberline {4}Diskussion}{16}{section.4}
+\contentsline {section}{\nonumberline Literatur}{16}{section*.16}
