@@ -35,10 +35,11 @@ Die Differentialgleichung hat folgende Lösung:
 	\label{eqn:I}
 \end{equation}
 wobei die Abkürzungen
-\begin{align*}
+\begin{align}
 	\mu & := \frac{R}{4 \pi L} \\
+	\label{eqn:mu}
 	und \ \ \nu & := \frac{1}{2 \pi} \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}
-\end{align*}
+\end{align}
 verwendet wurden. \\
 Im folgenden müssen nun zwei Fälle unterschieden werden.
 \newline
@@ -54,6 +55,7 @@ Im reelen Fall, lässt sich Formel \ref{eqn:I} mit Hilfe der Eulerschen Formel z
 umformen. Unter der genannten Bedingung ist zu erkennen das es sich um eine gedämpfte Schwingung handelt, die für $t \to \infty$ gegen Null strebt. Die Abklingdauer ist definiert als:
 \begin{equation}
 	T_\text{ex} = \frac{1}{2 \pi \mu} \ .
+	\label{eqn:tex}
 \end{equation}
 Nach der Abklingdauer hat sich die Amplitude auf den e-ten Teil ihres ursprünglischen Wertes verringert.
 \newline
@@ -68,11 +70,12 @@ Im imaginären Fall, kann Formel \ref{eqn:I}, nach einer hinreichend großen Zei
 \end{equation}
 umgeschrieben werden. \\
 Von Bedeutung ist der Speziallfall:
-\begin{align*}
+\begin{align}
 	\frac{1}{LC} & = \frac{R_\text{ap}^2}{4L^2} \ \ \ \ \ d.h. \nu = 0 \ , \\
+	\label{eqn:Rap}	
 	dan&n \ wird \\
 	I(t) & = C e^{- \frac{t}{\sqrt{LC}}} \ .
-\end{align*}
+\end{align}
 Der Speziallfall stellt den aperiodischen Grenzfall dar, die Amplitude des Stromes fällt hier am schnellsten ab ohne über zu schwingen.
 
 \subsubsection{Differentialgleichung für die erzwungene Schwingung}
@@ -100,6 +103,7 @@ Die Phasenverschiebung ergibt sich aus dem Vergleich von Real- und Imaginärteil
 Es wird deutlich, dass sich die Frequenzen $\omega_1$ und $\omega_2$, bei denen die Phasenverschiebung die Werte $\frac{\pi}{4}$ bzw. $\frac{3\pi}{4}$ hat, zu
 \begin{equation}
 	\omega_{1,2} = \pm \frac{R}{2L} + \sqrt{\frac{R^2}{4L^2} + \frac{1}{LC}}
+	\label{eqn:w12}
 \end{equation}
 ergeben.
 Der Betrag von $U$ entspricht der gesuchten Lösungsfunktion $U_\text{C}(\omega)$, damit folgt:
@@ -110,6 +114,7 @@ Der Betrag von $U$ entspricht der gesuchten Lösungsfunktion $U_\text{C}(\omega)
 Es wird deutlich das $U_\text{C}(\omega)$ für $\omega \to \infty$ gegen Null strebt und für $\omega \to 0$ gegen $U_0$ strebt. Außerdem gibt es eine Frequenz bei der $U_\text{C}$ seinen Maximalwert erreicht, diese Frequenz wird Resonanzfrequenz genannt.
 \begin{equation}
 	\omega_\text{res} = \sqrt{\frac{1}{LC} - \frac{R^2}{2L^2}} \ .
+	\label{eqn:wres}
 \end{equation}
 Wenn
 \begin{align*}
@@ -122,6 +127,7 @@ dann wird von einer schwachen Dämpfung gesprochen. Es gilt $\omega_\text{res} \
 Die Güte des Schwingkreises lässt sich über:
 \begin{equation}
 	q = \frac{1}{\omega_0 RC}
+	\label{eqn:q}
 \end{equation}
 berechnen. Die maximale Spannung an dem Kondensator ist um den Faktor der Güte größer als die Erregerspannung. Es wird nun die Breite der Resonanzkurve betrachtet, welche duch \ref{eqn:Ucw} beschrieben wird. Wenn
 \begin{align*}
@@ -130,6 +136,7 @@ berechnen. Die maximale Spannung an dem Kondensator ist um den Faktor der Güte 
 berücksichtigt wird, folgt die Breite zu:
 \begin{equation}
 	\omega_+ - \omega_- \approx \frac{R}{L} \ .
+	\label{eqn:qbreite}
 \end{equation}
 Die Güte folgt damit zu:
 \begin{equation}

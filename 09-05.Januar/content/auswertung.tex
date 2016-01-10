@@ -8,7 +8,10 @@ R_1 	&= (\num{67.2 +- 0.2}) \Omega	\\
 R_2 	&= (\num{682 +- 1}) \Omega
   \label{eqn:Bau}
 \end{eqnarray}
-
+Für den Versuch 3.2 wurde aufgrund eines Defektes des Regelbaren Widerstands der Aufbau gewechselt. Die Daten für den Aufgabenteil sind,\begin{eqnarray}
+  L_2 =& (\num{3.53 +- 0.03}) mH	\\
+  C_2 =& (\num{5.08 +- 0.01} µF		
+\end{eqnarray}
 \subsection{Zeitabhänigkeit der Amplitude und Dämpfungswiederstand einer Gedämpften Schwingung}
 Die durch das Oszilliskop gemessene Spannungspeaks werden mittels einer CWD-Funktion ermittelt und mit deren dazugehörige Zeit in Tabelle \ref{tab:U_C} aufgetragen.
 \begin{table}
@@ -34,7 +37,7 @@ Die durch das Oszilliskop gemessene Spannungspeaks werden mittels einer CWD-Funk
   \caption{Spannung am Kondensator zur Bestimmung des Abklingverhalten und Dämpfungswiederstand.}
   \label{tab:U_C}
 \end{table}
-Anhand der Daten lässt sich durch eine Fit-Funktion die Koeffizienten der Einhüllenden berechnen, welche in Gleichung ?? beschrieben sind. 
+Anhand der Daten lässt sich durch eine Fit-Funktion die Koeffizienten der Einhüllenden berechnen, welche in Gleichung \ref{eqn:I} beschrieben sind. 
 \begin{eqnarray}
   A_0 = ( \num{30.6 +- 0.9} ) \text{V} \\
   f = ( \num{680 +- 60} ) \text{Hz}
@@ -47,7 +50,7 @@ Die Einhüllende und die Messdaten sind in Abbildung \ref{fig:Osz} dargestellt.
   \caption{Messdaten mit Einhüllender}
   \label{fig:Osz}
 \end{figure}
-Nach Formel ?? lässt sich der effektive Dämpfungswiederstand sowie die Abklingdauer berechnen.
+Nach Formel \ref{eqn:mu} und \ref{eqn:tex} lässt sich der effektive Dämpfungswiederstand sowie die Abklingdauer berechnen.
 \begin{eqnarray}
   R_\text{eff} = ( \num{143.38 +- 12.7}) \, \Omega \\
   T_\text{ex} = ( \num{230 +- 10}) \cdot 10^{-6} \, \text{s}
@@ -60,7 +63,7 @@ Der im Experiment bestimmte Widerstand, bei dem der Aperiodische Grenzfall eintr
   R_\text{Praxis} = 1.25 \, \Omega \ .
   \label{eqn:Rprax}
 \end{equation}
-Der Theoretische Widerstand wird mittels Formel ?? ausgerechnet und beträgt 
+Der Theoretische Widerstand wird mittels Formel \ref{eqn:Rap} ausgerechnet und beträgt 
 \begin{equation}
   T_\text{Theorie} = (\num{2.75 +- 0.23}) , \Omega \ .
   \label{eqn:Rthe}
@@ -128,7 +131,7 @@ Er beträgt
   q_\text{exp} = 28.4 \ .
   \label{eqn:qexp}
 \end{equation}
-Aus Formel ?? lässt sich der theoretische Güte berechnen. Sie beträgt 
+Aus Formel \ref{eqn:q} lässt sich der theoretische Güte berechnen. Sie beträgt 
 \begin{equation}
   q_\text{theo} = (\num{4.18 +- 0.01})
   \label{eqn:qtheo}
@@ -144,7 +147,7 @@ Durch Ablesen wird die Breite der Resonanzkurve bestimmt welche
 \begin{equation}
   v_+ - v_- = 6.72 \, \text{kHz} 
 \end{equation}
-entspricht. Die theoretische breite berechnet sich nach Formel ??. Sie beträgt
+entspricht. Die theoretische breite berechnet sich nach Formel \ref{eqn:qbreite}. Sie beträgt
 \begin{equation}
 v_+ - v_- = (\num{6.47 +- 0.04}) \, \text{kHz} \ .
 \end{equation}
@@ -211,7 +214,7 @@ Dem Plot kann man entnehmen, dass erst ab einer Frequenz von ca 10 kHz eine Phas
   \caption{Phasenverschiebung zwischen Erreger- und Kondensatorspannung}
   \label{fig:Phi}
 \end{figure}
-Der Abbildung \ref{fig:Phi} lässt sich die Resonanzfrequenz, sowie die Frequenzen $f_1$ und $f_2$ entnehmen. Die theoretische Resonanzfrequenz berechnet sich aus Formel ?? und die Frequenzen $f_1$ und $f_2$ aus der Formel ??. In Gleichung \ref{eqn:res} wirde die theoretische mit den praktisch ermittelte Güte verglichen und der Fehler berechnet.
+Der Abbildung \ref{fig:Phi} lässt sich die Resonanzfrequenz, sowie die Frequenzen $f_1$ und $f_2$ entnehmen. Die theoretische Resonanzfrequenz berechnet sich aus Formel \ref{eqn:wres} und die Frequenzen $f_1$ und $f_2$ aus der Formel \ref{eqn:w12}. In Gleichung \ref{eqn:res} wirde die theoretische mit den praktisch ermittelte Güte verglichen und der Fehler berechnet.
 \begin{eqnarray}
   f_\text{res,exp} =& 26.800 \text{kHz}			\\
   f_\text{res,theo} =& (\num{26.58 +- 0.08}) \text{kHz} \\
