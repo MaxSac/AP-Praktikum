@@ -2,15 +2,15 @@
 \label{sec:Auswertung}
 Die für den Versuch relevanten Bauteile haben die Werte
 \begin{eqnarray}
-  L 	&= (\num{16.78 +- 0.09}) mH	\\
-  C 	&= (\num{2.066 +- 0.006}) nF	\\
+  L 	&= (\num{16.78 +- 0.09}) \text{mH}	\\
+  C 	&= (\num{2.066 +- 0.006}) \text{nF}	\\
 R_1 	&= (\num{67.2 +- 0.2}) \Omega	\\
 R_2 	&= (\num{682 +- 1}) \Omega
   \label{eqn:Bau}
 \end{eqnarray}
 Für den Versuch 3.2 wurde aufgrund eines Defektes des Regelbaren Widerstands der Aufbau gewechselt. Die Daten für den Aufgabenteil sind,\begin{eqnarray}
-  L_2 =& (\num{3.53 +- 0.03}) mH	\\
-  C_2 =& (\num{5.08 +- 0.01} µF		
+  L_2 =& (\num{3.53 +- 0.03}) \text{mH}	\\
+  C_2 =& (\num{5.08 +- 0.01}) \text{µF}
 \end{eqnarray}
 \subsection{Zeitabhänigkeit der Amplitude und Dämpfungswiederstand einer Gedämpften Schwingung}
 Die durch das Oszilliskop gemessene Spannungspeaks werden mittels einer CWD-Funktion ermittelt und mit deren dazugehörige Zeit in Tabelle \ref{tab:U_C} aufgetragen.
@@ -18,7 +18,7 @@ Die durch das Oszilliskop gemessene Spannungspeaks werden mittels einer CWD-Funk
   \centering
   \begin{tabular}{c c}
     \toprule
-    	$U_\text{C}$ / V & $t$ / $10^{-3}$ \\
+    	$U_\text{C}$ / V & $t$ / $10^{-3}$ \, s\\
     \midrule
 	52	& 0.18	\\
 	48.8	& 0.54	\\
@@ -34,10 +34,10 @@ Die durch das Oszilliskop gemessene Spannungspeaks werden mittels einer CWD-Funk
 	28.8	& 4.32 	\\
     \bottomrule
   \end{tabular}
-  \caption{Spannung am Kondensator zur Bestimmung des Abklingverhalten und Dämpfungswiederstand.}
+  \caption{Spannung am Kondensator zur Bestimmung des Abklingverhalten und des Dämpfungswiederstandes.}
   \label{tab:U_C}
 \end{table}
-Anhand der Daten lässt sich durch eine Fit-Funktion die Koeffizienten der Einhüllenden berechnen, welche in Gleichung \ref{eqn:I} beschrieben sind. 
+Anhand der Daten lassen sich durch eine Fit-Funktion die Koeffizienten der Einhüllenden berechnen, welche in Gleichung \ref{eqn:I} beschrieben ist.
 \begin{eqnarray}
   A_0 = ( \num{30.6 +- 0.9} ) \text{V} \\
   f = ( \num{680 +- 60} ) \text{Hz}
@@ -50,25 +50,26 @@ Die Einhüllende und die Messdaten sind in Abbildung \ref{fig:Osz} dargestellt.
   \caption{Messdaten mit Einhüllender}
   \label{fig:Osz}
 \end{figure}
-Nach Formel \ref{eqn:mu} und \ref{eqn:tex} lässt sich der effektive Dämpfungswiederstand sowie die Abklingdauer berechnen.
+Nach Formel \ref{eqn:mu} und \ref{eqn:tex} lässt sich der effektive Dämpfungswiderstand sowie die Abklingdauer berechnen.
 \begin{eqnarray}
   R_\text{eff} = ( \num{143.38 +- 12.7}) \, \Omega \\
   T_\text{ex} = ( \num{230 +- 10}) \cdot 10^{-6} \, \text{s}
   \label{eqn:Reff}
 \end{eqnarray}
-Der Erwatungswert wiegt vom Errechneten wert um 75 $\Omega$ ab. Dies lässt sich einerseits dadurch erklären, dass der Innenwiederstand von 50 $\Omega$ nicht berücksichtigt wurde. Andererseits kann es bei der gewählten Frequenz zu Impedanzen der verschiedenen Bauteile gekommen sein. Für die weiteren Aufgaben wird der Widerstand des Generators berücksichtigt.
-\subsection{Dämpfungswiederstand des Aperiodischen Grenzfalls}
+Der Erwatungswert weicht vom errechneten Wert um 75 $\Omega$ ab. Dies lässt sich einerseits dadurch erklären, dass der Innenwiderstand von 50 $\Omega$ nicht berücksichtigt wurde. Andererseits kann es bei der gewählten Frequenz zu Impedanzen der verschiedenen Bauteile gekommen sein. Für die weiteren Aufgaben wird der Widerstand des Generators berücksichtigt.
+\subsection{Dämpfungswiderstand des Aperiodischen Grenzfalls}
 Der im Experiment bestimmte Widerstand, bei dem der Aperiodische Grenzfall eintritt, beträgt
 \begin{equation}
   R_\text{Praxis} = 1.25 \, \Omega \ .
   \label{eqn:Rprax}
 \end{equation}
-Der Theoretische Widerstand wird mittels Formel \ref{eqn:Rap} ausgerechnet und beträgt 
+Der Theoretische Widerstand wird mittels Formel \ref{eqn:Rap} ausgerechnet und beträgt
 \begin{equation}
-  T_\text{Theorie} = (\num{2.75 +- 0.23}) , \Omega \ .
+  R_\text{Theorie} = (\num{2.75 +- 0.23}) \Omega \ .
   \label{eqn:Rthe}
 \end{equation}
-Zwischen dem theoretischen und praktisch ermittelten ist eine Differenz von 1.5 $\Omega$. Mögliche Ursachen für den Fehler sind, die vernachlässigte Impedanz des Aufbaus, als auch die Schwierigkeit den Punkt des Aperiodischen Grenzfalls zu treffen, da keine wesentliche Änderung erkennen zu sind. 
+Zwischen dem theoretisch und dem praktisch ermittelten Wert ist eine Differenz von \\
+1.5 $\Omega$. Mögliche Ursachen für den Fehler sind, die vernachlässigte Impedanz des Aufbaus, als auch die Schwierigkeit den Punkt des Aperiodischen Grenzfalls zu treffen, da keine wesentliche Änderung zu erkennen sind.
 \subsection{Frequenzabhängigkeit der Kondensatorspannung eines  Serienresonanzkreis}
 In Tabelle \ref{tab:U_c} sind die Spannung am Kondensator und die entsprechenden Frequenzen hinterlegt.
 \begin{table}
@@ -119,7 +120,7 @@ In Tabelle \ref{tab:U_c} sind die Spannung am Kondensator und die entsprechenden
   \caption{Frequanzabhängigkeit der Kondensatorspannung}
   \label{tab:U_c}
 \end{table}
-Anhand derer und der Abbildung \ref{fig:logUc} lässt sich der maximalwert der Güte ablesen. 
+Anhand derer und der Abbildung \ref{fig:logUc} lässt sich die Güte ablesen.
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{plot1.pdf}
@@ -131,29 +132,29 @@ Er beträgt
   q_\text{exp} = 28.4 \ .
   \label{eqn:qexp}
 \end{equation}
-Aus Formel \ref{eqn:q} lässt sich der theoretische Güte berechnen. Sie beträgt 
+Aus Formel \ref{eqn:q} lässt sich der theoretische Wert der Güte berechnen. Sie beträgt
 \begin{equation}
   q_\text{theo} = (\num{4.18 +- 0.01})
   \label{eqn:qtheo}
-\end{equation} 
-und ist somit 579 \% größer als der Praktisch ermittelte Wert. Mittels eines linearen Plot (siehe Abbildung \ref{fig:fUc}) soll die breite der Resonanzkurve bestimmt werden.
+\end{equation}
+und ist somit 579 \% größer als der praktisch ermittelte Wert. Mittels eines linearen Plot (siehe Abbildung \ref{fig:fUc}) soll die breite der Resonanzkurve bestimmt werden.
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{plot2.pdf}
   \caption{Frequenzabhängige Kondensatorspannung}
   \label{fig:fUc}
 \end{figure}
-Durch Ablesen wird die Breite der Resonanzkurve bestimmt welche 
+Durch Ablesen wird die Breite der Resonanzkurve bestimmt welche
 \begin{equation}
-  v_+ - v_- = 6.72 \, \text{kHz} 
+  v_+ - v_- = 6.72 \, \text{kHz}
 \end{equation}
 entspricht. Die theoretische breite berechnet sich nach Formel \ref{eqn:qbreite}. Sie beträgt
 \begin{equation}
 v_+ - v_- = (\num{6.47 +- 0.04}) \, \text{kHz} \ .
 \end{equation}
-Der experimentell bestimmte weicht vom theoretischen Wert um 3.9 \% ab.
-\subsection{Frequenzabhängigkeit der Phase zwischen Erreger und Kondensatorspannung}
-Ziel ist es die Resonansfrequenz $f_res$ zu bestimmen, sowie die Frequenz $f_1$ und $f_2$, welche eine Phasenverschiebung von $\frac{\pi}{4}$ und $\frac{3 \pi}{4}$. Die der Schaltung entnommen Frequenzen sind in Tabelle \ref{tab:phi} aufgetragen und in Abbildung \ref{fig:logphi} in einem halblogarithmischen Plot dargestellt.
+Der experimentell bestimmte Wert weicht vom theoretischen Wert um 3.9 \% ab.
+\subsection{Frequenzabhängigkeit der Phase zwischen Erreger- und Kondensatorspannung}
+Ziel ist es die Resonanzfrequenz $f_\text{res}$ zu bestimmen, sowie die Frequenz $f_1$ und $f_2$, welche eine Phasenverschiebung von $\frac{\pi}{4}$ und $\frac{3 \pi}{4}$ ergeben. Die der Schaltung entnommen Frequenzen sind in Tabelle \ref{tab:phi} aufgetragen und in Abbildung \ref{fig:logphi} in einem halblogarithmischen Plot dargestellt.
 \begin{table}
   \centering
   \begin{tabular}{c c}
@@ -207,29 +208,29 @@ Ziel ist es die Resonansfrequenz $f_res$ zu bestimmen, sowie die Frequenz $f_1$ 
   \caption{Phasenverschiebung zwischen Erreger- und Kondensatorspannung}
   \label{fig:logphi}
 \end{figure}
-Dem Plot kann man entnehmen, dass erst ab einer Frequenz von ca 10 kHz eine Phasenverschiebung zu bemerken ist. Um die Resonanz besser bestimmten zu können, wird die Werte in Abbildung \ref{fig:Phi} linear um die Resonanzfrequenz dargestellt. 
+Dem Plot kann man entnehmen, dass erst ab einer Frequenz von ca. \\
+ 10 kHz eine Phasenverschiebung zu bemerken ist. Um die Resonanz besser bestimmten zu können werden die Werte in Abbildung \ref{fig:Phi} linear um die Resonanzfrequenz dargestellt.
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{plot4.pdf}
   \caption{Phasenverschiebung zwischen Erreger- und Kondensatorspannung}
   \label{fig:Phi}
 \end{figure}
-Der Abbildung \ref{fig:Phi} lässt sich die Resonanzfrequenz, sowie die Frequenzen $f_1$ und $f_2$ entnehmen. Die theoretische Resonanzfrequenz berechnet sich aus Formel \ref{eqn:wres} und die Frequenzen $f_1$ und $f_2$ aus der Formel \ref{eqn:w12}. In Gleichung \ref{eqn:res} wirde die theoretische mit den praktisch ermittelte Güte verglichen und der Fehler berechnet.
+Der Abbildung \ref{fig:Phi} lassen sich die Resonanzfrequenz, sowie die Frequenzen $f_1$ und $f_2$ entnehmen. Die theoretische Resonanzfrequenz berechnet sich aus Formel \ref{eqn:wres} und die Frequenzen $f_1$ und $f_2$ aus der Formel \ref{eqn:w12}. In Gleichung \ref{eqn:res} wird die theoretisch ermittelte mit der praktisch ermittelten Güte verglichen und der Fehler berechnet.
 \begin{eqnarray}
   f_\text{res,exp} =& 26.800 \text{kHz}			\\
   f_\text{res,theo} =& (\num{26.58 +- 0.08}) \text{kHz} \\
-  \text{Abweichung} =& 1 \% 
+  \text{Abweichung} =& 1 \%
   \label{eqn:res}
 \end{eqnarray}
 Analog wird mit den Werten für $f_1$ und $f_2$ vorgangen.
 \begin{eqnarray}
   f_\text{1,exp} =& 23.700 \text{kHz}                 \\
   f_\text{1,theo} =& (\num{23.78 +- 0.07}) \text{kHz} \\
-  \text{Abweichung} =& 1 \% 
+  \text{Abweichung} =& 1 \%
 \end{eqnarray}
 \begin{eqnarray}
   f_\text{1,exp} =& 29.970 \text{kHz}                 \\
   f_\text{1,theo} =& (\num{30.7 +- 0.1}) \text{kHz} \\
-  \text{Abweichung} =& 1 \% 
+  \text{Abweichung} =& 1 \%
 \end{eqnarray}
-
