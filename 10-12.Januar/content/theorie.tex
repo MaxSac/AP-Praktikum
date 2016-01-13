@@ -5,20 +5,20 @@ Periodische Funktionen haben die Eigenschaft sich einerseits periodisch im Raum
   f(x + D) = f(x) \ ,
   \label{eqn:f(x)}
 \end{equation}
-als auch periodisch in der Zeit 
+als auch periodisch in der Zeit
 \begin{equation}
   f(t + T) =f(t)
   \label{eqn:f(t)}
 \end{equation}
-zu wiederholen. Dabei ist $T$ die Periodendauer und $D$ die Distanz nach dem sich ein Vorgang wiederholt. Solche Vorgänge lassen sich mittels der $2 \pi$ periodoschen Funktionen Sinus und Cosinus beschreiben, welche die Form 
+zu wiederholen. Dabei ist $T$ die Periodendauer und $D$ die Distanz nach dem sich ein Vorgang wiederholt. Solche Vorgänge lassen sich mittels der $2 \pi$ periodoschen Funktionen Sinus und Cosinus beschreiben, welche die Form
 \begin{eqnarray}
   f(t) = a sin \left( \frac{2 \pi}{T} t \right) \ ,	\\
   f(t) = a cos \left( \frac{2 \pi}{T} t \right)
   \label{eqn:sin}
 \end{eqnarray}
-haben. Mittels des Fouriersche Theorem lassen sich sämtliche sämtliche periodische Vorgänge in der Natur aus zusammensetzung mit der beiden Funktionen beschreiben.
+haben. Mittels des Fourierschen Theorem lassen sich sämtliche periodische Vorgänge in der Natur, mit Hilfe der beiden Funktionen beschreiben.
 \begin{equation}
-  \frac{1}{2} a_0 + \sum^{\infty}_{n=1} \left( a_\text{n} cos n \frac{2 \pi}{T} t + b_\text{n} sin n \frac{2 \pi}{T} t \right) 
+  \frac{1}{2} a_0 + \sum^{\infty}_{n=1} \left( a_\text{n} cos n \frac{2 \pi}{T} t + b_\text{n} sin n \frac{2 \pi}{T} t \right)
   \label{eqn:fourier}
 \end{equation}
 Vorraussetzung ist jedoch, dass die Reihe gleichmäßig konvergiert. Die Koeffizienten lassen sich nach
@@ -33,14 +33,14 @@ berechnen. Dabei treten nur vielfache der $\nu_1$ Grundfrequenz auf, welche als 
   \includegraphics[height=4cm]{picture/Frequenzspektrum.png}
   \caption{Frequenzspektrum einer periodischen Schwingung}
   \label{fig:fre}
-\end{figure}
-bei welchen die Amplituden für n $\rightarrow \infty$ gegen null gehen sollte, wie man Abbildung \ref{fig:fre} entnehmen kann. Falls es sich bei der fourieranalysierten Funktion nicht um eine Periodische Funktion handeln sollte, ergibt sich dort ein kontinuierliches Spektrum.
-Mit Hilfe der Fourier-Transformation ist es möglich das Frequenzspektrum sowohl periodischer als auch nicht-periodischer Funktion zu bestimmen. 
+\end{figure}                    %\to geht auch anstatt \rightarrow, sieht sogar gleich aus :)
+bei welchen die Amplituden für $n \rightarrow \infty$ gegen null gehen sollte, wie man Abbildung \ref{fig:fre} entnehmen kann. Falls es sich bei der fourieranalysierten Funktion nicht um eine Periodische Funktion handeln sollte, ergibt sich dort ein kontinuierliches Spektrum.
+Mit Hilfe der Fourier-Transformation ist es möglich das Frequenzspektrum sowohl periodischer als auch nicht-periodischer Funktion zu bestimmen.
 \begin{equation}
   g(\nu) = \int^{\infty}_{- \infty} f(t) e^{-i \nu t} dt
   \label{eqn:four-trafo}
 \end{equation}
-Da im Versuch nur über ein endlich langes Zeitintervall integriert werden kann, sind aufgrund der nicht periodizität Nebenmaxima zu erwarten. 
+Da im Versuch nur über ein endlich langes Zeitintervall integriert werden kann, sind aufgrund der nicht periodizität Nebenmaxima zu erwarten.
 \subsection{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
 \subsubsection{Mittelwert}
