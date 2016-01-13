@@ -1,2 +1,31 @@
 \section{Durchführung und Aufbau}
 \label{sec:Durchführung}
+\subsection{Vorbereitung}
+Zur Vorbereitung auf den Versuch sollen die Fourier-Koeffizienten von drei verschiedenen periodischen Schwingungen berechnet werden. Dabei wird bei der Parametrisierung darauf geachtet, dass die Funktionen entweder grade oder ungerade sind.
+\subsubsection{Sägezahn}
+\begin{eqnarray}
+  a_\text{n} =& 0	\\
+  b_\text{n} =& - \frac{T}{n \pi} (-1)^n	\\
+  f(t) =& \sum^{\infty}_{n=1} - \frac{T}{n \pi} (-1)^n sin \left( \frac{2 \pi n}{T} t \right)
+  \label{eqn:saege}
+\end{eqnarray}
+
+\subsubsection{Rechteck}
+\begin{eqnarray}
+  a_\text{n} =& 0	\\
+  b_\text{n} =& \frac{2 T}{n \pi} - \frac{2T}{n \pi} (-1)^n	\\
+  f(t) =& \sum^{\infty}_{n=1} - \frac{4 T}{(2n-1) \pi} sin \left( \frac{2 \pi (2n -1)}{T} t \right)
+  \label{eqn:recht}
+\end{eqnarray}
+\subsubsection{Dreieck}
+\begin{eqnarray}
+  a_\text{n} =& \frac{4 T}{n^2 \pi^2} -  (-1)^n \frac{4T}{n^2 \pi^2}     \\
+  b_\text{n} =& 0       \\
+  f(t) =& \sum^{\infty}_{n=1} - \frac{8 T}{(2n-1)^2 \pi^2} cos \left( \frac{2 \pi (2n -1)}{T} t \right)
+  \label{eqn:recht}
+\end{eqnarray}
+
+\subsection{Fourier-Synthese}
+Mittels eines Oberwellengenerator sollen die vorher berechneten Spannungen möglichst genau aproximiert werden. Dazu werden zunächst die harmonische Oberschwingung auf den ersten Channel des Osziloskops und auf den zweiten ein vielfaches der Oberschwingung gelegt. Mittels des X-Y-Betriebs des Oszilisskop kann die Phase der n-ten Oberschwingung mit der, der harmonischen Abgestimmt werden. Dies geschieht durch die Lissajour Figuren. Anschließend wird mittels eines AC-Millivoltmeters die in der Vorbereitung berechnete Amplitude für die einzelnen Oberwellen eingestellt. Nachdem die Amplituden auf das richtige Abfallverhalten eingestellt wurden, wird das Oszilliskop in den X-T-Betrieb gestellt und die einzelenen Oberwellen addiert. Von dem Graphen der auf dem Oszilloskopen erscheint wird ein Thermodruck gemacht.
+\subsection{Fourier-Analyse}
+Das Signal des Funktionsgenerator wird direkt an ein Oszilloskop angeschlossen. Dieses Foyetransformiert das Signal, nachdem man im Untermenü die entsprechende Einstellung getroffen hatt. Dabei ist darauf zu achten das die Skalierung hinreichend klein ist um genügend Peaks des Linienspektrums zu sehen. Die Nebenmaxima die durch die endliche Integration einer Zeit entstehen, sollen beim Ablesen vernachlässigt werden. Es sollen die Spannungswerte der Amplituden der Oberwelle entsprechend notiert werden um in der Auswertung eine Aussage über deren Abfallverhalten treffen zu können. Das Messprogramm wird für die 3 vorher berechneten Funktionen durchgeführt.
