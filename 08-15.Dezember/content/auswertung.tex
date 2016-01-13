@@ -2,7 +2,7 @@
 \label{sec:Auswertung}
 
 \subsection{Wheatston'sche Brückeschaltung}
-Mit Hilfe der Wheatston'schen Brückenschaltung werden zwei unbekannte Wiederstände $R_{13}$ = Wert13 und $R_{14}$ = Wert14 bestimmt. Dies geschieht mit Formel \ref{eqn:R_x}, die Werte und Ergebnisse sind in den Tabellen \ref{tab:Wheat1} und \ref{tab:Wheat2} aufgeführt. $\overline{R_\text{13,14}}$ entspricht hierbei den gemittelten Werten für die gesuchten Widerstände. Der Wert $R_2$ hat eine Toleranz von 0.2\% und $\frac{R_3}{R_4}$ hat eine Toleranz von 0.5\%.
+Mit Hilfe der Wheatston'schen Brückenschaltung werden zwei unbekannte Widerstände $R_{13}$ = Wert13 und $R_{14}$ = Wert14 bestimmt. Dies geschieht mit Formel \ref{eqn:R_x}, die Werte und Ergebnisse sind in den Tabellen \ref{tab:Wheat1} und \ref{tab:Wheat2} aufgeführt. $\overline{R_\text{13,14}}$ entspricht hierbei den gemittelten Werten für die gesuchten Widerstände. Der Wert $R_2$ hat eine Toleranz von 0.2\% und $\frac{R_3}{R_4}$ hat eine Toleranz von 0.5\%.
 
 \begin{table}[H] %R13
   \centering
@@ -78,10 +78,9 @@ Der Wert $C_2$ hat eine Toleranz von 0.2\% und $\frac{R_3}{R_4}$ hat eine Tolera
   \label{tab:Kapa3}
 \end{table}
 
-\newpage
 \subsection{Induktivitätsmessbrücke}
 \label{sec:Induk}
-Mit Hilfe der Induktivitätsmessbrücke wird die verlustbehaftete Induktivität $L_{19}, R_{19}$ = Wert19 einer unbekannten Spule bestimmt. Dies geschieht mit den Formeln \ref{eqn:R_x} und \ref{eqn:L_x}. Die Messwerte und Ergebnisse sind in der Tabelle \ref{tab:Induk1} aufgeführt. Die baubedingten Fehler von $R_2$ und $\frac{R_3}{R_4}$ sind die gleichen wie im vorangegangenen Kapitel, der Fehler von$L_2$ beträgt 0.2\%.
+Mit Hilfe der Induktivitätsmessbrücke wird die verlustbehaftete Induktivität \\ $L_{19}, R_{19}$ = Wert19 einer unbekannten Spule bestimmt. Dies geschieht mit den Formeln \ref{eqn:R_x} und \ref{eqn:L_x}. Die Messwerte und Ergebnisse sind in der Tabelle \ref{tab:Induk1} aufgeführt. Die baubedingten Fehler von $R_2$ und $\frac{R_3}{R_4}$ sind die gleichen wie im vorangegangenen Kapitel, der Fehler von $L_2$ beträgt 0.2\%.
 
 \begin{table}[H] %L19 R19
   \centering
@@ -90,7 +89,7 @@ Mit Hilfe der Induktivitätsmessbrücke wird die verlustbehaftete Induktivität 
     $L_2$ / mH & $R_2$ / $\Omega$ & $R_3$ / $\Omega$ & $R_4$ / $\Omega$ & $L_{19}$ / mH & $R_{19}$ / $\Omega$ & $\overline{L_{19}}$ / mH & $\overline{R_{19}}$ / $\Omega$ \\
     \midrule
     14.6 & 286 & 281 & 719 & \num{5.706 +- 0.029} & \num{111.8 +- 0.6} & & \\
-    20.1 & 287 & 287 & 713 & \num{8.090 +- 0.040} & \num{115.5 +- 0.6} & \num{6.898 +- 0.025} & \num{113.6 +- 0.4} \\
+    20.1 & 287 & 287 & 713 & \num{8.090 +- 0.040} & \num{115.5 +- 0.6} & \num{6.898 +- 0.027} & \num{113.6 +- 2.4} \\
   \end{tabular}
   \caption{Werte für die Bestimmung von $L_{19}$ und $R_{19}$.}
   \label{tab:Induk1}
@@ -98,7 +97,7 @@ Mit Hilfe der Induktivitätsmessbrücke wird die verlustbehaftete Induktivität 
 
 \subsection{Maxwell-Brücke}
 \label{sec:Maxwell}
-Mit Hilfe der Maxwell-Brücke soll die gleiche Spule untersucht werden welche auch für die Induktivitätsmessbrücke verwendet wurde, dadurch erhält man einen vergleichbaren Wert. Die verwendete Kapazität $C_4$ = 750 nF bleibt für die gesamte Messung unverändert. Durch einsetzen in die Formeln \ref{eqn:R_x}, \ref{eqn:L_m} erhält man $L_{19}$ und $R_{19}$. Die Messwerte und Ergebnisse sind in Tabelle \ref{tab:Induk2} aufgelistet.
+Mit Hilfe der Maxwell-Brücke soll die gleiche Spule untersucht werden welche auch für die Induktivitätsmessbrücke verwendet wurde. Die verwendete Kapazität $C_4$ = 750 nF bleibt für die gesamte Messung unverändert. $L_{19}$ und $R_{19}$ werden durch einsetzen in die Gleichungen \ref{eqn:R_x} und \ref{eqn:L_m} ermittelt. Die Messwerte und Ergebnisse sind in Tabelle \ref{tab:Induk2} aufgelistet.
 
 \begin{table}[H] %L19 R19
   \centering
@@ -114,12 +113,11 @@ Mit Hilfe der Maxwell-Brücke soll die gleiche Spule untersucht werden welche au
   \label{tab:Induk2}
 \end{table}
 
-\newpage
 \subsection{TT-Brücke}
-Wie man in der Tabelle \ref{tab:TT-Brucke} erkennen kann, wird die Brückenspannung bei ca. 380 Hz minimal und beträgt in etwa 0.02 V. \\
+In der Tabelle \ref{tab:TT-Brucke} wird deutlich, dass die Brückenspannung bei ca. 380 Hz minimal wird und in etwa 0.02 V beträgt. \\
 Der theoretische minimal Wert lässt sich mit folgender Formel berechnen:
 \begin{align*}
-  f_{0,\text{theo}} & = \frac{1}{RC} = (\num{382.1 +- 1.2}) \, \text{Hz} \\
+  f_{0,\text{theo}} & = \frac{1}{2\pi RC} = (\num{382.1 +- 1.2}) \, \text{Hz} \\
   R & = 1000 \, \Omega \\
   C & = (\num{4.165 +- 0.013}) \cdot 10^{-7} \, \text{F}.
 \end{align*}
@@ -178,9 +176,9 @@ Oberwellen nur von dem Term der zweiten Oberwelle bestimmt wird. Damit folgt, da
   U_1 & = 4.5 \, \text{V}    \\
   U_2 & = \frac{U_\text{br}}{f(2)}    \\
       & U_\text{br} = 0.02 \, \text{V}   \\
-      & f(2) = \frac{(1 - 2^2)^2}{(1 - 2^2)^2 + 16 \cdot 2^2} = 0.1233  \\
-  U_2 & = \frac{0.02 \text{V}}{0.1233} = 0.1622 \, \text{V}  \\
-  k = & \frac{0.1622 \text{V}}{4.5 \, \text{V}} = 0.036
+      & f^2(2) = \frac{(1 - 2^2)^2}{(1 - 2^2)^2 + 16 \cdot 2^2} = 0.1233  \\
+  U_2 & = \frac{0.02 \text{V}}{\sqrt{0.1233}} = 0.057 \, \text{V}  \\
+  k = & \frac{0.057 \text{V}}{4.5 \, \text{V}} = 0.0127
 \end{align}
 ist.
 

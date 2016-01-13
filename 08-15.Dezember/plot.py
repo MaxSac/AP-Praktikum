@@ -146,22 +146,22 @@ print('bR1x =', bR1x, ' bR2x =', bR2x, ' bR3x =', bR3x, ' bRx =', bRx)
 print('------------------------------------------------------------------------')
 print('Nr. c, Lx,Rx = Wert19')
 #1
-cL2 = 14.6 / 1000
+cL2 = ufloat(0.0146, 0.0146 * 0.002)
 cR3 = 281
 cR4 = cR3 / (1000 - cR3)
 cR4 = ufloat(cR4, cR4 * 0.005)
 cL1x = cL2 * cR4
 
-cR2 = 286
+cR2 = ufloat(286, 286 * 0.03)
 cR1x = cR2 * cR4
 #2
-cL2 = 20.1 / 1000
+cL2 = ufloat(0.0201, 0.0201 * 0.002)
 cR3 = 287
 cR4 = cR3 / (1000 - cR3)
 cR4 = ufloat(cR4, cR4 * 0.005)
 cL2x = cL2 * cR4
 
-cR2 = 287
+cR2 = ufloat(287, 287 * 0.03)
 cR2x = cR2 * cR4
 
 cLx = (cL1x + cL2x) / 2
@@ -211,22 +211,17 @@ w0 = 1 / (4.165*10**(-4))
 O = w / w0
 y2 = ((O**2-1)**2/((1-O**2)**2+16*O**2))**(0.5)
 plt.plot(x, y1, 'rx', label="Experimentelle Werte")
-plt.plot(x, y2, 'bx', label="Theoretische Werte")
+plt.plot(x, y2, 'b-', label="Theoretische Werte")
 plt.xlabel(r'$\Omega = \frac{f}{f_0}$')
 plt.ylabel(r'$\frac{U_\text{br}}{U_\text{s}}$')
 plt.xscale('log')
 plt.grid()
 plt.legend(loc="best")
 plt.tight_layout()
-plt.savefig('build/AufgabeE.pdf')
+#plt.savefig('build/AufgabeE.pdf')
 plt.close()
 w0 = 1 / (Wert3 * 1000)
 print('f0 theoretisch: ', w0/(2*math.pi))
 var = np.mean(y1 / y2)
 print('% Abweichung von Exp zu Theo Wert: ', (var - 1)*100)
-print('------------------------------------------------------------------------')
-print('Nr. f')
-y2 = 0.17556172079419585
-
-
 print('------------------------------------------------------------------------')

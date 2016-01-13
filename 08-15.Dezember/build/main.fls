@@ -1,4 +1,4 @@
-PWD D:/AP-Praktikum/08-15.Dezember
+PWD C:/Users/User/Documents/GitHub/AP-Praktikum/08-15.Dezember
 INPUT c:/texlive/2015/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./main.tex
 OUTPUT build/main.log
