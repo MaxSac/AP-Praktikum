@@ -14,4 +14,6 @@
 \contentsline {subsection}{\numberline {2.2}Fourier-Synthese}{5}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Fourier-Analyse}{6}{subsection.2.3}
 \contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{6}{section.4}
+\contentsline {subsection}{\numberline {3.1}Fourier-Analyse}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Fourier-Synthese}{8}{subsection.3.2}
+\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
