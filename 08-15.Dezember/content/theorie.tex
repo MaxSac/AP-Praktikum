@@ -9,22 +9,22 @@ Jede Brückenschaltung wird prinzipiell von einer Speisepannung $U_\text{s}$ und
 	\caption{Wesentlicher Aufbau einer Brückenschaltung \cite{sample}.}
 	\label{fig:wheatstone}
 \end{figure}
-Die Brückenschaltung liegt dem Kirchhoffschen Regeln zu Grunde. Die erste der beiden Regeln besagt, das die Summe der eingehenden und ausgehende Ströme an eineme Knoten gleich Null ist.
+Die Brückenschaltung liegt dem Kirchhoffschen Regeln zu Grunde. Die erste der beiden Regeln besagt, dass die Summe der eingehenden und ausgehende Ströme an einem Knoten gleich Null ist.
 \begin{equation}
   \text{Knotenregel} : \sum_{\text{k=1}}^\text{n} I_\text{k} = 0
   \label{eqn:K1}
 \end{equation}
-Die zweite Regel besagt, dass bei einer Geschlossenen Masche sich alle Teilspannungen, bei einem Umlauf zu Null addieren.
+Die zweite Regel besagt, dass sich bei einer Geschlossenen Masche alle Teilspannungen, bei einem Umlauf zu Null addieren.
 \begin{equation}
-  \text{Maschenregel} : \sum_{\text{k=1}}^\text{n} U_\text{k} = 0
+  \text{Maschenregel} : \sum_{\text{k=1}}^\text{n} U_\text{k} = 0 \ .
   \label{eqn:K2}
 \end{equation}
-Unter Berücksichtigung der Kirchhoffschen Gesetzen ergibt sich für die einfachste Brückschaltung eine Brückenspannung $U_\text{Br}$ von
+Unter Berücksichtigung der Kirchhoffschen Gesetze ergibt sich für die einfachste Brückschaltung eine Brückenspannung $U_\text{Br}$ von
 \begin{equation}
-  U_\text{Br} = \frac{R_2 R_3 - R_1 R_4}{(R_3 + R_4)(R_1 + R_2)}
+  U_\text{Br} = \frac{R_2 R_3 - R_1 R_4}{(R_3 + R_4)(R_1 + R_2)} \ .
   \label{eqn:Ubr}
 \end{equation}
-Es wird das Widerstandverhältnis so gewählt das die Brückenspannung minimal wird. Daraus ergibt sich die Abgleichsbedingung
+Es wird das Widerstandverhältnis so gewählt, dass die Brückenspannung minimal wird. Daraus ergibt sich die Abgleichsbedingung
 \begin{equation}
   R_2 R_3 = R_1 R_4 \ .
   \label{eqn:R}
@@ -48,7 +48,7 @@ und
 	\label{eqn:XY2}
 \end{align}
 
-\subsection{Wheatstone Brücke}
+\subsection{Wheatston'sche Brückenschaltung}
 Die Wheatstone Brücke besteht ausschließlich aus ohmschen Widerständen. Sie ist dafür gedacht einen unbekannten Widerstand $R_\text{x}$ mittels der oben genannten Abgleichmethode zu bestimmen. Der Schematische Aufbau einer Wheatstone Brücke ist in Abbildung \ref{fig:widerstand} zu sehen.
 \begin{figure}[H]
       \centering
@@ -144,9 +144,9 @@ lässt sich durch Auflösen der Gleichungen \ref{eqn:M1}, \ref{eqn:M2} nach $U_1
   U_\text{Br} = U_\text{S} \frac{1 - \omega^2 R^2 C^2}{1 - \omega^2 R^2 C^2 + 4 i \omega R C}
   \label{eqn:Ubr}
 \end{equation}
-Als Spannungsverhältniss erhält man durch umstellen der Gleichung \ref{eqn:Ubr} und der Einführung von
+Durch das Umstellen der Gleichung \ref{eqn:Ubr} und das Einführen von $\Omega$ folgt
 \begin{equation*}
-  \Omega = \omega R C
+  \Omega = \omega R C \ ,
 \end{equation*}
 die Form
 \begin{equation*}
