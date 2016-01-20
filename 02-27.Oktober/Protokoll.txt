@@ -1,0 +1,145 @@
+﻿#hier kommen Notizen rein wie das Protokoll in etwa auszusehen hatt.
+
+
+Theorie:
+
+
+Der Dopplereffekt ist die Verschiebung der Ruhefrequenz (delta f) wenn sich der Sender bzw der Empfänger
+ aufeinander zu bzw weg bewegen. Zunächst misst man die Ruhefrequenz der Welle indem man die Anzahl der 
+Schwingungen in einem bestimmeten Zeitintervall misst und diese durch die Zeit teilt. 
+	
+
+	f= Anzahl der Schwingungen / Zeit (1)
+
+
+Um die Ausbreitungsgeschwindigkeit des Senders bzw der Quelle zu bestimmen bildet man das Produkt aus
+	
+	
+	v = s*t (2)
+
+
+Die Anzahl der Schwingungsdifferenz zur Ruheschwingung berechnet sich aus 
+
+
+	delta anzahl an Schwingungen = t*v/lambda (3)
+
+
+Aus 3 folgt das der Beobachter 
+
+
+	v_e=delta n + delta z = t(f_0+v/lamda_0) (4)
+
+
+Schwingungen wahr nimmt. Durch das Umstellen von Foreml 3 nach lamda kommt man auf die Wellenlängenänderung .
+
+	delta Lamda = v/f_0 (5)
+
+Die Ausbreitungsgeschwindigkeit ist das Produkt aus 
+
+
+	f_0*lambda_0 = c (6)
+
+
+und ist abhängig vom Medium. 
+Da sich die Wellenlänge durch die Geschwindigkeit ändert 
+
+	f_q = c/(lamda_0-delta lamda) = f_0*{1/(1-v/c)}  (7)
+
+erhält man einen anderen Term als in Formel 4. Zum vergleich taylort man formel 7 
+
+	Taylorpolynom
+
+Deren vergleich folt in der Auswertung.
+
+
+
+
+
+
+
+
+Versuchsaufbau: 
+
+
+Mit Hilfe eines Waagens wodrauf ein Lautsprecher befestigt ist 
+und von einem Synchronmotor angetrieben wird, sowie ein Mikrofon soll der Dopplereffekt nachgewiesen und 
+bestimmt werden.
+Zunächst misst man die Geschwindigkeiten des Waagens. Dazu müssen die beiden Lichtschranken 
+welche zur Bestimmung der Laufzeit dienen richtig an den Untersetzer und dem Zählwerk angeschlossen werden.
+
+Dazu verwendeten wir zwei Schmitt-Trigger, welche mit den Fototransistoren der Lichtschranken verbunden 
+sind, um deren Impuls in ein verwertbares digitales Signal umzuwandeln. Beide Kanäle werden an einen Flip Flop 
+angeschlossen der eine Art "Speicherfunktion" bestitzt. Dieser beginnt ein Potential auszugeben wenn der Wagen 
+durch die erste Lichtschranke fährt und hört erst dann wieder auf wenn der Wagen die zweite Lichtschranke 
+passiert. Desweitern muss man ein Untersetzer der mit einer Zeitbasis verbunden ist anschließen was zur Zeitmessung dient.
+Den Untersetzer und den Flip-Flop schließt man an ein Und-Gatter an das nur ein Potential ausgibt wenn auf 
+beiden Kanälen ein Potetntial ist. Dieses Und-Gatter schließt man  nun an ein Zählwerk 
+an und bekommt die Zeit in der gewählten Einheit des Untersetzer, die der Wagen braucht um beide Lichtschranken
+zu passieren. 
+ 
+
+	Abbildung Schaltskizze (1)
+
+
+Die Geschwindigkeit wird als Positiv defineiert wenn sich der Sender
+ auf den Empfänger zu bewegt und als negativ wenn es invers dazu ist. Aufgrund verschiedener Gänge lässt
+ sich die Geschwindigkeit vom Sender verstellen.
+
+
+
+Zur Messung der Ruhefrequenz ist die Geschwindigkeit des Wagens als auch der Empfängers gleich null. Die Schaltung soll nun die Schwingung in einem geeigneten Zeitintervall messen und sie elektronisch auf einem Display ausgeben.
+ Dazu muss der Versuchsaufbau wie folgt geändert werden. 
+Das Mikrofon welches dem Empfänger darstellt wird ans Ende der Laufbahn des Wagen gestellt. Die Impulse des Mikrofons werden durch Impulsformer geschickt der sie in eine Rechteckspannung umwandelt. Der Impulsformer ist an einem Und-Gatter angeschloßen. An dem anderem Kanal kommt ein einsekündiger Impuls an, der nach dem auslösen der ersten Lichtschranke beginnt. Dies wird durch den anschluss an einem FlippFlopp realisiert indem man dort an dem Eingang den Schmitt-Trigger anschließt. Als Taktung des Flip-Flopes wält man einen Dekadischen untersetzer welcher an einem Und-gatterangeschloßen ist. Dieser gibt die Länge des betrachteten Zeitintervalls vor, praktischer Weise ist dies eine Sekunde lang weil man dann die Frequenz in Herz ausgegeben bekommt. In das Und-Gatter gehen einerseits die Zeitbasis als auch ein ausgang des Flip-Flops. Der flipFlop gibt daher eine sekunde lang einen  Impuls aus. Dannach fällt der Impuls ab und das andere Und-Gatter schließt und das Zählwerk bleibt stehen.
+
+	Abbildung 2
+
+Nachdem man die Ruhefrequenz bestimmt hatt lässt sich mit der gleichen Schaltung auch die Frequenz bei bewegter Quelle messen. Dazu wird nach jeder Messung das Zählwerk auf Null gesetzt und dannach der Wagen mit dem Synchronmotor in bewegung gestetzt. Nach der Messung der Frequenzen bei unterschiedlichen Geschwindigkeiten will man die Wellenlänge des verwendeten Tons ermitteln. Dazu spannt man den Sender und dem Empfänger auf einen Präzisonsschnlitten. Um die Wellenlänge zu messen wird an die y-Achse des Oszilloskops die Mikrofonspannung angelegt und auf die x-Achse die Generatorspannung des Senders. Nun fährt man den Präzisonsschlitten solange bis man geraden auf dem Oszilloskop erkennen kann und notiert sich diese Werte. Der Abstand bis zur ersten orthogonalen Graden ist grade die halbe Wellenlänge.
+
+Auswertung:
+
+Zunächst muss die Geschwindigkeit des Senders bei den verschieden Gängen berechnet werdem. Dies folgt aus Formel 1.
+
+	Geschwindigkeiten der verschieden Gänge.
+
+Dabei ist der Mittelwert von 5 verschieden Messungen zu bilden um den Fehler zu  minimieren. Analog bildet man den Mittelwert der verschieden frequenzen. 
+
+	Mittelwerte der Frequenzen
+
+Um zu prüfen ob ein linerarer zusammenhang zwischen der Frequenzänderung der Geschwindigkeit besteht werden delta f und v gegeneinader aufgetragen (Diagramm 1 und 2). Mittels einer Ausgleichsgraden lässt sich der Proportinalitätfaktoren bestimmen. 
+
+	Proprtinalitätsfaktoren mittels Steigungsdreieck
+
+Durch die bestimmte Ruhrfrequenz und der mit dem Präzisionsschlitten gemessen Wellenlänge lässt sich die Schallgeschwindigkeit bei Raumtemperatur berechenen (Formel 5)
+
+	c=lamda * f
+
+
+Vergleich zwischen f_q und f_e 
+
+
+Um f_e und f_q zu vergleichen taylort man f_q nach v/c.
+
+	taylorpolynom
+
+Man sieht das die ersten beiden Taylorpo. dem vom f_e entsprechen. Die Terme höherer Ordnung werden zu f²/c² genähert um den vergleich zu vereinfachen. 
+
+	f_q = f_e + f_0(v²/c² .....)
+
+Um die differenz zwischen f_e und f_q zu errrechnen setzen wir die Geschwindigkeiten in 
+
+	delta f = f_0*V²/C²
+
+ein. Der Betrag der Frequenzänderung bei den eingestellten Geschwindigkeiten ist maginal und kann nicht gemessen werden.
+
+
+Diskussion:
+
+Aufällig war das bei dem Versuchsaufbau 2 bei einem höheren GAng als dem siebten, eine große Abweichung zwischen dn einzelnen Messungen war und sie unrealistisch im Zumhang mit den anderen Messwerten erscheint. Ein ofentsichtlicher Fehler im Aufbau war nicht zu finden außer, dass das Mikrofon aufgrund einer fehlenden FEder nicht richtig ausgerichtet werden konnte. Möglicherweise war dadurch die EMpfangsleistung eingeschränkt oder die umgebungsgeräusche (Synchronmotor) zu laut. 
+
+Bei dem Vergleich zwischen den verschieden 1/lamdas 
+
+	56,19 synchronmotor Quelle bewegt sich auf Empfänger zu
+	58,74 synchronmotor invers
+	61,09 Messung der WEllenlänge
+
+föllt auf das die Werte um bis zu 8 Prozent unterscheiden. Dies liegt möglicherweise daran das die Wellenlänge nur auf 10⁻6 m genau bestimmt wurde, die Geschwindigkieitsmessung nicht genau genug gemessen. Der Literaturwert der Schallgeschwindigkeit unterscheidet sich um delta m = 10 m/s {Physikformelsammelung}.

@@ -1,0 +1,29 @@
+#hier kommen Notizen rein wie das Protokoll in etwa auszusehen hatt.
+
+Theorie:
+
+Der Dopplereffekt ist die Verschiebung der Ruhefrequenz wenn sich der Sender bzw der Empfänger aufeinander zu bzw weg bewegen.
+Zunächst misst man die Ruhefrequenz der Welle indem man die Anzahl der Schwingungen in einem bestimmeten Zeitintervall misst und diese durch die Zeit teilt. 
+	f= Anzahl der Schwingungen / Zeit (1)
+Um die Ausbreitungsgeschwindigkeit des Senders bzw der Quelle zu bestimmen bildet man das Produkt aus
+	v = s*t (2)
+Die Anzahl der Schwingungsdifferenz zur Ruheschwingung berechnet sich aus 
+	delta anzahl an schwingungen = t*v/lambda (3)
+Aus 3 folgt das der Beobachter 
+	delta n + delta z = t(f_0+v/lamda_0) (4) 
+Schwingungen wahr nimmt. Die Ausbreitungsgeschwindigkeit ist das Produkt aus 
+	f_0*lambda_0 = c (5)
+und ist abhängig vom Medium. 
+
+
+
+
+
+Versuchsaufbau: 
+
+Mit Hilfe eines Waagens wodrauf ein Lautsprecher befestigt ist und von einem Synchronmotor angetrieben wird soll, sowie ein Mikro soll der Dopplereffekt nachgewiesen und bestimmt werden. Zunächst misst man die Geschwindigkeiten des Waagens. Dazu müssen die beiden Lichtschranken welche zur Bestimmung der Laufzeit dienen richtig an den Untersetzer und dem Zählwerk angeschlossen werden.  Dazu verwendeten wir zwei Schmitt-Trigger, welche mit den Fototransistoren der Lichtschranken verbunden waren um deren Impuls in ein verwertbares digitales Signal umzuwandeln. 
+	Abbildung Schaltskizze (1)
+Die Geschwindigkeit wird als Positiv defineiert wenn sich der Sender auf den Empfänger zu bewegt und als negativ wenn es invers dazu ist. Aufgrund verschiedener Gänge lässt sich die Geschwindigkeit vom Sender verstellen. 
+
+Freuquenz
+Zur Messung der Ruhefrequenz bleibt sowohl der Sender als auch der Empfänger in Ruhe. Die Schaltung ermittelt die Schwingung in einem geeigneten Zeitintervall und gibt die elektronisch auf einem Display aus.

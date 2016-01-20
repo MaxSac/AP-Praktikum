@@ -1,0 +1,146 @@
+Theorie
+
+Einseitig Eingespannt:
+Das Hooksche Gesetz ist die Verbindung zwischen einer Spannung und der dadurch bewirkten Deformation/relative Längenänderung. Es existiert die Normalspannung (sigma) welche senkrecht (Skizze) und eine Tangentialspannung welche parallel zum Querschnitt wirkt. Da die Deformation durch Spannung proportional ist, lässt sich diese durch einen Protionalitästsfaktor E beschreiben.
+
+	Formel (1)
+
+Dieser Proportionalitätsfaktor heist Elastizitätsmodul und ist eine Materialkonstante, die sich in der Größenordnung zwischen 10^-1 und 10^3 kN/mm² befindet. Um diese Materialkonstante zu bestimmen habn wir die elastizität mithilfe der Durchbiegung eines Balkens bestimmt. Dieser Aufbau wurde gewählt weil die Durchbiegung größer als die Längenänderung durch Druck ist und damit einfacher zu bestimmen ist und der Fehler minimiert wird.
+
+Als erstes Betrachten wir die einseitige Einspannung. Dabei kommt es im Stab einersiets zur Stauchung als auch zur Streckung welche durch die Normalspannung verusacht wird. Da die Normalspannung an den Querschnitt angreift kommt es zu einem Drehmoment 
+	
+	M(sigma) (2)
+
+das der äußeren Kraft entgegen wirkt. Das Drehoment 
+
+	Mf (3)
+
+resultiert aus der Gravitationskraft des angehängten Gewichtes. In jedem Punkt des Stabes kommt zwischen 2 und 3 zu einem Gleichgewichtszustand. Mithilfe verschiedener Geometrischer Überlegung lässt sich folgern das 
+
+	D''(X)int(y²)=>dx/x (4)
+
+entspricht. Durch das das umstellen der Formel nach D und der zweifachen Integration kommt man zum Ausdruck 
+
+	D(x) (5) .
+
+Zusatz Bemerkung: das Integral über die Oberfläche des Querschnitts wird Flächenträgheitsmoment I (6) genannt.
+Zweiseitg eingespannt:
+Die Berechnung eines homogene Stabes zweiseitiger Auflage funktioniert analog zu dem eines einsitig eingespannten Stabes. Da die Kraft in der Stabmitte angreift, wird aus dem Moment 3  
+
+	M(f) <L/2 und M(f) >l/2 (7).
+
+Daraus ergeben sich die zwei neuen Momentengleichungen
+
+	d²D/dx (8) .
+
+Durch zweifache Integration und der Überlegung das die Tangente in der Stabmitte die Steigung null besitzt ergibt sich das Endergebniss:
+
+D(x) (9) <l/2
+
+Die Ermittlung des EModuls erfolgt durch die Gleichngen nach E.
+
+Volumen und Dichtebestimmung
+
+Durch die zehnfache Messung und der Bildung des fehlerbehafteten Mittelwertes wird versucht die Messunsicherheit zu Minimieren. 
+
+	Mittelwertformel (9)
+
+Desweiteren die Messungenauigkeiten bei der Berechnung des Volumens und der Dichte mithilfe der Gaußschen Fehlerfortpflanzung
+
+	Gaußsche Fehlerfortpflanzung (10)
+
+berechnet.
+
+Aufgabe
+Durchbiegung elastischer Stäbe
+
+Die Aufgabe bestand darin einerseits die Differenz des Stabes von seiner Ruheposition zur belasteten Position und deren Abstand zur Einspannung zu messen. Dabei nahm man bei großen Auslenkungen möglichst viele Werte weil der relative Messunsicherheit dort kleinner ist als der bei gering Durchbiegungen. 
+
+Volumen und Dichtebestimmung
+
+Durch eine möglichst große Messreihe wird versucht den Fehler bei der Dichtebestimmung möglichst klein zu halten. 
+
+Versuchsaufbau
+Durchbiegung elastischer Stäbe
+
+Zuerst spanne man den Stab ein, so das der Stab noch hinreichend lang ist um die Durchbiegung zu messen. Mithilfe zweier Messuhren die Parallel zur Ruheposition des Stabes sind wird die Druchbiegung des Stabes gemessen. Zusätzlich muss die Entfernung der Messuhren zum Einspannungspunkt des Stabes vermessen werden. Am Ende des Stabes wird ein Gewicht angehängt um eine Biegung des Stabes zu errreichen. Dabei ist zu beachten, dass das Gewicht möglichst weit von der Aufhängung entfernt ist, für ein möglichst großes Moment. Die Maximale Auslenkung sollte 7 mm nicht überschreitet, weil sonst den Stab  bleibend verbogen werden könnte oder die Auslenkungen ausserhalb des Messbereiches der Messuhren liegen würden. Eine Auslenkung unter 3mm ist nicht zu Empfehlen, weil sonst der Ablesefehler zu groß ist. Die Messwerte sind abwechselnd belasteter Stab und unbelasteter Stab zu entnehmen um die Auslenkung des Eigengewichtes des Stabes vernachlässigen zu können. 
+
+Bei der beistseitigen Einspannung wird der Balken so platziert das er in zwei Punkten fixiert ist. Hier hängt man das Gewicht in die Mitte. Der Abstand wird wieder von der Einspannung aus gemessen. Der Rest wird analog zur einseitigen Einspannung betrieben.
+
+Volumen und Dichtebestimmung
+
+Der Durchmesser eines runden Stabes wird mit Hilfe einer Schieblehre von 10 verschieden Positionen ermittelt und die entsprechende Messunsicherheit notiert. Desweitern wird analog die Länge des Stabes mit einem Maßband  gemessen. Das selbe Messverfahren wird auch für einen quadratischen Stab durchgeführt, jedoch nicht der Radius ermittelt sondern die Kantenlänge.
+
+Auswertung 
+
+Elastische Stäbe 
+
+Die Kraft die auf den Stab wirkt lässt sich berechenen aus 
+
+	F = m*g. (11)
+
+Daraus resultiert auf den runden Stab eine Gesamtkraft von .... Newton. Das Flächenträgheitsmoment berechnet sich durch Integration des Radius über die Fläche des Querschnittes (siehe 8).
+
+	I = int(y²) dq (12)
+
+Durch das Ablesen der Steigung der Ausgleichsgraden von Diagramm 1-3 erhält man den Quotient aus der Durchbiegung und der Funktion Lx²-x³/3. Beim beidseitig singespannten Stab trägt man die Durchbiegung gegebüber der Funktion 3L²x-4x³ auf. Die Steigung wird durch zwei möglichst weit auseinander liegende Punkte die auf der Ausgleichsgraden liegen berechnet. Dazu nutzt man die Formel des Steigungsdreiecks.
+
+	(y2-y1)/(x2-x1)=m
+
+	Steigung 1
+	Steigung 2
+	Steigung 3
+
+Die Steigung entspricht nach Formel (x,y) 
+
+	Steigung = F/2EI		bzw. Steigung = F/48EI
+
+durch ausflösen nach E bekommt man das Elastizitätsmodul heraus.
+
+E = sdfsdfsdf =3999 +- 0.01%
+
+Volumen und Dichtebestimmung
+Um einen möglichst genauen Messwert zu bestimmen bildet man den arethemischen Mittelwert der einzelnen Messungen.
+
+Länge ....
+Durchmesser ...
+
+Daurauf wird das Volumen der einzelnen Körpern errechnet
+
+...
+
+
+Zur berechnung des Fehlers der Volumina wird die Gaußsche Fehlerfortpflanzung angewendet
+
+...
+
+
+
+
+
+Diskussion
+Biegung Elastischer Stäbe
+
+Bei dem Vergleich der errechneten Elstizitätsmodule fällt auf,
+
+Stoff							Errechnet	Literaturwert	Abweichung in Prozent
+Elastizitätsmodul Messing 			    =	92,04*10^9	(78-123)*10^9	0%
+Elastizitätsmodul Aluminium (Einseitig Eingespannt) =   22,87*10^9	70*10^9		250%	DIN EN 1999
+Elastizitätsmodul Aluminium (Beidseitig Eingespannt)=	73,68*10^9	70*10^9		5%
+
+dass das EModul von Aluminium welches durch die einseitige Einspannung bestimmt wurde deutlich vom Literaturwert abweicht. Der wahrscheinlichste Grund ist ein Fehler in der Notation des Gewichtes. Das notierte Gewicht beträgt 0,2488 kg, wenn man jedoch aus dem Literaturwert des Elastiziztätsmodul und der Annahme das die Steigung der Graden stimmt die Masse nach Formel 5 zurückrechnet erhält man einen Masse von 0,7614 kg.
+
+	Formel zur Berechnung der Masse 
+
+Dies ist eine Differenz der Masse von über 200 % und eine mögliche Ursache für die Abweichung. Eine ablese Fehler bei der Messung der Durchbiegung ist unwahrscheinlich in der Größenordnung bei der häufe der Messungen. Die restlichen Ergebnisse scheinen den Messfehler der Messinstrumente entsprechend zu sein. 
+
+Dichtebestimmung
+
+Zu dem berechneten Volumen und der bestimmten Masse ist keine Äußerung möglich da lediglich deren Division einen Einfluss auf die Dichte hat. Die ermittelten Dichten weichen 
+
+MEssingstab(Rund) 	(8300 +- 168) kg/m²	
+Messingstab(Eckig)	(8400 +- 84 ) kg/m²	8500 kg/m² 	http://www.hug-technik.com/inhalt/ta/metall.htm
+
+nur < 3% vom Literaturwert ab. Dies liegt möglicherweise daran das die Legierung anders ist oder das Volumen bzw die Masse nicht genau genug bestimmt worden sind. 
+
+
