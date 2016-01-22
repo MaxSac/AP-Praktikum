@@ -1,4 +1,4 @@
-PWD /home/maximilian/Dokumente/00-AP_Praktikum/00-Vorlage
+PWD /home/maximilian/Dokumente/00-AP_Praktikum/11-19.Januar
 INPUT /home/maximilian/.local/texlive/2015/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./main.tex
 OUTPUT build/main.log
@@ -366,6 +366,11 @@ INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT build/main.aux
