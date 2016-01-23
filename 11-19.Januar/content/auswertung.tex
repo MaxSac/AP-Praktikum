@@ -1,19 +1,19 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-Das Experiment wurde mit der zweiten Schaltung durchgeführt. Die Schaltung hatt die Kenngrößen 
+Das Experiment wurde mit der zweiten Schaltung durchgeführt. Die Schaltung hatt die Kenngrößen
 \begin{eqnarray}
-  L =& (\num{23.954 +- 0.001}) mH	\\
-  C =& (\num{0.7932 +- 0.0001}) nF	\\
-  C_\text{Sp} =& (\num{0.028 +- 0.001})	\\
-  R =& 48 \text{\Omega}
+  L =& (\num{23.954 +- 0.001}) \text{mH}	\\
+  C =& (\num{0.7932 +- 0.0001}) \text{nF}	\\
+  C_\text{Sp} =& (\num{0.028 +- 0.001})	\text{nF}\\
+  R =& 48 \Omega
 \end{eqnarray}
 Als Koppelkondensator wurde ein variabeler Kondensator benutzt der einen relativen Messfehler von 0.5 \% besitzt und Kapazitäten von 12.00 nF, 9.99 nF, 8.18 nF, 6.86 nF, 4.74 nF, 2.86 nF, 2.19 nF und 0.997 nF.
 
 \subsection{Justierung der beiden LC-Kreise}
-Um die beiden Resanzfrequenzen miteinander abzustimmen, wird zunächst die Resonanzfrequenz $\nu^+$ des Kreises mit der nicht Regelbaren Kapazität mittels Lissajou-Figur bestimmt. Dafür wird die Phase gesucht, welche zwischen Generstorspannung und Schwingkreis verschwindet. Es wird nun der Funktionsgenerator an den zweiten Kreis angeschlossen und die Kapazität entsprechend eingestellt, so dass die selbe Lissajour-Figur wie im anderen Kreis zu sehen ist. 
-Als Resonanzfrequenz wird eine Frequenz von 
+Um die beiden Resanzfrequenzen miteinander abzustimmen, wird zunächst die Resonanzfrequenz $\nu^+$ des Kreises mit der nicht Regelbaren Kapazität mittels Lissajou-Figur bestimmt. Dafür wird die Phase gesucht, welche zwischen Generstorspannung und Schwingkreis verschwindet. Es wird nun der Funktionsgenerator an den zweiten Kreis angeschlossen und die Kapazität entsprechend eingestellt, so dass die selbe Lissajour-Figur wie im anderen Kreis zu sehen ist.
+Als Resonanzfrequenz wird eine Frequenz von
 \begin{equation}
-  \nu^+ = 35.46 kHz
+  \nu^+ = 35.46 \text{kHz}
   \label{nu+}
 \end{equation}
 gemessen.
@@ -25,7 +25,7 @@ Die dem experimentellen Aufbau entnommer Verhältniss aus Schwingungs- und Schwe
   n_\text{t} = \frac{ v_\text{t}^+ + v_\text{t}^- }{2(v_\text{t}^- - v_\text{t}^+)}
   \label{eqn:n_t}
 \end{equation}
-Die theoretischen Frequenzverhältnisse $n_\text{t}$ für die einzelnen Kondensatoren sind in Tabelle \ref{tab:n} aufgetragen. Die Abweichung des praktisch ermittelten Wertes vom theoretischen berechnet sich aus 
+Die theoretischen Frequenzverhältnisse $n_\text{t}$ für die einzelnen Kondensatoren sind in Tabelle \ref{tab:n} aufgetragen. Die Abweichung des praktisch ermittelten Wertes vom theoretischen berechnet sich aus
 \begin{equation}
   \sigma = \frac{| n_\text{exp} - n_\text{t} |}{n_\text{exp}}
 \end{equation}
@@ -40,7 +40,7 @@ Die theoretischen Frequenzverhältnisse $n_\text{t}$ für die einzelnen Kondensa
     8.18	& 11	& 11.7	& 6.4	\\
     6.86	& 9	& 10.0	& 11.1	\\
     4.74	& 7	& 7.2	& 2.9	\\
-    2.86	& 4	& 4.8	& 20	\\	
+    2.86	& 4	& 4.8	& 20	\\
     2.19	& 3 	& 3.9	& 30	\\
     0.997	& /	& 2.3	& /	\\
     \bottomrule
@@ -70,13 +70,13 @@ Sowohl die experimentell ermittelten Werte $v_\text{e}^+$ und  $v_\text{e}^-$, a
   \caption{Eigenfrequenzen der Schwingkreise in Abhängigkeit der Koppelkondensatoren}
   \label{tab:eigen}
 \end{table}
-Der Fehler der gemessenen Eigenschwingung sowohl für $\nu^+$ als auch $\nu^-$ ist 1-2 \%. Aufgrund der geringen relativen Abweichung können keine systematischen Fehler erkannt werden. 
+Der Fehler der gemessenen Eigenschwingung sowohl für $\nu^+$ als auch $\nu^-$ ist 1-2 \%. Aufgrund der geringen relativen Abweichung können keine systematischen Fehler erkannt werden.
 \subsection{Eigenfrequenzen des Systems (Beepmethode)}
-Die gewählte Startfrequenz des Beeps beträgt 
+Die gewählte Startfrequenz des Beeps beträgt
 \begin{equation}
   \nu_\text{Start} = 30.13 \text{kHz}
-\end{equation} 
-und die Endfrequenz 
+\end{equation}
+und die Endfrequenz
 \begin{equation}
   \nu_\text{Ende} = 60.98 \text{kHz}
 \end{equation}
@@ -86,7 +86,7 @@ Aufgrund des nicht immer eindeutigen Maxima wird ein Ablesefehler der Zeit von 2
   \begin{tabular}{c c c c c c c}
     \toprule
     $C_\text{k}$ / nF & t bis zum & $v_\text{e}^+$ / kHz & $\sigma^+$ / \% & t bis zum & $v_\text{e}^-$ / kHz & $\sigma^-$ / \%  \\
-    &1 Peak /ms& & & 2 Peak / ms & & \\
+    &1 Peak / ms& & & 2 Peak / ms & & \\
     \midrule
     \num{12.00 +- 0.06}     & \num{240 +- 2} &\num{37.53 +- 0.06} & 2 & \num{176 +- 2} & \num{35.55 +- 0.06} & 1 \\
     \num{9.99 +- 0.04}      & \num{256 +- 2} &\num{38.02 +- 0.06} & 1 & \num{168 +- 2} & \num{35.30 +- 0.06} & 2 \\
