@@ -66,16 +66,17 @@ U0 = 7
 
 U = U0 / ((1-L*C*(w**2))**2 + (w**2)*(R**2)*(C**2))**(0.5)
 
-def Uso(x, a, b, c):
-    return  c / (((1-a*(x**2))**2 + (x**2)*(b**2))**(0.5))
+def Uso(x, a, b, c, d):
+    return  d / ((((1-a*b*(x**2))**2) + (x**2)*(b**2)*(c**2))**(0.5))
 
 params, cov = curve_fit(Uso, w, UC)
+print(w, UC)
 
 print("Paramter: ",params, "Werte: ", Uso(w, *params))
 
 plt.xscale('log')
-plt.errorbar(w, UC, yerr=0.1, fmt='x', label='Messwerte')
-plt.plot(w, U, 'r-', label='theo Wert')
+#plt.errorbar(w, UC, yerr=0.1, fmt='x', label='Messwerte')
+#plt.plot(w, U, 'r-', label='theo Wert')
 plt.plot(w, Uso(w, *params), 'b-', label='Fit')
 plt.ylabel('U / V')
 plt.xlabel('$\omega$ / Hz')
