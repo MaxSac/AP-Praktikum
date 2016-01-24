@@ -62,24 +62,23 @@ w = f * 2 * math.pi
 L = 16.78 * 10**(-3)
 C = 2.066 * 10**(-9)
 R = 682
-U0 = 7
+U0 = 1
 
-U = U0 / ((1-L*C*(w**2))**2 + (w**2)*(R**2)*(C**2))**(0.5)
+#U = U0 / ((1-L*C*(w**2))**2 + (w**2)*(R**2)*(C**2))**(0.5)
 
-def Uso(x, a, b, c):
-    return  c / (((1-a*(x**2))**2 + (x**2)*(b**2))**(0.5))
+def Uso(x, a):
+    return  a / ((1-L*C*(x**2))**2 + (x**2)*(R**2)*(C**2))**(0.5)
 
 params, cov = curve_fit(Uso, w, UC)
 
-print("Paramter: ",params, "Werte: ", Uso(w, *params))
+print("Paramter: ", params, "Werte: ", Uso(w, *params))
 
 plt.xscale('log')
 plt.errorbar(w, UC, yerr=0.1, fmt='x', label='Messwerte')
-plt.plot(w, U, 'r-', label='theo Wert')
-plt.plot(w, Uso(w, *params), 'b-', label='Fit')
+#plt.plot(w, U, 'ro', label='theo Wert')
+plt.plot(w, Uso(w, *params), 'g-', label='Fit')
 plt.ylabel('U / V')
 plt.xlabel('$\omega$ / Hz')
-plt.xlim(8, 400000)
 plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig('build/plot1.pdf')
