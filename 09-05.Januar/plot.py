@@ -3,12 +3,13 @@ import numpy as np
 from scipy.optimize import curve_fit
 from scipy.signal import find_peaks_cwt
 from uncertainties import ufloat
+import math
 
 t, U = np.loadtxt('data2.txt', unpack=True)
 t *= 10000
 
 #Sucht nach Maxima
-#maxs = find_peaks_cwt(U, np.linspace(1, 5, 3000), min_snr=1, noise_perc=100) 
+#maxs = find_peaks_cwt(U, np.linspace(1, 5, 3000), min_snr=1, noise_perc=100)
 #mins = find_peaks_cwt(-U, np.linspace(1, 5, 3000), min_snr=1,  noise_perc=100)
 #for x in range(30):
 #    print('Maxima',t[mins[x]],U[mins[x]])
@@ -133,3 +134,25 @@ C3 = ufloat(2.066,0.006)*10**(-9)
 R3 = ufloat(682,1)
 w0 = 26300*(np.pi*2)
 print("Güte experimentell = ", 1/(w0*R3*C3))
+
+#Das neue Diagramm
+print("---------------------------------------------------------------")
+f, UC, phi = np.loadtxt("data.txt", unpack=True)
+w = f * 2 * math.pi
+L = 16.78 * 10**(-3)
+C = 2.066 * 10**(-9)
+R = 682
+U0 = 7
+
+U = U0 / ((1-L*C*(w**2))**2 + (w**2)*(R**2)*(C**2))**(0.5)
+
+plt.xscale('log')
+plt.errorbar(w, UC, yerr=0.1, fmt='x', label='Messwerte')
+plt.plot(w, U, 'r-', label='theo Wert')
+plt.ylabel('U / V')
+plt.xlabel('$\omega$ / Hz')
+plt.xlim(8, 400000)
+plt.legend(loc="best")
+plt.tight_layout()
+plt.savefig('build/ABCDE.pdf')
+plt.close()

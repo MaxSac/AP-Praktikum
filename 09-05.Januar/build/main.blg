@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'build/main.blg'
 [27] biber:276> INFO - === So Jan 24, 2016, 18:04:14
@@ -13,3 +14,20 @@
 [149] Biber.pm:2858> INFO - No sort tailoring available for locale 'de-DE'
 [152] bbl.pm:505> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
 [152] bbl.pm:596> INFO - Output to build/main.bbl
+=======
+[0] Config.pm:327> INFO - This is Biber 2.2
+[0] Config.pm:330> INFO - Logfile is 'build\main.blg'
+[26] biber-MSWIN:283> INFO - === 
+[26] Biber.pm:334> INFO - Reading 'build\main.bcf'
+[102] Biber.pm:677> INFO - Found 2 citekeys in bib section 0
+[118] Biber.pm:3054> INFO - Processing section 0
+[133] Biber.pm:3193> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[135] bibtex.pm:1072> INFO - Decoding LaTeX character macros into UTF-8
+[136] bibtex.pm:935> INFO - Found BibTeX data source 'lit.bib'
+[159] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[159] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[159] Biber.pm:2931> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[160] Biber.pm:2935> INFO - No sort tailoring available for locale 'de-DE'
+[162] bbl.pm:505> INFO - Writing 'build\main.bbl' with encoding 'UTF-8'
+[162] bbl.pm:596> INFO - Output to build\main.bbl
+>>>>>>> 954165bed9cfc426afa56506c6b962a64dc0f818
