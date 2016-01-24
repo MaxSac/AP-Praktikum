@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.10.18)  12 JAN 2016 09:45
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.10.18)  24 JAN 2016 17:25
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -278,7 +278,7 @@ Lua-only attribute luaotfload@cursbase = 6
 Lua-only attribute luaotfload@curscurs = 7
 Lua-only attribute luaotfload@cursdone = 8
 Lua-only attribute luaotfload@state = 9
-luaotfload | main : fontloader loaded in 0.018 seconds
+luaotfload | main : fontloader loaded in 0.019 seconds
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
@@ -2144,12 +2144,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--64
 
  []
 
-<picture/Theorie2.PNG, id=81, 295.85532pt x 156.585pt>
+[4] <picture/Theorie2.PNG, id=98, 295.85532pt x 156.585pt>
 File: picture/Theorie2.PNG Graphic file (type png)
  <use picture/Theorie2.PNG>
 Package pdftex.def Info: picture/Theorie2.PNG used on input line 86.
 (pdftex.def)             Requested size: 215.04262pt x 113.81102pt.
- [4] [5<./picture/Theorie2.PNG>] [6]) (./content/durchfuehrung.tex <picture/Durch1.PNG, id=127, 532.23843pt x 213.79875pt>
+ [5<./picture/Theorie2.PNG>] [6]) (./content/durchfuehrung.tex <picture/Durch1.PNG, id=127, 532.23843pt x 213.79875pt>
 File: picture/Durch1.PNG Graphic file (type png)
  <use picture/Durch1.PNG>
 Package pdftex.def Info: picture/Durch1.PNG used on input line 9.
@@ -2179,37 +2179,48 @@ File: plot.pdf Graphic file (type pdf)
  <use plot.pdf>
 Package pdftex.def Info: plot.pdf used on input line 49.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
- [9<./picture/Durch4.PNG>] [10<build/plot.pdf>] <plot1.pdf, id=210, 417.7206pt x 258.00488pt>
+ [9
+Missing character: There is no 𝛺 (U+1D6FA) in font "file:lmroman10-regular:script=latn;+trep;+tlig;"!
+Missing character: There is no 𝛺 (U+1D6FA) in font "file:lmroman10-regular:script=latn;+trep;+tlig;"!
+<./picture/Durch4.PNG>] [10
+Missing character: There is no 𝛺 (U+1D6FA) in font "file:lmroman10-regular:script=latn;+trep;+tlig;"!
+Missing character: There is no 𝛺 (U+1D6FA) in font "file:lmroman10-regular:script=latn;+trep;+tlig;"!
+Missing character: There is no 𝛺 (U+1D6FA) in font "file:lmroman10-regular:script=latn;+trep;+tlig;"!
+<build/plot.pdf>] <plot1.pdf, id=210, 417.7206pt x 258.00488pt>
 File: plot1.pdf Graphic file (type pdf)
  <use plot1.pdf>
 Package pdftex.def Info: plot1.pdf used on input line 126.
-(pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
- <plot2.pdf, id=213, 417.7206pt x 258.00488pt>
+(pdftex.def)             Requested size: 414.59636pt x 256.0748pt.
+ [11
+Missing character: There is no 𝛺 (U+1D6FA) in font "file:lmroman10-regular:script=latn;+trep;+tlig;"!
+Missing character: There is no 𝛺 (U+1D6FA) in font "file:lmroman10-regular:script=latn;+trep;+tlig;"!
+Missing character: There is no 𝛺 (U+1D6FA) in font "file:lmroman10-regular:script=latn;+trep;+tlig;"!
+<build/plot1.pdf>] [12] <plot2.pdf, id=254, 417.7206pt x 258.00488pt>
 File: plot2.pdf Graphic file (type pdf)
  <use plot2.pdf>
 Package pdftex.def Info: plot2.pdf used on input line 143.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
- [11<build/plot1.pdf>] [12] <plot3.pdf, id=268, 417.7206pt x 258.00488pt>
+ <plot3.pdf, id=258, 417.7206pt x 258.00488pt>
 File: plot3.pdf Graphic file (type pdf)
  <use plot3.pdf>
 Package pdftex.def Info: plot3.pdf used on input line 207.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
- <plot4.pdf, id=270, 417.7206pt x 258.00488pt>
+ <plot4.pdf, id=260, 417.7206pt x 258.00488pt>
 File: plot4.pdf Graphic file (type pdf)
  <use plot4.pdf>
 Package pdftex.def Info: plot4.pdf used on input line 215.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
- [13<build/plot2.pdf><build/plot3.pdf>] [14]) (./content/diskussion.tex)
+ [13<build/plot2.pdf>] [14] [15<build/plot3.pdf><build/plot4.pdf>]) (./content/diskussion.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [15<build/plot4.pdf>]
+ [16]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 3C056D33E6C6F1AAB14D8EAF915144F5;19952.
+(rerunfilecheck)             Checksum: 00E874E800C9BBCD7CBBB9A95618E7B6;19952.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: B9B92A93D8016819FD4C699009A7EE84;2113.
+(rerunfilecheck)             Checksum: 017D3E53C50C6011F2C1BBB6AC94A810;2113.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -2217,19 +2228,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44024 strings out of 494897
+ 44025 strings out of 494897
  100000,1648299 words of node,token memory allocated
  822 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 30 kern, 35 attribute, 68 glue_spec, 35 attribute_list, 2 action, 1 write nodes
-   avail lists: 1:1,2:6143,3:239,4:1172,5:189,6:1943,7:83,8:24,9:338,10:257,11:1
+   avail lists: 1:1,2:7365,3:239,4:1377,5:194,6:2282,7:102,8:24,9:370,10:269,11:1
  46346 multiletter control sequences out of 65536+600000
  105 fonts using 31530719 bytes
  69i,12n,104p,1248b,2071s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (15 pages, 240250 bytes).
+Output written on main.pdf (16 pages, 235923 bytes).
 
-PDF statistics: 531 PDF objects out of 1000 (max. 8388607)
- 400 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 131072)
+PDF statistics: 506 PDF objects out of 1000 (max. 8388607)
+ 386 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 131072)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

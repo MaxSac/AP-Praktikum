@@ -34,7 +34,7 @@ plt.plot(minst, minsU, 'ro', label='Minima')
 plt.plot(x, e(x, 30.63, 0.43, 24.20), 'g-', label='Obere Einhüllende')
 #Der Fehler ist 0.95 0.04 1.17
 plt.plot(x, e(x, -29.49, 0.46, 19.91), 'y-', label='Untere Einhüllende')
-#Der Fehler ist 0.60 0.03 0.68
+#Der Fehler ist 0.60, 0.03, 0.68
 plt.legend(loc="best")
 plt.xlabel('t / 100 µs')
 plt.ylabel('U / in Volt')
@@ -52,13 +52,20 @@ print("--------------------------------------------------------")
 L1 = ufloat(0.00353,0.00003)
 C1 = ufloat(5.075*10**(-6),0.01*10**(-6))
 R_ap_2 = ((4*L1)/C1)
+R2 = ufloat(682, 1)
 print("R_ap = ", R_ap_2**0.5)
 print("--------------------------------------------------------")
 
 f, UC, phi = np.loadtxt("data.txt", unpack=True)
 
+def freq(p):
+    x = 2*np.pi*p
+    return 7/(( (1-L1.n*C1.n*(x**2))**2 + (x**2)*(R2.n**2)*(C1.n**2) )**(0.5))
+print(freq(0))
+
 plt.xscale('log')
-plt.plot(f, UC, 'x', label='Messwerte')
+plt.errorbar(f, UC, yerr=0.1, fmt='x', label='Messwerte')
+plt.plot(f, freq(f))
 plt.ylabel('U / V')
 plt.xlabel('f / Hz')
 plt.xlim(8, 56000)
@@ -122,3 +129,7 @@ plt.tight_layout()
 plt.savefig('build/plot4.pdf')
 plt.close()
 
+C3 = ufloat(2.066,0.006)*10**(-9)
+R3 = ufloat(682,1)
+w0 = 26300*(np.pi*2)
+print("Güte experimentell = ", 1/(w0*R3*C3))

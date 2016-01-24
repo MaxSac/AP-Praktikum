@@ -4,11 +4,11 @@ Die für den Versuch relevanten Bauteile haben die Werte
 \begin{eqnarray}
   L 	&= (\num{16.78 +- 0.09}) \text{mH}	\\
   C 	&= (\num{2.066 +- 0.006}) \text{nF}	\\
-R_1 	&= (\num{67.2 +- 0.2}) \Omega	\\
-R_2 	&= (\num{682 +- 1}) \Omega
+  R_1 	&= (\num{67.2 +- 0.2}) \text{\Omega}	\\
+  R_2 	&= (\num{682 +- 1}) \text{\Omega}
   \label{eqn:Bau}
 \end{eqnarray}
-Für den Versuch 3.2 wurde aufgrund eines Defektes des Regelbaren Widerstands der Aufbau gewechselt. Die Daten für den Aufgabenteil sind,\begin{eqnarray}
+Für den Versuch 3.2 wurde aufgrund eines Defektes des regelbaren Widerstands der Aufbau gewechselt. Die Daten für den Aufgabenteil sind,\begin{eqnarray}
   L_2 =& (\num{3.53 +- 0.03}) \text{mH}	\\
   C_2 =& (\num{5.08 +- 0.01}) \text{µF}
 \end{eqnarray}
@@ -20,18 +20,18 @@ Die durch das Oszilliskop gemessene Spannungspeaks werden mittels einer CWD-Funk
     \toprule
     	$U_\text{C}$ / V & $t$ / $10^{-3}$ \, s\\
     \midrule
-	52	& 0.18	\\
-	48.8	& 0.54	\\
-	45.6	& 0.93 	\\
-	41.6	& 1.30	\\
-	38.4	& 1.69	\\
-	36.6	& 2.09 	\\
-	34.2	& 2.46	\\
-	33.3 	& 2.82	\\
-	32	& 3.20 	\\
-	31.4	& 3.59	\\
-	29.6	& 3.96	\\
-	28.8	& 4.32 	\\
+    \num{52.0 +- 0.1}  	& \num{0.18 +- 0.01}	\\
+    \num{48.8 +- 0.1}	& \num{0.54 +- 0.01}	\\
+    \num{45.6 +- 0.1}	& \num{0.93 +- 0.01} 	\\
+    \num{41.6 +- 0.1}	& \num{1.30 +- 0.01}	\\
+    \num{38.4 +- 0.1}	& \num{1.69 +- 0.01}	\\
+    \num{36.6 +- 0.1}	& \num{2.09 +- 0.01} 	\\
+    \num{34.2 +- 0.1}	& \num{2.46 +- 0.01}	\\
+    \num{33.3 +- 0.1} 	& \num{2.82 +- 0.01}	\\
+    \num{32.0 +- 0.1} 	& \num{3.20 +- 0.01} 	\\
+    \num{31.4 +- 0.1}	& \num{3.59 +- 0.01}	\\
+    \num{29.6 +- 0.1}	& \num{3.96 +- 0.01}	\\
+    \num{28.8 +- 0.1}	& \num{4.32 +- 0.01} 	\\
     \bottomrule
   \end{tabular}
   \caption{Spannung am Kondensator zur Bestimmung des Abklingverhalten und des Dämpfungswiederstandes.}
@@ -52,69 +52,69 @@ Die Einhüllende und die Messdaten sind in Abbildung \ref{fig:Osz} dargestellt.
 \end{figure}
 Nach Formel \ref{eqn:mu} und \ref{eqn:tex} lässt sich der effektive Dämpfungswiderstand sowie die Abklingdauer berechnen.
 \begin{eqnarray}
-  R_\text{eff} = ( \num{143.38 +- 12.7}) \, \Omega \\
+  R_\text{eff} = ( \num{140 +- 10}) \, \text{\Omega} \\
   T_\text{ex} = ( \num{230 +- 10}) \cdot 10^{-6} \, \text{s}
   \label{eqn:Reff}
 \end{eqnarray}
-Der Erwatungswert weicht vom errechneten Wert um 75 $\Omega$ ab. Dies lässt sich einerseits dadurch erklären, dass der Innenwiderstand von 50 $\Omega$ nicht berücksichtigt wurde. Andererseits kann es bei der gewählten Frequenz zu Impedanzen der verschiedenen Bauteile gekommen sein. Für die weiteren Aufgaben wird der Widerstand des Generators berücksichtigt.
+Der praktisch bestimmte Wert weicht vom errechneten Wert um 75 \Omega ab. Dies lässt sich einerseits dadurch erklären, dass der Innenwiderstand von 50 \Omega nicht berücksichtigt wurde. Andererseits kann es bei der gewählten Frequenz zu Impedanzen der verschiedenen Bauteile gekommen sein. Für die weiteren Aufgaben wird der Widerstand des Generators berücksichtigt.
 \subsection{Dämpfungswiderstand des Aperiodischen Grenzfalls}
 Der im Experiment bestimmte Widerstand, bei dem der Aperiodische Grenzfall eintritt, beträgt
 \begin{equation}
-  R_\text{Praxis} = 1.25 \, \Omega \ .
+  R_\text{Praxis} = 1.25 \, \text{\Omega} \ .
   \label{eqn:Rprax}
 \end{equation}
 Der Theoretische Widerstand wird mittels Formel \ref{eqn:Rap} ausgerechnet und beträgt
 \begin{equation}
-  R_\text{Theorie} = (\num{2.75 +- 0.23}) \Omega \ .
+  R_\text{Theorie} = (\num{2.75 +- 0.23}) \text{\Omega} \ .
   \label{eqn:Rthe}
 \end{equation}
 Zwischen dem theoretisch und dem praktisch ermittelten Wert ist eine Differenz von \\
-1.5 $\Omega$. Mögliche Ursachen für den Fehler sind, die vernachlässigte Impedanz des Aufbaus, als auch die Schwierigkeit den Punkt des Aperiodischen Grenzfalls zu treffen, da keine wesentliche Änderung zu erkennen sind.
+1.5 \Omega. Mögliche Ursachen für den Fehler sind, die vernachlässigte Impedanz des Aufbaus, als auch die Schwierigkeit den Punkt des Aperiodischen Grenzfalls zu treffen, da keine wesentliche Änderung zu erkennen sind.
 \subsection{Frequenzabhängigkeit der Kondensatorspannung eines  Serienresonanzkreis}
-In Tabelle \ref{tab:U_c} sind die Spannung am Kondensator und die entsprechenden Frequenzen hinterlegt.
+In Tabelle \ref{tab:U_c} sind die Spannung am Kondensator und die entsprechenden Frequenzen hinterlegt. Bei den Frequenzen wird ein Ablesefehler von 0.1 V angenommen, da immer auf die erste Stelle nach dem Kommer auf- bzw. abgerundet wird.
 \begin{table}
   \centering
   \begin{tabular}{c c}
 	\toprule
 	f / Hz & U / V \\
 	\midrule
-	9	& 5.6	\\
-	12	& 6.4	\\
-	16	& 6.8	\\
-	23	& 7.2	\\
-	35	& 7.2	\\
-	61	& 7.6	\\
-	162	& 7.6	\\
-	307	& 7.6	\\
-	500	& 7.6	\\
-	905	& 7.6	\\
-	1604	& 7.8	\\
-	2509	& 7.8	\\
-	4025	& 7.8	\\
-	5615	& 8.0	\\
-	8970	& 9.0	\\
- 	12030	& 10.0	\\
- 	15400	& 11.2	\\
- 	17610	& 13.0	\\
- 	20000	& 15.6	\\
- 	22520	& 20.4	\\
- 	24000	& 24.8	\\
-	24490	& 26.0	\\
-	25180	& 27.6	\\
-	25570	& 28.0	\\
-	26300	& 28.4	\\
-	27060	& 27.2	\\
- 	27610	& 26.0	\\
- 	28100	& 24.2	\\
- 	29970	& 18.0	\\
- 	32540	& 12.4	\\
-	35660	& 8.6	\\
-	40030 	& 5.4	\\
-	42580 	& 4.4	\\
-	45000	& 3.7	\\
-	50180	& 2.7	\\
-	52430 	& 2.4	\\
-	55010	& 2.2	\\
+	9	& \num{5.6 +- 0.1}	\\
+	12	& \num{6.4 +- 0.1}	\\
+	16	& \num{6.8 +- 0.1}	\\
+	23	& \num{7.2 +- 0.1}	\\
+	35	& \num{7.2 +- 0.1}	\\
+	61	& \num{7.6 +- 0.1}	\\
+	162	& \num{7.6 +- 0.1}	\\
+	307	& \num{7.6 +- 0.1}	\\
+	500	& \num{7.6 +- 0.1}	\\
+	905	& \num{7.6 +- 0.1}	\\
+	1604	& \num{7.8 +- 0.1}	\\
+	2509	& \num{7.8 +- 0.1}	\\
+	4025	& \num{7.8 +- 0.1}	\\
+	5615	& \num{8.0 +- 0.1}	\\
+	8970	& \num{9.0 +- 0.1}	\\
+	12030	& \num{10.0 +- 0.1}	\\
+	15400	& \num{11.2 +- 0.1}	\\
+	17610	& \num{13.0 +- 0.1}	\\
+	20000	& \num{15.6 +- 0.1}	\\
+	22520	& \num{20.4 +- 0.1}	\\
+	24000	& \num{24.8 +- 0.1}	\\
+	24490	& \num{26.0 +- 0.1}	\\
+	25180	& \num{27.6 +- 0.1}	\\
+	25570	& \num{28.0 +- 0.1}	\\
+	26300	& \num{28.4 +- 0.1}	\\
+	27060	& \num{27.2 +- 0.1}	\\
+	27610	& \num{26.0 +- 0.1}	\\
+	28100	& \num{24.2 +- 0.1}	\\
+	29970	& \num{18.0 +- 0.1}	\\
+	32540	& \num{12.4 +- 0.1}	\\
+	35660	& \num{8.6 +- 0.1}	\\
+	40030 	& \num{5.4 +- 0.1}	\\
+	42580 	& \num{4.4 +- 0.1}	\\
+	45000	& \num{3.7 +- 0.1}	\\
+	50180	& \num{2.7 +- 0.1}	\\
+	52430 	& \num{2.4 +- 0.1}	\\
+	55010	& \num{2.2 +- 0.1}	\\
 	\bottomrule
  	\end{tabular}
   \caption{Frequanzabhängigkeit der Kondensatorspannung}
@@ -123,13 +123,13 @@ In Tabelle \ref{tab:U_c} sind die Spannung am Kondensator und die entsprechenden
 Anhand derer und der Abbildung \ref{fig:logUc} lässt sich die Güte ablesen.
 \begin{figure}
   \centering
-  \includegraphics[height=5cm]{plot1.pdf}
+  \includegraphics[height=9cm]{plot1.pdf}
   \caption{Halblogaritmisch aufgetragene Kondensatorspannung gegen die Frequenz}
   \label{fig:logUc}
 \end{figure}
 Er beträgt
 \begin{equation}
-  q_\text{exp} = 28.4 \ .
+  q_\text{exp} = \num{4.30 +- 0.01} \ .
   \label{eqn:qexp}
 \end{equation}
 Aus Formel \ref{eqn:q} lässt sich der theoretische Wert der Güte berechnen. Sie beträgt
@@ -137,7 +137,7 @@ Aus Formel \ref{eqn:q} lässt sich der theoretische Wert der Güte berechnen. Si
   q_\text{theo} = (\num{4.18 +- 0.01})
   \label{eqn:qtheo}
 \end{equation}
-und ist somit 579 \% größer als der praktisch ermittelte Wert. Mittels eines linearen Plot (siehe Abbildung \ref{fig:fUc}) soll die breite der Resonanzkurve bestimmt werden.
+und ist somit 3 \% größer als der praktisch ermittelte Wert. Mittels eines linearen Plot (siehe Abbildung \ref{fig:fUc}) soll die breite der Resonanzkurve bestimmt werden.
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{plot2.pdf}

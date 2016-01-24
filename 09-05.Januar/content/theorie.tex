@@ -22,10 +22,10 @@ Die in der Abbildung \ref{fig:RCL} eingezeichneten Spannungen $U_\text{R}$, $U_\
 Da nun
 \begin{align*}
 	U_\text{R}(t) &= R I(t) \ \ , \\
-	U_\text{C}(t) &= \frac{Q(t)}{c} \ \ \ und \\
+	U_\text{C}(t) &= \frac{Q(t)}{c} \ \ \ \text{und} \\
 	U_\text{L}(t) &= L \frac{d I}{d t}
 \end{align*}
-ist, folgt mit weiteren umformungen
+ist, folgt mit weiteren Umformungen
 \begin{equation}
 	\ddot{I}(t) + \frac{R}{L} \dot{I}(t) + \frac{1}{LC} I(t) = 0 \ .
 \end{equation}
@@ -38,7 +38,7 @@ wobei die Abkürzungen
 \begin{align}
 	\mu & := \frac{R}{4 \pi L} \\
 	\label{eqn:mu}
-	und \ \ \nu & := \frac{1}{2 \pi} \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}
+	\text{und} \ \ \nu & := \frac{1}{2 \pi} \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}
 \end{align}
 verwendet wurden. \\
 Im folgenden müssen nun zwei Fälle unterschieden werden.
@@ -71,7 +71,7 @@ Im imaginären Fall, kann Formel \ref{eqn:I}, nach einer hinreichend großen Zei
 umgeschrieben werden. \\
 Von Bedeutung ist der Speziallfall:
 \begin{align}
-	\frac{1}{LC} & = \frac{R_\text{ap}^2}{4L^2} \ \ \ \ \ d.h. \ \nu = 0 \ , \\
+  \frac{1}{LC} & = \frac{R_\text{ap}^2}{4L^2} \ \ \ \ \ \text{d.h.} \ \nu = 0 \ , \\
 	\label{eqn:Rap}
 	\text{dan}&\text{n wird} \\
 	I(t) & = C e^{- \frac{t}{\sqrt{LC}}} \ .
@@ -79,7 +79,7 @@ Von Bedeutung ist der Speziallfall:
 Der Speziallfall stellt den aperiodischen Grenzfall dar, die Amplitude des Stromes fällt hier am schnellsten ab ohne über zu schwingen.
 
 \subsubsection{Differentialgleichung für die erzwungene Schwingung}
-In diesem Versuch wird ein von außen angeregter RCL-Schwingkreis untersucht. Dafür wird ein Sinusgenerator integriert. Der schematische Aufbau ist in Abbildung \ref{fig:aRCL} dargestellt.
+In diesem Versuch wird ein von außen angeregter RCL-Schwingkreis untersucht. Dafür wird ein Sinusgenerator in die Schaltung eingebaut. Der schematische Aufbau ist in Abbildung \ref{fig:aRCL} dargestellt.
 
 \begin{figure}[H]
 	\centering
@@ -94,7 +94,7 @@ Die Differentialgleichung für dieses Problem ist nun inhomogen und lautet:
 \end{equation}
 Daraus folgt die Lösung für die Spannung zu:
 \begin{equation}
-	U = \frac{U_0(1 - LC \omega^2 - i \omega RC)}{(1 - LC \omega^2)^2 + \omega^2 R^2 C^2} \ .
+	U = \frac{U_0(1 - LC \omega^2 - i \omega RC)}{(1 - LC \omega^2)^2 + \omega^2 R^2 C^2} 
 \end{equation}
 Die Phasenverschiebung ergibt sich aus dem Vergleich von Real- und Imaginärteil von $U$:
 \begin{equation}
@@ -129,7 +129,7 @@ Die Güte des Schwingkreises lässt sich über:
 	q = \frac{1}{\omega_0 RC}
 	\label{eqn:q}
 \end{equation}
-berechnen. Die maximale Spannung an dem Kondensator ist um den Faktor der Güte größer als die Erregerspannung. Es wird nun die Breite der Resonanzkurve betrachtet, welche duch \ref{eqn:Ucw} beschrieben wird. Wenn
+berechnen. Die maximale Spannung an dem Kondensator ist um den Faktor der Güte größer als die Erregerspannung. Es wird nun die Breite der Resonanzkurve betrachtet, welche duch Formel \ref{eqn:Ucw} beschrieben wird. Wenn
 \begin{align*}
 	\frac{R^2}{L^2} \ll {\omega_0}^2
 \end{align*}
