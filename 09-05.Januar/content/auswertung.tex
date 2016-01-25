@@ -1,18 +1,19 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 Die für den Versuch relevanten Bauteile haben die Werte
-\begin{eqnarray}
-  L 	&= (\num{16.78 +- 0.09}) \text{mH}	\\
-  C 	&= (\num{2.066 +- 0.006}) \text{nF}	\\
-  R_1 	&= (\num{67.2 +- 0.2}) \Omega	\\
-  R_2 	&= (\num{682 +- 1}) \Omega
+\begin{align}
+  L & = (\num{16.78 +- 0.09}) \text{mH}	\\
+  C & = (\num{2.066 +- 0.006}) \text{nF} \\
+  R_1 & = (\num{67.2 +- 0.2}) \Omega \\
+  R_2 & = (\num{682 +- 1}) \Omega
   \label{eqn:Bau}
-\end{eqnarray}
-Für den Versuch 3.2 wurde aufgrund eines Defektes des regelbaren Widerstands der Aufbau gewechselt. Die Daten für den Aufgabenteil sind,\begin{eqnarray}
+\end{align}
+Für den Versuch 3.2 wurde aufgrund eines Defektes des regelbaren Widerstands der Aufbau gewechselt. Die Daten für den Aufgabenteil sind,
+\begin{eqnarray}
   L_2 =& (\num{3.53 +- 0.03}) \text{mH}	\\
   C_2 =& (\num{5.08 +- 0.01}) \text{µF}
 \end{eqnarray}
-\subsection{Zeitabhänigkeit der Amplitude und Dämpfungswiederstand einer Gedämpften Schwingung}
+\subsection{Zeitabhänigkeit der Amplitude und Dämpfungswiderstand einer Gedämpften Schwingung}
 Die durch das Oszilliskop gemessene Spannungspeaks werden mittels einer CWD-Funktion ermittelt und mit deren dazugehörige Zeit in Tabelle \ref{tab:U_C} aufgetragen.
 \begin{table}
   \centering
@@ -57,7 +58,7 @@ Nach Formel \ref{eqn:mu} und \ref{eqn:tex} lässt sich der effektive Dämpfungsw
   \label{eqn:Reff}
 \end{eqnarray}
 Der praktisch bestimmte Wert weicht vom errechneten Wert um 75 $\Omega$ ab. Dies lässt sich einerseits dadurch erklären, dass der Innenwiderstand von 50 $\Omega$ nicht berücksichtigt wurde. Andererseits kann es bei der gewählten Frequenz zu Impedanzen der verschiedenen Bauteile gekommen sein. Für die weiteren Aufgaben wird der Widerstand des Generators berücksichtigt.
-\subsection{Dämpfungswiderstand des Aperiodischen Grenzfalls}
+\subsection{Dämpfungswiderstand des aperiodischen Grenzfalls}
 Der im Experiment bestimmte Widerstand, bei dem der Aperiodische Grenzfall eintritt, beträgt
 \begin{equation}
   R_\text{Praxis} = 1.25 \, \Omega \ .
@@ -71,7 +72,7 @@ Der Theoretische Widerstand wird mittels Formel \ref{eqn:Rap} ausgerechnet und b
 Zwischen dem theoretisch und dem praktisch ermittelten Wert ist eine Differenz von \\
 1.5 $\Omega$. Mögliche Ursachen für den Fehler sind, die vernachlässigte Impedanz des Aufbaus, als auch die Schwierigkeit den Punkt des Aperiodischen Grenzfalls zu treffen, da keine wesentliche Änderung zu erkennen sind.
 \subsection{Frequenzabhängigkeit der Kondensatorspannung eines  Serienresonanzkreis}
-In Tabelle \ref{tab:U_c} sind die Spannung am Kondensator und die entsprechenden Frequenzen hinterlegt. Bei den Frequenzen wird ein Ablesefehler von 0.1 V angenommen, da immer auf die erste Stelle nach dem Kommer auf- bzw. abgerundet wird.
+In Tabelle \ref{tab:U_c} sind die Spannung am Kondensator und die entsprechenden Frequenzen hinterlegt. Bei den Frequenzen wird ein Ablesefehler von 0.1 V angenommen, da immer auf die erste Stelle nach dem Komma auf- bzw. abgerundet wird.
 \begin{table}
   \centering
   \begin{tabular}{c c}
@@ -157,7 +158,7 @@ Die Resonanzfrequenz wird aus dem Graphen abgelesen, bzw der Tabelle entnommen
 \begin{equation}
   \nu_\text{res} = (\num{26.30 +- 0.01}) \, \text{kHz} \ .
 \end{equation}
-Mit Hilfe derer und der Breite der Resonanzkurve lässt sich aus Formel \ref{eqn:qbreite} die praktisch ermittelte Güte berechnen. Daraus folgt eine Güte von 
+Mit Hilfe derer und der Breite der Resonanzkurve lässt sich aus Formel \ref{eqn:qbreite} die praktisch ermittelte Güte berechnen. Daraus folgt eine Güte von
 \begin{equation}
   q_\text{exp2} = (\num{3.91 +- 0.08}) \ .
   \label{eqn:qexp2}
@@ -178,7 +179,7 @@ Ziel ist es die Resonanzfrequenz $\nu_\text{res}$ zu bestimmen, sowie die Freque
 	35  	& \num{0.00 +- 0.02} \\
 	61  	& \num{0.00 +- 0.02} \\
 	162 	& \num{0.00 +- 0.02} \\
-	307	& \num{0.00 +- 0.02} \\
+	307	  & \num{0.00 +- 0.02} \\
 	500 	& \num{0.00 +- 0.02} \\
 	905 	& \num{0.00 +- 0.02} \\
 	1604 	& \num{0.00 +- 0.02} \\
@@ -218,7 +219,7 @@ Ziel ist es die Resonanzfrequenz $\nu_\text{res}$ zu bestimmen, sowie die Freque
   \caption{Phasenverschiebung zwischen Erreger- und Kondensatorspannung}
   \label{fig:logphi}
 \end{figure}
-Dem Plot kann man entnehmen, dass erst ab einer Frequenz von ca. 10 kHz eine Phasenverschiebung zu bemerken ist. Um die Resonanz besser bestimmten zu können werden die Werte in Abbildung \ref{fig:Phi} linear um die Resonanzfrequenz dargestellt.
+Dem Plot wird entnommen, dass erst ab einer Frequenz von ca. 10 kHz eine Phasenverschiebung zu bemerken ist. Um die Resonanz besser bestimmten zu können werden die Werte in Abbildung \ref{fig:Phi} linear um die Resonanzfrequenz dargestellt.
 \begin{figure}
   \centering
   \includegraphics[height=9cm]{plot4.pdf}
@@ -227,7 +228,7 @@ Dem Plot kann man entnehmen, dass erst ab einer Frequenz von ca. 10 kHz eine Pha
 \end{figure}
 Mittels eines Fit werden die Messwerte durch eine Funktion der Form
 \begin{eqnarray}
-  \Phi (\nu)  =& arc tan(\nu \cdot a + b) + c \\
+  \Phi (\nu)  =& \arctan(\nu \cdot a + b) + c \\
   \label{pfit}
   a =& (\num{3.4 +- 0.1}) \cdot 10^{-4}\\
   b =& (\num{-9.1 +- 0.5})\\
