@@ -129,7 +129,7 @@ Anhand derer und der Abbildung \ref{fig:logUc} lässt sich die Güte ablesen.
 \end{figure}
 Er beträgt
 \begin{equation}
-  q_\text{exp} = \num{4.30 +- 0.01} \ .
+  q_\text{exp1} = \num{4.30 +- 0.01} \ .
   \label{eqn:qexp}
 \end{equation}
 Aus Formel \ref{eqn:q} lässt sich der theoretische Wert der Güte berechnen. Sie beträgt
@@ -140,7 +140,7 @@ Aus Formel \ref{eqn:q} lässt sich der theoretische Wert der Güte berechnen. Si
 und ist somit 3 \% größer als der praktisch ermittelte Wert. Mittels eines linearen Plot (siehe Abbildung \ref{fig:fUc}) soll die breite der Resonanzkurve bestimmt werden.
 \begin{figure}
   \centering
-  \includegraphics[height=5cm]{plot2.pdf}
+  \includegraphics[height=9cm]{plot2.pdf}
   \caption{Frequenzabhängige Kondensatorspannung}
   \label{fig:fUc}
 \end{figure}
@@ -150,61 +150,71 @@ Durch Ablesen wird die Breite der Resonanzkurve bestimmt welche
 \end{equation}
 entspricht. Die theoretische breite berechnet sich nach Formel \ref{eqn:qbreite}. Sie beträgt
 \begin{equation}
-v_+ - v_- = (\num{6.47 +- 0.04}) \, \text{kHz} \ .
+	v_+ - v_- = (\num{6.47 +- 0.04}) \, \text{kHz} \ .
+	\label{eqn:nures}
 \end{equation}
-Der experimentell bestimmte Wert weicht vom theoretischen Wert um 3.9 \% ab.
+Die Resonanzfrequenz wird aus dem Graphen abgelesen, bzw der Tabelle entnommen
+\begin{equation}
+  \nu_\text{res} = (\num{26.30 +- 0.01}) \, \text{kHz} \ .
+\end{equation}
+Mit Hilfe derer und der Breite der Resonanzkurve lässt sich aus Formel \ref{eqn:qbreite} die praktisch ermittelte Güte berechnen. Daraus folgt eine Güte von 
+\begin{equation}
+  q_\text{exp2} = (\num{3.91 +- 0.08}) \ .
+  \label{eqn:qexp2}
+\end{equation}
+Der experimentell bestimmte Wert weicht vom theoretischen Wert um 6.9 \% ab.
 \subsection{Frequenzabhängigkeit der Phase zwischen Erreger- und Kondensatorspannung}
-Ziel ist es die Resonanzfrequenz $f_\text{res}$ zu bestimmen, sowie die Frequenz $f_1$ und $f_2$, welche eine Phasenverschiebung von $\frac{\pi}{4}$ und $\frac{3 \pi}{4}$ ergeben. Die der Schaltung entnommen Frequenzen sind in Tabelle \ref{tab:phi} aufgetragen und in Abbildung \ref{fig:logphi} in einem halblogarithmischen Plot dargestellt.
+Ziel ist es die Resonanzfrequenz $\nu_\text{res}$ zu bestimmen, sowie die Frequenz $\nu_1$ und $\nu_2$, welche eine Phasenverschiebung von $\frac{\pi}{4}$ und $\frac{3 \pi}{4}$ ergeben. Die der Schaltung entnommen Frequenzen sind in Tabelle \ref{tab:phi} aufgetragen und in Abbildung \ref{fig:logphi} in einem halblogarithmischen Plot dargestellt.
 \begin{table}
   \centering
   \begin{tabular}{c c}
 	\toprule
 	$f$ / Hz & $\Phi$ / rad \\
 	\midrule
-	9   & 0.00 \\
-	12  & 0.00 \\
-	16  & 0.00 \\
-	23  & 0.00 \\
-	35  & 0.00 \\
-	61  & 0.00 \\
-	162 & 0.00 \\
-	307 & 0.00 \\
-	500 & 0.00 \\
-	905 & 0.00 \\
-	1604 & 0.00 \\
-	2509 & 0.00 \\
-	4025 & 0.00 \\
-	5615 & 0.00 \\
-	8970 & 0.00 \\
-	12030 & 0.12 \\
-	15400 & 0.27 \\
-	17610 & 0.33 \\
-	20000 & 0.42 \\
-	22520 & 0.62 \\
-	24000 & 0.87 \\
-	24490 & 0.95 \\
-	25180 & 1.20 \\
-	25570 & 1.25 \\
-	26300 & 1.45 \\
-	27060 & 1.70 \\
-	27610 & 1.97 \\
-	28100 & 1.90 \\
-	29970 & 2.37 \\
-	32540 & 2.69 \\
-	35660 & 2.82 \\
-	40030 & 3.16 \\
-	42580 & 2.88 \\
-	45000 & 2.88 \\
-	50180 & 2.96 \\
-	52430 & 3.09 \\
-	55010 & 3.11 \\
+	9   	& \num{0.00 +- 0.02} \\
+	12  	& \num{0.00 +- 0.02} \\
+	16  	& \num{0.00 +- 0.02} \\
+	23  	& \num{0.00 +- 0.02} \\
+	35  	& \num{0.00 +- 0.02} \\
+	61  	& \num{0.00 +- 0.02} \\
+	162 	& \num{0.00 +- 0.02} \\
+	307	& \num{0.00 +- 0.02} \\
+	500 	& \num{0.00 +- 0.02} \\
+	905 	& \num{0.00 +- 0.02} \\
+	1604 	& \num{0.00 +- 0.02} \\
+	2509 	& \num{0.00 +- 0.02} \\
+	4025 	& \num{0.00 +- 0.02} \\
+	5615 	& \num{0.00 +- 0.02} \\
+	8970 	& \num{0.00 +- 0.02} \\
+	12030	& \num{0.12 +- 0.02} \\
+	15400 	& \num{0.27 +- 0.02} \\
+	17610 	& \num{0.33 +- 0.02} \\
+	20000 	& \num{0.42 +- 0.02} \\
+	22520 	& \num{0.62 +- 0.02} \\
+	24000 	& \num{0.87 +- 0.02} \\
+	24490 	& \num{0.95 +- 0.02} \\
+	25180 	& \num{1.20 +- 0.02} \\
+	25570 	& \num{1.25 +- 0.02} \\
+	26300 	& \num{1.45 +- 0.02} \\
+	27060 	& \num{1.70 +- 0.02} \\
+	27610 	& \num{1.97 +- 0.02} \\
+	28100 	& \num{1.90 +- 0.02} \\
+	29970 	& \num{2.37 +- 0.02} \\
+	32540 	& \num{2.69 +- 0.02} \\
+	35660 	& \num{2.82 +- 0.02} \\
+	40030 	& \num{3.16 +- 0.02} \\
+	42580 	& \num{2.88 +- 0.02} \\
+	45000 	& \num{2.88 +- 0.02} \\
+	50180 	& \num{2.96 +- 0.02} \\
+	52430 	& \num{3.09 +- 0.02} \\
+	55010 	& \num{3.11 +- 0.02} \\
   \end{tabular}
   \caption{Phasenverschiebung in Abhängigkeit der Frequenz}
   \label{tab:phi}
 \end{table}
 \begin{figure}
   \centering
-  \includegraphics[height=5cm]{plot3.pdf}
+  \includegraphics[height=9cm]{plot3.pdf}
   \caption{Phasenverschiebung zwischen Erreger- und Kondensatorspannung}
   \label{fig:logphi}
 \end{figure}
@@ -212,25 +222,25 @@ Dem Plot kann man entnehmen, dass erst ab einer Frequenz von ca. \\
  10 kHz eine Phasenverschiebung zu bemerken ist. Um die Resonanz besser bestimmten zu können werden die Werte in Abbildung \ref{fig:Phi} linear um die Resonanzfrequenz dargestellt.
 \begin{figure}
   \centering
-  \includegraphics[height=5cm]{plot4.pdf}
+  \includegraphics[height=9cm]{plot4.pdf}
   \caption{Phasenverschiebung zwischen Erreger- und Kondensatorspannung}
   \label{fig:Phi}
 \end{figure}
-Der Abbildung \ref{fig:Phi} lassen sich die Resonanzfrequenz, sowie die Frequenzen $f_1$ und $f_2$ entnehmen. Die theoretische Resonanzfrequenz berechnet sich aus Formel \ref{eqn:wres} und die Frequenzen $f_1$ und $f_2$ aus der Formel \ref{eqn:w12}. In Gleichung \ref{eqn:res} wird die theoretisch ermittelte mit der praktisch ermittelten Güte verglichen und der Fehler berechnet.
+Der Abbildung \ref{fig:Phi} lassen sich die Resonanzfrequenz, sowie die Frequenzen $\nu_1$ und $\nu_2$ entnehmen. Die theoretische Resonanzfrequenz berechnet sich aus Formel \ref{eqn:wres} und die Frequenzen $\nu_1$ und $\nu_2$ aus der Formel \ref{eqn:w12}. In Gleichung \ref{eqn:res} wird die theoretisch ermittelte mit der praktisch ermittelten Güte verglichen und der Fehler berechnet.
 \begin{eqnarray}
-  f_\text{res,exp} =& 26.800 \text{kHz}			\\
-  f_\text{res,theo} =& (\num{26.58 +- 0.08}) \text{kHz} \\
+  \nu_\text{res,exp} =& 26.800 \text{kHz}			\\
+  \nu_\text{res,theo} =& (\num{26.58 +- 0.08}) \text{kHz} \\
   \text{Abweichung} =& 1 \%
   \label{eqn:res}
 \end{eqnarray}
-Analog wird mit den Werten für $f_1$ und $f_2$ vorgangen.
+Analog wird mit den Werten für $\nu_1$ und $\nu_2$ vorgangen.
 \begin{eqnarray}
-  f_\text{1,exp} =& 23.700 \text{kHz}                 \\
-  f_\text{1,theo} =& (\num{23.78 +- 0.07}) \text{kHz} \\
+  \nu_\text{1,exp} =& 23.700 \text{kHz}                 \\
+  \nu_\text{1,theo} =& (\num{23.78 +- 0.07}) \text{kHz} \\
   \text{Abweichung} =& 1 \%
 \end{eqnarray}
 \begin{eqnarray}
-  f_\text{1,exp} =& 29.970 \text{kHz}                 \\
-  f_\text{1,theo} =& (\num{30.7 +- 0.1}) \text{kHz} \\
+  \nu_\text{1,exp} =& 29.970 \text{kHz}                 \\
+  \nu_\text{1,theo} =& (\num{30.7 +- 0.1}) \text{kHz} \\
   \text{Abweichung} =& 1 \%
 \end{eqnarray}

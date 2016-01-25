@@ -4,7 +4,7 @@ from scipy.optimize import curve_fit
 from scipy.signal import find_peaks_cwt
 from uncertainties import ufloat
 import math
-"""
+
 t, U = np.loadtxt('data2.txt', unpack=True)
 t *= 10000
 
@@ -56,7 +56,12 @@ R_ap_2 = ((4*L1)/C1)
 R2 = ufloat(682, 1)
 print("R_ap = ", R_ap_2**0.5)
 print("--------------------------------------------------------")
-"""
+
+fm = ufloat(22470, 100)
+fp = ufloat(29200, 100)
+f0 = ufloat(26300, 100)
+print("Güte die sich aus der breite des Resonanz ergibt: ", f0/(fp-fm))
+
 f, UC, phi = np.loadtxt("data.txt", unpack=True)
 w = f * 2 * math.pi
 L = 16.78 * 10**(-3)
@@ -66,13 +71,10 @@ U0 = 1
 
 #U = U0 / ((1-L*C*(w**2))**2 + (w**2)*(R**2)*(C**2))**(0.5)
 
-<<<<<<< HEAD
-def Uso(x, a, b, c, d):
-    return  d / ((((1-a*b*(x**2))**2) + (x**2)*(b**2)*(c**2))**(0.5))
-=======
+
 def Uso(x, a):
     return  a / ((1-L*C*(x**2))**2 + (x**2)*(R**2)*(C**2))**(0.5)
->>>>>>> a392c7f2b151ad2687410a3ed9a0a7e4f2e52ea6
+
 
 params, cov = curve_fit(Uso, w, UC)
 print(w, UC)
@@ -80,29 +82,23 @@ print(w, UC)
 print("Paramter: ", params, "Werte: ", Uso(w, *params))
 
 plt.xscale('log')
-<<<<<<< HEAD
-#plt.errorbar(w, UC, yerr=0.1, fmt='x', label='Messwerte')
-#plt.plot(w, U, 'r-', label='theo Wert')
-plt.plot(w, Uso(w, *params), 'b-', label='Fit')
-=======
 plt.errorbar(w, UC, yerr=0.1, fmt='x', label='Messwerte')
 #plt.plot(w, U, 'ro', label='theo Wert')
 plt.plot(w, Uso(w, *params), 'g-', label='Fit')
->>>>>>> a392c7f2b151ad2687410a3ed9a0a7e4f2e52ea6
 plt.ylabel('U / V')
 plt.xlabel('$\omega$ / Hz')
 plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig('build/plot1.pdf')
 plt.close()
-"""
+
 print("--------------------------------------------------------")
 
 def FOO(x):
   return (1/(2**0.5))*(x/x)
 fx = np.linspace( 8, 56000, 100)
 
-plt.plot(f, UC, 'x', label='Messwerte')
+plt.errorbar(f, UC, yerr=0.1, fmt='x', label='Messwerte')
 plt.plot(f, 28.4*FOO(f), 'r--', label=r'$ U_{max}\frac{1}{\sqrt{2}} $')
 plt.plot([22470,22470], [0, 30], 'g--', lw=1, label=r'Halbwertsbreite')
 plt.plot([29200,29200], [0, 30], 'g--', lw=1)
@@ -122,12 +118,20 @@ R2 = ufloat(682,1)
 print("Theoretische Güte", 1/(((1/(L2*C2))**(-0.5))*R2*C2))
 print("--------------------------------------------------------")
 
-for x in range(36):
+for x in range(37):
     phi[x] = (phi[x]*(10**(-6)))/(1/f[x])*2*np.pi
     print('Frequenz: ', f[x], 'phi', phi[x])
 
+def phase(w, a, b, c):
+    return np.arctan((w*a) + b) + c
+
+param, cov = curve_fit(phase, f, phi)
+errors = np.sqrt(np.diag(cov))
+
+
 plt.xscale('log')
-plt.plot(f, phi, 'x', label='Messwerte')
+plt.errorbar(f, phi, yerr=0.02, fmt='x', label='Messwerte')
+plt.plot(f, phase(f, *param), 'r-', label='Fit')
 plt.ylabel(r'$\Phi$ / rad')
 plt.xlabel('f / Hz')
 plt.xlim(8, 55500)
@@ -138,7 +142,11 @@ plt.savefig('build/plot3.pdf')
 plt.close()
 print("--------------------------------------------------------")
 
-plt.plot(f, phi, 'x', label='Messwerte')
+print("Paramter: ", param)
+print("Fehler der Paramter", errors)
+
+plt.plot(f, phase(f, *param), 'r-', label='Fit')
+plt.errorbar(f, phi, yerr=0.02, fmt='x', label='Messwerte')
 plt.ylabel(r'$\Phi$ / rad')
 plt.xlabel('f / Hz')
 plt.plot([26800,26800], [0, 3.3], 'g--', lw=1, label=r'q_{\text{Resonanz}}')
@@ -156,4 +164,4 @@ C3 = ufloat(2.066,0.006)*10**(-9)
 R3 = ufloat(682,1)
 w0 = 26300*(np.pi*2)
 print("Güte experimentell = ", 1/(w0*R3*C3))
-"""
+
