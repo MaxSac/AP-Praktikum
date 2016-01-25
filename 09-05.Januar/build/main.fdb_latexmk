@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber build/main"] 1453751707 "build/main.bcf" "build/main.bbl" "build/main" 1453752330
-  "./build/main.bcf" 1453752328 102519 fde9b3f5e967476df0e5136ba906f0fc ""
+["biber build/main"] 1453751707 "build/main.bcf" "build/main.bbl" "build/main" 1453753449
+  "./build/main.bcf" 1453753446 102519 fde9b3f5e967476df0e5136ba906f0fc ""
   "lit.bib" 1452188032 262 c65ee593372f9bf8174006a3a64c38ec ""
   (generated)
-  "build/main.blg"
   "build/main.bbl"
-["pdflatex"] 1453752320 "main.tex" "build/main.pdf" "main" 1453752330
-  "./content/auswertung.tex" 1453752317 11129 50706bdec3f577163c7d1ed3c3d3c735 ""
+  "build/main.blg"
+["pdflatex"] 1453753438 "main.tex" "build/main.pdf" "main" 1453753449
+  "./content/auswertung.tex" 1453753421 12077 9077d540ede1bfeb8f839136135a0965 ""
   "./content/diskussion.tex" 1453467167 316 d12088af79e5d1299859a95dee99b741 ""
   "./content/durchfuehrung.tex" 1453653122 3410 fde63dc10cb6c2ef830261894ed7d983 ""
   "./content/theorie.tex" 1453746884 8381 44d5d2aebc3df28e7ddf782c9e338e77 ""
@@ -27,10 +27,10 @@
   "C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/xits-mathbold.luc" 1447938736 317296 4b022fabd6ec9f9a3dd9a8ea76031220 ""
   "C:/texlive/2015/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1452706793 8814 5283db96c6e3911a76b42605e3295043 ""
   "C:/texlive/2015/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1447938734 702976 a0da73909afc25e8e85e6bbef4ece548 ""
-  "build/main.aux" 1453752328 20419 58c9caac842ce3b9b4d0c7a65437c2a2 ""
+  "build/main.aux" 1453753446 21035 5eb62a9e24c9e28a2033803a1da74fa9 ""
   "build/main.bbl" 1453751708 1709 9a7cb1fb3b57013358b61b7b9d3e05a8 "biber build/main"
-  "build/main.run.xml" 1453752328 2330 4233a9836802043afc4fd6b527c0f360 ""
-  "build/main.toc" 1453752328 2112 d73de7f3b1b6ec0ecad179b957e66a6f ""
+  "build/main.run.xml" 1453753446 2330 4233a9836802043afc4fd6b527c0f360 ""
+  "build/main.toc" 1453753446 2215 5effdd0d1bcc1bb56332d738e21661f2 ""
   "build/plot.pdf" 1453751681 16935 2d5d80d5a755ba64490cb6b3829570a2 ""
   "build/plot1.pdf" 1453751684 14042 a3dd7d0c5d2daf056953bd75ef8b4b3b ""
   "build/plot2.pdf" 1453751687 12470 2d42643341081935305640a220691a1d ""
@@ -197,7 +197,7 @@
   "c:/texlive/2015/texmf-dist/tex/xelatex/xunicode/xunicode.sty" 1447859180 205722 8027ed7ab2230086d647802c25f3ee42 ""
   "c:/texlive/2015/texmf-var/tex/generic/config/language.dat.lua" 1447859219 17213 29e60af47476dc6bb99715846cb3659e ""
   "c:/texlive/2015/texmf-var/web2c/luatex/lualatex.fmt" 1447859285 2625305 638bfccc14d7bb99747a99bcf16cf59e ""
-  "content/auswertung.tex" 1453752317 11129 50706bdec3f577163c7d1ed3c3d3c735 ""
+  "content/auswertung.tex" 1453753421 12077 9077d540ede1bfeb8f839136135a0965 ""
   "content/diskussion.tex" 1453467167 316 d12088af79e5d1299859a95dee99b741 ""
   "content/durchfuehrung.tex" 1453653122 3410 fde63dc10cb6c2ef830261894ed7d983 ""
   "content/theorie.tex" 1453746884 8381 44d5d2aebc3df28e7ddf782c9e338e77 ""
@@ -215,11 +215,11 @@
   "plot3.pdf" 0 -1 0 ""
   "plot4.pdf" 0 -1 0 ""
   (generated)
-  "build/main.toc"
-  "build/main.run.xml"
-  "build/main.log"
-  "build/main.aux"
   "build/main.pdf"
-  "C:/texlive/2015/texmf-var/m_t_x_t_e_s_t.tmp"
   "build/main.bcf"
   "/home/maximilian/.local/texlive/2015/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.log"
+  "C:/texlive/2015/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.aux"
+  "build/main.run.xml"
+  "build/main.toc"

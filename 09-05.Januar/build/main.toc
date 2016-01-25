@@ -18,5 +18,6 @@
 \contentsline {subsection}{\numberline {3.2}Dämpfungswiderstand des aperiodischen Grenzfalls}{11}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Frequenzabhängigkeit der Kondensatorspannung eines Serienresonanzkreis}{11}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Frequenzabhängigkeit der Phase zwischen Erreger- und Kondensatorspannung}{14}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Verzögerungszeit eines Koaxialkabels}{17}{subsection.3.5}
 \contentsline {section}{\numberline {4}Diskussion}{17}{section.4}
 \contentsline {section}{\nonumberline Literatur}{17}{section*.16}
