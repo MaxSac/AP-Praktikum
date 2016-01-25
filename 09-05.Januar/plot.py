@@ -8,7 +8,7 @@ import math
 t, U = np.loadtxt('data2.txt', unpack=True)
 t *= 10000
 
-#Sucht nach Maxima
+#Sucht nach Maximaa
 #maxs = find_peaks_cwt(U, np.linspace(1, 5, 3000), min_snr=1, noise_perc=100)
 #mins = find_peaks_cwt(-U, np.linspace(1, 5, 3000), min_snr=1,  noise_perc=100)
 #for x in range(30):
@@ -150,7 +150,7 @@ plt.errorbar(f, phi, yerr=0.02, fmt='x', label='Messwerte')
 plt.ylabel(r'$\Phi$ / rad')
 plt.xlabel('f / Hz')
 plt.plot([26800,26800], [0, 3.3], 'g--', lw=1, label=r'q_{\text{Resonanz}}')
-plt.plot([23700,23700], [0, 3.3], 'y--', lw=1, label=r'$f_1$ und $f_2$')
+plt.plot([23700,23700], [0, 3.3], 'y--', lw=1, label=r'$\nu_1$ und $\nu_2$')
 plt.plot([29970,29970], [0, 3.3], 'y--', lw=1)
 plt.xlim(10000, 40000)
 plt.ylim(0, 3.2)
@@ -159,9 +159,14 @@ plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig('build/plot4.pdf')
 plt.close()
+print("----------------------------------------------------------")
 
 C3 = ufloat(2.066,0.006)*10**(-9)
 R3 = ufloat(682,1)
 w0 = 26300*(np.pi*2)
 print("Güte experimentell = ", 1/(w0*R3*C3))
 
+f0 = ufloat(26, 2)
+f1 = ufloat(23, 2)
+f2 = ufloat(29, 2)
+print("Güte zwei experimentell = ", f0/(f2-f1))

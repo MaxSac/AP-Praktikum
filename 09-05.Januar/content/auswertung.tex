@@ -164,7 +164,7 @@ Mit Hilfe derer und der Breite der Resonanzkurve lässt sich aus Formel \ref{eqn
 \end{equation}
 Der experimentell bestimmte Wert weicht vom theoretischen Wert um 6.9 \% ab.
 \subsection{Frequenzabhängigkeit der Phase zwischen Erreger- und Kondensatorspannung}
-Ziel ist es die Resonanzfrequenz $\nu_\text{res}$ zu bestimmen, sowie die Frequenz $\nu_1$ und $\nu_2$, welche eine Phasenverschiebung von $\frac{\pi}{4}$ und $\frac{3 \pi}{4}$ ergeben. Die der Schaltung entnommen Frequenzen sind in Tabelle \ref{tab:phi} aufgetragen und in Abbildung \ref{fig:logphi} in einem halblogarithmischen Plot dargestellt.
+Ziel ist es die Resonanzfrequenz $\nu_\text{res}$ zu bestimmen, sowie die Frequenz $\nu_1$ und $\nu_2$, welche eine Phasenverschiebung von $\frac{\pi}{4}$ und $\frac{3 \pi}{4}$ ergeben. Die Phasenverschiebung zu den entsprechenden Frequenzen sind in Tabelle \ref{tab:phi} aufgetragen und in Abbildung \ref{fig:logphi} in einem halblogarithmischen Plot dargestellt.
 \begin{table}
   \centering
   \begin{tabular}{c c}
@@ -218,29 +218,42 @@ Ziel ist es die Resonanzfrequenz $\nu_\text{res}$ zu bestimmen, sowie die Freque
   \caption{Phasenverschiebung zwischen Erreger- und Kondensatorspannung}
   \label{fig:logphi}
 \end{figure}
-Dem Plot kann man entnehmen, dass erst ab einer Frequenz von ca. \\
- 10 kHz eine Phasenverschiebung zu bemerken ist. Um die Resonanz besser bestimmten zu können werden die Werte in Abbildung \ref{fig:Phi} linear um die Resonanzfrequenz dargestellt.
+Dem Plot kann man entnehmen, dass erst ab einer Frequenz von ca. 10 kHz eine Phasenverschiebung zu bemerken ist. Um die Resonanz besser bestimmten zu können werden die Werte in Abbildung \ref{fig:Phi} linear um die Resonanzfrequenz dargestellt.
 \begin{figure}
   \centering
   \includegraphics[height=9cm]{plot4.pdf}
   \caption{Phasenverschiebung zwischen Erreger- und Kondensatorspannung}
   \label{fig:Phi}
 \end{figure}
-Der Abbildung \ref{fig:Phi} lassen sich die Resonanzfrequenz, sowie die Frequenzen $\nu_1$ und $\nu_2$ entnehmen. Die theoretische Resonanzfrequenz berechnet sich aus Formel \ref{eqn:wres} und die Frequenzen $\nu_1$ und $\nu_2$ aus der Formel \ref{eqn:w12}. In Gleichung \ref{eqn:res} wird die theoretisch ermittelte mit der praktisch ermittelten Güte verglichen und der Fehler berechnet.
+Mittels eines Fit werden die Messwerte durch eine Funktion der Form
 \begin{eqnarray}
-  \nu_\text{res,exp} =& 26.800 \text{kHz}			\\
-  \nu_\text{res,theo} =& (\num{26.58 +- 0.08}) \text{kHz} \\
-  \text{Abweichung} =& 1 \%
+  \Phi (\nu)  =& arc tan(\nu \cdot a + b) + c \\
+  \label{pfit}
+  a =& (\num{3.4 +- 0.1}) \cdot 10^{-4}\\
+  b =& (\num{-9.1 +- 0.5})\\
+  c =& (\num{1.50 +- 0.02})\\
+\end{eqnarray}
+approximiert. Anhand des Fits lassen sich die Frequenzen zu den Phasenverschiebung von $\frac{\pi}{4}$ und $\frac{3 \pi}{4}$ durch umstellen berechnen. Die theoretische Resonanzfrequenz berechnet sich aus Formel \ref{eqn:wres} und die Frequenzen $\nu_1$ und $\nu_2$ aus der Formel \ref{eqn:w12}. In Gleichung \ref{eqn:res} wird die theoretisch ermittelte mit der praktisch ermittelten Güte verglichen und der Fehler berechnet.
+\begin{eqnarray}
+  \nu_\text{res,exp} =&  (\num{26 +- 2}) \, \text{kHz}			\\
+  \nu_\text{res,theo} =& (\num{26.58 +- 0.08}) \, \text{kHz} \\
+  \text{Abweichung} =& 0.23 \%
   \label{eqn:res}
 \end{eqnarray}
 Analog wird mit den Werten für $\nu_1$ und $\nu_2$ vorgangen.
 \begin{eqnarray}
-  \nu_\text{1,exp} =& 23.700 \text{kHz}                 \\
-  \nu_\text{1,theo} =& (\num{23.78 +- 0.07}) \text{kHz} \\
-  \text{Abweichung} =& 1 \%
+  \nu_\text{1,exp} =&  (\num{23 +- 2}) \, \text{kHz}                 \\
+  \nu_\text{1,theo} =& (\num{23.78 +- 0.07}) \, \text{kHz} \\
+  \text{Abweichung} =& 3 \%
 \end{eqnarray}
 \begin{eqnarray}
-  \nu_\text{1,exp} =& 29.970 \text{kHz}                 \\
-  \nu_\text{1,theo} =& (\num{30.7 +- 0.1}) \text{kHz} \\
-  \text{Abweichung} =& 1 \%
+  \nu_\text{2,exp} =&  (\num{29 +- 2}) \, \text{kHz}                 \\
+  \nu_\text{2,theo} =& (\num{30.7 +- 0.1}) \, \text{kHz} \\
+  \text{Abweichung} =& 4 \%
 \end{eqnarray}
+Die Güte berechnet sich aus Formel \ref{eqn:qbreite} und beträgt
+\begin{equation}
+  q_\text{exp3} = \{ref{4 +- 2}  \ .
+  \label{eqn:q3}
+\end{equation}
+Dies entspricht einer prozentualen Abweichung von 4.5 \% vom Theoriewert.
