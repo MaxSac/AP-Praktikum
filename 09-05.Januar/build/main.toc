@@ -20,7 +20,7 @@
 \contentsline {subsection}{\numberline {3.4}Frequenzabhängigkeit der Phase zwischen Erreger- und Kondensatorspannung}{14}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Verzögerungszeit eines Koaxialkabels}{17}{subsection.3.5}
 \contentsline {section}{\numberline {4}Diskussion}{17}{section.4}
-\contentsline {subsection}{\numberline {4.1}Zeitabhänigkeit der Amplitude und Dämpfungswiderstand einer Gedämpften Schwingung}{17}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}Zeitabhänigkeit der Amplitude und Dämpfungswiderstand einer gedämpften Schwingung}{17}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Frequenzabhängigkeit der Kondensatorspannung eines Serienresonanzkreis}{17}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Frequenzabhängigkeit der Phase zwischen Erreger- und Kondensatorspannung}{18}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Vergleich der Messmethoden}{18}{subsection.4.4}

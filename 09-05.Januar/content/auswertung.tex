@@ -14,7 +14,7 @@ Für den Versuch 3.2 wurde aufgrund eines Defektes des regelbaren Widerstands de
   C_2 =& (\num{5.08 +- 0.01}) \text{µF}
 \end{eqnarray}
 \subsection{Zeitabhänigkeit der Amplitude und Dämpfungswiderstand einer Gedämpften Schwingung}
-Die durch das Oszilliskop gemessene Spannungspeaks werden mittels einer CWD-Funktion ermittelt und mit deren dazugehörige Zeit in Tabelle \ref{tab:U_C} aufgetragen.
+Die durch das Oszilliskop gemessene Spannungspeaks werden mittels einer CWD-Funktion ermittelt und mit der dazugehörigen Zeit in Tabelle \ref{tab:U_C} aufgetragen.
 \begin{table}
   \centering
   \begin{tabular}{c c}
@@ -35,7 +35,7 @@ Die durch das Oszilliskop gemessene Spannungspeaks werden mittels einer CWD-Funk
     \num{28.8 +- 0.1}	& \num{4.32 +- 0.01} 	\\
     \bottomrule
   \end{tabular}
-  \caption{Spannung am Kondensator zur Bestimmung des Abklingverhalten und des Dämpfungswiederstandes.}
+  \caption{Spannung am Kondensator zur Bestimmung des Abklingverhalten und des Dämpfungswiderstandes.}
   \label{tab:U_C}
 \end{table}
 Anhand der Daten lassen sich durch eine Fit-Funktion die Koeffizienten der Einhüllenden berechnen, welche in Gleichung \ref{eqn:I} beschrieben ist.
@@ -59,18 +59,18 @@ Nach Formel \ref{eqn:mu} und \ref{eqn:tex} lässt sich der effektive Dämpfungsw
 \end{eqnarray}
 Der praktisch bestimmte Wert weicht vom errechneten Wert um 75 $\Omega$ ab. Dies lässt sich einerseits dadurch erklären, dass der Innenwiderstand von 50 $\Omega$ nicht berücksichtigt wurde. Andererseits kann es bei der gewählten Frequenz zu Impedanzen der verschiedenen Bauteile gekommen sein. Für die weiteren Aufgaben wird der Widerstand des Generators berücksichtigt.
 \subsection{Dämpfungswiderstand des aperiodischen Grenzfalls}
-Der im Experiment bestimmte Widerstand, bei dem der Aperiodische Grenzfall eintritt, beträgt
+Der im Experiment bestimmte Widerstand, bei dem der aperiodische Grenzfall eintritt, beträgt
 \begin{equation}
   R_\text{Praxis} = 1.25 \, \Omega \ .
   \label{eqn:Rprax}
 \end{equation}
-Der Theoretische Widerstand wird mittels Formel \ref{eqn:Rap} ausgerechnet und beträgt
+Der theoretische Widerstand wird mittels Formel \ref{eqn:Rap} ausgerechnet und beträgt
 \begin{equation}
   R_\text{Theorie} = (\num{2.75 +- 0.23}) \text{\Omega} \ .
   \label{eqn:Rthe}
 \end{equation}
 Zwischen dem theoretisch und dem praktisch ermittelten Wert ist eine Differenz von \\
-1.5 $\Omega$. Mögliche Ursachen für den Fehler sind, die vernachlässigte Impedanz des Aufbaus, als auch die Schwierigkeit den Punkt des Aperiodischen Grenzfalls zu treffen, da keine wesentliche Änderung zu erkennen sind.
+1.5 $\Omega$. Mögliche Ursachen für den Fehler sind, die vernachlässigte Impedanz des Aufbaus, als auch die Schwierigkeit den Punkt des aperiodischen Grenzfalls zu treffen, da keine wesentliche Änderung zu erkennen sind.
 \subsection{Frequenzabhängigkeit der Kondensatorspannung eines  Serienresonanzkreis}
 In Tabelle \ref{tab:U_c} sind die Spannung am Kondensator und die entsprechenden Frequenzen hinterlegt. Bei den Frequenzen wird ein Ablesefehler von 0.1 V angenommen, da immer auf die erste Stelle nach dem Komma auf- bzw. abgerundet wird.
 \begin{table}
@@ -130,7 +130,7 @@ Anhand derer und der Abbildung \ref{fig:logUc} lässt sich die Güte ablesen.
 \end{figure}
 Sie beträgt
 \begin{equation}
-  q_\text{exp1} = \num{4.30 +- 0.01} \ .
+  q_\text{exp,1} = \num{4.30 +- 0.01} \ .
   \label{eqn:qexp}
 \end{equation}
 Aus Formel \ref{eqn:q} lässt sich der theoretische Wert der Güte berechnen. Sie beträgt
@@ -149,7 +149,7 @@ Durch Ablesen wird die Breite der Resonanzkurve bestimmt welche
 \begin{equation}
   v_+ - v_- = 6.72 \, \text{kHz}
 \end{equation}
-entspricht. Die theoretische breite berechnet sich nach Formel \ref{eqn:qbreite}. Sie beträgt
+entspricht. Die theoretische Breite berechnet sich nach Formel \ref{eqn:qbreite}. Sie beträgt
 \begin{equation}
 	v_+ - v_- = (\num{6.47 +- 0.04}) \, \text{kHz} \ .
 	\label{eqn:nures}
@@ -160,7 +160,7 @@ Die Resonanzfrequenz wird aus dem Graphen abgelesen, bzw der Tabelle entnommen
 \end{equation}
 Mit Hilfe derer und der Breite der Resonanzkurve lässt sich aus Formel \ref{eqn:qbreite} die praktisch ermittelte Güte berechnen. Daraus folgt eine Güte von
 \begin{equation}
-  q_\text{exp2} = (\num{3.91 +- 0.08}) \ .
+  q_\text{exp,2} = (\num{3.91 +- 0.08}) \ .
   \label{eqn:qexp2}
 \end{equation}
 Der experimentell bestimmte Wert weicht vom theoretischen Wert um 6.9 \% ab.
