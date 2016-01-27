@@ -3,7 +3,7 @@
 
 \subsection{Fourier-Analyse}
 \label{sec:Analyse}
-In der folgenden Messreihe werden drei periodische elektrische Schwingungen in ihre Fourier-Komponenten zerlegt und diese mit den Ergebnissen aus dem Fourierschen Theorem \ref{eqn:fourier} verglichen. Die jeweils verwendeten Schwingungen haben eine Frequenz von 100 kHz. $U_\text{theo, n}$ berechnet sich aus den Fourierkoeffizienten(siehe Gl. \ref{eqn:Koef}) der jeweiligen Schwingung und $U_\text{exp, n}$ wird aus den Diagrammen \ref{fig:SägeB} bis \ref{fig:DreieckB} abgelesen. In den Tabellen \ref{tab:Säge} bis \ref{tab:Drei} sind die Ergebnisse aufgelistet. \\
+In der folgenden Messreihe werden drei periodische elektrische Schwingungen in ihre Fourier-Komponenten zerlegt und diese mit den Ergebnissen aus dem Fourierschen Theorem (siehe Gl. (\ref{eqn:fourier})) verglichen. Die jeweils verwendeten Schwingungen haben eine Frequenz von 100 kHz. $U_\text{theo, n}$ berechnet sich aus den Fourierkoeffizienten(siehe Gl. \ref{eqn:Koef}) der jeweiligen Schwingung und $U_\text{exp, n}$ wird aus den Diagrammen \ref{fig:SägeB} bis \ref{fig:DreieckB} abgelesen. In den Tabellen \ref{tab:Säge} bis \ref{tab:Drei} sind die Ergebnisse aufgelistet. \\
 Die Fehler werden mit Gleichung \ref{eqn:Fehler} berechnet.
 \begin{equation}
   \sigma_\text{n} = \frac{U_\text{exp, n} - U_\text{theo, n}}{U_\text{theo, n}} \cdot 100 \ .
@@ -87,29 +87,75 @@ Die Fehler werden mit Gleichung \ref{eqn:Fehler} berechnet.
   \label{fig:DreieckB}
 \end{figure}
 
+\newpage
 \subsection{Fourier-Synthese}
 \label{sec:Synthese}
-Bei einer Amplitude von $a_1$ = 0.640 V der ersten Oberwelle ergeben sich folgende Approximationen: \\
+Die eingestellten Amplituden der Rechteck- und der Sägezahnspannung sind in Tabelle \ref{tab:SagRecht} aufgelistet.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c c c}
+    \toprule
+    \multicolumn{2}{c}{Oberwelle} & A / V \\
+    Sägezahn & Rechteck & \\
+    \midrule
+    1. & 1. & 0.640 \\
+    2. & --- & 0.320 \\
+    3. & 3. & 0.213 \\
+    4. & --- & 0.160 \\
+    5. & 5. & 0.128 \\
+    6. & --- & 0.106 \\
+    7. & 7. & 0.091 \\
+    8. & --- & 0.080 \\
+    9. & 9. & 0.071 \\
+    10. & --- & 0.064 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Die eingestellten größen für die Rechteck- und die Sägezahnspannung.}
+  \label{tab:SagRecht}
+\end{table}
+
 \textbf{Sägezahn-Schwingung:} \\
 \begin{figure}[H]
   \centering
-  \includegraphics[height=6cm]{picture/Saege.PNG}
+  \includegraphics[height=5cm]{picture/Saege.PNG}
   \caption{Sägezahn-Schwingung.}
   \label{fig:Säge}
 \end{figure}
 
+\newpage
 \textbf{Rechteck-Schwingung:} \\
 \begin{figure}[H]
   \centering
-  \includegraphics[height=6cm]{picture/Rechteck.PNG}
+  \includegraphics[height=5cm]{picture/Rechteck.PNG}
   \caption{Rechteck-Schwingung.}
   \label{fig:Recht}
 \end{figure}
 
+Die eingestellten Amplituden der Rechteck- und der Sägezahnspannung sind in Tabelle \ref{tab:Dreis} aufgelistet.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c c}
+    \toprule
+    Oberwelle & A / V \\
+    Dreieck & \\
+    \midrule
+    1. & 0.640 \\
+    3. & 0.071 \\
+    5. & 0.026 \\
+    7. & 0.013 \\
+    9. & 0.007 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Die eingestellten größen für die Dreiecksspannung.}
+  \label{tab:Dreis}
+\end{table}
+
 \textbf{Dreieck-Schwingung:} \\
 \begin{figure}[H]
   \centering
-  \includegraphics[height=6cm]{picture/Dreieck.PNG}
+  \includegraphics[height=5cm]{picture/Dreieck.PNG}
   \caption{Dreieck-Schwingung.}
   \label{fig:Drei}
 \end{figure}
