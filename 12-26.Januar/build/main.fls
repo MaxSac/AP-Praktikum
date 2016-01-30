@@ -1,4 +1,4 @@
-PWD /home/maximilian/Dokumente/00-AP_Praktikum/11-19.Januar
+PWD /home/maximilian/Dokumente/00-AP_Praktikum/12-26.Januar
 INPUT /home/maximilian/.local/texlive/2015/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./main.tex
 OUTPUT build/main.log
@@ -362,20 +362,11 @@ INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
 INPUT /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc
 INPUT /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc
-INPUT picture/GekoppelterSchwingkreis.PNG
-INPUT picture/Schwebungsfrequenz.PNG
-INPUT picture/AngeregterSchwingkreis.PNG
+INPUT ./picture/poisson.png
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
-INPUT picture/BestimmungDerResFrequenz.PNG
-INPUT picture/Schwebefrequenz.PNG
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
-INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
-INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
-INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT build/main.aux
