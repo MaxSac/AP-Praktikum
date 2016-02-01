@@ -32,44 +32,44 @@ Die Poissonsche Querkontraktionszahl µ Verknüpft die Längenänderung mit der 
 \end{equation}
 Das Kompressionsmodul $Q$ berechnet sich aus dem Elastizitätsmodul so wie der Querkontraktionszahl µ.
 \begin{equation}
-  Q = \frac{E}{-6µ + 3}
-  \label{}
+  Q = \frac{E}{-6 \mu + 3}
+  \label{eqn:komp}
 \end{equation}
 
 \subsection{Bestimmung des Torsionsmoduls G}
-Um die elastische Nachwirkung vernachlässigen zu können, wird zur Bestimmung des Torsionsmoduls eine dynamische Methode gewählt. Als elastische Nachwirkung wird die Zeit benötigt bis gewisse Materialien nach einer Belastung wieder in ihren Ausgangszustandung zurückkehrt. 
-Für die Dynamische Methode wird ein zylinderförmiger Draht an einem Ende Eingespannt und auf der anderen Seite wirkt über ein Kräftepaar ein Drehmoment auf diesen. Durch die Scherung des Drahtes um den Winkel \alpha kommt es zu einer Drehmoment welche infitesimalen Drehmomente über den Radius des Zylinders  integriert werden. 
+Um die elastische Nachwirkung vernachlässigen zu können, wird zur Bestimmung des Torsionsmoduls eine dynamische Methode gewählt. Als elastische Nachwirkung wird die Zeit benötigt bis gewisse Materialien nach einer Belastung wieder in ihren Ausgangszustandung zurückkehrt.
+Für die Dynamische Methode wird ein zylinderförmiger Draht an einem Ende Eingespannt und auf der anderen Seite wirkt über ein Kräftepaar ein Drehmoment auf diesen. Durch die Scherung des Drahtes um den Winkel \alpha kommt es zu einer Drehmoment welche infitesimalen Drehmomente über den Radius des Zylinders  integriert werden.
 \begin{equation}
   M = \frac{\pi G R^4 \varphi}{2L} =: D \varphi
   \label{eqn:M}
 \end{equation}
-In Analogie zur Federkonstante wird $D$ als Richtgröße bezeichnet. Durch eine kleine Auslenkung aus der Ruhelage im Rahmen der Kleinwinkelnäherung lässt sich das Schwingungsfähige System durch die Differentialgleichung 
+In Analogie zur Federkonstante wird $D$ als Richtgröße bezeichnet. Durch eine kleine Auslenkung aus der Ruhelage im Rahmen der Kleinwinkelnäherung lässt sich das Schwingungsfähige System durch die Differentialgleichung
 \begin{equation}
   D \varphi + \theta \varphi = 0
   \label{eqn:dgl}
 \end{equation}
-beschreiben, wobei \theta das Trägheitsmoment des Systems ist. Der Differnentialgleichung wird eine Periodendauer von 
+beschreiben, wobei \theta das Trägheitsmoment des Systems ist. Der Differnentialgleichung wird eine Periodendauer von
 \begin{equation}
   T = 2 \pi \sqrt{\frac{\theta}{D}}
   \label{eqn:T}
 \end{equation}
-entnommen und das Trägheitsmoment der Kugel aud des Formel 
+entnommen und das Trägheitsmoment der Kugel aud des Formel
 \begin{equation}
   \theta_\text{Kugel} = \frac{2}{5}m_\text{k}R_\text{k}^2
   \label{eqn:theta}
 \end{equation}
-berechnet. Somit ergibt sich aus Formel \ref{eqn:M}, \ref{eqn:T} und \ref{eqn:theta} ein Torsionsmodul $G$ von 
+berechnet. Somit ergibt sich aus Formel \ref{eqn:M}, \ref{eqn:T} und \ref{eqn:theta} ein Torsionsmodul $G$ von
 \begin{equation}
   G = \frac{16 \pi m_\text{k} R_\text{k}^2 L}{5 T^2 R^4} \ .
   \label{eqn:G}
 \end{equation}
 \subsection{Magnetisches Moment eines Permanentmagnetens}
-Das magnetische Moment $\vec{m}$  eine Permanentmagneten ist definiert als 
+Das magnetische Moment $\vec{m}$  eine Permanentmagneten ist definiert als
 \begin{equation}
   \vec{m} := p \vec{a}
   \label{eqn:m}
 \end{equation}
-wobei $p$ die Polstärke und $\vec{a}$ die Abstände der beiden Pole ist. Auf dem Magneten wirkt in einem B-Feld wie in Abbildung ?? zu sehen, dass Magnetische Moment $M_\text{Mag}$ zweier entgegengesetzter Kräfte. Der Betrag des magnetische Momentens ist 
+wobei $p$ die Polstärke und $\vec{a}$ die Abstände der beiden Pole ist. Auf dem Magneten wirkt in einem B-Feld wie in Abbildung ?? zu sehen, dass Magnetische Moment $M_\text{Mag}$ zweier entgegengesetzter Kräfte. Der Betrag des magnetische Momentens ist
 \begin{equation}
   |M_\text{Mag}| = m B sin(\gamma)
   \label{eqn:MM}
@@ -78,9 +78,9 @@ Daraus ergibt sich die nicht lineare Differentialgleichung
 \begin{equation}
   mBsin \varphi + D \varphi + \theta \frac{d^2 \varphi}{dt^2}
   \label{eqn:idgl}
-\end{equation} welche sich jedoch durch die Kleinwinkelnäherung $sin \varphi \sim \varphi$ in eine homogene Umschreiben lässt. Daraus lässt sich die Schwingungsdauer 
+\end{equation} welche sich jedoch durch die Kleinwinkelnäherung $sin \varphi \sim \varphi$ in eine homogene Umschreiben lässt. Daraus lässt sich die Schwingungsdauer
 \begin{equation}
-  T_\text{Mag} = 2 \pi \sqrt{\frac{\theta}{mB + D}} 
+  T_\text{Mag} = 2 \pi \sqrt{\frac{\theta}{mB + D}}
   \label{eqn:Tmag}
 \end{equation}
 entnehmen.

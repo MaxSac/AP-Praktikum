@@ -4,7 +4,7 @@
 \subsection{Geometrische Daten der Messapperatur}
 Im weiteren werden der Kugelradius $R_\text{K}$, die Kugelmasse $m_\text{K}$, das Trägheitsmoment der Kugelhalterung $\theta_\text{H}$, die Windungszahl der Helmholzspule $N$ und der Radius der Helmholzspule $R_\text{H}$ aufgelistet.
 \begin{align*}
-  R_\text{K} &= (\num{0.0288 +- 0.0002}) \ \text{m} \\
+  R_\text{K} &= (\num{0.02538 +- 0.00001}) \ \text{m} \\
   m_\text{K} &= (\num{0.5122 +- 0.0002}) \ \text{kg} \\
   \theta_\text{H} &= 2.25 \cdot 10^{-6} \ \text{kg m}^2 \\
   N &= 390 \\
@@ -39,7 +39,7 @@ Das Gesamtträgheitsmoment ergibt sich aus der Summation von dem Trägheitsmomen
 \end{align*}
 
 \subsection{Bestimmung des Schubmoduls G und der anderen elastischen Konstanten}
-Mit den Tabellen \ref{tab:Messwerte} und \ref{tab:Periodendauer1} und der Gleichung (\ref{eqn:}) folgt der Schubmodul $G$ zu
+Mit den Tabellen \ref{tab:Messwerte} und \ref{tab:Periodendauer1} und der Gleichung (\ref{eqn:G}) folgt der Schubmodul $G$ zu
 \begin{align*}
   G = (\num{4.99 +- 0.04}) \cdot 10^{10} \frac{\text{N}}{\text{m}^2} \ .
 \end{align*}
@@ -76,13 +76,13 @@ Die Werte für den Elastizitätsmodul und den Schubmodul wurden vorgegeben:
 \begin{align*}
   G = 8.2 \cdot 10^{10} \frac{\text{N}}{\text{m}^2}
 \end{align*}
-Im weiteren Verlauf wird das gegebene $G$ verwendet. Mit Hilfe von $E$ und $G$ werden nun die poissonsche Querkontraktionszahl $\mu$ und der Kompressionsmodul $Q$ bestimmt. Mit den Gleichungen (\ref{eqn:}) und (\ref{eqn:}) ergeben sich:
+Im weiteren Verlauf wird das gegebene $G$ verwendet. Mit Hilfe von $E$ und $G$ werden nun die poissonsche Querkontraktionszahl $\mu$ und der Kompressionsmodul $Q$ bestimmt. Mit den Gleichungen (\ref{eqn:pois}) und (\ref{eqn:komp}) ergeben sich:
 \begin{equation}
   \mu = \frac{E}{2G} - 1 = 0.28
 \end{equation}
 und
 \begin{equation}
-  Q = \frac{EG}{9G - 3E} = 1.59 \cdot 10^{11} \frac{\text{N}}{\text{m}^2} \ .
+  Q = \frac{E}{-6 \mu + 3} = 1.59 \cdot 10^{11} \frac{\text{N}}{\text{m}^2} \ .
 \end{equation}
 
 \subsection{Bestimmung des magnetischen Momentes $m$}
@@ -113,9 +113,10 @@ Zunächst wird über den Spulenstrom das Magnetfeld im Zentrum der Spule mit Hil
   \label{eqn:B}
 \end{equation}
 Mit $\mu_0 = 4 \pi \cdot 10^{-7} \ \frac{\text{N}}{\text{A}^2}$.
-Nun kann Gleichung (\ref{eqn:}) zu
+Nun kann Gleichung (\ref{eqn:Tmag}) zu
 \begin{equation}
   mB + D = \frac{4 \pi^2 \theta}{T_\text{m}^2}
+  \label{eqn:MagMoment}
 \end{equation}
 umgestellt werden. Das magnetische Moment wird nun mit Hilfe einer linearen Regression bestimmt. Die Steigung der Geraden entspricht dann dem magnetischen Moment. In Tabelle \ref{tab:BUndMehr} sind $B$ und $\frac{4 \pi^2 \theta}{T_\text{m}^2}$ aufgelistet.
 
@@ -158,7 +159,7 @@ Aufgrund der Horizontalkomponente des Erdmagnetfeldes, wirkt auf den Magneten in
   \centering
   \begin{tabular}{c c}
     \toprule
-    & $T_\text{m}$ / s \\
+    & $T_\text{E}$ / s \\
     \midrule
     1. & 18.638 \\
     2. & 18.607 \\
@@ -179,7 +180,7 @@ Aufgrund der Horizontalkomponente des Erdmagnetfeldes, wirkt auf den Magneten in
   \label{tab:Periodendauer2}
 \end{table}
 
-Die Horizontalkomponente lässt sich aus Gleichung (\ref{eqn:}) nach $B$ umgestellt bestimmen.
+Die Horizontalkomponente lässt sich aus Gleichung (\ref{eqn:MagMoment}) nach $B$ umgestellt bestimmen.
 \begin{equation}
-  B_\text{h} = \frac{4 \pi^2 I_\text{ges}}{m} \left(\frac{1}{T_\text{m}^2} - \frac{1}{T^2} \right) = (\num{65.0 +- 8.0}) \ \mu T
+  B_\text{h} = \frac{4 \pi^2 I_\text{ges}}{m} \left(\frac{1}{T_\text{E}^2} - \frac{1}{T^2} \right) = (\num{65.0 +- 8.0}) \ \mu \text{T}
 \end{equation}
