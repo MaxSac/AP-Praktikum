@@ -1,7 +1,7 @@
 \section{Theoretische Grundlage}
 \label{sec:Theorie}
 \subsection{Ziel}
-Ziel des Versuches ist es der elastisches Modul eines Metalls mittels einer Drehschwingung zu bestimmten, als auch das magnetische Moment eines Permanentmagneten. 
+Ziel des Versuches ist es der elastisches Modul eines Metalls mittels einer Drehschwingung zu bestimmten, als auch das magnetische Moment eines Permanentmagneten.
 \subsection{Normal-, Schubspannung und Hooksches Gesetz}
 Kräfte die an die Oberfläche eines elastischen Körper angreifen, verformen diesen. Aufgrund dessen werden die Größe Spannung definiert, welche ein Verhältniss von der Kraft zum ein Flächenelement herstellt.
 \begin{equation}
@@ -10,7 +10,7 @@ Kräfte die an die Oberfläche eines elastischen Körper angreifen, verformen di
 \end{equation}
 Sie lassen sich in zwei Kategorien aufteilen. Als Normalspannung $\sigma_\text{N}$ werden die Kräfte bezeichnet welche senkrecht zur Oberfläche stehen. Die Kräfte welche parallel zur Oberfläche stehen heißen Schubspannung $\sigma_\text{S}$. Desweiteren gibt es noch Volumenkräfte. Bei solchen greift die Kraft an jedem Volumenelement an, zum Beispiel die Schwerkraft.
 
-Zwischen hinreichend kleinen Spannungen und Deformation besteht ein proportionaler Zusammenhang welcher als Hooksches bezeichnet wird. 
+Zwischen hinreichend kleinen Spannungen und Deformation besteht ein proportionaler Zusammenhang welcher als Hooksches bezeichnet wird.
 \begin{equation}
   \sigma = E \frac{\Delta L}{L}  \hspace{2em} \text{und} \hspace{2em} P = Q\frac{\Delta V}{V}
   \label{eqn:Hook}
@@ -33,7 +33,6 @@ Die Poissonsche Querkontraktionszahl µ Verknüpft die Längenänderung mit der 
 
 
 \subsection{Fehlerrechnung}
-Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
 \subsubsection{Mittelwert}
 Der Mittelwert einer Messreihe $x_\text{1}, ... ,x_\text{n}$ lässt sich durch die Formel
 \begin{equation}
@@ -46,24 +45,8 @@ berechnen. Die Standardabweichung des Mittelwertes beträgt
 	\label{eqn:std}
 \end{equation}
 
-\subsubsection{Gauß'sche Fehlerfortpflanzung}
-Wenn $x_\text{1}, ..., x_\text{n}$ fehlerbehaftete Messgrößen im weiteren Verlauf benutzt werden, wird der neue Fehler $\Delta f$ mit Hilfe der Gaußschen Fehlerfortpflanzung angegeben.
-\begin{equation}
-	\Delta f = \sqrt{\sum_{\text{k}=1}^\text{N} \left( \frac{ \partial f}{\partial x_\text{k}} \right) ^2 \cdot (\Delta x_\text{k})^2}
-	\label{eqn:var}
-\end{equation}
+\subsubsection{Fehlerfortpflanzung}
+Die Fehlerfortpflanzung übernimmt Python 3.4.3 mit der Funktion "ufloat" aus "Python-Uncertainties".
 
 \subsubsection{Lineare Regression}
-Die Steigung und y-Achsenabschnitt einer Ausgleichsgeraden werden gegebenfalls mittels Linearen Regression berechnet.
-\begin{equation}
-	y = m \cdot x + b
-	\label{eqn:reg}
-\end{equation}
-\begin{equation}
-	m = \frac{ \overline{xy} - \overline{x} \overline{y} } {\overline{x^2} - \overline{x}^2}
-	\label{eqn:reg_m}
-\end{equation}
-\begin{equation}
-	b = \frac{ \overline{x^2}\overline{y} - \overline{x} \, \overline{xy}} { \overline{x^2} - \overline{x}^2}
-	\label{eqn:reg_b}
-\end{equation}
+Die Lineare Regression und sämtliche andere Rechnungen wurden ebenfalls mit Python 3.4.3 durchgeführt.

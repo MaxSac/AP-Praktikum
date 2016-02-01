@@ -8,13 +8,13 @@ Im weiteren werden der Kugelradius $R_\text{K}$, die Kugelmasse $m_\text{K}$, da
   m_\text{K} &= (\num{0.5122 +- 0.0002}) \ \text{kg} \\
   \theta_\text{H} &= 2.25 \cdot 10^{-6} \ \text{kg m}^2 \\
   N &= 390 \\
-  R_\text{H} &= 0.078 \text{m}
+  R_\text{H} &= 0.078 \ \text{m}
 \end{align*}
 Die Abmessungen des Drahtes sind in der folgenden Tabelle aufgeführt.
 
 \begin{table}[H] %Abmessungdes Drahtes
   \centering
-  \begin{tabular}{c c c}
+  \begin{tabular}{c | c | c}
     \toprule
     & L / m & 2R / $10^{-3}$ \ m \\
     \midrule
@@ -24,8 +24,8 @@ Die Abmessungen des Drahtes sind in der folgenden Tabelle aufgeführt.
     &       & 0.200 \\
     &       & 0.205 \\
     \bottomrule
-    Mittelwert & 0.5983 & 0.2060 \\
-    Fehler     & 0.0008 & 0.0004 \\
+    Mittelwert(nach Gl. (\ref{eqn:ave}))         & 0.5983 & 0.2060 \\
+    Standardabweichung(nach Gl. (\ref{eqn:std})) & 0.0008 & 0.0004 \\
     \bottomrule
   \end{tabular}
   \caption{Die Abmessung des Drahtes.}
@@ -41,7 +41,7 @@ Das Gesamtträgheitsmoment ergibt sich aus der Summation von dem Trägheitsmomen
 \subsection{Bestimmung des Schubmoduls G und der anderen elastischen Konstanten}
 Mit den Tabellen \ref{tab:Messwerte} und \ref{tab:Periodendauer1} und der Gleichung (\ref{eqn:}) folgt der Schubmodul $G$ zu
 \begin{align*}
-  G = (\num{4.99 +- 0.04}) \cdot 10^{10} \cdot 10^{10} \frac{\text{N}}{\text{m}^2} \ .
+  G = (\num{4.99 +- 0.04}) \cdot 10^{10} \frac{\text{N}}{\text{m}^2} \ .
 \end{align*}
 
 \begin{table}[H] %Periodendauer ohne Magnet
@@ -61,8 +61,8 @@ Mit den Tabellen \ref{tab:Messwerte} und \ref{tab:Periodendauer1} und der Gleich
     9. & 18.797 \\
     10.& 18.800 \\
     \bottomrule
-    Mittelwert & 18.793 \\
-    Fehler & 0.014 \\
+    Mittelwert(nach Gl. (\ref{eqn:ave})) & 18.793 \\
+    Standardabweichung(nach Gl. (\ref{eqn:std})) & 0.014 \\
     \bottomrule
   \end{tabular}
   \caption{Periodendauer der Schwingung ohne Magnet.}
@@ -99,8 +99,8 @@ Zur Bestimmung des magnetischen Momentes, wird die Periodendauer $T_\text{m}$ in
     $T_\text{m}$ / s & 17.333 & 16.006 & 15.041 & 14.109 & 13.244 \\
     $T_\text{m}$ / s & 17.336 & 15.992 & 15.026 & 14.104 & 13.174 \\
     \bottomrule
-    Mittelwert & 17.280 & 16.004 & 15.050 & 14.122 & 13.210 \\
-    Fehler & 0.090 & 0.013 & 0.018 & 0.021 & 0.040 \\
+    Mittelwert(nach Gl. (\ref{eqn:ave})) & 17.280 & 16.004 & 15.050 & 14.122 & 13.210 \\
+    Standardabweichung(nach Gl. (\ref{eqn:std})) & 0.090 & 0.013 & 0.018 & 0.021 & 0.040 \\
     \bottomrule
   \end{tabular}
   \caption{Messwerte für die Schwingungsdauern in Abhängigkeit vom Spulenstrom.}
@@ -136,7 +136,7 @@ umgestellt werden. Das magnetische Moment wird nun mit Hilfe einer linearen Regr
   \label{tab:BUndMehr}
 \end{table}
 
-In Abbildung \ref{fig:magMoment} ist $B$ gegen $\frac{4 \pi^2 \theta}{T_\text{m}^2}$ aufgetragen und es wurde zusätzlich eine Ausgleichgerade aufgetragen.
+In Abbildung \ref{fig:magMoment} ist $B$ gegen $\frac{4 \pi^2 \theta}{T_\text{m}^2}$ aufgetragen und es wurde zusätzlich eine Ausgleichgerade eingezeichnet.
 
 \begin{figure}[H]
   \centering
@@ -171,8 +171,8 @@ Aufgrund der Horizontalkomponente des Erdmagnetfeldes, wirkt auf den Magneten in
     9. & 18.599 \\
     10.& 18.620 \\
     \bottomrule
-    Mittelwert & 18.609 \\
-    Fehler & 0.018 \\
+    Mittelwert(nach Gl. (\ref{eqn:ave})) & 18.609 \\
+    Standardabweichung(nach Gl. (\ref{eqn:std})) & 0.018 \\
     \bottomrule
   \end{tabular}
   \caption{Periodendauer der Schwingung mit Magnet.}

@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.16)  30 JAN 2016 23:17
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.16)  1 FEB 2016 15:41
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -275,7 +275,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.069 seconds)
+luaotfload | main : initialization completed in 0.078 seconds)
 Lua module: fontspec 2013/05/20 2.3c Advanced font selection for LuaLaTeX.
 \l_fontspec_script_int=\count118
 \l_fontspec_language_int=\count119
@@ -2165,11 +2165,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 88.
 
-[6]
 
-LaTeX Warning: Reference `eqn:' on page 7 undefined on input line 116.
+Overfull \hbox (30.90236pt too wide) in paragraph at lines 93--106
+ [][][] 
+ []
 
-<MagnetischesMoment.pdf, id=102, 417.7206pt x 258.00488pt>
+
+LaTeX Warning: Reference `eqn:' on page 6 undefined on input line 116.
+
+[6] <MagnetischesMoment.pdf, id=109, 417.7206pt x 258.00488pt>
 File: MagnetischesMoment.pdf Graphic file (type pdf)
  <use MagnetischesMoment.pdf>
 Package pdftex.def Info: MagnetischesMoment.pdf used on input line 143.
@@ -2191,28 +2195,28 @@ luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [7] [8<build/MagnetischesMoment.pdf>]
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [7<build/MagnetischesMoment.pdf>]
 
-LaTeX Warning: Reference `eqn:' on page 9 undefined on input line 182.
+LaTeX Warning: Reference `eqn:' on page 8 undefined on input line 182.
 
 ) (./content/diskussion.tex
 
-LaTeX Warning: Citation 'Literatur' on page 9 undefined on input line 13.
+LaTeX Warning: Citation 'Literatur' on page 8 undefined on input line 13.
 
 )
 
 LaTeX Warning: Empty bibliography on input line 23.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-[9] [10]
+[8] [9]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: B7DF03BE423F2A68C5DDEAF952D28FE1;12691.
+(rerunfilecheck)             Checksum: 9DF8E80BE482F82844249A23AE957C35;12298.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 2FE0D052BD0BBD701D9FA53D7D02598A;1715.
+(rerunfilecheck)             Checksum: 1CF395CB8C273F3141B4008F22831C26;1704.
 
 
 LaTeX Warning: There were undefined references.
@@ -2229,19 +2233,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44079 strings out of 494897
+ 44070 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 644 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 16 kern, 21 attribute, 67 glue_spec, 21 attribute_list, 1 write nodes
-   avail lists: 1:2,2:734,3:172,4:959,5:163,6:1983,7:96,8:20,9:289,10:267,11:1
- 46414 multiletter control sequences out of 65536+600000
- 134 fonts using 30539139 bytes
+ 593 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 12 kern, 17 attribute, 64 glue_spec, 17 attribute_list, 1 write nodes
+   avail lists: 1:2,2:744,3:169,4:993,5:176,6:2003,7:86,8:20,9:300,10:264,11:1
+ 46410 multiletter control sequences out of 65536+600000
+ 134 fonts using 30538715 bytes
  69i,13n,104p,953b,1965s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (10 pages, 118842 bytes).
+Output written on main.pdf (9 pages, 117055 bytes).
 
 PDF statistics: 291 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 131072)
+ 230 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 131072)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
