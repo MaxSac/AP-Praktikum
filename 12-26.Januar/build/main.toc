@@ -20,3 +20,4 @@
 \contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
 \contentsline {subsection}{\numberline {4.1}Elastische Konstanten}{10}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Erdmagnetfeld}{10}{subsection.4.2}
+\contentsline {section}{\nonumberline Literatur}{11}{section*.9}

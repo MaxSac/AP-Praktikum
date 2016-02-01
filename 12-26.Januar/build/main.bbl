@@ -16,5 +16,20 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{Literatur}{manual}{}
+      \list{location}{1}{%
+        {http://www-app1.gfz-potsdam.de/cgi-bin/igrf.pl}%
+      }
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labeltitlesource}{title}
+      \field{title}{Horizontale Erdmagnetfeldkomponente für Dortmund}
+      \field{year}{2016}
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
 
