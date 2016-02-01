@@ -365,6 +365,9 @@ INPUT /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/
 INPUT ./picture/poisson.png
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
+INPUT picture/Messapperatur.png
+INPUT picture/Aufbau.png
+INPUT picture/Aufbau2.png
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
 INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm

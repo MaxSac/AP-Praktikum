@@ -11,12 +11,16 @@
 \contentsline {subsubsection}{\numberline {1.6.1}Mittelwert}{5}{subsubsection.1.6.1}
 \contentsline {subsubsection}{\numberline {1.6.2}Fehlerfortpflanzung}{5}{subsubsection.1.6.2}
 \contentsline {subsubsection}{\numberline {1.6.3}Lineare Regression}{5}{subsubsection.1.6.3}
-\contentsline {section}{\numberline {2}Durchführung und Aufbau}{6}{section.2}
-\contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Geometrische Daten der Messapperatur}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Bestimmung des Schubmoduls G und der anderen elastischen Konstanten}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Bestimmung des magnetischen Momentes $m$}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Bestimmung der Horizontalkomponente des Erdmagnetfeldes}{9}{subsection.3.4}
-\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Elastische Konstanten}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Erdmagnetfeld}{10}{subsection.4.2}
+\contentsline {section}{\numberline {2}Durchführung und Aufbau}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Daten der Messaperatur}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Schwingungsdauer des Torsionsmodul ohne Magnetisches Moment}{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Messung des Erdmagnetfeldes}{7}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Messung des Erdmagnetfeldes}{7}{subsection.2.4}
+\contentsline {section}{\numberline {3}Auswertung}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Geometrische Daten der Messapperatur}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Bestimmung des Schubmoduls G und der anderen elastischen Konstanten}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Bestimmung des magnetischen Momentes $m$}{10}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Bestimmung der Horizontalkomponente des Erdmagnetfeldes}{11}{subsection.3.4}
+\contentsline {section}{\numberline {4}Diskussion}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Elastische Konstanten}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Erdmagnetfeld}{12}{subsection.4.2}
