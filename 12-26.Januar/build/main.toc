@@ -11,4 +11,10 @@
 \contentsline {subsubsection}{\numberline {1.4.3}Lineare Regression}{4}{subsubsection.1.4.3}
 \contentsline {section}{\numberline {2}Durchführung und Aufbau}{4}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{4}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{4}{section.4}
+\contentsline {subsection}{\numberline {3.1}Geometrische Daten der Messapperatur}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Bestimmung des Schubmoduls G und der anderen elastischen Konstanten}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Bestimmung des magnetischen Momentes $m$}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Bestimmung der Horizontalkomponente des Erdmagnetfeldes}{8}{subsection.3.4}
+\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Elastische Konstanten}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Erdmagnetfeld}{9}{subsection.4.2}

@@ -88,7 +88,7 @@ Therm = np.array([Therm[0].n, Therm[1].n, Therm[2].n, Therm[3].n, Therm[4].n])
 def f(x, a, b):
     return a * x + b
 params, covariance = curve_fit(f, B, Therm)
-"""
+
 plt.plot(B, Therm * 10**4, 'rx', label='Messwerte')
 plt.plot(B, f(B, *params) * 10**4, 'b-', label='linearer Fit')
 plt.xlabel(r'B / $10^{-3}$ T')
@@ -98,7 +98,7 @@ plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig('build/MagnetischesMoment.pdf')
 plt.close()
-"""
+
 errors = np.sqrt(np.diag(covariance))
 m = ufloat(params[0], errors[0]) * 10**3
 print('m =', m)
