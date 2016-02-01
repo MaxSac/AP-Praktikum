@@ -64,6 +64,26 @@ berechnet. Somit ergibt sich aus Formel \ref{eqn:M}, \ref{eqn:T} und \ref{eqn:th
   \label{eqn:G}
 \end{equation}
 \subsection{Magnetisches Moment eines Permanentmagnetens}
+Das magnetische Moment $\vec{m}$  eine Permanentmagneten ist definiert als 
+\begin{equation}
+  \vec{m} := p \vec{a}
+  \label{eqn:m}
+\end{equation}
+wobei $p$ die Polstärke und $\vec{a}$ die Abstände der beiden Pole ist. Auf dem Magneten wirkt in einem B-Feld wie in Abbildung ?? zu sehen, dass Magnetische Moment $M_\text{Mag}$ zweier entgegengesetzter Kräfte. Der Betrag des magnetische Momentens ist 
+\begin{equation}
+  |M_\text{Mag}| = m B sin(\gamma)
+  \label{eqn:MM}
+\end{equation}
+Daraus ergibt sich die nicht lineare Differentialgleichung
+\begin{equation}
+  mBsin \varphi + D \varphi + \theta \frac{d^2 \varphi}{dt^2}
+  \label{eqn:idgl}
+\end{equation} welche sich jedoch durch die Kleinwinkelnäherung $sin \varphi \sim \varphi$ in eine homogene Umschreiben lässt. Daraus lässt sich die Schwingungsdauer 
+\begin{equation}
+  T_\text{Mag} = 2 \pi \sqrt{\frac{\theta}{mB + D}} 
+  \label{eqn:Tmag}
+\end{equation}
+entnehmen.
 \subsection{Fehlerrechnung}
 \subsubsection{Mittelwert}
 Der Mittelwert einer Messreihe $x_\text{1}, ... ,x_\text{n}$ lässt sich durch die Formel
