@@ -15,7 +15,7 @@ Zwischen hinreichend kleinen Spannungen und Deformation besteht ein proportional
   \sigma = E \frac{\Delta L}{L}  \hspace{2em} \text{und} \hspace{2em} P = Q\frac{\Delta V}{V}
   \label{eqn:Hook}
 \end{equation}
-Um alle Spannungen in einem Kristall volständig zu beschreiben werden jeweils 6 Komponenten benötigt, wobei 3 für die Gestaltsund 3 für die Volumenelastizität zuständig sind. Bei einem einfachen  Kristall mit niedriger Symmetrie entsteht deswegen eine 6x6-Matrix mit 36 Einträgen. Bei kubischen Kristallen lässt sich aufgrund der symmetrie der Matrix und des Körpers auf 3 Einträge verringern.
+Um alle Spannungen in einem Kristall volständig zu beschreiben werden jeweils 6 Komponenten benötigt, wobei 3 für die Gestaltsund 3 für die Volumenelastizität zuständig sind. Bei einem einfachen  Kristall mit niedriger Symmetrie entsteht deswegen eine 6x6-Matrix mit 36 Einträgen. Bei kubischen Kristallen lässt sich aufgrund der symmetrie der Matrix und des Körpers auf 3 Einträge verringern. Handelt sich zusätzlich um einen isotropen Körper, so lässt sich der Körper vollständig durch 2 Konstanten beschreiben.
 
 \subsection{Elastische Konstanten isotroper Stoffe}
 Zur Berechnung des elastizitschen Konstanten wird einerseits die Torsionsmodul $G$ als auch das Komprssionsmodul $Q$ benötigt bzw das Elastizitätsmodul $\sigma$.
@@ -27,11 +27,43 @@ Die Poissonsche Querkontraktionszahl µ Verknüpft die Längenänderung mit der 
   \label{fig:poisson}
 \end{figure}
 \begin{equation}
-  µ := -\frac{\Delta B}{B} \cdot \frac{L}{\Delta L}
+  \text{µ} := -\frac{\Delta B}{B} \cdot \frac{L}{\Delta L} = \frac{E}{2G} - 1
   \label{eqn:pois}
 \end{equation}
+Das Kompressionsmodul $Q$ berechnet sich aus dem Elastizitätsmodul so wie der Querkontraktionszahl µ.
+\begin{equation}
+  Q = \frac{E}{-6µ + 3}
+  \label{}
+\end{equation}
 
-
+\subsection{Bestimmung des Torsionsmoduls G}
+Um die elastische Nachwirkung vernachlässigen zu können, wird zur Bestimmung des Torsionsmoduls eine dynamische Methode gewählt. Als elastische Nachwirkung wird die Zeit benötigt bis gewisse Materialien nach einer Belastung wieder in ihren Ausgangszustandung zurückkehrt. 
+Für die Dynamische Methode wird ein zylinderförmiger Draht an einem Ende Eingespannt und auf der anderen Seite wirkt über ein Kräftepaar ein Drehmoment auf diesen. Durch die Scherung des Drahtes um den Winkel \alpha kommt es zu einer Drehmoment welche infitesimalen Drehmomente über den Radius des Zylinders  integriert werden. 
+\begin{equation}
+  M = \frac{\pi G R^4 \varphi}{2L} =: D \varphi
+  \label{eqn:M}
+\end{equation}
+In Analogie zur Federkonstante wird $D$ als Richtgröße bezeichnet. Durch eine kleine Auslenkung aus der Ruhelage im Rahmen der Kleinwinkelnäherung lässt sich das Schwingungsfähige System durch die Differentialgleichung 
+\begin{equation}
+  D \varphi + \theta \varphi = 0
+  \label{eqn:dgl}
+\end{equation}
+beschreiben, wobei \theta das Trägheitsmoment des Systems ist. Der Differnentialgleichung wird eine Periodendauer von 
+\begin{equation}
+  T = 2 \pi \sqrt{\frac{\theta}{D}}
+  \label{eqn:T}
+\end{equation}
+entnommen und das Trägheitsmoment der Kugel aud des Formel 
+\begin{equation}
+  \theta_\text{Kugel} = \frac{2}{5}m_\text{k}R_\text{k}^2
+  \label{eqn:theta}
+\end{equation}
+berechnet. Somit ergibt sich aus Formel \ref{eqn:M}, \ref{eqn:T} und \ref{eqn:theta} ein Torsionsmodul $G$ von 
+\begin{equation}
+  G = \frac{16 \pi m_\text{k} R_\text{k}^2 L}{5 T^2 R^4} \ .
+  \label{eqn:G}
+\end{equation}
+\subsection{Magnetisches Moment eines Permanentmagnetens}
 \subsection{Fehlerrechnung}
 \subsubsection{Mittelwert}
 Der Mittelwert einer Messreihe $x_\text{1}, ... ,x_\text{n}$ lässt sich durch die Formel

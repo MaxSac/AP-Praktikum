@@ -1,20 +1,20 @@
-[0] Config.pm:327> INFO - This is Biber 2.3
-[1] Config.pm:330> INFO - Logfile is 'build\main.blg'
-[33] biber-MSWIN:284> INFO - === 
-[53] Biber.pm:346> INFO - Reading 'build\main.bcf'
-[144] Biber.pm:689> INFO - Found 1 citekeys in bib section 0
-[150] Biber.pm:3066> INFO - Processing section 0
-[168] Biber.pm:3206> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[170] bibtex.pm:1062> INFO - Decoding LaTeX character macros into UTF-8
-[171] bibtex.pm:923> INFO - Found BibTeX data source 'lit.bib'
-[174] Biber.pm:3206> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[274] bibtex.pm:1062> INFO - Decoding LaTeX character macros into UTF-8
-[276] bibtex.pm:923> INFO - Found BibTeX data source 'programme.bib'
-[280] Utils.pm:147> WARN - I didn't find a database entry for 'Literatur' (section 0)
-[289] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[289] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[290] Biber.pm:2943> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[290] Biber.pm:2947> INFO - No sort tailoring available for locale 'de-DE'
-[291] bbl.pm:505> INFO - Writing 'build\main.bbl' with encoding 'UTF-8'
-[292] bbl.pm:596> INFO - Output to build\main.bbl
-[292] Biber.pm:107> INFO - WARNINGS: 1
+[0] Config.pm:324> INFO - This is Biber 2.1
+[0] Config.pm:327> INFO - Logfile is 'build/main.blg'
+[30] biber:276> INFO - === Mo Feb  1, 2016, 19:30:04
+[30] Biber.pm:333> INFO - Reading 'build/main.bcf'
+[100] Biber.pm:645> INFO - Found 1 citekeys in bib section 0
+[114] Biber.pm:2977> INFO - Processing section 0
+[126] Biber.pm:3115> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[126] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[127] bibtex.pm:895> INFO - Found BibTeX data source 'lit.bib'
+[130] Biber.pm:3115> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[131] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[132] bibtex.pm:895> INFO - Found BibTeX data source 'programme.bib'
+[132] Utils.pm:146> WARN - I didn't find a database entry for 'Literatur' (section 0)
+[139] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[139] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[139] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[139] Biber.pm:2858> INFO - No sort tailoring available for locale 'de-DE'
+[140] bbl.pm:505> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[140] bbl.pm:596> INFO - Output to build/main.bbl
+[140] Biber.pm:106> INFO - WARNINGS: 1
