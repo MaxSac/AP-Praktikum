@@ -369,6 +369,7 @@ INPUT ./content/theorie.tex
 INPUT C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc
 INPUT C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc
 INPUT ./picture/poisson.png
+INPUT picture/MagM.png
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT picture/Messapperatur.png

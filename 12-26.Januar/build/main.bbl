@@ -19,6 +19,22 @@
 
 \refsection{0}
   \sortlist{nty}{nty}
+    \entry{sample}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V102.pdf}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Versuch 102: Drehschwingungen}
+      \field{year}{2016}
+    \endentry
     \entry{Literatur}{manual}{}
       \list{location}{1}{%
         {http://www-app1.gfz-potsdam.de/cgi-bin/igrf.pl}%
@@ -26,6 +42,7 @@
       \field{sortinit}{H}
       \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
       \field{labeltitlesource}{title}
+      \field{month}{02}
       \field{title}{Horizontale Erdmagnetfeldkomponente für Dortmund}
       \field{year}{2016}
     \endentry
