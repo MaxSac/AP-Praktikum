@@ -1,9 +1,9 @@
 \section{Theoretische Grundlage}
 \label{sec:Theorie}
 \subsection{Ziel}
-Ziel des Versuches ist es der elastisches Modul eines Metalls mittels einer Drehschwingung zu bestimmten, als auch das magnetische Moment eines Permanentmagneten.
+Ziel des Versuches ist es der elastische Modul eines Metalls mittels einer Drehschwingung zu bestimmten, als auch der magnetische Moment eines Permanentmagneten.
 \subsection{Normal-, Schubspannung und Hooksches Gesetz}
-Kräfte die an die Oberfläche eines elastischen Körper angreifen, verformen diesen. Aufgrund dessen werden die Größe Spannung definiert, welche ein Verhältniss von der Kraft zum ein Flächenelement herstellt.
+Kräfte die an die Oberfläche eines elastischen Körper angreifen, verformen diesen. Aufgrund dessen wird die Größe Spannung definiert, welche ein Verhältniss von der Kraft zu einem Flächenelement herstellt.
 \begin{equation}
   \sigma = \frac{F}{m^2} \, \frac{\text{N}}{m^2}
   \label{eqn:Spannung}
@@ -15,7 +15,7 @@ Zwischen hinreichend kleinen Spannungen und Deformation besteht ein proportional
   \sigma = E \frac{\Delta L}{L}  \hspace{2em} \text{und} \hspace{2em} P = Q\frac{\Delta V}{V}
   \label{eqn:Hook}
 \end{equation}
-Um alle Spannungen in einem Kristall volständig zu beschreiben werden jeweils 6 Komponenten benötigt, wobei 3 für die Gestaltsund 3 für die Volumenelastizität zuständig sind. Bei einem einfachen  Kristall mit niedriger Symmetrie entsteht deswegen eine 6x6-Matrix mit 36 Einträgen. Bei kubischen Kristallen lässt sich aufgrund der symmetrie der Matrix und des Körpers auf 3 Einträge verringern. Handelt sich zusätzlich um einen isotropen Körper, so lässt sich der Körper vollständig durch 2 Konstanten beschreiben.
+Um alle Spannungen in einem Kristall volständig zu beschreiben werden jeweils sechs Komponenten benötigt, wobei drei für die Gestalts- und drei für die Volumenelastizität zuständig sind. Bei einem einfachen  Kristall mit niedriger Symmetrie entsteht deswegen eine 6x6-Matrix mit 36 Einträgen. Bei kubischen Kristallen lässt sich aufgrund der symmetrie der Matrix und des Körpers auf 3 Einträge verringern. Handelt sich zusätzlich um einen isotropen Körper, so lässt sich der Körper vollständig durch 2 Konstanten beschreiben.
 
 \subsection{Elastische Konstanten isotroper Stoffe}
 Zur Berechnung des elastizitschen Konstanten wird einerseits die Torsionsmodul $G$ als auch das Komprssionsmodul $Q$ benötigt bzw das Elastizitätsmodul $\sigma$.
@@ -23,7 +23,7 @@ Die Poissonsche Querkontraktionszahl µ Verknüpft die Längenänderung mit der 
 \begin{figure}
   \centering
   \includegraphics[width=5.0cm]{./picture/poisson.png}
-  \caption{<+caption text+>}
+  \caption{Längenänderung durch Normalspannung}
   \label{fig:poisson}
 \end{figure}
 \begin{equation}
@@ -37,8 +37,8 @@ Das Kompressionsmodul $Q$ berechnet sich aus dem Elastizitätsmodul so wie der Q
 \end{equation}
 
 \subsection{Bestimmung des Torsionsmoduls G}
-Um die elastische Nachwirkung vernachlässigen zu können, wird zur Bestimmung des Torsionsmoduls eine dynamische Methode gewählt. Als elastische Nachwirkung wird die Zeit benötigt bis gewisse Materialien nach einer Belastung wieder in ihren Ausgangszustandung zurückkehrt.
-Für die Dynamische Methode wird ein zylinderförmiger Draht an einem Ende Eingespannt und auf der anderen Seite wirkt über ein Kräftepaar ein Drehmoment auf diesen. Durch die Scherung des Drahtes um den Winkel \alpha kommt es zu einer Drehmoment welche infitesimalen Drehmomente über den Radius des Zylinders  integriert werden.
+Um die elastische Nachwirkung vernachlässigen zu können, wird zur Bestimmung des Torsionsmoduls eine dynamische Methode gewählt. Als elastische Nachwirkung wird die Zeit, die benötigt wird bis gewisse Materialien nach einer Belastung wieder in ihren Ausgangszustandung zurückkehrt bezeichnet.
+Für die Dynamische Methode wird ein zylinderförmiger Draht an einem Ende eingespannt und auf der anderen Seite wirkt über ein Kräftepaar ein Drehmoment auf diesen. Durch die Scherung des Drahtes um den Winkel \alpha kommt es zu einer Drehmoment. Dieses infitesimalen Drehmomente wird über den Radius des Zylinders  integriert.
 \begin{equation}
   M = \frac{\pi G R^4 \varphi}{2L} =: D \varphi
   \label{eqn:M}
@@ -69,7 +69,14 @@ Das magnetische Moment $\vec{m}$  eine Permanentmagneten ist definiert als
   \vec{m} := p \vec{a}
   \label{eqn:m}
 \end{equation}
-wobei $p$ die Polstärke und $\vec{a}$ die Abstände der beiden Pole ist. Auf dem Magneten wirkt in einem B-Feld wie in Abbildung ?? zu sehen, dass Magnetische Moment $M_\text{Mag}$ zweier entgegengesetzter Kräfte. Der Betrag des magnetische Momentens ist
+wobei $p$ die Polstärke und $\vec{a}$ die Abstände der beiden Pole ist. Auf dem Magneten wirkt in einem B-Feld wie in Abbildung \ref{fig:MagM} zu sehen, 
+\begin{figure}
+  \centering
+  \includegraphics[height=6cm]{picture/MagM.png}
+  \caption{Magnetisches Moment eines Permanentmagneten im B-Feld}
+  \label{fig:MagM}
+\end{figure}
+dass Magnetische Moment $M_\text{Mag}$ zweier entgegengesetzter Kräfte. Der Betrag des magnetische Momentens ist
 \begin{equation}
   |M_\text{Mag}| = m B sin(\gamma)
   \label{eqn:MM}
