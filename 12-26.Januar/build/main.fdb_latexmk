@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber build/main"] 1454420784 "build/main.bcf" "build/main.bbl" "build/main" 1454421389
-  "./build/main.bcf" 1454421387 102519 827f3d1118596923f00e0191bdddc41c ""
+["biber build/main"] 1454420784 "build/main.bcf" "build/main.bbl" "build/main" 1454534882
+  "./build/main.bcf" 1454534881 102519 827f3d1118596923f00e0191bdddc41c ""
   "lit.bib" 1454420768 379 dee9451fc1c4e6eb1c394a06a43bf0aa ""
   (generated)
-  "build/main.bbl"
   "build/main.blg"
-["pdflatex"] 1454421378 "main.tex" "build/main.pdf" "main" 1454421389
+  "build/main.bbl"
+["pdflatex"] 1454534871 "main.tex" "build/main.pdf" "main" 1454534882
   "./content/auswertung.tex" 1454421131 7216 b939e11c7419d2baaa3f264db304a2b0 ""
   "./content/diskussion.tex" 1454421230 1234 d2f1c811d6687536575ca976a05c5a43 ""
   "./content/durchfuehrung.tex" 1454420416 2415 7f2218aab05f3a77532e73b8a293949a ""
-  "./content/theorie.tex" 1454420451 6472 c679626ed5101e44822d0b79bf8a6c9b ""
+  "./content/theorie.tex" 1454534853 6567 cfa393c0de4846cc92fe62fd24355c0e ""
   "./header.tex" 1454191884 3544 64994dec978fb68501b2dda973fdc29b ""
   "./main.tex" 1454421328 400 b86b651c87800ccf5a2d81bb402ba78e ""
   "./picture/poisson.png" 1454191884 40732 b4fffbcc1d482d72081053d3d6beca6c ""
@@ -29,11 +29,11 @@
   "C:/texlive/2015/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1454192117 8298 b233004054e31a0d38297bc25772d9c2 ""
   "C:/texlive/2015/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1452977850 682849 fc4187645b1debf9a7a71e8849840adb ""
   "MagnetischesMoment.pdf" 0 -1 0 ""
-  "build/MagnetischesMoment.pdf" 1454421377 13210 1cac9bb96fcf73e620986a2137c959db ""
-  "build/main.aux" 1454421387 18323 e5fcf744447aad571cf6d120d1f45681 ""
+  "build/MagnetischesMoment.pdf" 1454534870 13212 9b47303b6c7c4d91a1758a15398597c2 ""
+  "build/main.aux" 1454534881 18323 e5fcf744447aad571cf6d120d1f45681 ""
   "build/main.bbl" 1454420785 1621 c955d4ba24b9ce2def5f2097cd0626d2 "biber build/main"
-  "build/main.run.xml" 1454421387 2330 4233a9836802043afc4fd6b527c0f360 ""
-  "build/main.toc" 1454421387 2375 d749f660e314bd9685433b0f85c895a3 ""
+  "build/main.run.xml" 1454534881 2330 4233a9836802043afc4fd6b527c0f360 ""
+  "build/main.toc" 1454534881 2375 d749f660e314bd9685433b0f85c895a3 ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1452955068 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1452955068 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1452955068 928 2dc8d444221b7a635bb58038579b861a ""
@@ -220,10 +220,10 @@
   "picture/Messapperatur.png" 1454418385 47784 3cd723b77f13eacb7b4ba17f8d007d5d ""
   "picture/poisson.png" 1454191884 40732 b4fffbcc1d482d72081053d3d6beca6c ""
   (generated)
-  "build/main.log"
-  "build/main.toc"
-  "build/main.aux"
-  "build/main.pdf"
-  "build/main.run.xml"
   "build/main.bcf"
+  "build/main.run.xml"
+  "build/main.log"
+  "build/main.aux"
   "C:/texlive/2015/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.toc"
+  "build/main.pdf"
