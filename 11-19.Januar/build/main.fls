@@ -378,6 +378,10 @@ INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/
 INPUT /home/maximilian/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
+INPUT /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/tex/latex/euenc/eu2lmtt.fd
+INPUT /home/maximilian/.local/texlive/2015/texmf-dist/tex/latex/euenc/eu2lmtt.fd
+INPUT /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-regular.luc
 INPUT build/main.aux
 INPUT build/main.aux
 INPUT build/main.toc

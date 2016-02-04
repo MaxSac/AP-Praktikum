@@ -7,20 +7,34 @@ Das Experiment wurde mit der zweiten Schaltung durchgeführt. Die Schaltung hatt
   C_\text{Sp} =& (\num{0.028 +- 0.001})	\text{nF}\\
   R =& 48 \Omega
 \end{eqnarray}
-Als Koppelkondensator wurde ein variabeler Kondensator benutzt der einen relativen Messfehler von 0.5 \% besitzt und Kapazitäten von 12.00 nF, 9.99 nF, 8.18 nF, 6.86 nF, 4.74 nF, 2.86 nF, 2.19 nF und 0.997 nF.
+Als Koppelkondensator wurde ein variabeler Kondensator benutzt der einen relativen Messfehler von 0.5 \% besitzt und Kapazitäten von 
+\begin{eqnarray}
+  12.00  \, \text{nF} \\
+  9.99 \, \text{nF} \\
+  8.18 \, \text{nF} \\
+  6.86 \, \text{nF} \\
+  4.74 \, \text{nF} \\
+  2.86 \, \text{nF} \\
+  2.19 \, \text{nF} \\
+  0.997 \, \text{nF} \ .
+\end{eqnarray}
 
 \subsection{Justierung der beiden LC-Kreise}
-Um die beiden Resanzfrequenzen miteinander abzustimmen, wird zunächst die Resonanzfrequenz $\nu^+$ des Kreises mit der nicht Regelbaren Kapazität mittels Lissajou-Figur bestimmt. Dafür wird die Phase gesucht, welche zwischen Generstorspannung und Schwingkreis verschwindet. Es wird nun der Funktionsgenerator an den zweiten Kreis angeschlossen und die Kapazität entsprechend eingestellt, so dass die selbe Lissajour-Figur wie im anderen Kreis zu sehen ist.
+Um die beiden Resonanzfrequenzen miteinander abzustimmen, wird zunächst die Resonanzfrequenz $\nu^+$ des Kreises mit der nicht Regelbaren Kapazität mittels Lissajous-Figur bestimmt. Dafür wird die Phase gesucht, welche zwischen Generstorspannung und Schwingkreis verschwindet. Es wird nun der Funktionsgenerator an den zweiten Kreis angeschlossen und die Kapazität entsprechend eingestellt, so dass die selbe Lissajous-Figur wie im anderen Kreis zu sehen ist.
 Als Resonanzfrequenz wird eine Frequenz von
 \begin{equation}
-  \nu^+ = 35.46 \text{kHz}
+  \nu_\text{exp}^+ = 35.46 \, \text{kHz}
   \label{nu+}
 \end{equation}
-gemessen.
-
+gemessen. Die mittels Formel \ref{eqn:vp} berechnete Frequenz beträgt
+\begin{equation}
+  \nu_\text{theo}^+ = (\num{35.88 +- 0.03}) \, \text{kHz}
+  \label{eqn_nut+}
+\end{equation}
+Dies entspricht eine relative Abweichung von 1 \%.
 \subsection{Frequenzverhältniss von Schwebung und Schwingung}
 
-Die dem experimentellen Aufbau entnommer Verhältniss aus Schwingungs- und Schwebungsfrequenz $n_\text{exp}$ ist in Tabelle \ref{tab:n} aufgeführt. Aus Formel \ref{eqn:vp} und \ref{eqn:vm}, lässt sich das theoretische Frequenzverhältniss berechnen.
+Die dem experimentellen Aufbau entnommer Verhältniss aus Schwingungs- und Schwebungsfrequenz $n_\text{exp}$ ist in Tabelle \ref{tab:n} aufgeführt. Aus Formel (\ref{eqn:vp}) und (\ref{eqn:vm}), lässt sich das theoretische Frequenzverhältniss berechnen.
 \begin{equation}
   n_\text{t} = \frac{ v_\text{t}^+ + v_\text{t}^- }{2(v_\text{t}^- - v_\text{t}^+)}
   \label{eqn:n_t}
@@ -35,44 +49,44 @@ Die theoretischen Frequenzverhältnisse $n_\text{t}$ für die einzelnen Kondensa
     \toprule
     $C_\text{k}$ / nF & $n_\text{exp}$ & $n_\text{t}$ & $\sigma$ / \%	\\
     \midrule
-    12.00	& 15	& 16.7	& 11.3	\\
-    9.99	& 13 	& 14.1	& 8.5	\\
-    8.18	& 11	& 11.7	& 6.4	\\
-    6.86	& 9	& 10.0	& 11.1	\\
-    4.74	& 7	& 7.2	& 2.9	\\
-    2.86	& 4	& 4.8	& 20	\\
-    2.19	& 3 	& 3.9	& 30	\\
-    0.997	& /	& 2.3	& /	\\
+    12.00	& \num{15 +- 1}	& 16.7	& 11.3	\\
+    9.99	& \num{13 +- 1} & 14.1	& 8.5	\\
+    8.18	& \num{11 +- 1}	& 11.7	& 6.4	\\
+    6.86	& \num{9 +- 1}	& 10.0	& 11.1	\\
+    4.74	& \num{7 +- 1}	& 7.2	& 2.9	\\
+    2.86	& \num{4 +- 1}	& 4.8	& 20	\\
+    2.19	& \num{3 +- 1} 	& 3.9	& 30	\\
+    0.997	& /		& 2.3	& /	\\
     \bottomrule
   \end{tabular}
   \caption{Frequenzverhältniss der verschiedenen Koppelkondensatoren}
   \label{tab:n}
 \end{table}
-Ursachen für die Abweichungen vom Theoriewert liegen einerseits dran, dass immer nur die Maxima eine einzige Schwebung gezählt wurden. Ein Verbesserungspotential besteht darin, mehrere Schwingungen zu betrachten und den Wert anschließend zu mitteln.
-\subsection{Eigenfrequenzen des Systems (Lissajour Figur)}
-Sowohl die experimentell ermittelten Werte $v_\text{e}^+$ und  $v_\text{e}^-$, als auch die Theoriewerte die sich nach Formel \ref{eqn:vp} und \ref{eqn:vm} berechnen sind in Tabelle \ref{tab:eigen} aufgeführt. Von diesen Werten wurde die Abweichung berechnet und ebenfalls in der Tabelle aufgeführt.
+Ursachen für die Abweichungen vom Theoriewert liegen einerseits daran, dass immer nur die Maxima eine einzige Schwebung gezählt wurden. Aufgrund dessen ist die Messung auf eine Schwingung genau. Ein Verbesserungspotential besteht darin, mehrere Schwingungen zu betrachten und den Wert anschließend zu mitteln.
+\subsection{Eigenfrequenzen des Systems (Lissajous Figur)}
+Sowohl die experimentell ermittelten Werte $v_\text{e}^+$ und  $v_\text{e}^-$, als auch die Theoriewerte die sich nach Formel (\ref{eqn:vp}) und (\ref{eqn:vm}) berechnen, sind in Tabelle \ref{tab:eigen} aufgeführt. Von diesen Werten wird die Abweichung berechnet und ebenfalls in der Tabelle aufgeführt. Für die praktisch ermittelten Frequenzen wird ein Fehler von 3 \% angenommen. Der Fehler setzt sich einerseits aus der Abweichung des experimentellen von der theoretischen Resonanzfrequenz, als auch der Messunsicherheit beim einstellen der zweiten Kapazität zusammen.
 \begin{table}
   \centering
   \begin{tabular}{c c c c c c c}
     \toprule
-    $C_\text{k}$ / nF & $v_\text{e}^+$ / kHz & $v_\text{t}^+$ /kHz & $\sigma^+$ / \% & $v_\text{e}^-$ / kHz & $v_\text{t}^-$ /kHz & $\sigma^-$ / \%  \\
+    $C_\text{k}$ / nF & $v_\text{e}^-$ / kHz & $v_\text{t}^-$ /kHz & $\sigma^-$ / \% & $v_\text{e}^+$ / kHz & $v_\text{t}^+$ /kHz & $\sigma^+$ / \%  \\
     \midrule
-    \num{12.00 +- 0.06}	& 37.32	& \num{38.10 +- 0.01} & 2 & 35.37 & 35.88 & 2 \\
-    \num{9.99 +- 0.04}	& 38.28	& \num{38.52 +- 0.01} & 1 & 35.22 & 35.88 & 2 \\
-    \num{8.18 +- 0.04}	& 38.67 & \num{39.08 +- 0.01} & 1 & 35.22 & 35.88 & 2 \\
-    \num{6.86 +- 0.03}	& 39.06 & \num{39.66 +- 0.02} & 2 & 35.22 & 35.88 & 2 \\
-    \num{4.74 +- 0.02}	& 40.53 & \num{41.22 +- 0.02} & 2 & 35.22 & 35.88 & 2 \\
-    \num{2.86 +- 0.01}	& 43.59 & \num{44.33 +- 0.03} & 2 & 35.22 & 35.88 & 2 \\
-    \num{2.19 +- 0.01}	& 46.02 & \num{46.55 +- 0.04} & 1 & 35.22 & 35.88 & 2 \\
-    \num{0.997 +- 0.005}	& 55.86 & \num{56.25 +- 0.08} & 1 & 35.22 & 35.88 & 2 \\
+    \num{12.00 +- 0.06}	& \num{37 +- 1}	& \num{38.10 +- 0.01} & 2 & \num{35 +- 1} & \num{35.88 +- 0.03} & 2 \\
+    \num{9.99 +- 0.04}	& \num{38 +- 1}	& \num{38.52 +- 0.01} & 1 & \num{35 +- 1} & \num{35.88 +- 0.03} & 2 \\
+    \num{8.18 +- 0.04}	& \num{38 +- 1} & \num{39.08 +- 0.01} & 1 & \num{35 +- 1} & \num{35.88 +- 0.03} & 2 \\
+    \num{6.86 +- 0.03}	& \num{39 +- 1} & \num{39.66 +- 0.02} & 2 & \num{35 +- 1} & \num{35.88 +- 0.03} & 2 \\
+    \num{4.74 +- 0.02}	& \num{40 +- 1} & \num{41.22 +- 0.02} & 2 & \num{35 +- 1} & \num{35.88 +- 0.03} & 2 \\
+    \num{2.86 +- 0.01}	& \num{43 +- 1} & \num{44.33 +- 0.03} & 2 & \num{35 +- 1} & \num{35.88 +- 0.03} & 2 \\
+    \num{2.19 +- 0.01}	& \num{46 +- 1} & \num{46.55 +- 0.04} & 1 & \num{35 +- 1} & \num{35.88 +- 0.03} & 2 \\
+    \num{0.997 +- 0.005}& \num{55 +- 1} & \num{56.25 +- 0.08} & 1 & \num{35 +- 1} & \num{35.88 +- 0.03} & 2 \\
     \bottomrule
   \end{tabular}
   \caption{Eigenfrequenzen der Schwingkreise in Abhängigkeit der Koppelkondensatoren}
   \label{tab:eigen}
 \end{table}
 Der Fehler der gemessenen Eigenschwingung sowohl für $\nu^+$ als auch $\nu^-$ ist 1-2 \%. Aufgrund der geringen relativen Abweichung können keine systematischen Fehler erkannt werden.
-\subsection{Eigenfrequenzen des Systems (Beepmethode)}
-Die gewählte Startfrequenz des Beeps beträgt
+\subsection{Eigenfrequenzen des Systems (Sweepmethode)}
+Die gewählte Startfrequenz des Sweeps beträgt
 \begin{equation}
   \nu_\text{Start} = 30.13 \text{kHz}
 \end{equation}
@@ -80,7 +94,7 @@ und die Endfrequenz
 \begin{equation}
   \nu_\text{Ende} = 60.98 \text{kHz}
 \end{equation}
-Aufgrund des nicht immer eindeutigen Maxima wird ein Ablesefehler der Zeit von 2 ms berücksichtigt. Aus Formel \ref{eqn:??} lässt sich die gemessene Zeit, in die entsprechende Frequenz umrechenen. Die Ergebnisse sind in Tabelle \ref{tab:beep} aufgelistet, ebenso wie die Zeiten vom Start der Messung bis zum Peak und die Fehler der praktisch ermittelten Fehler zum theoretischen Wert.
+Aufgrund des nicht immer eindeutigen Maximxums wird ein Ablesefehler der Zeit von 2 ms berücksichtigt. Aus Formel \ref{eqn:nut} lässt sich die gemessene Zeit, in die entsprechende Frequenz umrechenen. Die Ergebnisse sind in Tabelle \ref{tab:beep} aufgelistet, ebenso wie die Zeiten vom Start der Messung bis zum Peak und die Fehler der praktisch ermittelten Fehler zum theoretischen Wert.
 \begin{table}
   \centering
   \begin{tabular}{c c c c c c c}
