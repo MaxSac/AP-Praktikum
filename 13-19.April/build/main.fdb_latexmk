@@ -1,11 +1,9 @@
 # Fdb version 3
-["biber build/main"] 1461582615 "build/main.bcf" "build/main.bbl" "build/main" 1461583135
-  "./build/main.bcf" 1461582908 101938 a7065571a3123bb83d0971d42016ffc9 ""
-  "build/main.bcf" 1461582908 101938 a7065571a3123bb83d0971d42016ffc9 ""
+["biber build/main"] 1461585270 "build/main.bcf" "build/main.bbl" "build/main" 1461585286
+  "./build/main.bcf" 1461585285 101938 a7065571a3123bb83d0971d42016ffc9 ""
   (generated)
-  "build/main.blg"
   "build/main.bbl"
-["pdflatex"] 1461582902 "main.tex" "build/main.pdf" "main" 1461583135
+["pdflatex"] 1461585279 "main.tex" "build/main.pdf" "main" 1461585286
   "./content/auswertung.tex" 1461582863 4196 f627832f8f578fd5a1897a208f5d8ad0 ""
   "./content/diskussion.tex" 1461082458 46 402cc6c9751419c0f1a455b2d4ed1f51 ""
   "./content/durchfuehrung.tex" 1461582392 1169 b7afb6f7cf30c961414489e321d02bb4 ""
@@ -29,10 +27,10 @@
   "C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/xits-mathbold.luc" 1461078438 317296 a70a827d2a5e3a3a9b277a5684df1836 ""
   "C:/texlive/2015/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1452710393 8814 5283db96c6e3911a76b42605e3295043 ""
   "C:/texlive/2015/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1447942334 702976 a0da73909afc25e8e85e6bbef4ece548 ""
-  "build/main.aux" 1461582908 6369 9aa7ec453bdbc79f47ac2f08e355296e ""
-  "build/main.bbl" 1461582616 486 09eb4fb3e5c239471bbf545cb1159669 "biber build/main"
-  "build/main.run.xml" 1461582908 2330 4233a9836802043afc4fd6b527c0f360 ""
-  "build/main.toc" 1461582908 813 456c6f295429f08123dc04d2b8a7886b ""
+  "build/main.aux" 1461585285 6369 9aa7ec453bdbc79f47ac2f08e355296e ""
+  "build/main.bbl" 1461585271 486 09eb4fb3e5c239471bbf545cb1159669 "biber build/main"
+  "build/main.run.xml" 1461585285 2330 4233a9836802043afc4fd6b527c0f360 ""
+  "build/main.toc" 1461585285 813 456c6f295429f08123dc04d2b8a7886b ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1447858987 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1447858987 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1447858987 928 2dc8d444221b7a635bb58038579b861a ""
@@ -211,10 +209,10 @@
   "picture/Frauenhofer.png" 1461082458 30976 bf426ecb1bdf6637abb9766411ef777b ""
   "picture/doppelspalt.png" 1461082458 41733 1064d44ea13975cc6ed67bd9bfd10ba4 ""
   (generated)
-  "build/main.pdf"
+  "build/main.toc"
+  "build/main.aux"
   "build/main.log"
   "C:/texlive/2015/texmf-var/m_t_x_t_e_s_t.tmp"
-  "build/main.aux"
-  "build/main.run.xml"
   "build/main.bcf"
-  "build/main.toc"
+  "build/main.run.xml"
+  "build/main.pdf"

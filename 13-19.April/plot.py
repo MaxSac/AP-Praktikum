@@ -15,14 +15,18 @@ def func(x, y):
 print('-----------------------------------------------------------------------')
 print('Einzelspalt b = 0.075mm')
 a1, i1 = np.loadtxt('data1.txt', unpack=True)
-i1 = i1 * 10**(-3) - Id
+i1 = i1 * 10**(-6) - Id
 a1 = a1 * 10**(-3)
 B1 = 0.075 * 10**(-3)
 
 b1 = func(a1, i1)
 M = np.mean(b1)
 V = np.var(b1)
+Ab = -(M - B1) / B1 *100
 print('Mittelwert von b = ', M, ' +/- ', V)
+print('Prozentuale Abweichung: ', Ab)
+print('----------')
+print(b1)
 
 plt.plot(a1, i1, 'gx', label='Messwerte')
 plt.plot(a1, i1, 'r-', label='gefittete Kurve')
@@ -45,7 +49,11 @@ B2 = 0.15 * 10**(-3)
 b2 = func(a2, i2)
 M = np.mean(b2)
 V = np.var(b2)
+Ab = -(M - B2) / B2 *100
 print('Mittelwert von b = ', M, ' +/- ', V)
+print('Prozentuale Abweichung: ', Ab)
+print('----------')
+print(b2)
 
 plt.plot(a2, i2, 'gx', label='Messwerte')
 plt.plot(a2, i2, 'r-', label='gefittete Kurve')
