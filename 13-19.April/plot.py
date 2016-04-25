@@ -17,7 +17,7 @@ print('Einzelspalt b = 0.075mm')
 a1, i1 = np.loadtxt('data1.txt', unpack=True)
 i1 = i1 * 10**(-3) - Id
 a1 = a1 * 10**(-3)
-b1 = 0.075 * 10**(-3)
+B1 = 0.075 * 10**(-3)
 
 b1 = func(a1, i1)
 M = np.mean(b1)
@@ -40,7 +40,12 @@ print('Einzelspalt b = 0.15mm')
 a2, i2 = np.loadtxt('data2.txt', unpack=True)
 i2 = i2 * 10**(-6) - Id
 a2 = a2 * 10**(-3)
-b2 = 0.15 * 10**(-3)
+B2 = 0.15 * 10**(-3)
+
+b2 = func(a2, i2)
+M = np.mean(b2)
+V = np.var(b2)
+print('Mittelwert von b = ', M, ' +/- ', V)
 
 plt.plot(a2, i2, 'gx', label='Messwerte')
 plt.plot(a2, i2, 'r-', label='gefittete Kurve')
