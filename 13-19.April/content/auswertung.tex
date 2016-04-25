@@ -10,20 +10,17 @@ Alle Messwerte zur Bestimmung der Spaltgrößen $b$, über das Interferenzmuster
 \begin{align*}
   I_\text{D} = 0.1 \cdot 10^{-9} \ \text{A}
 \end{align*}
-und wird für alle Messungen als konstant angesehen. Die Gleichungen (\ref{eqn:I}) und (\ref{eqn:Id}) werden jeweils nach $b$ umgestellt und Mithilfe der Messwerte aus Tabelle (\ref{tab:Spalt}) und einer Ausgleichsrechnung wird $b$ bestimmt. Der Winkel wird als $\Phi \approx \frac{x}{L}$ angenommen.
-\begin{equation}
-  \text{Gleichung (\ref{eqn:I})}: b = \frac{\lambda}{\pi \cdot \sin\left(\frac{x}{L}\right)} \cdot \arcsin\left(\sqrt{I} \cdot \frac{\pi \cdot \sin\left(\frac{x}{L}\right)}{\lambda}\right) \ .
-\end{equation}
-Da in beiden Gleichungen durch $\sin\left(\frac{x}{L} \right)$ geteilt wird, muss der Wert $x = 0$ aus der Ausgleichsrechnung entfernt werden.
+und wird für alle Messungen als konstant angesehen. Mithilfe der Gleichungen (\ref{eqn:I}) und (\ref{eqn:Id}) und der Messwerte aus Tabelle (\ref{tab:Spalt}) werden die Spaltbreiten $b$ der Spalte bestimmt. Der Winkel wird als $\Phi \approx \frac{x}{L}$ angenommen. Da in beiden Gleichungen durch $\sin\left(\frac{x}{L} \right)$ geteilt wird, muss der Wert $x = 0$ aus der Ausgleichsrechnung entfernt werden. Die Ausgleichsrechnungen werden in den Abbildungen (\ref{fig:Einzel1}) bis (\ref{fig:Doppel}) dargestellt.
 
-\begin{table}
+\begin{table}[H] %Messwerte
+  \small
   \centering
   \begin{tabular}{c || c | c | c | c}
     \toprule
     Abstand & \multicolumn{3}{|c|}{Einzelspalt mit} & Doppelspalt mit \\
     \toprule
     & b = 0.075 mm & b = 0.15 mm & b = 0.4 mm & b = 0.1 mm, g = 0.4 mm \\
-    a / mm & I /  A & I /  A & I /  A & I /  A \\
+    a / mm & I /  $\mu$A & I / $\mu$A & I / $\mu$A & I / $\mu$A \\
     \midrule
     -25	& 0.00062 & 0.00175 & 0.0065 & 0.00240 \\
     -24	& 0.00058 & 0.00170 & 0.0072 & 0.00250 \\
@@ -81,3 +78,68 @@ Da in beiden Gleichungen durch $\sin\left(\frac{x}{L} \right)$ geteilt wird, mus
   \caption{Messwerte zur Bestimmung der Spaltbreite $b$.}
   \label{tab:Spalt}
 \end{table}
+
+\begin{figure}[H] %Einzelspalt dünn
+  \centering
+  \includegraphics[height=9cm]{build/plot1.pdf}
+  \caption{Ausgleichsrechnung zum dünnen Einzelspalt.}
+  \label{fig:Einzel1}
+\end{figure}
+
+\begin{figure}[H] %Einzelspalt mittel
+  \centering
+  \includegraphics[height=9cm]{build/plot2.pdf}
+  \caption{Ausgleichsrechnung zum mittleren Einzelspalt.}
+  \label{fig:Einzel2}
+\end{figure}
+
+\begin{figure}[H] %Einzelspalt dick
+  \centering
+  \includegraphics[height=9cm]{build/plot1.pdf}
+  \caption{Ausgleichsrechnung zum dicken Einzelspalt.}
+  \label{fig:Einzel3}
+\end{figure}
+
+\begin{figure}[H] %Doppelspalt
+  \centering
+  \includegraphics[height=9cm]{build/plot4.pdf}
+  \caption{Ausgleichsrechnung zum Doppelspalt.}
+  \label{fig:Doppel}
+\end{figure}
+
+Es ergeben sich folgende Werte für den dünnen Einzelspalt:
+\begin{align*}
+  \text{Spaltbreite per Intensitätsverteilung}:& \ b_\text{Beugung} = (\num{0.9999 +- 0.0}) \ \text{m} \\
+  \text{Spaltbreite per Mikroskop}:& \ b_\text{Mikroskop} = 7.22 \cdot 10^{-5} \ \text{m} \\
+  \text{Herstellerangabe}:& \ b_\text{Her} = 7.5 \cdot 10^{-5} \ \text{m} \\
+  \text{Abweichung}:& \ \frac{b_\text{Her} \cdot 100}{b_\text{Beugung}} - 100 = 99.99 \% \\
+  \text{Abweichung}:& \ \frac{b_\text{Mikroskop} \cdot 100}{b_\text{Beugung}} - 100 = 3.88 \%
+\end{align*}
+
+Es ergeben sich folgende Werte für den mittleren Einzelspalt:
+\begin{align*}
+  \text{Spaltbreite per Intensitätsverteilung}:& \ b_\text{Beugung} = (\num{1.0003 +- 0.0}) \ \text{m} \\
+  \text{Spaltbreite per Mikroskop}:& \ b_\text{Mikroskop} = 1.33 \cdot 10^{-5} \ \text{m} \\
+  \text{Herstellerangabe}:& \ b_\text{Her} = 1.5 \cdot 10^{-5} \ \text{m} \\
+  \text{Abweichung}:& \ \frac{b_\text{Her} \cdot 100}{b_\text{Beugung}} - 100 = 99.99 \% \\
+  \text{Abweichung}:& \ \frac{b_\text{Mikroskop} \cdot 100}{b_\text{Beugung}} - 100 = 12.78 \%
+\end{align*}
+
+Es ergeben sich folgende Werte für den dicken Einzelspalt:
+\begin{align*}
+  \text{Spaltbreite per Intensitätsverteilung}:& \ b_\text{Beugung} = (\num{0.9997 +- 0.0}) \ \text{m} \\
+  \text{Spaltbreite per Mikroskop}:& \ b_\text{Mikroskop} = 4.0 \cdot 10^{-5} \ \text{m} \\
+  \text{Herstellerangabe}:& \ b_\text{Her} = 4.0 \cdot 10^{-5} \ \text{m} \\
+  \text{Abweichung}:& \ \frac{b_\text{Her} \cdot 100}{b_\text{Beugung}} - 100 = 99.96 \% \\
+  \text{Abweichung}:& \ \frac{b_\text{Mikroskop} \cdot 100}{b_\text{Beugung}} - 100 = 0.00 \%
+\end{align*}
+
+Es ergeben sich folgende Werte für den Doppelspalt:
+\begin{align*}
+  \text{Spaltbreite}:& \ b_\text{Beugung} = (\num{1.0018 +- 0.0}) \ \text{m} \\
+  \text{Spaltabstand}:& \ s_\text{Beugung} = (\num{0.9968 +- 0.0}) \ \text{m} \\
+  \text{Herstellerangabe}:& \ b_\text{Her} = 1.0 \cdot 10^{-5} \ \text{m} \\
+  \text{Herstellerangabe}:& \ s_\text{Her} = 4.0 \cdot 10^{-5} \ \text{m} \\
+  \text{Abweichung}:& \ \frac{b_\text{Her} \cdot 100}{b_\text{Beugung}} - 100 = 99.99 \% \\
+    \text{Abweichung}:& \ \frac{s_\text{Her} \cdot 100}{s_\text{Beugung}} - 100 = 99.96 \% \\
+\end{align*}
