@@ -360,6 +360,11 @@ INPUT build/main.toc
 OUTPUT build/main.toc
 INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
+INPUT picture/Bild1.PNG
+INPUT picture/Bessel.png
+INPUT picture/Abbe.png
+INPUT ./content/Fehlerrechnung.tex
+INPUT ./content/Fehlerrechnung.tex
 INPUT C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc
 INPUT C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc
 INPUT ./content/durchfuehrung.tex

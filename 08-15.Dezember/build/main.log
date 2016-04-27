@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.11.18)  15 JAN 2016 11:35
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.11.18)  27 APR 2016 16:55
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -278,7 +278,7 @@ Lua-only attribute luaotfload@cursbase = 6
 Lua-only attribute luaotfload@curscurs = 7
 Lua-only attribute luaotfload@cursdone = 8
 Lua-only attribute luaotfload@state = 9
-luaotfload | main : fontloader loaded in 0.031 seconds
+luaotfload | main : fontloader loaded in 0.019 seconds
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
@@ -1930,13 +1930,7 @@ Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2015/10/21 v3.1 biblatex localization (PK/JW/AB)
-) (./build/main.aux
-luatex-hyphen: loading patterns and exceptions for: ngerman (\language31)
-luatex-hyphen: info: no hyphenation exceptions for this language
-
-LaTeX Warning: Label `eqn:Ubr' multiply defined.
-
-)
+) (./build/main.aux)
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1988,7 +1982,9 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 452.
  (c:/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (c:/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+))
+luatex-hyphen: loading patterns and exceptions for: ngerman (\language31)
+luatex-hyphen: info: no hyphenation exceptions for this language (c:/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (c:/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2015/10/15 v2.6m siunitx: Abbreviated units
@@ -2021,13 +2017,14 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout3 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (./build/main.bbl)
+Package biblatex Info: ... file 'main.bbl' not found.
+
+No file main.bbl.
 Package biblatex Info: Reference section=0 on input line 11.
 Package biblatex Info: Reference segment=0 on input line 11.
 \AtBeginShipoutBox=\box56
 Package hyperref Info: Link coloring OFF on input line 11.
- (c:/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
@@ -2127,43 +2124,169 @@ luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [1
 
 {c:/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 15.
- (./build/main.toc)
 \tf@toc=\write4
 
 \openout4 = main.toc
  [2
 
-] (./content/theorie.tex(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc) <picture/1.png, id=73, 855.195pt x 817.0525pt>
+] (./content/theorie.tex(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc)
+
+LaTeX Warning: Reference `fig:wheatstone' on page 3 undefined on input line 5.
+
+<picture/1.png, id=20, 855.195pt x 817.0525pt>
 File: picture/1.png Graphic file (type png)
  <use picture/1.png>
 Package pdftex.def Info: picture/1.png used on input line 8.
 (pdftex.def)             Requested size: 148.90451pt x 142.26378pt.
- [3<./picture/1.png>] <picture/2.png, id=94, 779.91376pt x 753.81625pt>
+
+
+LaTeX Warning: Citation 'sample' on page 3 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'sample' on page 3 undefined on input line 9.
+
+[3<./picture/1.png>]
+
+LaTeX Warning: Reference `eqn:XY' on page 4 undefined on input line 40.
+
+
+LaTeX Warning: Reference `fig:widerstand' on page 4 undefined on input line 52.
+
+<picture/2.png, id=37, 779.91376pt x 753.81625pt>
 File: picture/2.png Graphic file (type png)
  <use picture/2.png>
 Package pdftex.def Info: picture/2.png used on input line 55.
 (pdftex.def)             Requested size: 147.1855pt x 142.26378pt.
- <picture/3.png, id=99, 752.8125pt x 781.92125pt>
+
+
+LaTeX Warning: Citation 'sample' on page 4 undefined on input line 56.
+
+
+LaTeX Warning: Citation 'sample' on page 4 undefined on input line 56.
+
+
+LaTeX Warning: Reference `eqn:R' on page 4 undefined on input line 59.
+
+
+LaTeX Warning: Reference `fig:C' on page 4 undefined on input line 66.
+
+<picture/3.png, id=38, 752.8125pt x 781.92125pt>
 File: picture/3.png Graphic file (type png)
  <use picture/3.png>
 Package pdftex.def Info: picture/3.png used on input line 69.
 (pdftex.def)             Requested size: 136.95924pt x 142.26378pt.
- [4<./picture/2.png>] <picture/4.png, id=115, 809.0225pt x 840.13875pt>
+
+
+LaTeX Warning: Citation 'sample' on page 4 undefined on input line 70.
+
+
+LaTeX Warning: Citation 'sample' on page 4 undefined on input line 70.
+
+[4<./picture/2.png>]
+
+LaTeX Warning: Reference `eqn:R_x' on page 5 undefined on input line 73.
+
+
+LaTeX Warning: Reference `eqn:XY2' on page 5 undefined on input line 77.
+
+
+LaTeX Warning: Reference `fig:L' on page 5 undefined on input line 84.
+
+<picture/4.png, id=49, 809.0225pt x 840.13875pt>
 File: picture/4.png Graphic file (type png)
  <use picture/4.png>
 Package pdftex.def Info: picture/4.png used on input line 88.
 (pdftex.def)             Requested size: 136.98883pt x 142.26378pt.
- [5<./picture/3.png><./picture/4.png>] <picture/5.png, id=128, 1157.32375pt x 810.02625pt>
+
+
+LaTeX Warning: Citation 'sample' on page 5 undefined on input line 89.
+
+
+LaTeX Warning: Citation 'sample' on page 5 undefined on input line 89.
+
+
+LaTeX Warning: Reference `eqn:R_x' on page 5 undefined on input line 92.
+
+
+LaTeX Warning: Reference `eqn:XY2' on page 5 undefined on input line 96.
+
+[5<./picture/3.png><./picture/4.png>]
+
+LaTeX Warning: Reference `fig:Max-Br' on page 6 undefined on input line 102.
+
+<picture/5.png, id=58, 1157.32375pt x 810.02625pt>
 File: picture/5.png Graphic file (type png)
  <use picture/5.png>
 Package pdftex.def Info: picture/5.png used on input line 105.
 (pdftex.def)             Requested size: 203.25871pt x 142.26378pt.
- <picture/7.png, id=134, 1173.38374pt x 857.2025pt>
+
+
+LaTeX Warning: Citation 'sample' on page 6 undefined on input line 106.
+
+
+LaTeX Warning: Citation 'sample' on page 6 undefined on input line 106.
+
+
+LaTeX Warning: Reference `eqn:XY1' on page 6 undefined on input line 109.
+
+
+LaTeX Warning: Reference `eqn:XY2' on page 6 undefined on input line 109.
+
+
+LaTeX Warning: Reference `fig:TT' on page 6 undefined on input line 120.
+
+<picture/7.png, id=59, 1173.38374pt x 857.2025pt>
 File: picture/7.png Graphic file (type png)
  <use picture/7.png>
 Package pdftex.def Info: picture/7.png used on input line 123.
 (pdftex.def)             Requested size: 194.72794pt x 142.26378pt.
- [6<./picture/5.png>]) (./content/durchfuehrung.tex [7<./picture/7.png>] [8]) (./content/auswertung.tex
+
+
+LaTeX Warning: Citation 'sample' on page 6 undefined on input line 124.
+
+
+LaTeX Warning: Citation 'sample' on page 6 undefined on input line 124.
+
+[6<./picture/5.png>]
+
+LaTeX Warning: Reference `eqn:M1' on page 7 undefined on input line 142.
+
+
+LaTeX Warning: Reference `eqn:M2' on page 7 undefined on input line 142.
+
+
+LaTeX Warning: Reference `eqn:M3' on page 7 undefined on input line 142.
+
+
+LaTeX Warning: Reference `eqn:Ubr' on page 7 undefined on input line 147.
+
+) (./content/durchfuehrung.tex [7<./picture/7.png>]
+
+LaTeX Warning: Reference `fig:wheatstone' on page 8 undefined on input line 5.
+
+
+LaTeX Warning: Reference `fig:C' on page 8 undefined on input line 9.
+
+
+LaTeX Warning: Reference `fig:L' on page 8 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:Max-Br' on page 8 undefined on input line 18.
+
+[8]
+
+LaTeX Warning: Reference `fig:TT' on page 9 undefined on input line 21.
+
+) (./content/auswertung.tex
+
+LaTeX Warning: Reference `eqn:R_x' on page 9 undefined on input line 5.
+
+
+LaTeX Warning: Reference `tab:Wheat1' on page 9 undefined on input line 5.
+
+
+LaTeX Warning: Reference `tab:Wheat2' on page 9 undefined on input line 5.
+
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
@@ -2181,17 +2304,54 @@ luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [9]
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+
+LaTeX Warning: Reference `eqn:R_x' on page 9 undefined on input line 36.
+
+
+LaTeX Warning: Reference `eqn:R_x' on page 9 undefined on input line 36.
+
+
+LaTeX Warning: Reference `eqn:C_x' on page 9 undefined on input line 36.
+
+
+LaTeX Warning: Reference `tab:Kapa1' on page 9 undefined on input line 36.
+
+
+LaTeX Warning: Reference `tab:Kapa3' on page 9 undefined on input line 36.
+
+[9]
 Overfull \hbox (36.47289pt too wide) in paragraph at lines 69--77
  [][][] 
  []
+
+
+LaTeX Warning: Reference `eqn:R_x' on page 10 undefined on input line 83.
+
+
+LaTeX Warning: Reference `eqn:L_x' on page 10 undefined on input line 83.
+
+
+LaTeX Warning: Reference `tab:Induk1' on page 10 undefined on input line 83.
 
 
 Overfull \hbox (56.76326pt too wide) in paragraph at lines 87--94
  [][][] 
  []
 
+
+LaTeX Warning: Reference `eqn:R_x' on page 10 undefined on input line 100.
+
+
+LaTeX Warning: Reference `eqn:L_m' on page 10 undefined on input line 100.
+
+
+LaTeX Warning: Reference `tab:Induk2' on page 10 undefined on input line 100.
+
 [10]
+
+LaTeX Warning: Reference `tab:TT-Brucke' on page 11 undefined on input line 117.
+
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
@@ -2201,46 +2361,27 @@ Underfull \hbox (badness 2799) in paragraph at lines 161--161
 [][][]|\EU2/lmr/m/n/10 Mess-wer-te der Brü-cken-span-nung und der Fre-quenz von der TT-
  []
 
-[11] <AufgabeE.pdf, id=213, 417.7206pt x 258.00488pt>
-File: AufgabeE.pdf Graphic file (type pdf)
- <use AufgabeE.pdf>
-Package pdftex.def Info: AufgabeE.pdf used on input line 167.
-(pdftex.def)             Requested size: 418.25555pt x 258.33493pt.
- [12]) (./content/diskussion.tex) [13<build/AufgabeE.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
- (./build/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
-Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 66850C8981C45696D22ACC3B6E4C20D2;17258.
-Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: E964A7C56A389503220BF1449F23F718;2264.
+[11]
+
+LaTeX Warning: File `AufgabeE.pdf' not found on input line 167.
 
 
-LaTeX Warning: There were multiply-defined labels.
+! Package pdftex.def Error: File `AufgabeE.pdf' not found.
 
-Package logreq Info: Writing requests to 'main.run.xml'.
-
-\openout1 = main.run.xml
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
-)
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167 ...udegraphics[width=\textwidth]{AufgabeE.pdf}
+                                                  
 
 Here is how much of LuaTeX's memory you used:
- 44081 strings out of 494897
+ 43995 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 680 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 17 kern, 22 attribute, 65 glue_spec, 22 attribute_list, 1 write nodes
-   avail lists: 1:3,2:6828,3:274,4:1441,5:186,6:2305,7:71,8:28,9:335,10:306,11:1
- 46393 multiletter control sequences out of 65536+600000
- 125 fonts using 27888971 bytes
- 69i,13n,104p,1248b,2071s stack positions out of 5000i,500n,10000p,200000b,100000s
-<c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (14 pages, 288619 bytes).
-
-PDF statistics: 431 PDF objects out of 1000 (max. 8388607)
- 350 compressed objects within 4 object streams
- 82 named destinations out of 1000 (max. 131072)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 8564 words of node memory still in use:
+   107 hlist, 5 vlist, 42 rule, 9 disc, 4 math, 403 glue, 28 kern, 13 penalty, 2 margin_kern, 303 glyph, 786 attribute, 204 glue_spec, 474 attribute_list, 1 temp, 7 if_stack, 2 write, 3 local_par, 2 dir, 2 pdf_dest nodes
+   avail lists: 1:5,2:5616,3:154,4:885,5:169,6:1939,7:30,8:10,9:238,10:297,11:1
+ 46350 multiletter control sequences out of 65536+600000
+ 124 fonts using 27800159 bytes
+ 69i,13n,104p,1248b,1214s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!

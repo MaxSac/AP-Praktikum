@@ -286,7 +286,6 @@ INPUT c:/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 INPUT c:/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 INPUT build/main.aux
 INPUT build/main.aux
-INPUT c:/texlive/2015/texmf-dist/tex/generic/hyph-utf8/patterns/txt/hyph-de-1996.pat.txt
 OUTPUT build/main.aux
 INPUT c:/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 INPUT c:/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
@@ -298,6 +297,7 @@ INPUT c:/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT c:/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT c:/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT c:/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT c:/texlive/2015/texmf-dist/tex/generic/hyph-utf8/patterns/txt/hyph-de-1996.pat.txt
 INPUT c:/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
 INPUT c:/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
 INPUT c:/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
@@ -305,9 +305,6 @@ INPUT c:/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 INPUT c:/texlive/2015/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 INPUT c:/texlive/2015/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 OUTPUT build/main.bcf
-INPUT build/main.bbl
-INPUT build/main.bbl
-INPUT build/main.bbl
 INPUT c:/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -354,9 +351,6 @@ INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT build/main.toc
-INPUT build/main.toc
-INPUT build/main.toc
 OUTPUT build/main.toc
 INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
@@ -387,11 +381,3 @@ INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT AufgabeE.pdf
-INPUT ./content/diskussion.tex
-INPUT ./content/diskussion.tex
-INPUT build/main.aux
-INPUT build/main.aux
-INPUT build/main.toc
-INPUT build/main.run.xml
-OUTPUT build/main.run.xml
