@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.11.18)  27 APR 2016 18:36
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.11.18)  28 APR 2016 11:36
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -278,7 +278,7 @@ Lua-only attribute luaotfload@cursbase = 6
 Lua-only attribute luaotfload@curscurs = 7
 Lua-only attribute luaotfload@cursdone = 8
 Lua-only attribute luaotfload@state = 9
-luaotfload | main : fontloader loaded in 0.018 seconds
+luaotfload | main : fontloader loaded in 0.016 seconds
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
@@ -2129,7 +2129,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 \openout4 = main.toc
  [2
 
-] (./content/theorie.tex <picture/Bild1.PNG, id=45, 238.64156pt x 423.08063pt>
+] (./content/theorie.tex <picture/Bild1.PNG, id=54, 238.64156pt x 423.08063pt>
 File: picture/Bild1.PNG Graphic file (type png)
  <use picture/Bild1.PNG>
 Package pdftex.def Info: picture/Bild1.PNG used on input line 9.
@@ -2139,12 +2139,12 @@ Overfull \hbox (2.4309pt too wide) in paragraph at lines 5--15
 []$[]$ $[]$
  []
 
-[3<./picture/Bild1.PNG>] <picture/Bessel.png, id=55, 236.38312pt x 161.85469pt>
+[3<./picture/Bild1.PNG>] <picture/Bessel.png, id=64, 236.38312pt x 161.85469pt>
 File: picture/Bessel.png Graphic file (type png)
  <use picture/Bessel.png>
 Package pdftex.def Info: picture/Bessel.png used on input line 34.
 (pdftex.def)             Requested size: 207.78333pt x 142.26378pt.
- [4<./picture/Bessel.png>] <picture/Abbe.png, id=69, 218.31563pt x 168.63pt>
+ [4<./picture/Bessel.png>] <picture/Abbe.png, id=76, 218.31563pt x 168.63pt>
 File: picture/Abbe.png Graphic file (type png)
  <use picture/Abbe.png>
 Package pdftex.def Info: picture/Abbe.png used on input line 65.
@@ -2154,15 +2154,15 @@ Package pdftex.def Info: picture/Abbe.png used on input line 65.
 LaTeX Warning: Empty bibliography on input line 24.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
-[6]
+[6] [7]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: D25958A0B70E75D16BDE64193DD3DD4B;7712.
+(rerunfilecheck)             Checksum: A74608851C35DE5D1969FE70C03665D4;10217.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 3BF1969F0233522D89958E6E0EBAE552;1073.
+(rerunfilecheck)             Checksum: B11978415BC86C58A6CF9C181275B1C0;1398.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -2170,19 +2170,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43768 strings out of 494897
+ 43773 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 599 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 13 kern, 18 attribute, 67 glue_spec, 18 attribute_list, 1 write nodes
-   avail lists: 1:3,2:5705,3:119,4:506,5:142,6:1903,7:286,8:14,9:160,10:247,11:1
- 46152 multiletter control sequences out of 65536+600000
- 94 fonts using 19584219 bytes
- 69i,8n,104p,1248b,870s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 604 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 13 kern, 18 attribute, 67 glue_spec, 18 attribute_list, 1 action, 1 write nodes
+   avail lists: 1:3,2:5705,3:136,4:598,5:157,6:1903,7:286,8:21,9:192,10:247,11:1
+ 46154 multiletter control sequences out of 65536+600000
+ 94 fonts using 19583691 bytes
+ 69i,8n,104p,1365b,870s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (6 pages, 105782 bytes).
+Output written on main.pdf (7 pages, 108994 bytes).
 
-PDF statistics: 178 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 131072)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 200 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 131072)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
