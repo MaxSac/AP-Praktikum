@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.optimize import curve_fit
+from uncertainties import ufloat
 
 b_A, e_A, V_A = np.loadtxt('data/abbe.txt', unpack=True)
 g_b, b_b = np.loadtxt('data/bekannt.txt', unpack=True)
@@ -55,9 +57,7 @@ def bessel(a, ebw, bw1, bw2):
         g1[x] = ebw[x] - bw1[x]
         d1[x] = g1[x] - bw1[x]
         g2[x] = ebw[x] - bw2[x]
-#        print('e',ebw[x],'bw',bw2[x],'g',g2[x])
         d2[x] = g2[x] - bw2[x]
-        print('d',d2[x])
         f1 = (ebw[x]**2 - d1[x]**2)/(4*ebw[x])
         f2 = (ebw[x]**2 - d2[x]**2)/(4*ebw[x])
         print(x, ' = ', f1 , " , ", f2 )
@@ -70,4 +70,30 @@ print("-")
 print("Bessel Methode blaues Licht")
 bessel(5, e_bb, b1_bb, b2_bb)
 print("-")
+
+#Abbemethode 
+
+def lin(x,a,b):
+        return b + a * x
+
+params1, cov1 = curve_fit(lin, b_A, (1+V_A))
+print('Abbe Methode f_1 = ', params1[0], '+-', cov1[0])
+plt.plot(b_A, lin(b_A, *params1))
+plt.plot(b_A, (1 + V_A), 'x', label='Messdaten')
+plt.xlabel(r' / cm')
+plt.ylabel(r'Gegenstandsweite / cm ')
+plt.legend(loc='best')
+plt.savefig('build/Abbe1.pdf')
+plt.close()
+
+g_A = e_A - b_A
+params2, cov2 = curve_fit(lin, g_A, (1+1/V_A))
+print('Abbe Methode f_2 = ', params2[0], '+-', cov2[0])
+plt.plot(g_A, lin(g_A, *params2))
+plt.plot(g_A, (1 + 1/V_A), 'x', label='Messdaten')
+plt.xlabel(r' / cm')
+plt.ylabel(r'Gegenstandsweite / cm ')
+plt.legend(loc='best')
+plt.savefig('build/Abbe2.pdf')
+plt.close()
 
