@@ -44,3 +44,30 @@ plt.legend(loc='best')
 plt.savefig('build/unbekannt.pdf')
 plt.close()
 
+#Besselmethode Weißes Licht
+
+def bessel(a, ebw, bw1, bw2):
+    g1 = [0]*11
+    g2 = [0]*11
+    d1 = [0]*11
+    d2 = [0]*11
+    for x in range(a):
+        g1[x] = ebw[x] - bw1[x]
+        d1[x] = g1[x] - bw1[x]
+        g2[x] = ebw[x] - bw2[x]
+#        print('e',ebw[x],'bw',bw2[x],'g',g2[x])
+        d2[x] = g2[x] - bw2[x]
+        print('d',d2[x])
+        f1 = (ebw[x]**2 - d1[x]**2)/(4*ebw[x])
+        f2 = (ebw[x]**2 - d2[x]**2)/(4*ebw[x])
+        print(x, ' = ', f1 , " , ", f2 )
+print("Bessel Methode weißes Licht")
+bessel(11, e_bw, b1_bw, b2_bw)
+print("-")
+print("Bessel Methode rotes Licht")
+bessel(5, e_br, b1_br, b2_br)
+print("-")
+print("Bessel Methode blaues Licht")
+bessel(5, e_bb, b1_bb, b2_bb)
+print("-")
+

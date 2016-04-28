@@ -10,7 +10,8 @@
 \contentsline {subsection}{\numberline {3.2}Gauß'sche Fehlerfortpflanzung}{6}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Lineare Regression}{6}{subsection.3.3}
 \contentsline {section}{\numberline {4}Durchführung und Aufbau}{6}{section.4}
-\contentsline {subsection}{\numberline {4.1}Aufbau und Durchführung um das Abbildungsgesetz (Gl. (\ref {eqn:V})) und die Linsengleichung (Gl. (\ref {eqn:D})) zu verifizieren}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}Aufbau und Durchführung um das Abbildungsgesetz und die Linsengleichung zu verifizieren}{6}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Bestimmung der Brennweite einer Linse nach der Methode von Bessel}{6}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Bestimmung der Brennweite eines Linsensystems nach Abbe}{7}{subsection.4.3}
 \contentsline {section}{\numberline {5}Auswertung}{7}{section.5}
 \contentsline {section}{\numberline {6}Diskussion}{7}{section.6}
