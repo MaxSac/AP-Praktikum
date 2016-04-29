@@ -76,8 +76,10 @@ print("-")
 def lin(x,a,b):
         return b + a * x
 
+for x in range (10):
+    V_A[x] = V_A[x]/3
 params1, cov1 = curve_fit(lin, b_A, (1+V_A))
-print('Abbe Methode f_1 = ', params1[0], '+-', cov1[0])
+print('Abbe Methode f_1 = ', params1[0], '+-', cov1[0], ', h* = ', params1[1], '+-', cov1[1])
 plt.plot(b_A, lin(b_A, *params1))
 plt.plot(b_A, (1 + V_A), 'x', label='Messdaten')
 plt.xlabel(r' / cm')
@@ -88,7 +90,7 @@ plt.close()
 
 g_A = e_A - b_A
 params2, cov2 = curve_fit(lin, g_A, (1+1/V_A))
-print('Abbe Methode f_2 = ', params2[0], '+-', cov2[0])
+print('Abbe Methode f_2 = ', params2[0], '+-', cov2[0], ', h= ', params2[1], '+-', cov2[1])
 plt.plot(g_A, lin(g_A, *params2))
 plt.plot(g_A, (1 + 1/V_A), 'x', label='Messdaten')
 plt.xlabel(r' / cm')

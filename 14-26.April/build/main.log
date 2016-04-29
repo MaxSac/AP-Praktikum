@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2016.4.22)  28 APR 2016 21:11
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2016.4.22)  29 APR 2016 18:38
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -1900,7 +1900,17 @@ File: german.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 ) (./build/main.aux
 luatex-hyphen: loading patterns and exceptions for: german (\language4)
 luatex-hyphen: info: no hyphenation exceptions for this language
-Language ngerman already loaded; id is 8)
+Language ngerman already loaded; id is 8
+
+LaTeX Warning: Label `fig:<+label+>' multiply defined.
+
+
+LaTeX Warning: Label `fig:<+label+>' multiply defined.
+
+
+LaTeX Warning: Label `fig:<+label+>' multiply defined.
+
+)
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -2119,21 +2129,58 @@ File: picture/Abbe.PNG Graphic file (type png)
  <use picture/Abbe.PNG>
 Package pdftex.def Info: picture/Abbe.PNG used on input line 65.
 (pdftex.def)             Requested size: 184.18335pt x 142.26378pt.
-) (./content/Fehlerrechnung.tex(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) [5<./picture/Abbe.PNG>]) (./content/durchfuehrung.tex) (./content/auswertung.tex [6]) (./content/diskussion.tex)
+) (./content/Fehlerrechnung.tex(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) [5<./picture/Abbe.PNG>]) (./content/durchfuehrung.tex) (./content/auswertung.tex [6]
+
+LaTeX Warning: Reference `eqn:' on page 7 undefined on input line 3.
+
+
+LaTeX Warning: Reference `eqn:' on page 7 undefined on input line 3.
+
+
+LaTeX Warning: Reference `fig:' on page 7 undefined on input line 26.
+
+<bekannt.pdf, id=99, 417.7206pt x 258.00488pt>
+File: bekannt.pdf Graphic file (type pdf)
+ <use bekannt.pdf>
+Package pdftex.def Info: bekannt.pdf used on input line 29.
+(pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
+ <unbekannt.pdf, id=100, 417.7206pt x 258.00488pt>
+File: unbekannt.pdf Graphic file (type pdf)
+ <use unbekannt.pdf>
+Package pdftex.def Info: unbekannt.pdf used on input line 36.
+(pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
+ <Abbe1.pdf, id=101, 417.7206pt x 258.00488pt>
+File: Abbe1.pdf Graphic file (type pdf)
+ <use Abbe1.pdf>
+Package pdftex.def Info: Abbe1.pdf used on input line 43.
+(pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
+ <Abbe2.pdf, id=102, 417.7206pt x 258.00488pt>
+File: Abbe2.pdf Graphic file (type pdf)
+ <use Abbe2.pdf>
+Package pdftex.def Info: Abbe2.pdf used on input line 50.
+(pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
+) (./content/diskussion.tex [7] [8<build/bekannt.pdf><build/unbekannt.pdf><build/Abbe1.pdf>])
 
 LaTeX Warning: Empty bibliography on input line 24.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
-[7]
+[9<build/Abbe2.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
  (./build/main.aux
 Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: A4628A7DD43D567BA791340F0536DE49;10776.
+(rerunfilecheck)             Checksum: A93C71E1C1895E92A4B34E84E697C66E;11787.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 70588E7802E8C6F3236FAC651ECADE20;1476.
+(rerunfilecheck)             Checksum: 8E379F0FBBF2A2508565E035EAC714AE;1476.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -2141,19 +2188,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43079 strings out of 495003
+ 43107 strings out of 495003
  100000,1648299 words of node,token memory allocated
- 596 words of node memory still in use:
+ 609 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 12 kern, 17 attribute, 67 glue_spec, 17 attribute_list, 1 action, 1 write nodes
-   avail lists: 1:2,2:497,3:137,4:729,5:189,6:2556,7:287,8:18,9:192,10:335,11:1
- 45374 multiletter control sequences out of 65536+600000
- 93 fonts using 27426223 bytes
- 71i,8n,104p,1225b,870s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:2,2:679,3:150,4:1075,5:189,6:2556,7:287,8:18,9:217,10:335,11:1
+ 45395 multiletter control sequences out of 65536+600000
+ 93 fonts using 27426751 bytes
+ 71i,12n,104p,1225b,870s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (7 pages, 109722 bytes).
+Output written on main.pdf (9 pages, 156776 bytes).
 
-PDF statistics: 200 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 131072)
+PDF statistics: 296 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 131072)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
