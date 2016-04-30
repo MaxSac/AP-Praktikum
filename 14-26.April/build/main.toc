@@ -14,4 +14,7 @@
 \contentsline {subsection}{\numberline {4.2}Bestimmung der Brennweite einer Linse nach der Methode von Bessel}{6}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Bestimmung der Brennweite eines Linsensystems nach Abbe}{7}{subsection.4.3}
 \contentsline {section}{\numberline {5}Auswertung}{7}{section.5}
-\contentsline {section}{\numberline {6}Diskussion}{9}{section.6}
+\contentsline {subsection}{\numberline {5.1}Verifizieren der Linsengleichung}{7}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Bestimmung einer Bekannten sowie Unbekannten Brennweite}{7}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Besselmethode}{8}{subsection.5.3}
+\contentsline {section}{\numberline {6}Diskussion}{10}{section.6}

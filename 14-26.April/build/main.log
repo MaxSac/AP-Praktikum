@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2016.4.22)  29 APR 2016 18:38
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2016.4.22)  30 APR 2016 12:21
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -276,7 +276,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.045 seconds)
+luaotfload | main : initialization completed in 0.046 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX. (/home/maximilian/.local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 \l_fontspec_script_int=\count118
@@ -1904,12 +1904,6 @@ Language ngerman already loaded; id is 8
 
 LaTeX Warning: Label `fig:<+label+>' multiply defined.
 
-
-LaTeX Warning: Label `fig:<+label+>' multiply defined.
-
-
-LaTeX Warning: Label `fig:<+label+>' multiply defined.
-
 )
 \openout1 = main.aux
 
@@ -2109,7 +2103,7 @@ Language ngerman already loaded; id is 8)
 \openout4 = main.toc
  [2
 
-] (./content/theorie.tex <picture/Bild1.PNG, id=52, 238.64156pt x 423.08063pt>
+] (./content/theorie.tex <picture/Bild1.PNG, id=58, 238.64156pt x 423.08063pt>
 File: picture/Bild1.PNG Graphic file (type png)
  <use picture/Bild1.PNG>
 Package pdftex.def Info: picture/Bild1.PNG used on input line 9.
@@ -2119,61 +2113,88 @@ Overfull \hbox (2.4309pt too wide) in paragraph at lines 5--15
 []$[]$ $[]$
  []
 
-[3<./picture/Bild1.PNG>] <picture/Bessel.PNG, id=62, 236.38312pt x 161.85469pt>
+[3<./picture/Bild1.PNG>] <picture/Bessel.PNG, id=68, 236.38312pt x 161.85469pt>
 File: picture/Bessel.PNG Graphic file (type png)
  <use picture/Bessel.PNG>
 Package pdftex.def Info: picture/Bessel.PNG used on input line 34.
 (pdftex.def)             Requested size: 207.78333pt x 142.26378pt.
- [4<./picture/Bessel.PNG>] <picture/Abbe.PNG, id=76, 218.31563pt x 168.63pt>
+ [4<./picture/Bessel.PNG>] <picture/Abbe.PNG, id=82, 218.31563pt x 168.63pt>
 File: picture/Abbe.PNG Graphic file (type png)
  <use picture/Abbe.PNG>
 Package pdftex.def Info: picture/Abbe.PNG used on input line 65.
 (pdftex.def)             Requested size: 184.18335pt x 142.26378pt.
 ) (./content/Fehlerrechnung.tex(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) [5<./picture/Abbe.PNG>]) (./content/durchfuehrung.tex) (./content/auswertung.tex [6]
 
-LaTeX Warning: Reference `eqn:' on page 7 undefined on input line 3.
+LaTeX Warning: Reference `eqn:' on page 7 undefined on input line 4.
 
 
-LaTeX Warning: Reference `eqn:' on page 7 undefined on input line 3.
+LaTeX Warning: Reference `eqn:' on page 7 undefined on input line 4.
 
-
-LaTeX Warning: Reference `fig:' on page 7 undefined on input line 26.
-
-<bekannt.pdf, id=99, 417.7206pt x 258.00488pt>
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" <bekannt.pdf, id=106, 417.7206pt x 258.00488pt>
 File: bekannt.pdf Graphic file (type pdf)
  <use bekannt.pdf>
-Package pdftex.def Info: bekannt.pdf used on input line 29.
+Package pdftex.def Info: bekannt.pdf used on input line 35.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
- <unbekannt.pdf, id=100, 417.7206pt x 258.00488pt>
+ [7]
+
+LaTeX Warning: Reference `eqn:fiunb' on page 8 undefined on input line 44.
+
+<unbekannt.pdf, id=115, 417.7206pt x 258.00488pt>
 File: unbekannt.pdf Graphic file (type pdf)
  <use unbekannt.pdf>
-Package pdftex.def Info: unbekannt.pdf used on input line 36.
+Package pdftex.def Info: unbekannt.pdf used on input line 52.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
- <Abbe1.pdf, id=101, 417.7206pt x 258.00488pt>
+
+
+LaTeX Warning: Reference `tab:' on page 8 undefined on input line 58.
+
+
+LaTeX Warning: Reference `eqn:' on page 8 undefined on input line 58.
+
+<Abbe1.pdf, id=116, 417.7206pt x 258.00488pt>
 File: Abbe1.pdf Graphic file (type pdf)
  <use Abbe1.pdf>
-Package pdftex.def Info: Abbe1.pdf used on input line 43.
+Package pdftex.def Info: Abbe1.pdf used on input line 84.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
- <Abbe2.pdf, id=102, 417.7206pt x 258.00488pt>
+ <Abbe2.pdf, id=117, 417.7206pt x 258.00488pt>
 File: Abbe2.pdf Graphic file (type pdf)
  <use Abbe2.pdf>
-Package pdftex.def Info: Abbe2.pdf used on input line 50.
+Package pdftex.def Info: Abbe2.pdf used on input line 91.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
-) (./content/diskussion.tex [7] [8<build/bekannt.pdf><build/unbekannt.pdf><build/Abbe1.pdf>])
+) (./content/diskussion.tex [8<build/bekannt.pdf><build/unbekannt.pdf>] [9<build/Abbe1.pdf><build/Abbe2.pdf>])
 
 LaTeX Warning: Empty bibliography on input line 24.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
-[9<build/Abbe2.pdf>]
+[10]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
  (./build/main.aux
 Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: A93C71E1C1895E92A4B34E84E697C66E;11787.
+(rerunfilecheck)             Checksum: E3843A50434977646F8C0A7D3A23AC8E;14106.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 8E379F0FBBF2A2508565E035EAC714AE;1476.
+(rerunfilecheck)             Checksum: 4412B475DE80B16C5F07D70DFA7157BB;1772.
 
 
 LaTeX Warning: There were undefined references.
@@ -2188,19 +2209,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43107 strings out of 495003
+ 43247 strings out of 495003
  100000,1648299 words of node,token memory allocated
- 609 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 12 kern, 17 attribute, 67 glue_spec, 17 attribute_list, 1 action, 1 write nodes
-   avail lists: 1:2,2:679,3:150,4:1075,5:189,6:2556,7:287,8:18,9:217,10:335,11:1
- 45395 multiletter control sequences out of 65536+600000
- 93 fonts using 27426751 bytes
+ 643 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 15 kern, 20 attribute, 67 glue_spec, 20 attribute_list, 1 action, 1 write nodes
+   avail lists: 1:2,2:686,3:177,4:1056,5:186,6:2556,7:287,8:21,9:209,10:335,11:1
+ 45487 multiletter control sequences out of 65536+600000
+ 133 fonts using 42841571 bytes
  71i,12n,104p,1225b,870s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (9 pages, 156776 bytes).
+Output written on main.pdf (10 pages, 161369 bytes).
 
-PDF statistics: 296 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 43 named destinations out of 1000 (max. 131072)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 320 PDF objects out of 1000 (max. 8388607)
+ 247 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 131072)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

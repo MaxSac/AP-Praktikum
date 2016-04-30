@@ -1,5 +1,6 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+\subsection{Verifizieren der Linsengleichung}
 Um die Gleichung \ref{eqn:} und \ref{eqn:} zu verifizieren sind die dafür Relevanten Messwerte in Tabelle \ref{tab:VdA} aufgetragen. Die Gegenstandsgröße $G$ des Pearl L beträgt $3.0 \cdot 10^{-2}$ m und die Vergrößerungen werden entsprechen $V_1 = \frac{b}{g}$ und $V_2 = \frac{B}{G}$ berechnet.
 \begin{table}
   \centering
@@ -23,20 +24,60 @@ Um die Gleichung \ref{eqn:} und \ref{eqn:} zu verifizieren sind die dafür Relev
   \caption{Verifizierung des Abbildungsgesetzes}
   \label{tab:VdA}
 \end{table}
-Desweiteren wird zur ermittlung der Brennweite ein Plot erstellt,wonbei die Gegenstandsweiten auf die Y-Achse des Koordinatensystems aufgetragen werden und mit den entsprechenden Bildweiten, welche auf der X-Achse aufgetragen sind, verbunden. Aus dem Schnittpunkt der Graden lässt sich die Brennweite der Linse Ablesen. Aus Abbildung \ref{fig:} wird die Brennweite ?? abgelesen. 
+\subsection{Bestimmung einer Bekannten sowie Unbekannten Brennweite}
+Desweiteren wird zur ermittlung der Brennweite ein Plot erstellt,wonbei die Gegenstandsweiten auf die Y-Achse des Koordinatensystems aufgetragen werden und mit den entsprechenden Bildweiten, welche auf der X-Achse aufgetragen sind, verbunden. Aus dem Schnittpunkt der Graden lässt sich die Brennweite der Linse Ablesen. Aus Abbildung \ref{fig:fibek} wird die Brennweite
+\begin{equation}
+  f_\text{abgelesen} = \num{9.8 +- 0.7} 10^{-2} \text{m}
+  \label{eqn:fbek}
+\end{equation} abgelesen. 
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{bekannt.pdf}
-  \caption{<+caption text+>}
-  \label{fig:<+label+>}
+  \caption{Brennweite einer bekannten Linse}
+  \label{fig:fibek}
 \end{figure}
-
+Die vom Herstelller angegeben Brennweite beträgt 
+\begin{equation}
+  f_\text{Hersteller} = 10\cdot10^{-2} \text{m} \, .
+  \label{eqn:fHer}
+\end{equation}
+Die Messung wird für eine Linse mit unbekannter Brechkraft wiederhholt und aus dem Diagramm \ref{eqn:fiunb} lässt sich eine Brennweite von 
+\begin{equation}
+  f_\text{unbekannt} = \num{11.9 +- 4.6} \text{m}
+  \label{eqn:unb}
+\end{equation}
+ablesen.
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{unbekannt.pdf}
-  \caption{<+caption text+>}
-  \label{fig:<+label+>}
+  \caption{Brennweite einer unbekannten Linse}
+  \label{fig:fiunb}
 \end{figure}
+
+\subsection{Besselmethode}
+Die entsprechenden Messdaten zu dem Versuch sind in Tabelle \ref{tab:} zu finden.  Dabei wurde die Brennweite nach Formel \ref{eqn:} berechnetu, wobei der Abstand $d = g - b$ und die Gegenstandsweite als $g = e - b$ definiert ist.
+\begin{table}
+  \centering
+  \begin{tabular}{c c c | c c}
+    \toprule
+    $e$ / $10^{-2}$ m & $g_1$ / m & $g_2$ / m & $f$ / $10^{-2}$ m & $f$ / $10^{-2}$ m\\
+    \midrule
+	100.0	& 11.5	& 89.3	& 10.18	& 9.48	\\
+	97.5	& 11.5	& 86.9	& 10.14	& 9.41	\\
+	95.0	& 11.6	& 84.4	& 10.18	& 9.61	\\
+	92.5	& 11.6	& 81.6	& 10.15	& 9.58	\\
+	90.0	& 11.7	& 79.1	& 10.18	& 9.61	\\
+	87.5	& 11.7	& 76.5	& 10.14	& 8.74	\\	
+	85.0	& 11.8	& 75.1	& 10.16	& 7.94	\\	
+	82.5	& 11.9	& 73.6	& 10.18	& 9.56	\\
+	80.0	& 11.9	& 68.9	& 10.13	& 9.51	\\
+	77.5	& 12.1	& 66.4	& 10.21	& 9.37	\\
+    \bottomrule
+  \end{tabular}
+  	\caption{Brennweite von weißem Licht}
+  \label{tab:ffw}
+\end{table}<++>
+
 
 \begin{figure}
   \centering
