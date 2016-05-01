@@ -49,18 +49,25 @@ plt.close()
 #Besselmethode Weißes Licht
 
 def bessel(a, ebw, bw1, bw2):
-    g1 = [0]*11
-    g2 = [0]*11
-    d1 = [0]*11
-    d2 = [0]*11
+    g1 = [0]*a
+    g2 = [0]*a
+    d1 = [0]*a
+    d2 = [0]*a
+    f1 = [0]*a
+    f2 = [0]*a
     for x in range(a):
         g1[x] = ebw[x] - bw1[x]
         d1[x] = g1[x] - bw1[x]
         g2[x] = ebw[x] - bw2[x]
         d2[x] = g2[x] - bw2[x]
-        f1 = (ebw[x]**2 - d1[x]**2)/(4*ebw[x])
-        f2 = (ebw[x]**2 - d2[x]**2)/(4*ebw[x])
-        print(x, ' = ', f1 , " , ", f2 )
+        f1[x] = (ebw[x]**2 - d1[x]**2)/(4*ebw[x])
+        f2[x] = (ebw[x]**2 - d2[x]**2)/(4*ebw[x])
+        print(x, ' = ', f1[x] , " , ", f2[x] )
+    f1_m = ufloat(np.mean(f1), np.std(f1)/np.sqrt(len(f1)))
+    f2_m = ufloat(np.mean(f2), np.std(f2)/np.sqrt(len(f1)))
+    print('f1 Mittelwert', np.mean(f1), '+-', np.std(f1)/np.sqrt(len(f1)))
+    print('f2 Mittelwert', np.mean(f2), '+-', np.std(f2)/np.sqrt(len(f1)))
+    print('f Mittelwert', (f1_m+f2_m)/2)
 print("Bessel Methode weißes Licht")
 bessel(11, e_bw, b1_bw, b2_bw)
 print("-")
@@ -76,24 +83,27 @@ print("-")
 def lin(x,a,b):
         return b + a * x
 
+
 for x in range (10):
     V_A[x] = V_A[x]/3
+g_A = e_A - b_A
 params1, cov1 = curve_fit(lin, b_A, (1+V_A))
+cov1 = np.sqrt(np.diag(cov1))
 print('Abbe Methode f_1 = ', params1[0], '+-', cov1[0], ', h* = ', params1[1], '+-', cov1[1])
 plt.plot(b_A, lin(b_A, *params1))
 plt.plot(b_A, (1 + V_A), 'x', label='Messdaten')
-plt.xlabel(r' / cm')
+plt.xlabel(r' (1+V) / cm')
 plt.ylabel(r'Gegenstandsweite / cm ')
 plt.legend(loc='best')
 plt.savefig('build/Abbe1.pdf')
 plt.close()
 
-g_A = e_A - b_A
 params2, cov2 = curve_fit(lin, g_A, (1+1/V_A))
+cov2 = np.sqrt(np.diag(cov2))
 print('Abbe Methode f_2 = ', params2[0], '+-', cov2[0], ', h= ', params2[1], '+-', cov2[1])
 plt.plot(g_A, lin(g_A, *params2))
 plt.plot(g_A, (1 + 1/V_A), 'x', label='Messdaten')
-plt.xlabel(r' / cm')
+plt.xlabel(r' (1 + 1/V)/ cm')
 plt.ylabel(r'Gegenstandsweite / cm ')
 plt.legend(loc='best')
 plt.savefig('build/Abbe2.pdf')

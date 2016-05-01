@@ -1,7 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Verifizieren der Linsengleichung}
-Um die Gleichung \ref{eqn:} und \ref{eqn:} zu verifizieren sind die dafür Relevanten Messwerte in Tabelle \ref{tab:VdA} aufgetragen. Die Gegenstandsgröße $G$ des Pearl L beträgt $3.0 \cdot 10^{-2}$ m und die Vergrößerungen werden entsprechen $V_1 = \frac{b}{g}$ und $V_2 = \frac{B}{G}$ berechnet.
+Um die Gleichung \ref{eqn:V} und \ref{eqn:D} zu verifizieren sind die dafür Relevanten Messwerte in Tabelle \ref{tab:VdA} aufgetragen. Die Gegenstandsgröße $G$ des Pearl L beträgt $3.0 \cdot 10^{-2}$ m und die Vergrößerungen werden entsprechen $V_1 = \frac{b}{g}$ und $V_2 = \frac{B}{G}$ berechnet.
 \begin{table}
   \centering
   \begin{tabular}{c c c c c c}
@@ -25,9 +25,9 @@ Um die Gleichung \ref{eqn:} und \ref{eqn:} zu verifizieren sind die dafür Relev
   \label{tab:VdA}
 \end{table}
 \subsection{Bestimmung einer Bekannten sowie Unbekannten Brennweite}
-Desweiteren wird zur ermittlung der Brennweite ein Plot erstellt,wonbei die Gegenstandsweiten auf die Y-Achse des Koordinatensystems aufgetragen werden und mit den entsprechenden Bildweiten, welche auf der X-Achse aufgetragen sind, verbunden. Aus dem Schnittpunkt der Graden lässt sich die Brennweite der Linse Ablesen. Aus Abbildung \ref{fig:fibek} wird die Brennweite
+Desweiteren wird zur ermittlung der Brennweite ein Plot erstellt, wobei die Gegenstandsweiten auf die Y-Achse des Koordinatensystems aufgetragen werden und mit den entsprechenden Bildweiten, welche auf der X-Achse aufgetragen sind, verbunden. Aus dem Schnittpunkt der Graden lässt sich die Brennweite der Linse Ablesen. Aus Abbildung \ref{fig:fibek} wird die Brennweite
 \begin{equation}
-  f_\text{abgelesen} = \num{9.8 +- 0.7} 10^{-2} \text{m}
+  f_\text{abgelesen} = (\num{9.8 +- 0.7}) 10^{-2} \, \text{m}
   \label{eqn:fbek}
 \end{equation} abgelesen. 
 \begin{figure}
@@ -38,12 +38,12 @@ Desweiteren wird zur ermittlung der Brennweite ein Plot erstellt,wonbei die Gege
 \end{figure}
 Die vom Herstelller angegeben Brennweite beträgt 
 \begin{equation}
-  f_\text{Hersteller} = 10\cdot10^{-2} \text{m} \, .
+  f_\text{Hersteller} = 10\cdot10^{-2}  \, \text{m} \, .
   \label{eqn:fHer}
 \end{equation}
-Die Messung wird für eine Linse mit unbekannter Brechkraft wiederhholt und aus dem Diagramm \ref{eqn:fiunb} lässt sich eine Brennweite von 
+Die Messung wird für eine Linse mit unbekannter Brechkraft wiederhholt und aus dem Diagramm \ref{fig:fiunb} lässt sich eine Brennweite von 
 \begin{equation}
-  f_\text{unbekannt} = \num{11.9 +- 4.6} \text{m}
+  f_\text{unbekannt} = (\num{11.9 +- 4.6}) \, \text{m}
   \label{eqn:unb}
 \end{equation}
 ablesen.
@@ -55,7 +55,7 @@ ablesen.
 \end{figure}
 
 \subsection{Besselmethode}
-Die entsprechenden Messdaten zu dem Versuch sind in Tabelle \ref{tab:} zu finden.  Dabei wurde die Brennweite nach Formel \ref{eqn:} berechnetu, wobei der Abstand $d = g - b$ und die Gegenstandsweite als $g = e - b$ definiert ist.
+Die entsprechenden Messdaten zu dem Versuch sind in Tabelle \ref{tab:ffw} zu finden.  Dabei wurde die Brennweite nach Formel \ref{eqn:tbes} berechnet, wobei der Abstand $d = g - b$ und die Gegenstandsweite als $g = e - b$ dem enstsprechend definiert ist.
 \begin{table}
   \centering
   \begin{tabular}{c c c | c c}
@@ -72,23 +72,71 @@ Die entsprechenden Messdaten zu dem Versuch sind in Tabelle \ref{tab:} zu finden
 	82.5	& 11.9	& 73.6	& 10.18	& 9.56	\\
 	80.0	& 11.9	& 68.9	& 10.13	& 9.51	\\
 	77.5	& 12.1	& 66.4	& 10.21	& 9.37	\\
-    \bottomrule
+   \midrule
+		&	&	& \num{10.16 +- 0.01} & \num{9.3 +- 0.1} \\
+   \bottomrule
   \end{tabular}
   	\caption{Brennweite von weißem Licht}
   \label{tab:ffw}
-\end{table}<++>
+\end{table}
+Aus Mittlung der Einzelmesswerte erhält man durch die Besselmethode eine experimentell bestimmte Brennweite von 
+\begin{equation}
+  f_\text{exp} = (\num{9.7 +- 0.1}) 10^{-2} \, \text{m} \ .
+  \label{eqn:fexp}
+\end{equation}
+Für den Versuch wurde eine Brennweite von 
+\begin{equation}
+  f_\text{Hersteller} = 10 \cdot 10^{-2} \, \text{m}
+  \label{eqn:fHer}
+\end{equation}
+verwendet.
+Anschließend wird die Brechkraft von farbigen Licht bestimmt. Dazu wird zunächst ein roter und anschließend ein blauer Farbfilter vor die Lampe gespannt.
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c || c c c}
+    \toprule
+    $e$ / m & $g_\text{rot} / 10^{-2}$ m & $b_\text{rot} / 10^{-2}$ m & $f_\text{rot} / 10^{-2}$ m & $g_\text{blau} / 10^{-2}$ m & $b_\text{blau} / 10^{-2}$ m & $f_\text{blau} / 10^{-2}$ m \\
+    \midrule
+    100	& 89.3	& 10.7	& 9.6 &	89.3 & 10.7 & 9.6	\\
+    90	& 79.1	& 10.9	& 9.6 & 79.3 & 10.7 & 9.4	\\
+    80	& 68.8	& 11.2	& 9.6 & 69.0 & 11.0 & 9.5	\\
+    70	& 58.5	& 11.5	& 9.6 & 58.6 & 11.4 & 9.4	\\
+    60	& 48.0	& 12.0	& 9.6 & 48.4 & 11.6 & 9.4	\\
+    \bottomrule
+  \end{tabular}
+  \caption{Brennweite von rotem und blauem Licht}
+  \label{tab:fbesslf}
+\end{table}
+Aus der Tabelle \ref{tab:fbesslf} ergibt sich für rotes Licht eine Brennweite von
+\begin{equation}
+  f_\text{rot} = (\num{9.60 +- 0.01}) \, 10^{-2} \, \text{m}
+  \label{eqn:frot}
+\end{equation} 
+und für blaues Licht eine Brennweite von 
+\begin{equation}
+  f_\text{blau} = (\num{9.49 +- 0.02}) \, 10^{-2} \, \text{m} \ .
+  \label{fblau}
+\end{equation}
 
-
+\subsection{Methode nach Abbe}
+Es sollen die Hauptebene und die Brennweite mithilfe der Formeln \ref{eqn:g'} und \ref{eqn:b'} bestimmt werden. Dafür wird zunächst eine lineare Regression durchgeführt und die Fitparameter sich ausgegeben gelassen. 
 \begin{figure}
   \centering
     \includegraphics[height=5cm]{Abbe1.pdf}
-  \caption{<+caption text+>}
+  \caption{Gegenstandsweiten Fit}
   \label{fig:<+label+>}
 \end{figure}
-
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{Abbe2.pdf}
-  \caption{<+caption text+>}
+  \caption{Bildweiten Fit}
   \label{fig:<+label+>}
 \end{figure}
+Der Fit ergibt die Brennweiten und die Laage der Hauptebenen
+\begin{eqnarray}
+  f_\text{g} &= (\num{ 6.2+- 0.1}) \cdot 10^{-2} \text{m} \\ 
+  f_\text{b} &= (\num{ 5.72 +- 0.04 }) \cdot 10^{-2} \text{m} \\
+  h &= (\num{ -0.72 +- 0.09}) \text{m} \\
+  h' &= (\num{ 0.305 +- 0.008}) \text{m} 
+  \label{eqn:abbedf}
+\end{eqnarray}
