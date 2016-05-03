@@ -1,15 +1,18 @@
 [0] Config.pm:327> INFO - This is Biber 2.2
 [0] Config.pm:330> INFO - Logfile is 'build\main.blg'
-[31] biber-MSWIN:283> INFO - === 
-[32] Biber.pm:334> INFO - Reading 'build\main.bcf'
-[109] Biber.pm:677> INFO - Found 1 citekeys in bib section 0
-[132] Biber.pm:3054> INFO - Processing section 0
-[151] Biber.pm:3193> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[153] bibtex.pm:1072> INFO - Decoding LaTeX character macros into UTF-8
-[154] bibtex.pm:935> INFO - Found BibTeX data source 'lit.bib'
-[170] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[171] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[171] Biber.pm:2931> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[171] Biber.pm:2935> INFO - No sort tailoring available for locale 'de-DE'
-[175] bbl.pm:505> INFO - Writing 'build\main.bbl' with encoding 'UTF-8'
-[176] bbl.pm:596> INFO - Output to build\main.bbl
+[25] biber-MSWIN:283> INFO - === 
+[26] Biber.pm:334> INFO - Reading 'build\main.bcf'
+[101] Biber.pm:677> INFO - Found 1 citekeys in bib section 0
+[117] Biber.pm:3054> INFO - Processing section 0
+[132] Biber.pm:3193> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[134] bibtex.pm:1072> INFO - Decoding LaTeX character macros into UTF-8
+[135] bibtex.pm:935> INFO - Found BibTeX data source 'lit.bib'
+[137] Utils.pm:147> WARN - BibTeX subsystem: C:\Users\User\AppData\Local\Temp\qg7MKOFUEK\lit.bib_7056.utf8, line 4, warning: undefined macro "April"
+[138] Utils.pm:147> WARN - The field 'month' in entry 'sample' cannot be null, deleting it
+[152] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[152] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[152] Biber.pm:2931> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[152] Biber.pm:2935> INFO - No sort tailoring available for locale 'de-DE'
+[154] bbl.pm:505> INFO - Writing 'build\main.bbl' with encoding 'UTF-8'
+[154] bbl.pm:596> INFO - Output to build\main.bbl
+[154] Biber.pm:107> INFO - WARNINGS: 2
