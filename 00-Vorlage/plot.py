@@ -1,5 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.optimize import curve_fit
+from scipy.signal import find_peaks_cwt
+from uncertainties import ufloat
+import math
 
 x = np.linspace(0, 10, 1000)
 y = x ** np.sin(x)
