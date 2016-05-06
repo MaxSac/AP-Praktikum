@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2016.4.22)  3 MAY 2016 17:10
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2016.4.22)  3 MAY 2016 18:29
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -276,7 +276,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.046 seconds)
+luaotfload | main : initialization completed in 0.044 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX. (/home/maximilian/.local/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 \l_fontspec_script_int=\count118
@@ -2106,25 +2106,36 @@ Language ngerman already loaded; id is 8)
 \openout4 = main.toc
  [2
 
-] (./content/theorie.tex <picture/Bild1.PNG, id=60, 238.64156pt x 423.08063pt>
+] (./content/theorie.tex <picture/Bild1.PNG, id=62, 238.64156pt x 423.08063pt>
 File: picture/Bild1.PNG Graphic file (type png)
  <use picture/Bild1.PNG>
 Package pdftex.def Info: picture/Bild1.PNG used on input line 9.
 (pdftex.def)             Requested size: 209.12778pt x 370.75627pt.
 
-Overfull \hbox (2.4309pt too wide) in paragraph at lines 5--15
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 10.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (83.64984pt too wide) in paragraph at lines 10--10
+[][] [] 
+ []
+
+
+Overfull \hbox (2.4309pt too wide) in paragraph at lines 5--17
 []$[]$ $[]$
  []
 
-[3<./picture/Bild1.PNG>] <picture/Bessel.PNG, id=70, 236.38312pt x 161.85469pt>
+[3<./picture/Bild1.PNG>] <picture/Bessel.PNG, id=77, 236.38312pt x 161.85469pt>
 File: picture/Bessel.PNG Graphic file (type png)
  <use picture/Bessel.PNG>
-Package pdftex.def Info: picture/Bessel.PNG used on input line 34.
+Package pdftex.def Info: picture/Bessel.PNG used on input line 33.
 (pdftex.def)             Requested size: 207.78333pt x 142.26378pt.
- [4<./picture/Bessel.PNG>] <picture/Abbe.PNG, id=84, 218.31563pt x 168.63pt>
+ [4<./picture/Bessel.PNG>] <picture/Abbe.PNG, id=92, 218.31563pt x 168.63pt>
 File: picture/Abbe.PNG Graphic file (type png)
  <use picture/Abbe.PNG>
-Package pdftex.def Info: picture/Abbe.PNG used on input line 68.
+Package pdftex.def Info: picture/Abbe.PNG used on input line 67.
 (pdftex.def)             Requested size: 184.18335pt x 142.26378pt.
 ) (./content/Fehlerrechnung.tex(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: /home/maximilian/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) [5<./picture/Abbe.PNG>]) (./content/durchfuehrung.tex) (./content/auswertung.tex [6]
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
@@ -2146,12 +2157,12 @@ luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" <bekannt.pdf, id=110, 417.7206pt x 258.00488pt>
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" <bekannt.pdf, id=120, 417.7206pt x 258.00488pt>
 File: bekannt.pdf Graphic file (type pdf)
  <use bekannt.pdf>
 Package pdftex.def Info: bekannt.pdf used on input line 35.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
- [7] <unbekannt.pdf, id=120, 417.7206pt x 258.00488pt>
+ [7] <unbekannt.pdf, id=130, 417.7206pt x 258.00488pt>
 File: unbekannt.pdf Graphic file (type pdf)
  <use unbekannt.pdf>
 Package pdftex.def Info: unbekannt.pdf used on input line 52.
@@ -2161,31 +2172,28 @@ Overfull \hbox (51.76178pt too wide) in paragraph at lines 96--107
  [][][] 
  []
 
-<Abbe1.pdf, id=175, 417.7206pt x 258.00488pt>
+<Abbe1.pdf, id=186, 417.7206pt x 258.00488pt>
 File: Abbe1.pdf Graphic file (type pdf)
  <use Abbe1.pdf>
-Package pdftex.def Info: Abbe1.pdf used on input line 125.
+Package pdftex.def Info: Abbe1.pdf used on input line 148.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
- <Abbe2.pdf, id=176, 417.7206pt x 258.00488pt>
+ <Abbe2.pdf, id=187, 417.7206pt x 258.00488pt>
 File: Abbe2.pdf Graphic file (type pdf)
  <use Abbe2.pdf>
-Package pdftex.def Info: Abbe2.pdf used on input line 131.
+Package pdftex.def Info: Abbe2.pdf used on input line 154.
 (pdftex.def)             Requested size: 230.33344pt x 142.26378pt.
- [9] [10<build/Abbe1.pdf><build/Abbe2.pdf>]) (./content/diskussion.tex)
-
-LaTeX Warning: Empty bibliography on input line 24.
-
+ [9]) (./content/diskussion.tex [10<build/Abbe1.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
-[11]
+ [11<build/Abbe2.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
  (./build/main.aux
 Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: B51D81074E375BD7E0E51606EEECB9B3;15352.
+(rerunfilecheck)             Checksum: 2557E58540F954FD07B82355B3486F68;16262.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 175932A0AD7BC150CAA324C5F1A14C68;1854.
+(rerunfilecheck)             Checksum: D0462364FAD9ECEBF89CC9228A1C2995;1920.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2197,19 +2205,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43261 strings out of 495003
+ 43398 strings out of 495003
  100000,1648299 words of node,token memory allocated
- 686 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 19 kern, 24 attribute, 67 glue_spec, 24 attribute_list, 1 action, 1 write nodes
-   avail lists: 1:2,2:1157,3:191,4:1388,5:188,6:2556,7:287,8:22,9:335,10:335,11:1
- 45493 multiletter control sequences out of 65536+600000
+ 694 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 19 kern, 24 attribute, 68 glue_spec, 24 attribute_list, 1 action, 1 write nodes
+   avail lists: 1:3,2:1128,3:208,4:1608,5:189,6:2556,7:287,8:23,9:315,10:335,11:1
+ 45625 multiletter control sequences out of 65536+600000
  133 fonts using 42841359 bytes
- 71i,12n,104p,1225b,870s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (11 pages, 166845 bytes).
+ 71i,12n,104p,1225b,2429s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/maximilian/.local/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (11 pages, 173599 bytes).
 
-PDF statistics: 347 PDF objects out of 1000 (max. 8388607)
- 273 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 131072)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 372 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 131072)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

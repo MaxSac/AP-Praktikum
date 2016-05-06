@@ -19,3 +19,4 @@
 \contentsline {subsection}{\numberline {5.3}Besselmethode}{8}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}Methode nach Abbe}{9}{subsection.5.4}
 \contentsline {section}{\numberline {6}Diskussion}{11}{section.6}
+\contentsline {section}{\nonumberline Literatur}{11}{section*.12}
