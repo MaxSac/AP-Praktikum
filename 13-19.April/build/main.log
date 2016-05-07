@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.11.18)  3 MAY 2016 17:02
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.11.18)  7 MAY 2016 17:54
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -278,7 +278,7 @@ Lua-only attribute luaotfload@cursbase = 6
 Lua-only attribute luaotfload@curscurs = 7
 Lua-only attribute luaotfload@cursdone = 8
 Lua-only attribute luaotfload@state = 9
-luaotfload | main : fontloader loaded in 0.016 seconds
+luaotfload | main : fontloader loaded in 0.018 seconds
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
@@ -2129,22 +2129,22 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 \openout4 = main.toc
  [2
 
-] (./content/theorie.tex <picture/Frauenhofer.png, id=41, 721.69624pt x 749.80125pt>
+] (./content/theorie.tex <picture/Frauenhofer.png, id=43, 721.69624pt x 749.80125pt>
 File: picture/Frauenhofer.png Graphic file (type png)
  <use picture/Frauenhofer.png>
 Package pdftex.def Info: picture/Frauenhofer.png used on input line 6.
 (pdftex.def)             Requested size: 164.31279pt x 170.71652pt.
- <picture/doppelspalt.png, id=44, 1099.10625pt x 665.48625pt>
+ <picture/doppelspalt.png, id=46, 1099.10625pt x 665.48625pt>
 File: picture/doppelspalt.png Graphic file (type png)
  <use picture/doppelspalt.png>
 Package pdftex.def Info: picture/doppelspalt.png used on input line 13.
 (pdftex.def)             Requested size: 234.94478pt x 142.26378pt.
- [3<./picture/Frauenhofer.png><./picture/doppelspalt.png>](load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-bold.luc)(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc)(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-bold.luc) [4]) (./content/durchfuehrung.tex <picture/Aufbau.png, id=69, 1782.66pt x 817.0525pt>
+(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-bold.luc)(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc)(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-bold.luc) [3<./picture/Frauenhofer.png>]) (./content/durchfuehrung.tex <picture/Aufbau.png, id=61, 1782.66pt x 817.0525pt>
 File: picture/Aufbau.png Graphic file (type png)
  <use picture/Aufbau.png>
 Package pdftex.def Info: picture/Aufbau.png used on input line 6.
 (pdftex.def)             Requested size: 310.3925pt x 142.26378pt.
-) (./content/auswertung.tex [5<./picture/Aufbau.png>]
+) (./content/auswertung.tex [4<./picture/doppelspalt.png>]
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
@@ -2162,37 +2162,34 @@ luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [6]
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [5<./picture/Aufbau.png>]
 Overfull \vbox (89.95216pt too high) has occurred while \output is active []
 
- [7] <build/plot1.pdf, id=98, 417.7206pt x 258.00488pt>
+ [6] <build/plot1.pdf, id=90, 417.7206pt x 258.00488pt>
 File: build/plot1.pdf Graphic file (type pdf)
  <use build/plot1.pdf>
-Package pdftex.def Info: build/plot1.pdf used on input line 84.
-(pdftex.def)             Requested size: 414.59636pt x 256.0748pt.
- <build/plot2.pdf, id=99, 417.7206pt x 258.00488pt>
-File: build/plot2.pdf Graphic file (type pdf)
- <use build/plot2.pdf>
-Package pdftex.def Info: build/plot2.pdf used on input line 91.
-(pdftex.def)             Requested size: 414.59636pt x 256.0748pt.
-File: build/plot1.pdf Graphic file (type pdf)
- <use build/plot1.pdf>
-Package pdftex.def Info: build/plot1.pdf used on input line 98.
-(pdftex.def)             Requested size: 414.59636pt x 256.0748pt.
- [8<./build/plot1.pdf><./build/plot2.pdf>] <build/plot4.pdf, id=144, 417.7206pt x 258.00488pt>
-File: build/plot4.pdf Graphic file (type pdf)
- <use build/plot4.pdf>
-Package pdftex.def Info: build/plot4.pdf used on input line 105.
+Package pdftex.def Info: build/plot1.pdf used on input line 85.
 (pdftex.def)             Requested size: 414.59636pt x 256.0748pt.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [9<./build/plot4.pdf>]) (./content/diskussion.tex
-
-LaTeX Warning: Reference `fig:Einezl1' on page 10 undefined on input line 3.
-
-) [10]
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" <build/plot2.pdf, id=91, 417.7206pt x 258.00488pt>
+File: build/plot2.pdf Graphic file (type pdf)
+ <use build/plot2.pdf>
+Package pdftex.def Info: build/plot2.pdf used on input line 119.
+(pdftex.def)             Requested size: 414.59636pt x 256.0748pt.
+ [7<./build/plot1.pdf>]
+File: build/plot1.pdf Graphic file (type pdf)
+ <use build/plot1.pdf>
+Package pdftex.def Info: build/plot1.pdf used on input line 153.
+(pdftex.def)             Requested size: 414.59636pt x 256.0748pt.
+ [8<./build/plot2.pdf>] <build/plot4.pdf, id=139, 417.7206pt x 258.00488pt>
+File: build/plot4.pdf Graphic file (type pdf)
+ <use build/plot4.pdf>
+Package pdftex.def Info: build/plot4.pdf used on input line 187.
+(pdftex.def)             Requested size: 414.59636pt x 256.0748pt.
+ [9]) (./content/diskussion.tex [10<./build/plot4.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
  [11]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
@@ -2200,13 +2197,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: EA864CC422EB23386ADD59347324A7D1;7689.
+(rerunfilecheck)             Checksum: 60279F1C92F1EA7914DA119B615001AA;8639.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 30D4EF99810AE90B70EB7DF7767BE769;880.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 7AFDC507042369968C003B67DFC76540;1019.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -2214,19 +2207,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44012 strings out of 494897
+ 44001 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 633 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 13 kern, 18 attribute, 68 glue_spec, 18 attribute_list, 1 write nodes
-   avail lists: 1:2,2:8809,3:149,4:2514,5:238,6:2594,7:347,8:16,9:474,10:202,11:1
- 46362 multiletter control sequences out of 65536+600000
+ 568 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 7 kern, 12 attribute, 62 glue_spec, 12 attribute_list, 1 write nodes
+   avail lists: 1:2,2:8419,3:182,4:2487,5:209,6:2459,7:352,8:13,9:429,10:251,11:1
+ 46356 multiletter control sequences out of 65536+600000
  127 fonts using 28066979 bytes
  69i,13n,104p,1248b,2071s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (11 pages, 225629 bytes).
+Output written on main.pdf (11 pages, 229480 bytes).
 
-PDF statistics: 271 PDF objects out of 1000 (max. 8388607)
- 203 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 131072)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 267 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 131072)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
