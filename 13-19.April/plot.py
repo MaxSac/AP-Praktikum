@@ -4,7 +4,7 @@ from scipy.optimize import curve_fit
 from scipy.signal import find_peaks_cwt
 from uncertainties import ufloat
 import math
-from lmfit import minimize, Parameter, Model
+from lmfit import Parameter, Model
 
 Id = 0.1 * 10**(-9) #Dunkelstrom
 L = 0.93 #Abstand zwischen Spalt und Schirm

@@ -20,7 +20,7 @@ Die Kathode wird durch einen Heizstrom $I_\text{H}$ erhitzt und die dadurch frei
 \end{figure}
 Das Gebiet wo eine kleine Gegenspannung angelegt wird, wird als Anlaufstromgebiet bezeichnet. Der Strom $I_\text{S}$ ist darauf zurückzuführen, dass die aus der Kathode austretenden Elektronen eine statistisch verteilte Bewegungsenergie besitzen die ausreicht die Gegenspannung zur Anode zu überwinden. Die Stromdichte berechnet sich in Abhängigkeit der Temperatur nach:
 \begin{equation}
-  j(V) = j_0 \exp\left( - \frac{e_0 V}{k_\text{B}}T \right)
+  j(V) = j_0 \exp\left( - \frac{e_0 V}{k_\text{B} T} \right)
   \label{eqn:jv}
 \end{equation}
 Anschließend an das Anlaufstromsgebiet befindet sich das Raumladungsgebiet. Es ist dadurch gekennzeichnet das nicht alle Elektronen von dem Feld abgezogen werden und einige der Feldlinien bereits vor der Kathode enden. Dies geschieht da die Raumladungsdichte aufgrund der Bewegung der Elektronen abnimmt.
@@ -30,7 +30,7 @@ Anschließend an das Anlaufstromsgebiet befindet sich das Raumladungsgebiet. Es 
 \end{equation}
 Daher muss das ohmsche Gesetz in diesem Bereich durch das Langmuir-Schottkysche Raumladungsgesetz
 \begin{equation}
-  j = \frac{4}{9}\varepsilon_0\sqrt{2e_0/m_0}\frac{V^{3/2}}{a^2}
+  j = \frac{4}{9}\varepsilon_0\sqrt{2e_0/m_0}\frac{V^{\frac{3}{2}}}{a^2}
   \label{eqn:jLS}
 \end{equation}
 ersetzt werden. Ziel des Versuches ist es die Beziehung $j \propto V^{3/2}$ zu bestätigen.
@@ -41,37 +41,4 @@ An das Raumladungsgebiet schließt sich das Sättigungsgebiet an. Dabei erreiche
 \end{equation}
 
 \subsection{Fehlerrechnung}
-Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
-\subsubsection{Mittelwert}
-Der Mittelwert einer Messreihe $x_\text{1}, ... ,x_\text{n}$ lässt sich durch die Formel
-\begin{equation}
-	\overline{x} = \frac{1}{N} \sum_{\text{k}=1}^\text{N} x_k
-	\label{eqn:ave}
-\end{equation}
-berechnen. Die Standardabweichung des Mittelwertes beträgt
-\begin{equation}
-	\Delta \overline{x} = \sqrt{ \frac{1}{N(N-1)} \sum_{\text{k}=1}^\text{N} (x_\text{k} - \overline{x})^2}
-	\label{eqn:std}
-\end{equation}
-
-\subsubsection{Gauß'sche Fehlerfortpflanzung}
-Wenn $x_\text{1}, ..., x_\text{n}$ fehlerbehaftete Messgrößen im weiteren Verlauf benutzt werden, wird der neue Fehler $\Delta f$ mit Hilfe der Gaußschen Fehlerfortpflanzung angegeben.
-\begin{equation}
-	\Delta f = \sqrt{\sum_{\text{k}=1}^\text{N} \left( \frac{ \partial f}{\partial x_\text{k}} \right) ^2 \cdot (\Delta x_\text{k})^2}
-	\label{eqn:var}
-\end{equation}
-
-\subsubsection{Lineare Regression}
-Die Steigung und y-Achsenabschnitt einer Ausgleichsgeraden werden gegebenfalls mittels Linearen Regression berechnet.
-\begin{equation}
-	y = m \cdot x + b
-	\label{eqn:reg}
-\end{equation}
-\begin{equation}
-	m = \frac{ \overline{xy} - \overline{x} \overline{y} } {\overline{x^2} - \overline{x}^2}
-	\label{eqn:reg_m}
-\end{equation}
-\begin{equation}
-	b = \frac{ \overline{x^2}\overline{y} - \overline{x} \, \overline{xy}} { \overline{x^2} - \overline{x}^2}
-	\label{eqn:reg_b}
-\end{equation}
+Sämtliche Fits werden Mithilfe der Funktion "lmfit" aus Python gefittet und die Parameter ausgegeben.
