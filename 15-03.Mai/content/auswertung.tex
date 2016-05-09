@@ -8,7 +8,7 @@ Die zu Beginn aufgenommenen Daten zu den zwei Hochvakuumdioden werden im folgend
   Kathodenoberfläche: f = 0.35 cm$^{2}$ , \\
   Maximaler Heizstrom: I = 2.0 A \\
 
-  \begin{table} %Messdaten
+  \begin{table}[H] %Messdaten
     \small
     \centering
     \begin{tabular}{c||c|c|c|c|c}
@@ -76,16 +76,17 @@ Die zu Beginn aufgenommenen Daten zu den zwei Hochvakuumdioden werden im folgend
   \end{table}
 
 \subsection{Kennlinienschar zu den Dioden und deren Sättigungsstrom}
+\label{sec:K}
 Die Messdaten aus Tabelle (\ref{tab:Messdaten1}) sind in den Abbildungen (\ref{fig:Kenn1}) und (\ref{fig:Kenn2}) aufgetragen.
 
-\begin{figure} %Kennlinienschar Diode 1
+\begin{figure}[H] %Kennlinienschar Diode 1
   \centering
   \includegraphics[height=7cm]{build/Kenn1}
   \caption{Kennlinienschar für die 1. Diode}
   \label{fig:Kenn1}
 \end{figure}
 
-\begin{figure} %Kennlinienschar Diode 2
+\begin{figure}[H] %Kennlinienschar Diode 2
   \centering
   \includegraphics[height=7cm]{build/Kenn2}
   \caption{Kennlinienschar für die 2. Diode}
@@ -100,6 +101,7 @@ Wie in Abbilding (\ref{fig:Kenn1}) zu sehen ist kann kein Sättigungsstrom für 
 \end{align*}
 
 \subsection{Gültigkeitsbereich des Langmuir-Schottkyschen Raumladungsgesetzes}
+\label{sec:R}
 Die Kennlinien $I_1$ und $I_2$ liegen komplett in dem Raumladungsbereich und der Exponent des Raumladungsgesetzes (\ref{eqn:jLS}) wird durch eine Regression zu
 \begin{align*}
   \text{Exponent von}\ I_1 & =  \num{1.379 +- 0.001} \ , \\
@@ -115,6 +117,7 @@ bestimmt.
 \end{figure}
 
 \subsection{Anlaufstromgebiet und Kathodentemperatur}
+\label{sec:A}
 Die aufgenommenen Messdaten und die korrigierten Spannungen sind in Tabelle (\ref{tab:Messdaten2}) aufgeführt. Dieser Versuchsteil ist nur für die erste Diode durchgeführt worden. Da die Spannungen im nA Bereich liegen und das Ampermeter einen Innenwiderstand von 1 M$\Omega$ besitzt müssen die Spannungen mit
 \begin{align*}
   U_\text{korr} = U - R_\text{innen} \cdot I
@@ -167,7 +170,7 @@ Nun wird mit Hilfe von der Gleichung (\ref{eqn:jv}) eine Ausgleichsrechnung durc
 \end{figure}
 
 \subsection{Kathodentemperatur aus der Leistungsbilanz des Heiztromfadens}
-\label{sec:K}
+\label{sec:L}
 Mit dem Heizstrom $I_\text{heiz}$ und der Heizspannung $U_\text{heiz}$ aus Tabelle (\ref{tab:heiz}) und der Gleichung (\ref{eqn:T}) lässt sich die Kathodentemperatur berechnen.
 \begin{equation}
   T = \left(\frac{I_\text{heiz} U_\text{heiz} - N_\text{WL}}{f \eta \sigma}\right)^{\frac{1}{4}}
