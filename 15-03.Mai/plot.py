@@ -15,7 +15,9 @@ U_heiz = np.array([6.2, 6.0, 5.0, 4.4, 4.0])
 I_heiz = np.array([2.5, 2.4, 2.0, 1.9, 1.8])
 f1 = 0.32 / 10000 #m^2 emittierende Fläche
 f2 = 0.35 / 10000 #m^2 emittierende Fläche
-'''
+
+
+
 print('-----------------------------------------------------------------------')
 print('Kennlinienschar und Sättigungsstrom')
 
@@ -93,7 +95,10 @@ plt.grid()
 plt.tight_layout()
 plt.savefig('build/Anlauf.pdf')
 plt.close()
-'''
+
+
+
+
 print('-----------------------------------------------------------------------')
 print('Kathodentemperatur aus der Leistungsbilanz des Heizstromfadens')
 T = ((I_heiz*U_heiz-0.95)/(f1*10000*0.28*5.7*10**(-12)))**(1/4)
