@@ -1,46 +1,53 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Verifizieren der Linsengleichung}
-Um die Gleichung \ref{eqn:V} und \ref{eqn:D} zu verifizieren sind die dafür Relevanten Messwerte in Tabelle \ref{tab:VdA} aufgetragen. Die Gegenstandsgröße $G$ des Pearl L beträgt $3.0 \cdot 10^{-2}$ m und die Vergrößerungen werden entsprechen $V_1 = \frac{b}{g}$ und $V_2 = \frac{B}{G}$ berechnet.
+Um das Abbildungsgesetz sowie die Linsengleichung (Gleichungen \eqref{eqn:V} und \eqref{eqn:D}) zu verifizieren sind die dafür relevanten Messwerte in Tabelle \ref{tab:VdA} aufgetragen. Die Gegenstandsgröße des Pearl L beträgt 
+\begin{equation}
+  G = 3.0 \cdot 10^{-2} \, \text{m} \ .
+\end{equation} 
+Die Vergrößerungen werden entsprechen $V_1 = \frac{b}{g}$ und $V_2 = \frac{B}{G}$ berechnet und sowie deren relative Messabweichung in der Tabelle \ref{tab:VdA} aufgelistet. Die Brennweite zu den Bildweiten $b$ sowie Gegenstandsweiten $G$ werden mittels der Linsengleichung (Gleichung \eqref{eqn:D}) berechnet und ebenfalls in der Tabelle aufgelistet. 
 \begin{table}
   \centering
-  \begin{tabular}{c c c c c c}
+  \begin{tabular}{c c c | c | c c c c}
     \toprule
-    $g / 10^{-2}$ m & $b / 10^{-2}$ m & $B / 10^{-3}$ m & $V_1$ & $V_2$ & $\left\lvert \frac{V_1 - V_2}{V_1} \right\rvert / \% $\\
+    $g / 10^{-2}$ m & $b / 10^{-2}$ m & $B / 10^{-3}$ m & $f / 10^{-2}$ m & $V_1$ & $V_2$ & $\left\lvert \frac{V_1 - V_2}{V_1} \right\rvert / \% $\\
    \midrule
-    25	& 15.6	& 2.0 	& 0.62 & 0.66	& 6.6 	\\
-    24	& 16.4	& 2.0	& 0.68 & 0.66	& 3.0	\\
-    23	& 16.8	& 2.2	& 0.73 & 0.73	& 0.0	\\
-    22	& 17.6	& 2.3	& 0.80 & 0.77	& 3.8	\\
-    21	& 18.4	& 2.7	& 0.88 & 0.90	& 2.3	\\
-    20	& 19.3	& 2.7	& 0.97 & 0.90	& 7.2	\\
-    19	& 20.5	& 3.1	& 1.08 & 1.03	& 4.7	\\
-    18	& 21.4	& 3.4	& 1.18 & 1.13	& 4.2	\\
-    17	& 23.1	& 4.2	& 1.35 & 1.40	& 3.7	\\
-    16	& 25.1	& 4.7	& 1.56 & 1.57	& 0.6	\\
-    15	& 29.2	& 5.7	& 1.94 & 1.90	& 2.1	\\
+    25.0 & 15.6 & 2.0 & 10.4 & 0.62   & 0.66	& 6.6 	\\
+    24.0 & 16.4 & 2.0 & 10.2 & 0.68   & 0.66	& 3.0	\\
+    23.0 & 16.8 & 2.2 & 10.3 & 0.73   & 0.73	& 0.0	\\
+    22.0 & 17.6 & 2.3 & 10.2 & 0.80   & 0.77	& 3.8	\\
+    21.0 & 18.4 & 2.7 & 10.2 & 0.88   & 0.90	& 2.3	\\
+    20.0 & 19.3 & 2.7 & 10.2 & 0.97   & 0.90	& 7.2	\\
+    19.0 & 20.5 & 3.1 & 10.1 & 1.08   & 1.03	& 4.7	\\
+    18.0 & 21.4 & 3.4 & 10.2 & 1.18   & 1.13	& 4.2	\\
+    17.0 & 23.1 & 4.2 & 10.2 & 1.35   & 1.40	& 3.7	\\
+    16.0 & 25.1 & 4.7 & 10.2 & 1.56   & 1.57	& 0.6	\\
+    15.0 & 29.2 & 5.7 & 10.1 & 1.94   & 1.90	& 2.1	\\
+    \midrule
+    \multicolumn{3}{r|}{(Mittelwert $\pm$ Fehler des Mittelwertes)}&(\num {10.2 +- 0.1}) & & & (\num{3.5 +- 0.7})\\
     \bottomrule
   \end{tabular}
-  \caption{Verifizierung des Abbildungsgesetzes}
+  \caption{Messwerte und berechnete Größen zur Verifizierung des Abbildungsgesetzes}
   \label{tab:VdA}
 \end{table}
+Das Abbildungsgesetz wurde durch die Messung bestätig, da die Werte einen Fehler von durchschnittlich 3.5 \% aufweisen. Dies liegt innerhalb des Toleranzbereichs der Messunsicherheit bei den Versuchen im Praktikum. Die Linsengleichung ist ebenso verifiziert worden da die durchschnittliche Brennweite einen Fehler von 2\% aufweist gegenüber der Herrstellerangabe von 
+\begin{equation}
+  f_\text{Hersteller} = 10^{-1} \, \text{m} \ .
+  \label{eqn:fHer1}
+\end{equation}
 \subsection{Bestimmung einer Bekannten sowie Unbekannten Brennweite}
-Desweiteren wird zur Ermittlung der Brennweite ein Plot erstellt, wobei die Gegenstandsweiten auf die Y-Achse des Koordinatensystems aufgetragen werden und mit den entsprechenden Bildweiten, welche auf der X-Achse aufgetragen sind, verbunden. Aus dem Schnittpunkt der Graden lässt sich die Brennweite der Linse Ablesen. Aus Abbildung \ref{fig:fibek} wird die Brennweite
+Die Brennweite der bekannten Linse wurde bereits im Vorherigen Kapitel mit Hilfe der Linsengleichung bestimmt. Zusätzlich wird die Brennweite mit Hilfe eines Plots bestimmt. Dafür wird die Gegenstandsweiten auf die Y-Achse des Koordinatensystems aufgetragen werden und mit den entsprechenden Bildweiten, welche auf der X-Achse aufgetragen sind, verbunden. Aus dem Schnittpunkt der Graden lässt sich die Brennweite der Linse Ablesen. Aus Abbildung \ref{fig:fibek} wird die Brennweite
 \begin{equation}
   f_\text{abgelesen} = (\num{9.8 +- 0.7}) 10^{-2} \, \text{m}
   \label{eqn:fbek}
-\end{equation} abgelesen. 
+\end{equation}
+abgelesen. 
 \begin{figure}
   \centering
   \includegraphics[height=5cm]{bekannt.pdf}
   \caption{Brennweite einer bekannten Linse}
   \label{fig:fibek}
 \end{figure}
-Die vom Herstelller angegeben Brennweite beträgt 
-\begin{equation}
-  f_\text{Hersteller} = 10\cdot10^{-2}  \, \text{m} \, .
-  \label{eqn:fHer}
-\end{equation}
 Die Messung wird für eine Linse mit unbekannter Brechkraft wiederhholt und aus dem Diagramm \ref{fig:fiunb} lässt sich eine Brennweite von 
 \begin{equation}
   f_\text{unbekannt} = (\num{11.9 +- 4.6}) \, \text{m}
@@ -53,7 +60,28 @@ ablesen.
   \caption{Brennweite einer unbekannten Linse}
   \label{fig:fiunb}
 \end{figure}
-
+\begin{table}
+  \centering
+  \begin{tabular}{c c| c}
+    \toprule
+    $b/10^{-2}$ m & $g/10^{-2}$ m & $f/10^{-2}$ m\\
+    \midrule
+	40.0	& 15.0	& 	\\
+	39.0	& 15.1	&	\\
+	38.0	& 15.3	&	\\
+	37.0	& 15.5	&	\\
+	36.0	& 15.8	&	\\
+	35.0	& 16.3	&	\\
+	34.0	& 16.6	&	\\
+	33.0	& 17.0	&	\\
+	32.0	& 17.5	&	\\
+	31.0	& 17.8	&	\\
+	30.0	& 18.4	&	\\
+    \bottomrule
+  \end{tabular}
+  \caption{<+Caption text+>}
+  \label{tab:<+label+>}
+\end{table}<++>
 \subsection{Besselmethode}
 Die entsprechenden Messdaten zu dem Versuch sind in Tabelle \ref{tab:ffw} zu finden.  Dabei wirde die Brennweite nach Formel \ref{eqn:tbes} berechnet, wobei der Abstand $d = g - b$ und die Gegenstandsweite als $g = e - b$ dem enstsprechend definiert ist.
 \begin{table}
