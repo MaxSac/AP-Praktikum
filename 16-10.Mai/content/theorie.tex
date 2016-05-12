@@ -46,6 +46,40 @@ Mit dem Abstand $L$ zwischen Kondensator und Nachweissystem. \\
 
 Um möglichst genaue Messergebnisse erzielen zu können müssen daher $L$ und $p$ möglichst groß und $U_\text{B}$ möglichst klein gewählt werden. Allerdings können an einer solchen Röhre nur Wechselspannungen mit kleiner Frequenz untersucht werden. Um Wechselspannungenn mit hoher Frequenz zu untersuchen muss eine Kathodenstrahlröhre mit kleinem $p$ und großem $U_\text{B}$ gewählt werden.
 
+\subsection{Ablenkung von Elektronen im B-Feld}
+Im Gegensatz zum elektrischen Feld, erzeugen magnetische Felder nur Kräfte auf relativ zum Feld bewegte Ladung. Diese Kraft wird Lorentz-Kraft $\vec{F}_\text{L}$ genannt.
+\begin{equation}
+	\vec{F}_\text{L} = q \ \vec{v} \times \vec{B}
+	\label{eqn:FL}
+\end{equation}
+Mit der Ladung $q$, der Geschwindigkeit $\vec{v}$ und dem Magnetfeld $\vec{B}$.\\
+Es wird also nur eine Kraft auf die Ladung ausgeübt wenn es eine Geschwindigkeitskomponente senkrecht zum Magnetfeld gibt. Wenn nun ein Elektron, mit konstanter Geschwindigkeit $v_0$, senkrecht in ein homogenes Magnetfeld fliegt wird das Elektron senkrecht zu $v_0$ und $\vec{B}$ abgelenkt. Nach der Lorentz-Kraft aus Gleichung \eqref{eqn:FL} steht diese in jedem Bahnpunkt senkrecht zum Wegelemt $d \vec{s}$. Mit diesen Überlegungen und dem Kräftegleichgewicht von Lorentz-Kraft und Zentrifugalkraft ergibt sich der Krümmungsradius $r$ zu:
+\begin{equation}
+	r = \frac{m_0 v_0}{e_0 B}
+	\label{eqn:r}
+\end{equation}
+Mit $e_0$ als Elementarladung und $m_0$ als Elektronenmasse. \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=7cm]{picture/AblenkungBFeld}
+	\caption{Die Ablenkung eines Elektronenstrahls im B-Feld. \cite[2]{V502}}
+	\label{fig:AblenkungB}
+\end{figure}
+
+Mit $v_0 = \sqrt{2 U_\text{B} \frac{e_0}{m_0}}$ und der Abbildung \eqref{fig:AblenkungB} folgt die Bestimmungsgleichung für Ladung eines Elektrons,
+\begin{equation}
+	\frac{D}{L^2 + D^2} = \frac{1}{\sqrt{8 U_\text{B}}} \sqrt{\frac{e_0}{m_0}} B
+\end{equation}
+Mit der Verschiebung $D$ und dem Wirkungsbereich des Magnetfeldes $L$.
+
+
+
+
+
+
+
+
 
 
 
