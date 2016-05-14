@@ -19,6 +19,7 @@ def linear(x,g,b):
     return b - (b/g)  * x
 
 #Bekannnte Linse
+
 plt.plot(g_b, null, 'x', label='Messwerte')
 plt.plot(null, b_b, 'x')
 for i in range(11):
@@ -80,7 +81,7 @@ print("Bessel Methode blaues Licht")
 bessel(5, e_bb, b1_bb, b2_bb)
 print("-")
 
-#Abbemethode 
+#Abbemethode
 
 def lin(x,a,b):
         return b + a * x
