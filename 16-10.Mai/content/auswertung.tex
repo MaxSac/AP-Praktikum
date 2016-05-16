@@ -26,7 +26,7 @@ Anhand derer lassen sich durch verwendung von Gleichung \eqref{eqn:BH} die magne
 \begin{figure}
   \centering
   \includegraphics[height=7cm]{B-Feld.pdf}
-  \caption{<+caption text+>}
+  \caption{Diagramm zur Bestimmung der spezifischen Ladung}
   \label{fig:bfeld}
 \end{figure}
 Aus den Steigungen $a$ der Fitts lassen sich durch Umformung der Gleichung \eqref{eqn:e0m} zu,
@@ -103,32 +103,33 @@ In einem linearen Diagramm werden die Ablenkspannungen $U_\text{d}$ aus Tabelle 
 Es wird ein Fit durch die einzelnen Messpunkte gelegt anhand derer die Empfindlichkeit der Braunschen Röhre bestimmt wird. Diese wird in einem weiterem Diagramm gegen den Kehrwert der Beschleunigungsspannung aufgetragen.
 \begin{figure}
   \centering
-  \includegraphics[height=8cm]{E-Feld.pdf}
-  \caption{<+caption text+>}
-  \label{fig:<+label+>}
+  \includegraphics[height=8cm]{E-Feld2.pdf}
+  \caption{Bestimmtung der Kenngröße}
+  \label{fig:K}
 \end{figure}
 Anhand der Steigung des weiteren Fits lässt sich die Kenngröße
 \begin{equation}
-  K_\text{theo} = \frac{p L}{2 d} = \frac{0.019 \, \text{m} \cdot 0.143 \, \text{m}}{2 \cdot 0.006 \, \text{m}} = 22.6 \frac{1}{\text{m}}
+  K_\text{theo} = \frac{p L}{2 d} = \frac{0.019 \, \text{m} \cdot 0.143 \, \text{m}}{2 \cdot 0.006 \, \text{m}} = 0.226 \, \frac{1}{\text{m}}
   \label{eqn:Ktheo}
 \end{equation}
 des Systems bestimmen. Der Fit liefert eine Kenngröße von
 \begin{equation}
-  K_\text{Messung} = (\num{0.27 +- 0.01}) \, \frac{1}{m} \ .
+  K_\text{Messung} = (\num{0.27 +- 0.01}) \, \frac{1}{\text{m}} \ .
   \label{Kmess}
 \end{equation}
 \subsection{Kathodenstrahl-Oszillograph}
-Die gemessene Frequenzverhältnisse sind in Tabelle \ref{eqn:sync} aufgeführt.
+Die gemessene Frequenzverhältnisse sind in Tabelle \ref{tab:sync} aufgeführt.
 \begin{table}
   \centering
   \begin{tabular}{c c c}
     \toprule
-    Frequenzverhältniss & $\nu_\text{Messung}$ & $\nu_{Theoretisch}$ \\
+    Frequenzverhältniss & $\nu_\text{Messung}$ & $\nu_\text{Theoretisch}$ \\
     \midrule
     1:2	& 159.96& 160.00\\
     1:1	& 79.75 & 80.00	\\
     2:1	& 39.87 & 40.00	\\
     3:1	& 26.65 & 26.67	\\
+    \bottomrule
   \end{tabular}
   \caption{Synchronisationsfrequenzen}
   \label{tab:sync}
@@ -138,3 +139,24 @@ Aus Mittelung der mit dem Frequenzverhältnis multiplizierten gemessenen Frequen
   \overline{\nu_\text{Messung}} = \num{79.81 +- 0.05} \text{Hz}
   \label{eqn:numess}
 \end{equation}
+Desweiteren soll der Schwellwert der Spannung $U_\text{B}$ werden. Da die Empfindlichkeit der Röhre bereits bekannt ist, ergibt dieser sich durch Umformen der Gleichung \ref{eqn:DUd} nach $U_d$ zu
+\begin{equation}
+  U_\text{d} = \frac{D 2 d U_\text{B}}{p L} \ .
+  \label{eqn:dfs}
+\end{equation}
+Für die Beschleunigungsspannung von 260 V Ergibt sich für die verschiedenen Verschiebungen $D$ auf dem Schirm die in der Tabelle \ref{tab:scheitel} aufgeführten Scheitelwerte.
+\begin{table}
+  \centering
+  \begin{tabular}{c c c}
+    \toprule
+	Frequenzverhältniss & D / mm & $U_\text{d}$ / V \\
+    \midrule
+	1:2	& 6.3 & 5.2 	\\
+	1:1	& 6.3 & 5.2	\\
+	2:1	& 5.7 & 4.7	\\
+	3:1	& 5.7 & 4.7	\\
+    \bottomrule
+  \end{tabular}
+  \caption{Verschiebung und Scheitelwert der Spannung}
+  \label{tab:scheitel}
+\end{table}

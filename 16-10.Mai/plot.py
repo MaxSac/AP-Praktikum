@@ -73,8 +73,10 @@ e_m_450 = (np.sqrt(8*450)*zw_450)**2
 print('Steigung des Graphens mit 450 V = ', zw_450)
 print('Spezifische Ladung', e_m_450, 'Prozentuelle Abweichung vom Theoriewert', (e_m- e_m_450)/e_m)
 
-plt.xlabel('B')
-plt.ylabel('D/(L² + D²)')
+e_M = [e_m_250,e_m_300,e_m_350,e_m_400,e_m_450]
+print('Mittelwert der Spezifischen Ladung', np.mean(e_M), (e_m- 1.77*10**(11))/e_m)
+plt.xlabel('B / T')
+plt.ylabel('D/(L² + D²) m')
 plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig('build/B-Feld.pdf')
@@ -91,12 +93,13 @@ Dn = []
 for x in range(8):
     Dn.append(x*0.0254/4)
 E_350 = np.delete(E_350,0)
-
+'''
 def berechneEmpf(E, d, lab):
     params, cov = curve_fit(lin, E,d)
     plt.plot(E,d, 'x')
     plt.plot(E, lin(E, *params), label= lab)
     zw = params[0]
+'''
 def berechneEmpf(E, d, lab):
     params, cov = curve_fit(lin, E,d)
     plt.plot(E,d, 'x')
@@ -108,10 +111,12 @@ def berechneEmpf(E, d, lab):
 zw_E_180 = berechneEmpf(E_180, D, r'$U_\text{B} =180 \text{V}$')
 zw_E_230 = berechneEmpf(E_230, D, r'$U_\text{B} =230 \text{V}$')
 zw_E_260 = berechneEmpf(E_260, D, r'$U_\text{B} =260 \text{V}$')
+print('Scheitelwert der Spannung D=1', 0.0063/zw_E_260)
+print('Scheitelwert der Spannung D=0.9', 0.0057/zw_E_260)
 zw_E_300 = berechneEmpf(E_300, D, r'$U_\text{B} =300 \text{V}$')
 zw_E_350 = berechneEmpf(E_350, Dn, r'$U_\text{B} =350 \text{V}$')
-plt.xlabel('$U_d$')
-plt.ylabel('D')
+plt.xlabel('$U_d$ / V ')
+plt.ylabel('D / m')
 plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig('build/E-Feld.pdf')
@@ -133,9 +138,16 @@ print('b =', params[1], '±', errors[1])
 x_plot = np.linspace(1/380, 1/175)
 
 plt.plot(x, y, 'rx', label="example data")
-plt.plot(x_plot, f(x_plot, *params), label='linearer Fit', linewidth=3)
+plt.plot(x_plot, f(x_plot, *params), label='linearer Fit', linewidth=1)
 plt.xlim(1/380,1/175)
+plt.xlabel(r'1/U V')
+plt.ylabel('a')
+plt.legend(loc="best")
+plt.tight_layout()
+plt.savefig('build/E-Feld2.pdf')
 plt.close()
 
 frequenz = [159.56/2, 79.75,39.87*2, 26.65*3]
 print(np.mean(frequenz),stats.sem(frequenz))
+sin = [6.3,6.3,5.7,5.7]
+print('Mittelwert der Sinusspannung = ',np.mean(sin),stats.sem(sin))
