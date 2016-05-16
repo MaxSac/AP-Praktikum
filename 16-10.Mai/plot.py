@@ -22,7 +22,7 @@ for x in range(9):
     r.append(radius(x))
 
 #B_Feld mit 250 Volt Beschleunigungsspannung
-params_B_250, cov_B_250 = curve_fit(lin, magfeld(B_250),r) 
+params_B_250, cov_B_250 = curve_fit(lin, magfeld(B_250),r)
 plt.plot(magfeld(B_250),r, 'x')
 plt.plot(magfeld(B_250), lin(magfeld(B_250), *params_B_250), label=r'$U_\text{B} =250 \text{V}$')
 zw_250 = ufloat(params_B_250[0], np.sqrt(np.diag(cov_B_250))[0])
@@ -32,7 +32,7 @@ print('Spezifische Ladung', e_m_250, 'Prozentuelle Abweichung vom Theoriewert', 
 
 
 #B_Feld mit 300 Volt Beschleunigungsspannung
-params_B_300, cov_B_300 = curve_fit(lin, magfeld(B_300),r) 
+params_B_300, cov_B_300 = curve_fit(lin, magfeld(B_300),r)
 plt.plot(magfeld(B_300),r, 'x')
 plt.plot(magfeld(B_300), lin(magfeld(B_300), *params_B_300), label=r'$U_\text{B} =300 \text{V}$')
 zw_300 = ufloat(params_B_300[0], np.sqrt(np.diag(cov_B_300))[0])
@@ -42,7 +42,7 @@ print('Spezifische Ladung', e_m_300, 'Prozentuelle Abweichung vom Theoriewert', 
 
 
 #B_Feld mit 350 Volt Beschleunigungsspannung
-params_B_350, cov_B_350 = curve_fit(lin, magfeld(B_350),r) 
+params_B_350, cov_B_350 = curve_fit(lin, magfeld(B_350),r)
 plt.plot(magfeld(B_350),r, 'x')
 plt.plot(magfeld(B_350), lin(magfeld(B_350), *params_B_350), label=r'$U_\text{B} =350 \text{V}$')
 zw_350 = ufloat(params_B_350[0], np.sqrt(np.diag(cov_B_350))[0])
@@ -55,7 +55,7 @@ B_400 = np.delete(B_400, 8)
 B_450 = np.delete(B_450, 8)
 
 #B_Feld mit 400 Volt Beschleunigungsspannung
-params_B_400, cov_B_400 = curve_fit(lin, magfeld(B_400),r) 
+params_B_400, cov_B_400 = curve_fit(lin, magfeld(B_400),r)
 plt.plot(magfeld(B_400),r, 'x')
 plt.plot(magfeld(B_400), lin(magfeld(B_400), *params_B_400), label=r'$U_\text{B}=400 \text{V}$')
 zw_400 = ufloat(params_B_400[0], np.sqrt(np.diag(cov_B_400))[0])
@@ -65,7 +65,7 @@ print('Spezifische Ladung', e_m_400, 'Prozentuelle Abweichung vom Theoriewert', 
 
 
 #B_Feld mit 450 Volt Beschleunigungsspannung
-params_B_450, cov_B_450 = curve_fit(lin, magfeld(B_450),r) 
+params_B_450, cov_B_450 = curve_fit(lin, magfeld(B_450),r)
 plt.plot(magfeld(B_450),r, 'x')
 plt.plot(magfeld(B_450), lin(magfeld(B_450), *params_B_450), label=r'$U_\text{B} =450 \text{V}$')
 zw_450 = ufloat(params_B_450[0], np.sqrt(np.diag(cov_B_450))[0])
@@ -93,12 +93,12 @@ for x in range(8):
 E_350 = np.delete(E_350,0)
 
 def berechneEmpf(E, d, lab):
-    params, cov = curve_fit(lin, E,d) 
+    params, cov = curve_fit(lin, E,d)
     plt.plot(E,d, 'x')
     plt.plot(E, lin(E, *params), label= lab)
     zw = params[0]
 def berechneEmpf(E, d, lab):
-    params, cov = curve_fit(lin, E,d) 
+    params, cov = curve_fit(lin, E,d)
     plt.plot(E,d, 'x')
     plt.plot(E, lin(E, *params), label= lab)
     zw = params[0]

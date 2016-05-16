@@ -5,12 +5,9 @@ In den beiden folgenden Experimenten soll die Ablenkung von Elektronen im elektr
 \label{sec:Theorie}
 \subsection{Aufbau der Kathodenstrahlröhre}
 Die beiden Versuche werden in einem Hochvakuum durchgeführt, da die Elektronen sonst mit den Luftmolekülen wechselwirken würden. Dazu wird die Kathodenstrahlröhre (Braunsche Röhre) verwendet. Diese besteht aus drei Hauptkomponenten: der Elektronenkanone, einem Ablenksystem und einem Nachweissystem.\\
-\textbf{Die Elektronenkanone:} \\
-Die Elektronenkanone erzeugt freie Elektronen durch Glühemission und beschleunigt diese. Dazu wird ein Kathode indirekt beheizt und von dem Wehnelt-Zylinder umgeben, welcher die Intensität des Elektronenstrahls steuert. Die Elektronen werden durch die nachfolgenden Elektroden beschleunigt und Fokussiert. \\
-\textbf{Das Ablenksystem:} \\
-Das Ablenksystem besteht aus zwei, zueinander parallelen Kondensatorplatten, welche ein annähernd homogenes elektrisches Feld erzeugen in dem die Elektronen abgelenkt werden. Sollen die Elektronen in eine weitere Richtung abgelenkt werden wird ein weiteres Plattenpaar um 90 Grad versetzt eingebaut. \\
-\textbf{Das Nachweissystem:} \\
-Das Nachweissystem visualisiert den auftrefenden Elektronenstrahl.\\
+\textbf{Die Elektronenkanone} erzeugt freie Elektronen durch Glühemission und beschleunigt diese. Dazu wird ein Kathode indirekt beheizt und von dem Wehnelt-Zylinder umgeben, welcher die Intensität des Elektronenstrahls steuert. Die Elektronen werden durch die nachfolgenden Elektroden beschleunigt und Fokussiert. \\
+\textbf{Das Ablenksystem} besteht aus zwei, zueinander parallelen Kondensatorplatten, welche ein annähernd homogenes elektrisches Feld erzeugen in dem die Elektronen abgelenkt werden. Sollen die Elektronen in eine weitere Richtung abgelenkt werden wird ein weiteres Plattenpaar um 90 Grad versetzt eingebaut. \\
+\textbf{Das Nachweissystem} visualisiert den auftrefenden Elektronenstrahl.\\
 In der nachfolgenden Abbildung wird der Sachverhalt verdeutlicht.
 
 \begin{figure}[H]
@@ -44,16 +41,16 @@ Mit dem Abstand $L$ zwischen Kondensator und Nachweissystem. \\
 	\label{fig:AblenkungE}
 \end{figure}
 
-Um genaue Messergebnisse erzielen zu können müssen daher $L$ und $p$ möglichst groß und $U_\text{B}$ möglichst klein gewählt werden. Allerdings können an einer solchen Röhre nur Wechselspannungen mit kleiner Frequenz untersucht werden. Um Wechselspannungenn mit hoher Frequenz zu untersuchen muss eine Kathodenstrahlröhre mit kleinem $p$ und großem $U_\text{B}$ gewählt werden.
+Um genaue Messergebnisse erzielen zu können müssen daher $L$ und $p$ möglichst groß und $U_\text{B}$ möglichst klein gewählt werden. Allerdings können an einer solchen Röhre nur Wechselspannungen mit kleiner Frequenz untersucht werden. Um Wechselspannungen mit hoher Frequenz zu untersuchen muss eine Kathodenstrahlröhre mit kleinem $p$ und großem $U_\text{B}$ gewählt werden.
 
 \subsection{Ablenkung von Elektronen im B-Feld}
-Im Gegensatz zum elektrischen Feld, erzeugen magnetische Felder nur Kräfte auf relativ zum Feld bewegte Ladung. Diese Kraft wird Lorentz-Kraft $\vec{F}_\text{L}$ genannt.
+Im Gegensatz zum elektrischen Feld, wirken in magnetische Felder nur Kräfte auf relativ zum Feld bewegte Ladungen. Diese Kraft wird Lorentz-Kraft $\vec{F}_\text{L}$ genannt.
 \begin{equation}
 	\vec{F}_\text{L} = q \ \vec{v} \times \vec{B}
 	\label{eqn:FL}
 \end{equation}
 Mit der Ladung $q$, der Geschwindigkeit $\vec{v}$ und dem Magnetfeld $\vec{B}$.\\
-Es wird also nur eine Kraft auf die Ladung ausgeübt wenn es eine Geschwindigkeitskomponente senkrecht zum Magnetfeld gibt. Wenn nun ein Elektron, mit konstanter Geschwindigkeit $v_0$, senkrecht in ein homogenes Magnetfeld fliegt wird das Elektron senkrecht zu $v_0$ und $\vec{B}$ abgelenkt. Nach der Lorentz-Kraft aus Gleichung \eqref{eqn:FL} steht diese in jedem Bahnpunkt senkrecht zum Wegelemt $d \vec{s}$. Mit diesen Überlegungen und dem Kräftegleichgewicht von Lorentz-Kraft und Zentrifugalkraft ergibt sich der Krümmungsradius $r$ zu:
+Es wird also nur eine Kraft auf die Ladung ausgeübt wenn es eine Geschwindigkeitskomponente senkrecht zum Magnetfeld gibt. Wenn nun ein Elektron, mit konstanter Geschwindigkeit $v_0$, senkrecht in ein homogenes Magnetfeld fliegt, wird das Elektron senkrecht zu $\vec{v}$ und $\vec{B}$ abgelenkt. Nach der Lorentz-Kraft aus Gleichung \eqref{eqn:FL} steht diese in jedem Bahnpunkt senkrecht zum Wegelemt $d \vec{s}$. Mit diesen Überlegungen und dem Kräftegleichgewicht von Lorentz-Kraft und Zentrifugalkraft ergibt sich der Krümmungsradius $r$ zu:
 \begin{equation}
 	r = \frac{m_0 v_0}{e_0 B}
 	\label{eqn:r}
@@ -72,26 +69,51 @@ Mit $v_0 = \sqrt{2 U_\text{B} \frac{e_0}{m_0}}$ und der Abbildung \eqref{fig:Abl
 	\frac{D}{L^2 + D^2} = \frac{1}{\sqrt{8 U_\text{B}}} \sqrt{\frac{e_0}{m_0}} B
 	\label{eqn:e0m}
 \end{equation}
-Mit der Verschiebung $D$ und dem Wirkungsbereichsa des Magnetfeldes $L$.
+Mit der Verschiebung $D$ und dem Wirkungsbereich $L$ des Magnetfeldes.
 
 \subsection{Magnetfeld einer Helmholtzspule}
-Eine Helmholtzspule wird oft verwendet wenn ein annähernd homogenes Magnetfeld benötigt wird. Sie besteht aus zwei Ringspulen, mit Radius $R$ und Windungszahl $N$, welche parallel zueinander aufgebaut sind. Das Magnetfeld einer Helmholtzspule lässt sich aus
+Eine Helmholtzspule wird oft verwendet wenn ein annähernd homogenes Magnetfeld benötigt wird. Sie besteht aus zwei Ringspulen, mit dem Radius $R$ und der Windungszahl $N$, welche parallel zueinander aufgebaut sind. Das Magnetfeld einer Helmholtzspule lässt sich aus
 \begin{center}
-	\large{$B = \mu_0 \frac{8}{\sqrt{125}} \frac{N I}{R}$} \\
+	\begin{align}
+		B = \mu_0 \frac{8}{\sqrt{125}} \frac{N I}{R}
+		\label{eqn:BH}
+	\end{align}
 	\small{(I = \text{Spulenstrom}, $\mu_0$ = \text{Magnetische Feldkonstante})}
 \end{center}
 berechnen.
 
-
-
-
-
-
-
-
-
-
-
-
-
 \subsection{Fehlerrechnung}
+Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
+\subsubsection{Mittelwert}
+Der Mittelwert einer Messreihe $x_\text{1}, ... ,x_\text{n}$ lässt sich durch die Formel
+\begin{equation}
+	\overline{x} = \frac{1}{N} \sum_{\text{k}=1}^\text{N} x_k
+	\label{eqn:ave}
+\end{equation}
+berechnen. Die Standardabweichung des Mittelwertes beträgt
+\begin{equation}
+	\Delta \overline{x} = \sqrt{ \frac{1}{N(N-1)} \sum_{\text{k}=1}^\text{N} (x_\text{k} - \overline{x})^2}
+	\label{eqn:std}
+\end{equation}
+
+\subsubsection{Gauß'sche Fehlerfortpflanzung}
+Wenn $x_\text{1}, ..., x_\text{n}$ fehlerbehaftete Messgrößen im weiteren Verlauf benutzt werden, wird der neue Fehler $\Delta f$ mit Hilfe der Gaußschen Fehlerfortpflanzung angegeben.
+\begin{equation}
+	\Delta f = \sqrt{\sum_{\text{k}=1}^\text{N} \left( \frac{ \partial f}{\partial x_\text{k}} \right) ^2 \cdot (\Delta x_\text{k})^2}
+	\label{eqn:var}
+\end{equation}
+
+\subsubsection{Lineare Regression}
+Die Steigung und y-Achsenabschnitt einer Ausgleichsgeraden werden gegebenfalls mittels Linearen Regression berechnet.
+\begin{equation}
+	y = m \cdot x + b
+	\label{eqn:reg}
+\end{equation}
+\begin{equation}
+	m = \frac{ \overline{xy} - \overline{x} \overline{y} } {\overline{x^2} - \overline{x}^2}
+	\label{eqn:reg_m}
+\end{equation}
+\begin{equation}
+	b = \frac{ \overline{x^2}\overline{y} - \overline{x} \, \overline{xy}} { \overline{x^2} - \overline{x}^2}
+	\label{eqn:reg_b}
+\end{equation}
