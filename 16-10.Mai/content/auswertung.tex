@@ -29,10 +29,112 @@ Anhand derer lassen sich durch verwendung Gleichung \eqref{eqn:} die magnetische
   \caption{<+caption text+>}
   \label{fig:bfeld}
 \end{figure}
-Aus den Steigungen $a$ der Fitts lassen sich durch Umformung der Gleichung \eqref{eqn:} zu,
+Aus den Steigungen $a$ der Fitts lassen sich durch Umformung der Gleichung \eqref{eqn:e0m} zu,
 \begin{equation}
   \frac{e_0}{m_0} = \left( a \cdot \sqrt{8 U_\text{B}} )^2 \right)
   \label{eqn:e0m0}
 \end{equation}
-die spezifische Ladung der Elektronen berechnen. Die zu den zugehörigen Beschleunigungspannungen spezifische Ladungen sind in Tabelle \ref{tab:} mit ihrer realtiven Abweichung von ihrem Literaturwert %\sample{spez} aufgetragen. 
-
+die spezifische Ladung der Elektronen berechnen. Die zu den zugehörigen Beschleunigungspannungen spezifische Ladungen sind in Tabelle \ref{tab:e0m0} mit ihrer realtiven Abweichung von ihrem Literaturwert (\cite{spez}) aufgetragen. 
+\begin{table}
+  \centering
+  \begin{tabular}{c| c c}
+    \toprule
+    $U_\text{B}$  & $e_0/m_0$ praktisch & $\Delta e_0/m_0$ \\
+    \midrule
+    	250	& (\num{1.77 +- 0.05}) & 1 \% \\
+	300	& (\num{1.76 +- 0.05}) & 1 \% \\
+	350	& (\num{1.76 +- 0.04}) & 1 \% \\
+	400	& (\num{1.78 +- 0.07}) & 1 \% \\
+	450	& (\num{1.80 +- 0.04}) & 2 \% \\
+    \bottomrule
+  \end{tabular}
+  \caption{spezifische Ladung und Abweichung vom Literaturwert}
+  \label{tab:e0m0}
+\end{table}
+\subsection{Intensität des Erdmagnetfeld}
+Für den Versuch iwir ein Inktlisationswinkel von 
+\begin{equation}
+  \Phi_\text{Inc} = (\num{66 +-3})°
+  \label{eqn:Inc}
+\end{equation} 
+gemmesen. Der Strom $I_\text{K}$ um das Magnetfeld der Erde mittels Helmholzspulen zu kompensieren beträgt 
+\begin{equation}
+  I_\text{K} = 0.27 \, \text{A} \ .
+  \label{IK}
+\end{equation}
+Mit Formel \ref{eqn:} ergibt sich für den Strom $I_\text{K}$ ein magnetisches Feld von 
+\begin{equation}
+  1.72 \cdot 10^{-5} \, \text{T} \ .
+  \label{eqn:Binc}
+\end{equation}
+Nach Bereinigung magnetischen Feldes von dem Inklisationswinkel ergibt sich eine Totalintesistät von 
+\begin{equation}
+  4.34 \cdot 10^{-5} \, \text{T} \ .
+  \label{eqn:Berd}
+\end{equation}
+\subsection{Empfindlichkeit der Braunschen Röhre}
+In einem linearem Diagramm werden die Ablenksspannungen $U_\text{d}$ aus Tabelle \ref{tab:DIS} gegen die Verschiebung $D$ des Leuchtflecks aufgetragen.
+\begin{table}
+  \centering
+  \begin{tabular}{c| c c c c c }
+    \toprule
+    $D / \frac{Zoll}{4}$ & $U_\text{B}$ = 180 V & $U_\text{B}$ = 230 V & $U_\text{B}$ = 260 V & $U_\text{B}$ = 300 V & $U_\text{B}$ = 350 V \\
+    \midrule
+    1 &	-20.02	&-25.21	&-28.00	&-32.19	&-28.00	\\
+    2 &	-16.12	&-20.24	&-22.99	&-27.04	&-22.99	\\
+    3 &	-12.64	&-16.07	&-18.05	&-21.16	&-18.05	\\
+    4 &	-8.88	&-12.18	&-12.65	&-15.28	&-12.65	\\	
+    5 &	-5.10	&-7.59	&-7.51	&-9.58	&-7.51	\\
+    6 &	-1.37	&-2.69	&-2.64	&-4.02	&-2.64	\\
+    7 &	2.62	&2.04	&2.73	&2.17	&2.73	\\
+    8 &	6.53	&6.79	&8.34	&7.97	&8.34	\\
+    9 &	10.44	&11.60	&13.57	&14.40	&13.57	\\
+    \bottomrule
+  \end{tabular}
+  \caption{Auslenkung der Elektronen in Abhägigkeit der Ablenkspannung bei unterschiedlichen Beschleunigungsspannungen}
+  \label{tab:DIS}
+\end{table}
+\begin{figure}
+  \centering
+  \includegraphics[height=8cm]{E-Feld.pdf}
+  \caption{Empfindlichkeit der Braunschen Röhre}
+  \label{fig:empf}
+\end{figure}
+Es wird ein Fit durch die einzelnen Messpunkte gelegt anhand derer die Empfindlichkeit der Braunsche Röhre bestimmt wird. Diese wird in einem weiterem Diagramm gegen den Kehrwert der Beschleunigungsspannung aufgetragen.
+\begin{figure}
+  \centering
+  \includegraphics[height=8cm]{E-Feld2.pdf}
+  \caption{<+caption text+>}
+  \label{fig:<+label+>}
+\end{figure}
+Anhand der Steigung des weiteren Fits lässt sich die Kenngröße 
+\begin{equation}
+  K_\text{theo} = \frac{p L}{2 d} = \frac{0.019 \, \text{m} \cdot 0.143 \, \text{m}}{2 \cdot 0.006 \, \text{m}} = 22.6 \frac{1}{\text{m}}
+  \label{eqn:Ktheo}
+\end{equation} 
+des Systems bestimmen. Der Fit liefert eine Kenngröße von 
+\begin{equation}
+  K_\text{Messung} = (\num{0.27 +- 0.01}) \, \frac{1}{m} \ .
+  \label{Kmess}
+\end{equation}
+\subsection{Kathodenstrahl-Oszillograph}
+Die gemessene Frequenzverhältnisse sind in Tabelle \ref{eqn:} aufgeführt.
+\begin{table}
+  \centering
+  \begin{tabular}{c c c}
+    \toprule
+    Frequenzverhältniss & $\nu_\text{Messung}$ & $\nu_{Theoretisch}$ \\
+    \midrule
+    1:2	& 159.96& 160.00\\
+    1:1	& 79.75 & 80.00	\\
+    2:1	& 39.87 & 40.00	\\
+    3:1	& 26.65 & 26.67	\\
+  \end{tabular}
+  \caption{Synchronisationsfrequenzen}
+  \label{tab:sync}
+\end{table}
+Aus Mittlung der mit dem Frequenzverhältniss multiplizierten gemessenen Frequenzen ergibt sich eine Mittlere Frequenz von 
+\begin{equation}
+  \overline{\nu_\text{Messung}} = \num{79.81 +- 0.05} \text{Hz}
+  \label{eqn:numess}
+\end{equation}

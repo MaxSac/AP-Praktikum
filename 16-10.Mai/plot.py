@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.constants as const
+from scipy import stats
 from scipy.optimize import curve_fit
 from scipy.signal import find_peaks_cwt
 from uncertainties import ufloat
@@ -72,6 +73,8 @@ e_m_450 = (np.sqrt(8*450)*zw_450)**2
 print('Steigung des Graphens mit 450 V = ', zw_450)
 print('Spezifische Ladung', e_m_450, 'Prozentuelle Abweichung vom Theoriewert', (e_m- e_m_450)/e_m)
 
+plt.xlabel('B')
+plt.ylabel('D/(L² + D²)')
 plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig('build/B-Feld.pdf')
@@ -94,6 +97,11 @@ def berechneEmpf(E, d, lab):
     plt.plot(E,d, 'x')
     plt.plot(E, lin(E, *params), label= lab)
     zw = params[0]
+def berechneEmpf(E, d, lab):
+    params, cov = curve_fit(lin, E,d) 
+    plt.plot(E,d, 'x')
+    plt.plot(E, lin(E, *params), label= lab)
+    zw = params[0]
     print('Steigung des Graphens = ', params[0], '+-', np.sqrt(np.diag(cov))[0])
     return zw
 
@@ -102,7 +110,8 @@ zw_E_230 = berechneEmpf(E_230, D, r'$U_\text{B} =230 \text{V}$')
 zw_E_260 = berechneEmpf(E_260, D, r'$U_\text{B} =260 \text{V}$')
 zw_E_300 = berechneEmpf(E_300, D, r'$U_\text{B} =300 \text{V}$')
 zw_E_350 = berechneEmpf(E_350, Dn, r'$U_\text{B} =350 \text{V}$')
-
+plt.xlabel('$U_d$')
+plt.ylabel('D')
 plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig('build/E-Feld.pdf')
@@ -126,8 +135,7 @@ x_plot = np.linspace(1/380, 1/175)
 plt.plot(x, y, 'rx', label="example data")
 plt.plot(x_plot, f(x_plot, *params), label='linearer Fit', linewidth=3)
 plt.xlim(1/380,1/175)
-plt.legend(loc="best")
-plt.tight_layout()
-plt.savefig('build/E-Feld2.pdf')
 plt.close()
 
+frequenz = [159.56/2, 79.75,39.87*2, 26.65*3]
+print(np.mean(frequenz),stats.sem(frequenz))
