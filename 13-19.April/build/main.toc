@@ -9,5 +9,5 @@
 \contentsline {subsection}{\numberline {3.2}Ausgleichsrechnung zum mittleren Einzelspalt}{8}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Ausgleichsrechnung zum dicken Einzelspalt}{9}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Ausgleichsrechnung zum Doppelspalt}{10}{subsection.3.4}
-\contentsline {section}{\numberline {4}Diskussion}{11}{section.4}
-\contentsline {section}{\nonumberline Literatur}{11}{section*.10}
+\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
+\contentsline {section}{\nonumberline Literatur}{11}{section*.12}

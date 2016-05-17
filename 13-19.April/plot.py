@@ -5,7 +5,7 @@ from scipy.signal import find_peaks_cwt
 from uncertainties import ufloat
 import math
 from lmfit import Parameter, Model
-
+'''
 Id = 0.1 * 10**(-9) #Dunkelstrom
 L = 0.93 #Abstand zwischen Spalt und Schirm
 lam = 635 * 10**(-9) #Wellenlänge des Lasers
@@ -17,7 +17,7 @@ def Einzel(x, b, A):
 def Doppel(x, b, s):
     return 4*(np.cos((math.pi*s*np.sin(x/L))/lam))**2 * ((lam)/(math.pi*b*np.sin(x/L)))**2 * (np.sin((math.pi*b*np.sin(x/L))/lam))**2
 
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
 print('Einzelspalt b = 0.075mm')
 
 a1, i1 = np.loadtxt('data1.txt', unpack=True)
@@ -39,7 +39,7 @@ plt.tight_layout()
 plt.savefig('build/plot1.pdf')
 plt.close()
 
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
 print('Einzelspalt b = 0.15mm')
 
 a2, i2 = np.loadtxt('data2.txt', unpack=True)
@@ -61,7 +61,7 @@ plt.tight_layout()
 plt.savefig('build/plot2.pdf')
 plt.close()
 
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
 print('Einzelspalt b = 0.40mm')
 
 a3, i3 = np.loadtxt('data3.txt', unpack=True)
@@ -83,7 +83,7 @@ plt.tight_layout()
 plt.savefig('build/plot3.pdf')
 plt.close()
 
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
 print('Doppelspalt b = 0.1mm, g = 0.4mm')
 
 a4, i4 = np.loadtxt('data4.txt', unpack=True)
@@ -105,4 +105,5 @@ plt.tight_layout()
 plt.savefig('build/plot4.pdf')
 plt.close()
 
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
+'''
