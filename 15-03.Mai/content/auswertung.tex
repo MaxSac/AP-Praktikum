@@ -1,6 +1,6 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-Die zu Beginn aufgenommenen Daten zu den zwei Hochvakuumdioden werden im folgenden aufgelistet:\\
+Die zu Beginn aufgenommenen Daten zu den zwei Hochvakuumdioden werden im Folgenden aufgelistet:\\
 \textbf{Diode 1:} \\
   Kathodenoberfläche: f = 0.32 cm$^{2}$ , \\
   Maximaler Heizstrom: I = 2.5 A \\
@@ -71,7 +71,7 @@ Die zu Beginn aufgenommenen Daten zu den zwei Hochvakuumdioden werden im folgend
       250	& 3.070 & 2.480 & 0.165	& 0.066	& 0.028 \\
       \bottomrule
     \end{tabular}
-    \caption{Messdaten }
+    \caption{Messdaten für den ersten Versuchsteil.}
     \label{tab:Messdaten1}
   \end{table}
 
@@ -93,12 +93,17 @@ Die Messdaten aus Tabelle (\ref{tab:Messdaten1}) sind in den Abbildungen (\ref{f
   \label{fig:Kenn2}
 \end{figure}
 
-Wie in Abbilding (\ref{fig:Kenn1}) zu sehen ist kann kein Sättigungsstrom für die erste Diode abgelesen werden. Der Sättigungsstrom $I_\text{s}$ für die zweite Diode lässt sich, aus Abbildung (\ref{fig:Kenn2}), deutlich genauer abschätzen.
+\newpage
+
+Der Sättigungsstrom $I_\text{s}$ für die beiden Dioden lässt sich, aus den Abbildungen (\ref{fig:Kenn1}) und (\ref{fig:Kenn2}), zu
 \begin{align*}
-  \text{Schätzwert für}\ I_{\text{s},3} & \approx 0.175 \ \text{mA} \\
-  \text{Schätzwert für}\ I_{\text{s},4} & \approx 0.075 \ \text{mA} \\
-  \text{Schätzwert für}\ I_{\text{s},5} & \approx 0.035 \ \text{mA}
+  I_{\text{s},1} & \approx 4.000 \, \text{mA} \\
+  I_{\text{s},2} & \approx 3.800 \, \text{mA} \\
+  I_{\text{s},3} & \approx 0.175 \, \text{mA} \\
+  I_{\text{s},4} & \approx 0.075 \, \text{mA} \\
+  I_{\text{s},5} & \approx 0.035 \, \text{mA}
 \end{align*}
+abschätzen.
 
 \subsection{Gültigkeitsbereich des Langmuir-Schottkyschen Raumladungsgesetzes}
 \label{sec:R}
@@ -112,9 +117,15 @@ bestimmt.
 \begin{figure}[H]
   \centering
   \includegraphics[height=7cm]{build/Raum}
-  \caption{Raumladungsgebiet für die erste Diode}
+  \caption{Die gefittete Kurve für das Raumladungsgebiet der ersten Diode}
   \label{fig:}
 \end{figure}
+
+Für den Fit wurde folgende Gleichung verwendet:
+\begin{align*}
+  j = \frac{4}{9}\, \varepsilon_0\, \sqrt{2\, e_0/m_0}\frac{V^x}{a^2} \\
+  (x = \text{gesuchter Exponent})
+\end{align*}
 
 \subsection{Anlaufstromgebiet und Kathodentemperatur}
 \label{sec:A}
@@ -159,9 +170,16 @@ korrigiert werden.
 
 Nun wird mit Hilfe von der Gleichung (\ref{eqn:jv}) eine Ausgleichsrechnung durchgeführt, um die Kathodentemperatur $T$ zu bestimmen. Für die Temperatur ergibt sich folgender Wert:
 \begin{align*}
-  T = (\num{2702.2 +- 80.7}) \ \text{K}
+  T = (\num{2700 +- 80}) \, \text{K}
 \end{align*}
-
+Für den Fit wurde folgende Gleichung verwendet:
+\begin{align*}
+  I = j \exp\left( - \frac{e_0 V}{k_\text{B} T} \right)
+\end{align*}
+Die Normierungskonstante $j$ ergibt sich zu:
+\begin{align*}
+  j = (\num{8.7 +- 0.2}) \cdot 10^{-9} \, \text{A}
+\end{align*}
 \begin{figure}[H]
   \centering
   \includegraphics[height=7cm]{build/Anlauf}
@@ -173,10 +191,10 @@ Nun wird mit Hilfe von der Gleichung (\ref{eqn:jv}) eine Ausgleichsrechnung durc
 \label{sec:L}
 Mit dem Heizstrom $I_\text{heiz}$ und der Heizspannung $U_\text{heiz}$ aus Tabelle (\ref{tab:heiz}) und der Gleichung (\ref{eqn:T}) lässt sich die Kathodentemperatur berechnen.
 \begin{equation}
-  T = \left(\frac{I_\text{heiz} U_\text{heiz} - N_\text{WL}}{f \eta \sigma}\right)^{\frac{1}{4}}
+  T = \left(\frac{I_\text{heiz}\, U_\text{heiz} - N_\text{WL}}{f\, \eta\, \sigma}\right)^{\frac{1}{4}}
   \label{eqn:T}
 \end{equation}
-Wobei $N_\text{WL}$ zu 0.95 W geschätzt wird, $f$ die Kathodenoberfläche ist, $\eta = 0.28$ dem Emissionsgrad der Oberfläche und $\sigma = 5.7 \cdot 10^{-12}$ der Stefan-Boltzmannschen Strahlungskonstanten entspricht.
+Wobei $N_\text{WL}$ zu 0.95 W geschätzt wird, $f$ die Kathodenoberfläche ist, $\eta = 0.28$ dem Emissionsgrad der Oberfläche und $\sigma = 5.7 \cdot 10^{-12} \, \frac{\text{W}}{\text{cm}^2\, \text{K}^4}$ der Stefan-Boltzmannschen Strahlungskonstanten entspricht.
 
 \begin{table}[H]
   \centering
@@ -184,21 +202,21 @@ Wobei $N_\text{WL}$ zu 0.95 W geschätzt wird, $f$ die Kathodenoberfläche ist, 
     \toprule
     $I_\text{heiz}$ / A & $U_\text{heiz}$ / V & T / K \\
     \midrule
-    2.5 & 6.2 & 2310.3 \\
-    2.4 & 6.0 & 2265.3 \\
-    2.0 & 5.0 & 2051.7 \\
-    1.9 & 4.3 & 1951.7 \\
-    1.8 & 4.0 & 1870.4 \\
+    2.5 & 6.2 & 2310 \\
+    2.4 & 6.0 & 2265 \\
+    2.0 & 5.0 & 2051 \\
+    1.9 & 4.3 & 1951 \\
+    1.8 & 4.0 & 1870 \\
     \bottomrule
   \end{tabular}
-  \caption{Kathodentemperatur}
+  \caption{Die Kathodentemperatur mit dem zugehörigem Heizstrom und der Heizspannung.}
   \label{tab:heiz}
 \end{table}
 
 \subsection{Austrittsarbeit für Wolfram}
-Die Richardson-Gleichung (\ref{eqn:js}) lässt wie folgt umstellen:
+Die Richardson-Gleichung (\ref{eqn:js}) lässt sich wie folgt umstellen:
 \begin{equation}
-  \Phi = - \frac{k T}{e_0} \ln \left(\frac{I_\text{s} h^3}{4 \pi f e_0 m_0 k^2 T^2}\right)
+  \Phi = - \frac{k\, T}{e_0} \ln \left(\frac{I_\text{s}\, h^3}{4\, \pi\, f\, e_0\, m_0\, k^2\, T^2}\right)
 \end{equation}
 Daraus lässt sich mit den Kathodentemperaturen aus Kapitel (\ref{sec:K}) und dem Sättigungsstrom $I_\text{s}$ die Austrittsarbeit von Wolfram bestimmen. In der folgenden Tabelle ist die Austrittsarbeit aufgelistet.
 
@@ -208,13 +226,15 @@ Daraus lässt sich mit den Kathodentemperaturen aus Kapitel (\ref{sec:K}) und de
     \toprule
     T / K & $I_\text{s}$ / mA & $\Phi$ / eV \\
     \midrule
-    2051.7 & 0.175 & 4.887 \\
-    1951.7 & 0.075 & 4.775 \\
-    1870.4 & 0.035 & 4.685 \\
+    2310 & 4.000 & 6.324 \\
+    2265 & 3.800 & 6.204 \\
+    2051 & 0.175 & 4.887 \\
+    1951 & 0.075 & 4.775 \\
+    1870 & 0.035 & 4.685 \\
     \bottomrule
   \end{tabular}
   \caption{Die Austrittsarbeit von Wolfram}
   \label{tab:}
 \end{table}
 
-Der Mittelwert der Austrittsarbeit liegt bei ($\num{4.782 +- 0.007}$) eV .
+Der Mittelwert der Austrittsarbeit liegt bei ($\num{4.78 +- 0.08}$) eV. Allerdings wurden die ersten beiden Werte für die Berechnung des Mittelwertes nicht betrachtet, da sie sehr weit vom Mittel abweichen.

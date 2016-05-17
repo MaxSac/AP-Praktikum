@@ -7,7 +7,7 @@ import scipy.constants as c
 import math
 from lmfit import minimize, Parameter, Model
 
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
 
 U_1, I1, I2 = np.loadtxt('Diode1.txt', unpack=True)
 U_2, I3, I4, I5 = np.loadtxt('Diode2.txt', unpack=True)
@@ -16,7 +16,7 @@ I_heiz = np.array([2.5, 2.4, 2.0, 1.9, 1.8])
 f1 = 0.32 / 10000 #m^2 emittierende Fläche
 f2 = 0.35 / 10000 #m^2 emittierende Fläche
 '''
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
 print('Kennlinienschar und Sättigungsstrom')
 
 plt.plot(U_1, I1, 'rx', label='$I_1 = 2.5$ A')
@@ -40,7 +40,7 @@ plt.tight_layout()
 plt.savefig('build/Kenn2.pdf')
 plt.close()
 
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
 print('Exponenten des Raumladungsgesetzes')
 
 a = 0.0002176
@@ -59,6 +59,8 @@ result2 = model.fit(I2, V=U_1, x=Parameter(value=1.5))
 print('I2 = ', result2.params)
 print('--------------------')
 
+plt.plot(U_1, I1, 'rx', label='$I_1 = 2.5$ A')
+plt.plot(U_1, I2, 'gx', label='$I_2 = 2.4$ A')
 plt.plot(U_1, Raumladungsgesetz(U_1, 1.378684), 'r-', label='$I_1 = 2.5$ A')
 plt.plot(U_1, Raumladungsgesetz(U_1, 1.344863), 'g-', label='$I_2 = 2.4$ A')
 plt.ylabel('I / mA')
@@ -69,7 +71,7 @@ plt.tight_layout()
 plt.savefig('build/Raum.pdf')
 plt.close()
 
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
 print('Anlaufstromgebiet und Kathodentemperatur')
 
 R = 1000000 #Ohm
@@ -94,42 +96,18 @@ plt.tight_layout()
 plt.savefig('build/Anlauf.pdf')
 plt.close()
 '''
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
 print('Kathodentemperatur aus der Leistungsbilanz des Heizstromfadens')
 T = ((I_heiz*U_heiz-0.95)/(f1*10000*0.28*5.7*10**(-12)))**(1/4)
-print(T)
+print('Kathodentemperatur: ', T)
 
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
 print('Austrittsarbeit für Wolfram')
-T = np.array([2051.71, 1951.86, 1870.36])
-I_s = np.array([175, 75, 35])* 10**(-6)
+T = np.array([2310.31, 2265.35, 2051.71, 1951.86, 1870.36])
+I_s = np.array([3.6, 3.4, 175, 75, 35])* 10**(-6)
 Phi = -(c.k*T)/c.e*np.log((I_s*c.h**3) / (4*math.pi*f2*c.e*c.m_e*c.k**2*T**2))
-print(Phi)
+print('Austrittsarbeit: ', Phi)
+print('Mittelwert: ', np.mean(Phi))
+print('Standardabweichung: ', np.std(Phi))
 
-asd = np.mean(Phi)
-asf = np.var(Phi)
-print(asd, asf)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-print('-----------------------------------------------------------------------')
+print('-------------------------------------------------------------------')
