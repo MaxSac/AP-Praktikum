@@ -107,12 +107,20 @@ abschätzen.
 
 \subsection{Gültigkeitsbereich des Langmuir-Schottkyschen Raumladungsgesetzes}
 \label{sec:R}
-Die Kennlinien $I_1$ und $I_2$ liegen komplett in dem Raumladungsbereich und der Exponent des Raumladungsgesetzes (\ref{eqn:jLS}) wird durch eine Regression zu
+Die Kennlinien $I_1$ und $I_2$ liegen komplett in dem Raumladungsbereich und der Exponent des Raumladungsgesetzes (\ref{eqn:jLS}) wird durch eine Regression bestimmt. Für den Fit wurde folgende Gleichung verwendet:
+\begin{center}
+  $I = m \cdot U^x$ \\
+  \small{($x$ = gesuchter Exponent, $m$ = Normierungskonstante, $I$ = Stromstärke, $U$ = Spannung)}
+\end{center}
+Die daraus berrechenten Exponenten sind
 \begin{align*}
-  \text{Exponent von}\ I_1 & =  \num{1.379 +- 0.001} \ , \\
-  \text{Exponent von}\ I_2 & =  \num{1.345 +- 0.002}
+  x_1 & =  \num{1.379 +- 0.001}\ \text{und} \\
+  x_2 & =  \num{1.345 +- 0.002} \ .
 \end{align*}
-bestimmt.
+Mit der Normierungskonstanten
+\begin{align*}
+  m = 0.001577 \, \text{A} \ .
+\end{align*}
 
 \begin{figure}[H]
   \centering
@@ -121,12 +129,6 @@ bestimmt.
   \label{fig:}
 \end{figure}
 
-Für den Fit wurde folgende Gleichung verwendet:
-\begin{align*}
-  j = \frac{4}{9}\, \varepsilon_0\, \sqrt{2\, e_0/m_0}\frac{V^x}{a^2} \\
-  (x = \text{gesuchter Exponent})
-\end{align*}
-
 \subsection{Anlaufstromgebiet und Kathodentemperatur}
 \label{sec:A}
 Die aufgenommenen Messdaten und die korrigierten Spannungen sind in Tabelle (\ref{tab:Messdaten2}) aufgeführt. Dieser Versuchsteil ist nur für die erste Diode durchgeführt worden. Da die Spannungen im nA Bereich liegen und das Ampermeter einen Innenwiderstand von 1 M$\Omega$ besitzt müssen die Spannungen mit
@@ -134,6 +136,19 @@ Die aufgenommenen Messdaten und die korrigierten Spannungen sind in Tabelle (\re
   U_\text{korr} = U - R_\text{innen} \cdot I
 \end{align*}
 korrigiert werden.
+Nun wird mit Hilfe von der Gleichung (\ref{eqn:jv}) eine Ausgleichsrechnung durchgeführt, um die Kathodentemperatur $T$ zu bestimmen. Für den Fit wurde folgende Gleichung verwendet:
+\begin{center}
+  $I = m \exp\left( a \cdot \frac{U}{T} \right)$ \\
+  \small{($m$ = Normierungskonstante, $a$ = konstanter Faktoren, $I$ = Stromstärke, $U$ = Spannung, $T$ = gesuchte Temperatur)}
+\end{center}
+Für die Temperatur ergibt sich folgender Wert:
+\begin{align*}
+  T = (\num{2700 +- 80}) \, \text{K}
+\end{align*}
+Mit der Normierungskonstanten
+\begin{align*}
+  m = (\num{8.7 +- 0.2}) \cdot 10^{-9}\, \text{A} \ .
+\end{align*}
 
 \begin{table}[H] %Messdaten
   \centering
@@ -168,21 +183,9 @@ korrigiert werden.
   \label{tab:Messdaten2}
 \end{table}
 
-Nun wird mit Hilfe von der Gleichung (\ref{eqn:jv}) eine Ausgleichsrechnung durchgeführt, um die Kathodentemperatur $T$ zu bestimmen. Für die Temperatur ergibt sich folgender Wert:
-\begin{align*}
-  T = (\num{2700 +- 80}) \, \text{K}
-\end{align*}
-Für den Fit wurde folgende Gleichung verwendet:
-\begin{align*}
-  I = j \exp\left( - \frac{e_0 V}{k_\text{B} T} \right)
-\end{align*}
-Die Normierungskonstante $j$ ergibt sich zu:
-\begin{align*}
-  j = (\num{8.7 +- 0.2}) \cdot 10^{-9} \, \text{A}
-\end{align*}
 \begin{figure}[H]
   \centering
-  \includegraphics[height=7cm]{build/Anlauf}
+  \includegraphics[height=7.0cm]{build/Anlauf}
   \caption{Anlaufstromgebiet für die erste Diode}
   \label{fig:anlauf}
 \end{figure}
@@ -214,23 +217,24 @@ Wobei $N_\text{WL}$ zu 0.95 W geschätzt wird, $f$ die Kathodenoberfläche ist, 
 \end{table}
 
 \subsection{Austrittsarbeit für Wolfram}
+\label{sec:AfW}
 Die Richardson-Gleichung (\ref{eqn:js}) lässt sich wie folgt umstellen:
 \begin{equation}
   \Phi = - \frac{k\, T}{e_0} \ln \left(\frac{I_\text{s}\, h^3}{4\, \pi\, f\, e_0\, m_0\, k^2\, T^2}\right)
 \end{equation}
-Daraus lässt sich mit den Kathodentemperaturen aus Kapitel (\ref{sec:K}) und dem Sättigungsstrom $I_\text{s}$ die Austrittsarbeit von Wolfram bestimmen. In der folgenden Tabelle ist die Austrittsarbeit aufgelistet.
+Daraus lässt sich mit den Kathodentemperaturen aus Kapitel (\ref{sec:K}) und dem Sättigungsstrom $I_\text{s}$ die Austrittsarbeit von Wolfram bestimmen. In der folgenden Tabelle ist die Austrittsarbeit mit den zugehörigen Werten aufgelistet.
 
 \begin{table}[H]
   \centering
-  \begin{tabular}{c c c}
+  \begin{tabular}{c c c c}
     \toprule
-    T / K & $I_\text{s}$ / mA & $\Phi$ / eV \\
+    f / cm$^2$ & T / K & $I_\text{s}$ / mA & $\Phi$ / eV \\
     \midrule
-    2310 & 4.000 & 6.324 \\
-    2265 & 3.800 & 6.204 \\
-    2051 & 0.175 & 4.887 \\
-    1951 & 0.075 & 4.775 \\
-    1870 & 0.035 & 4.685 \\
+    0.32 & 2310 & 4.000 & 6.324 \\
+    0.32 & 2265 & 3.800 & 6.204 \\
+    0.35 & 2051 & 0.175 & 4.887 \\
+    0.35 & 1951 & 0.075 & 4.775 \\
+    0.35 & 1870 & 0.035 & 4.685 \\
     \bottomrule
   \end{tabular}
   \caption{Die Austrittsarbeit von Wolfram}

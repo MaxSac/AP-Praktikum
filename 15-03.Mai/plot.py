@@ -8,14 +8,14 @@ import math
 from lmfit import minimize, Parameter, Model
 
 print('-------------------------------------------------------------------')
-
+'''
 U_1, I1, I2 = np.loadtxt('Diode1.txt', unpack=True)
 U_2, I3, I4, I5 = np.loadtxt('Diode2.txt', unpack=True)
 U_heiz = np.array([6.2, 6.0, 5.0, 4.4, 4.0])
 I_heiz = np.array([2.5, 2.4, 2.0, 1.9, 1.8])
 f1 = 0.32 / 10000 #m^2 emittierende Fläche
 f2 = 0.35 / 10000 #m^2 emittierende Fläche
-'''
+
 print('-------------------------------------------------------------------')
 print('Kennlinienschar und Sättigungsstrom')
 
@@ -45,7 +45,8 @@ print('Exponenten des Raumladungsgesetzes')
 
 a = 0.0002176
 konst = 4/9 * c.epsilon_0 * (2*c.e/c.m_e)**(0.5) * f1 / a**2
-
+print('m = ', konst)
+print('--------------------')
 def Raumladungsgesetz(V, x):
     return konst * (V**x)
 
@@ -95,7 +96,7 @@ plt.grid()
 plt.tight_layout()
 plt.savefig('build/Anlauf.pdf')
 plt.close()
-'''
+
 print('-------------------------------------------------------------------')
 print('Kathodentemperatur aus der Leistungsbilanz des Heizstromfadens')
 T = ((I_heiz*U_heiz-0.95)/(f1*10000*0.28*5.7*10**(-12)))**(1/4)
@@ -109,5 +110,5 @@ Phi = -(c.k*T)/c.e*np.log((I_s*c.h**3) / (4*math.pi*f2*c.e*c.m_e*c.k**2*T**2))
 print('Austrittsarbeit: ', Phi)
 print('Mittelwert: ', np.mean(Phi))
 print('Standardabweichung: ', np.std(Phi))
-
+'''
 print('-------------------------------------------------------------------')

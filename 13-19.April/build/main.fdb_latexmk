@@ -1,13 +1,13 @@
 # Fdb version 3
-["biber build/main"] 1463513833 "build/main.bcf" "build/main.bbl" "build/main" 1463517031
-  "./build/main.bcf" 1463517030 102226 f23e6400ac804ecdb74d4d1391e85141 ""
+["biber build/main"] 1463513833 "build/main.bcf" "build/main.bbl" "build/main" 1463648645
+  "./build/main.bcf" 1463648643 102226 f23e6400ac804ecdb74d4d1391e85141 ""
   "lit.bib" 1462822496 190 081fc70baf2e76156b8a0e6172864d7d ""
   (generated)
-  "build/main.blg"
   "build/main.bbl"
-["pdflatex"] 1463517022 "main.tex" "build/main.pdf" "main" 1463517031
+  "build/main.blg"
+["pdflatex"] 1463648636 "main.tex" "build/main.pdf" "main" 1463648645
   "./content/auswertung.tex" 1463517009 6623 85af7256c83dd57491dd58bfeb0e2965 ""
-  "./content/diskussion.tex" 1463513857 1981 b86c303ee6b2590f17106505cf0584ea ""
+  "./content/diskussion.tex" 1463647604 2128 5a9256a54494fc554bbee9a46168490d ""
   "./content/durchfuehrung.tex" 1462822496 1177 921520fec95bb3f38561ccff111f90b9 ""
   "./content/theorie.tex" 1463514968 3468 992c60dee2b8a11717158d8b91e97a47 ""
   "./header.tex" 1462822496 3544 64994dec978fb68501b2dda973fdc29b ""
@@ -29,10 +29,10 @@
   "C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/xits-mathbold.luc" 1461078438 317296 a70a827d2a5e3a3a9b277a5684df1836 ""
   "C:/texlive/2015/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1452710393 8814 5283db96c6e3911a76b42605e3295043 ""
   "C:/texlive/2015/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1447942334 702976 a0da73909afc25e8e85e6bbef4ece548 ""
-  "build/main.aux" 1463517030 9382 56d6d928a88df9c6ca59f45240bbdac7 ""
+  "build/main.aux" 1463648643 9384 f0a9d53b7283af858350ff869be05368 ""
   "build/main.bbl" 1463513834 1226 b0b5b177862edf2da5fac34a426bb079 "biber build/main"
-  "build/main.run.xml" 1463517030 2330 4233a9836802043afc4fd6b527c0f360 ""
-  "build/main.toc" 1463517030 1019 c911b809e4e724f8f3d50c19d1ba0e7e ""
+  "build/main.run.xml" 1463648643 2330 4233a9836802043afc4fd6b527c0f360 ""
+  "build/main.toc" 1463648643 1019 c911b809e4e724f8f3d50c19d1ba0e7e ""
   "build/plot1.pdf" 1463513279 10394 af6c3aad30becb9b38faadf0233db59e ""
   "build/plot2.pdf" 1463513282 10319 c9995c83cf05b312be772612bb037f12 ""
   "build/plot4.pdf" 1463513288 12348 522a45fbe8ca384bd64903a52760bc51 ""
@@ -205,7 +205,7 @@
   "c:/texlive/2015/texmf-var/tex/generic/config/language.dat.lua" 1447862819 17213 29e60af47476dc6bb99715846cb3659e ""
   "c:/texlive/2015/texmf-var/web2c/luatex/lualatex.fmt" 1447862885 2625305 638bfccc14d7bb99747a99bcf16cf59e ""
   "content/auswertung.tex" 1463517009 6623 85af7256c83dd57491dd58bfeb0e2965 ""
-  "content/diskussion.tex" 1463513857 1981 b86c303ee6b2590f17106505cf0584ea ""
+  "content/diskussion.tex" 1463647604 2128 5a9256a54494fc554bbee9a46168490d ""
   "content/durchfuehrung.tex" 1462822496 1177 921520fec95bb3f38561ccff111f90b9 ""
   "content/theorie.tex" 1463514968 3468 992c60dee2b8a11717158d8b91e97a47 ""
   "header.tex" 1462822496 3544 64994dec978fb68501b2dda973fdc29b ""
@@ -214,10 +214,10 @@
   "picture/Frauenhofer.png" 1462822496 30976 bf426ecb1bdf6637abb9766411ef777b ""
   "picture/doppelspalt.png" 1462822496 41733 1064d44ea13975cc6ed67bd9bfd10ba4 ""
   (generated)
-  "C:/texlive/2015/texmf-var/m_t_x_t_e_s_t.tmp"
-  "build/main.bcf"
-  "build/main.run.xml"
   "build/main.pdf"
+  "C:/texlive/2015/texmf-var/m_t_x_t_e_s_t.tmp"
   "build/main.aux"
-  "build/main.toc"
+  "build/main.bcf"
   "build/main.log"
+  "build/main.toc"
+  "build/main.run.xml"
