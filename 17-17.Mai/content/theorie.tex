@@ -1,5 +1,69 @@
 \section{Theoretische Grundlage}
 \label{sec:Theorie}
+Ziel des Versuches ist es die innere Abschirmungszahlen verschiedener Alalimetalle anhand derer Emissionslinien zu bestimmen. 
+Alakli-Metalle bestizen nur komplett besetzte Schalen und  ein Valenzelektronen. Diese lassen sich mit Hilfe der Ein-Elektronen-Näherung recht einfach beschreiben. Der Anatz der Näherungberuht darauf, das die Ladungen der Elektronen welche die kompletten Schalen besetzen sich mit denen, der Protonen des Kerns kompensiert. Somit kann das Atom als Wasserstoffatom genähert werden. Das zwischen dem Proton und Neutron liegende Columbfeld, wird jedoch durch die inneren Elektronen abgeschirmt. Dies wird im weiteren Verlauf der Rechnung durch die Abschirmzahl \sigma berücksichtigt. 
+\begin{equation}
+  z_\text{eff} = z - \sigma
+  \label{eqn:zeff}
+\end{equation}
+Somit errechnet sich die effiktive Anzahl von Protonen entsprechend Gleichung \eqref{eqn:zeff}. 
+Um die Energieeigenwerte des Symstems zu berchnen wird zunächst die Schrödingergleichung aufgestellt,
+\begin{equation}
+  \left( \sum_\text{i} \frac{P_\text{i}^2}{2 m_\text{i}} + U \right) \Psi = E \Psi
+  \label{eqn:Sch}
+\end{equation}
+für die sich die Lösungen 
+\begin{equation}
+  E(n) = R_{\infty} \frac{1}{n^2}, \. n =1, \, 2, \, \cdots
+  \label{eqn:En}
+\end{equation}
+ergeben. Dabei ist $n$ die Hauptquantenzahl. Da es sich jedoch um ein Kugelsymetrisches Problem handelt muss zunächst noch der Laplaceoperator in Kugelkoordinaten eingeführt werden. Zusätzlich wird nun beim Potetntial die Abschirmkonstante berücksichtigt, so dass sich das Potential der Form
+\begin{equation}
+  U = - \frac{\left( z - \Sigma \right) e_0^2}{4 \pi  \varepsilon_0 r}
+  \label{schrö}
+\end{equation}
+ergibt. Die Lösung der für das an das System angepasste Schrödingergleichung wird relativistisch betrachtet und in einer Potenzreihe umgeschrieben so dass sich die Energieigenwerte
+\begin{equation}
+  E_\text{rel n,l} = -R_{\infty} \left( \frac{(z - \Sigma)^2}{n²} + \alpha^2 \frac{(z - \sigma)^4}{n^3}\left( \frac{2}{2 l +1} - \frac{3}{4n} \right) \right)
+  \label{eqn:ham}
+\end{equation}
+ergeben. Dabei entspricht $\alpha$ der Sommerfeldschen Feinstrukturkonstante , $R_{inf}$ der Rydbergenergie
+\begin{equation}
+  \alpha := \frac{e_0^2}{2 h c \varepsilon_0}
+  \label{eqn:alpha}
+\end{equation}
+und $l$ ist die Bahndrehquantenzahl die beim lösen der Schrödingergleichung aus der Kugelflächenfunktion resultiert.  
+ergeben. Desweiteren muss die Spin-Bahn-Kopplung $S$ der Elektronen berücksichtigt werden. Sie ist neben dem aus den kugelsymetrischen Laplaceoperator folgender Drehimpuls $L$ ein weiterer. Mittels Störungstheorie wird der Einflusses des Spins berechnet. Es ergibt sich die Energieeigenwertgleichung 
+\begin{equation}
+  E_\text{n,j} = -R_{\infty}\left( \frac{(z - \Sigma)^2}{n²} + \alpha^2 \frac{(z - \sigma)^4}{n^3} \left( \frac{1}{j + 0.5} - \frac{3}{4n} \right) \right)
+  \label{<++>}
+\end{equation}
+wobei die Spinquantenzahl $j$ nur die Werte $l + \frac{1}{2}$ und $l - \frac{1}{2}$ annehmen kann. 
+
+Angeregte Valenzelektronen haben bei den durch die ``Quantenzahlen $n ,l$ und $j$ gekennzeichneten Energieniveaus verschiedene Übergangswahrscheinlichkeiten``.	Die entsprechende Bahndrehquantenzahl $l$ ändert sich jeweils um $\delta l$ = $\pm 1$. Darüber hinaus ist ein Übergang der Spinquantenzahl $\delta j = 0$ zwar möglich, aber sehr unwahrscheinlich. Die Hauptquantenzahl n ist nicht eingeschränkt, wird jedoch mit steigendem n immer unwahrscheinlicher. Das Phänomen das bei gleicher Bahndrehquantenzahl und unterschiedlichen Spinquantenzahlen wei Spektrallinien dicht beieinadner liegen,wird als Doublett-Struktur bezeichnet. In Abbildung \ref{fig:} ist ein Beispiel für verschiedene Energieniveaus abgebildet.
+%\begin{figure}
+%  \centering
+%  \includegraphics[height=6cm]{}
+%  \caption{<+caption text+>}
+%  \label{fig:<+label+>}
+%\end{figure}
+
+Um Schlussendlich die Energie des Leuchtelektron genau zu bestimmen wird die Abschirmkonstante in zwei Teile eingeteilt. Einerseits in die Konstante der vollen Abschirmung $\sigma_1$ und der der inneren Abschirmung $\sigma_2$. Bei der
+
+\begin{equation}
+  \Delta E_\text{D} = \frac{R_{infty} \alpha^2}{n^3} \left( z - \sigma_2 \right)^2 \frac{1}{l(l+1)}
+  \label{<++>}
+\end{equation}
+
+\begin{equation}
+  \Delta E_\text{D} = h_\text{c}\left( \frac{1}{\lambda} - \frac{1}{\lambda'} \right)
+  \label{<++>}
+\end{equation}
+
+\begin{equation}
+  sin \varphi = k \frac{\lambda}{g}
+  \label{}
+\end{equation}
 
 
 
