@@ -36,7 +36,7 @@ Das Abbildungsgesetz wurde durch die Messung bestätig, da die Werte einen Fehle
   \label{eqn:fHer1}
 \end{equation}
 \subsection{Bestimmung einer bekannten sowie unbekannten Brennweite}
-Die Brennweite der bekannten Linse wurde bereits im vorherigen Kapitel mit Hilfe der Linsengleichung bestimmt. Zusätzlich wird die Brennweite mit Hilfe eines Plots bestimmt. Dafür werden die Gegenstandsweiten auf die y-Achse des Koordinatensystems aufgetragen werden und mit den entsprechenden Bildweiten, welche auf der x-Achse aufgetragen sind, verbunden werden. Aus dem Schnittpunkt der Geraden lässt sich die Brennweite der Linse ablesen. Aus Abbildung \ref{fig:fibek} wird die Brennweite
+Die Brennweite der bekannten Linse wurde bereits im vorherigen Kapitel mit Hilfe der Linsengleichung bestimmt. Zusätzlich wird die Brennweite mit Hilfe eines Plots bestimmt. Dafür werden die Gegenstandsweiten auf die y-Achse des Koordinatensystems aufgetragen und mit den entsprechenden Bildweiten, welche auf der x-Achse aufgetragen sind, verbunden. Aus dem Schnittpunkt der Geraden lässt sich die Brennweite der Linse ablesen. Aus Abbildung \ref{fig:fibek} wird die Brennweite
 \begin{equation}
   f_\text{abgelesen} = (\num{9.8 +- 0.4}) 10^{-2} \, \text{m}
   \label{eqn:fbek}
@@ -75,7 +75,7 @@ Die Messung wird für eine Linse mit unbekannter Brechkraft wiederholt. Die Mess
 \end{table}
 Aus dem Diagramm \ref{fig:fiunb} lässt sich eine Brennweite von
 \begin{equation}
-  f_\text{unbekannt} = (\num{11.9 +- 2.3}) \, \text{m}
+  f_\text{unbekannt} = (\num{11.9 +- 2.3})10^{-2} \, \text{m}
   \label{eqn:unb}
 \end{equation}
 ablesen.
@@ -86,7 +86,7 @@ ablesen.
   \label{fig:fiunb}
 \end{figure}
 \subsection{Verfahren nach Bessel}
-Die entsprechenden Messdaten zu dem Versuch sind in Tabelle \ref{tab:ffw} zu finden. Dabei wird die Brennweite nach Formel \eqref{eqn:tbes} berechnet, wobei der Abstand $d = g - b$ und die Gegenstandsweite als $g = e - b$ demenstsprechend definiert ist.
+Die entsprechenden Messdaten zu dem Versuch sind in Tabelle \ref{tab:ffw} zu finden. Dabei wird die Brennweite nach Formel \eqref{eqn:tbes} berechnet, wobei der Abstand $d = g - b$ und die Gegenstandsweite als $g = e - b$ demenstsprechend definiert sind.
 \begin{table}
   \centering
   \begin{tabular}{c c c | c c}
@@ -110,7 +110,7 @@ Die entsprechenden Messdaten zu dem Versuch sind in Tabelle \ref{tab:ffw} zu fin
   	\caption{Brennweite von weißem Licht}
   \label{tab:ffw}
 \end{table}
-Aus der Mittelung der einzelnen Messwerte erhält ??man?? durch das Bessel-Verfahren eine experimentell bestimmte Brennweite für weißes Licht von
+Aus der Mittelung der einzelnen Messwerte ergibt sich durch das Bessel-Verfahren eine experimentell bestimmte Brennweite für weißes Licht von
 \begin{equation}
   f_\text{exp} = (\num{9.73 +- 0.13}) 10^{-2} \, \text{m} \ .
   \label{eqn:fexp}
@@ -155,7 +155,11 @@ und für blaues Licht eine Brennweite von
 \end{equation}
 
 \subsection{Verfahren nach Abbe}
-Es sollen die Hauptebene und die Brennweite mit Hilfe der Formeln \eqref{eqn:g'} und \eqref{eqn:b'} bestimmt werden. Es wird eine Zerstreuungslinse und Fokussierlinse jeweils von 10 $10^{-2}$ m Brennweite im Abstand von
+Es sollen die Hauptebene und die Brennweite mit Hilfe der Formeln \eqref{eqn:g'} und \eqref{eqn:b'} bestimmt werden. Es wird eine Zerstreuungslinse und Fokussierlinse jeweils von 
+\begin{equation}
+  f_\text{Hersteller} = 10 \cdot 10^{-2} \, \text{m} 
+\end{equation}
+Brennweite im Abstand von
 \begin{equation}
   d = 6 \cdot 10^{-2} \, \text{m}
   \label{eqn:d}
@@ -187,14 +191,14 @@ Die Messwerte sind in Tabelle \ref{tab:mabbe} aufgetragen.
   \caption{Messwerte zur Bestimmung der Brennweite mittels Abbemethode}
   \label{tab:mabbe}
 \end{table}
-Es wird zunächst eine lineare Regression entsprechend Gleichung \eqref{eqn:g'} durchgeführt und die Fitparameter $f_\text{g}$ und $h$ ermittelt. Anhand derer kann ??man?? aus der Steigung des Graphens und den Schnittpunkten mit der Achse die Hauptebenen und die Brennweiten berechnen.
+Es wird zunächst eine lineare Regression entsprechend Gleichung \eqref{eqn:g'} durchgeführt und die Fitparameter $f_\text{g}$ und $h$ ermittelt. Anhand derer wird aus der Steigung des Graphens und den Schnittpunkten mit der Achse die Hauptebenen und die Brennweiten berechnet.
 \begin{figure}
   \centering
     \includegraphics[height=8cm]{Abbe1.pdf}
   \caption{Bildweiten Fit}
   \label{fig:Gfit}
 \end{figure}
-Der Fit durch die Messwerte ist in Abbildung \ref{eqn:Gfit} zu sehen.
+Der Fit durch die Messwerte ist in Abbildung \ref{fig:Gfit} zu sehen.
 \begin{figure}
   \centering
   \includegraphics[height=8cm]{Abbe2.pdf}
@@ -203,15 +207,15 @@ Der Fit durch die Messwerte ist in Abbildung \ref{eqn:Gfit} zu sehen.
 \end{figure}
 Der Fit der Form von Gleichung \eqref{eqn:b'} ergibt die Brennweiten und die Lage der Hauptebenen
 \begin{eqnarray}
-  f_\text{g} &= (\num{ 15.9 +- 0.3}) \cdot 10^{-2} \, \text{m} \\
-  f_\text{b} &= (\num{ 17.5 +- 0.1 }) \cdot 10^{-2} \, \text{m} \\
-  h &= (\num{ 11 +- 1}) \cdot 10^{-2} \, \text{m} \\
-  h' &= (\num{ -5.3 +- 0.2}) \cdot 10^{-2} \,\text{m}
+  f_\text{g} &= (\num{ 15.9 +- 0.3}) \cdot 10^{-2} \, \text{m} , \\
+  f_\text{b} &= (\num{ 17.5 +- 0.1 }) \cdot 10^{-2} \, \text{m} , \\
+  h &= (\num{ 11 +- 1}) \cdot 10^{-2} \, \text{m} ,\\
+  h' &= (\num{ -5.3 +- 0.2}) \cdot 10^{-2} \,\text{m} \, .
   \label{eqn:abbedf}
 \end{eqnarray}
 Die theoretische Brennweite des Systems berechnet sich aus der Modifikation von Formel \eqref{eqn:D} um einen Korrekturfaktor zu
 \begin{eqnarray}
-  \frac{1}{f} &= \frac{1}{f_1} + \frac{1}{f_2} - \frac{d}{f_1 * f_2} \\
+  \frac{1}{f} &= \frac{1}{f_1} + \frac{1}{f_2} - \frac{d}{f_1 \cdot f_2} \\
   f &= 16.6 \cdot 10^{-2} \, m \ .
   \label{tabbe}
 \end{eqnarray}
