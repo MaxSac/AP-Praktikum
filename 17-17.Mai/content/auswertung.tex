@@ -1,3 +1,157 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Berechnung der Gitterkonstanten $g$ aus dem Helium-Spektrum}
+Die zu den gegebenen Wellenlängen $\lambda$ gemessenen Beugungswinkel $\phi$, für Helium, sind in Tabelle \eqref{tab:Mess1} aufgelistet.
+
+\begin{table}[H] %Beugungswinkel, Wellenlänge
+  \centering
+  \begin{tabular}{c| c c c}
+    \toprule
+    Farbe & $\lambda$ / $10^{-9}$\, m & $\phi$ / rad & $\sin(\phi)$ \\
+    \midrule
+      violett   & 438.8 & 0.456 & 0.440 \\
+      violett   & 447.1 & 0.466 & 0.449 \\
+      blau      & 471.3 & 0.492 & 0.473 \\
+      blaugrün  & 492.2 & 0.517 & 0.494 \\
+      grün      & 501.6 & 0.531 & 0.506 \\
+      grün      & 504.8 & 0.534 & 0.509 \\
+      gelb      & 587.6 & 0.635 & 0.593 \\
+      rot       & 667.8 & 0.738 & 0.673 \\
+      dunkelrot & 706.5 & 0.794 & 0.713 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Die Wellenlänge und der zugehörige Beugungswinkel aus dem Helium-Spektrum.}
+  \label{tab:Mess1}
+\end{table}
+
+Die Gitterkonstante $g$ wird mit Hilfe einer linearen Regression, der Gleichung \eqref{eqn:phi} bestimmt, indem $\sin(\phi)$ gegen $\lambda$ aufgetragen wird (siehe Diagramm \eqref{fig:Gitterkonstante}). Aus der Regression ergeben sich folgende Werte:
+\begin{align*}
+  k & = 1 \\
+  b & = (\num{-6 +- 2}) \cdot 10^{-3} \\
+  \Rightarrow g & = (\num{9.81 +- 0.04}) \cdot 10^{-7} \text{m}
+\end{align*}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=8cm]{build/Gitterkonstante}
+  \caption{Ausgleichsgerade zur Berechnung der Gitterkonstante.}
+  \label{fig:Gitterkonstante}
+\end{figure}
+
+\subsection{Bestimmung der Eichgröße}
+Die Eichgröße $\Psi$ lässt sich mit
+\begin{align}
+  \Psi = \frac{\lambda_1 - \lambda_2}{\cos(\overline{\phi}_{1, 2}) \Delta t}
+\end{align}
+berechnen. Die dafür benötigten Werte sind in den Tabellen \eqref{tab:Mess2} und \eqref{tab:Mess2.1} angegeben.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|c|c|c|c}
+    & $\phi_1$ / rad & $\phi_2$ / rad & $\overline{\phi}_{1,2}$ / rad & $\cos(\overline{\phi}_{1,2})$ \\
+    \hline
+    \multirow{3}*{Natrium}  & 0.606 & 0.609 & $\num{0.607 +- 0.002}$ &
+                            $\num{0.821 +- 0.001}$ \\
+                            & 0.632 & 0.637 & $\num{0.634 +- 0.003}$ & $\num{0.805 +- 0.002}$ \\
+                            & 0.667 & 0.670 & $\num{0.668 +- 0.002}$ & $\num{0.785 +- 0.001}$ \\
+    \hline
+    \multirow{4}*{Kalium}   & 0.532 & 0.534 & $\num{0.533 +- 0.001}$ &
+                            $\num{0.8612 +- 0.0004}$ \\
+                            & 0.534 & 0.536 & $\num{0.535 +- 0.001}$ &
+                            $\num{0.8603 +- 0.0004}$ \\
+                            & 0.620 & 0.621 & $\num{0.620 +- 0.001}$ &
+                            $\num{0.814 +- 0.001}$ \\
+                            & 0.623 & 0.625 & $\num{0.624 +- 0.001}$ &
+                            $\num{0.812 +- 0.001}$ \\
+    \hline
+    Rubidium                & 0.675 & 0.689 & $\num{0.682 +- 0.007}$ &
+                            $\num{0.776 +- 0.004}$ \\
+    \hline
+  \end{tabular}
+  \caption{Messwerte zur Bestimmung der Eichgröße Teil 1}
+  \label{tab:Mess2}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|c|c|c|c}
+    & $\lambda_1$ / $10^{-9}$ m & $\lambda_2$ / $10^{-9}$ m & $\Delta t$ / Skt & $\Psi$ / $10^{-7} \cdot \frac{\text{m}}{\text{Skt}}$ \\
+    \hline
+    \multirow{3}*{Natrium}  & 559.4 & 562.2 & -0.0035 & $\num{9.83 +- 0.01}$
+                            \\
+                            & 580.3 & 584.5 & -0.0052 & $\num{9.83 +- 0.02}$ \\
+                            & 607.6 & 610.3 & -0.0035 & $\num{9.83 +- 0.01}$ \\
+    \hline
+    \multirow{4}*{Kalium}   & 498.7 & 500.2 & -0.0017 & $\num{9.826 +-
+                            0.005}$ \\
+                            & 500.2 & 501.6 & -0.0017 & $\num{9.826 +- 0.005}$ \\
+                            & 570.6 & 572.0 & -0.0017 & $\num{9.826 +- 0.006}$ \\
+                            & 573.4 & 574.8 & -0.0017 & $\num{9.826 +- 0.006}$ \\
+    \hline
+    Rubidium                & 614.3 & 625.0 & -0.0140 & $\num{9.83 +- 0.06}$
+                            \\
+    \hline
+  \end{tabular}
+  \caption{Messwerte zur Bestimmung der Eichgröße Teil 2}
+  \label{tab:Mess2.1}
+\end{table}
+
+Der Mittelwert der Eichgrößen beträgt:
+\begin{align*}
+  \Psi = (\num{9.827 +- 0.008}) \cdot 10^{-7} \frac{\text{m}}{\text{Skt}}
+\end{align*}
+
+\subsection{Berechnung der Abschirmungszahl}
+Für die Berechnung der inneren Abschirmungszahl $\sigma_2$ werden mehrere Schritte benötigt. Zu Beginn muss die Wellenlänge der Dublettlinien mit Hilfe der gemessenen Beugungswinkel und der bereits bestimmten Gitterkonstante nach Gleichung \eqref{eqn:phi} bestimmt werden. Dann wird mit Gleichung \eqref{eqn:ed} die Energiedifferenz der Dublettlinien berechnet. Zu letzt soll die Gleichung \eqref{eqn:ded} nach $\sigma_2$ umgestellt werden
+\begin{equation*}
+  \sigma_2 = z - \sqrt[4]{\Delta E_\text{D} \cdot l(l + 1)\, \frac{n^3}{R_\infty \alpha^2}} \ .
+\end{equation*}
+Dabei ist bei Natrium $n = 3$, bei Kalium $n = 4$ und bei Rubidium $n = 5$ und für alle drei Alkali-Atome ist $l = 1$. Die Ergebnisse und Zwischenergebnisse befinden sich in Tabelle \eqref{tab:Mess3}.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|c|c|c}
+    \hline
+    $\phi$ / rad & $\lambda$ / $10^{-9}$ m & $\Delta E_\text{D}$ / eV & $\sigma_2$ \\
+    \hline
+    \multicolumn{4}{c}{Natrium} \\
+    \hline
+    0.606 & 559.4 & \multirow{2}{*}{0.011} & \multirow{2}{*}{10.82} \\
+    0.609 & 562.2 & & \\
+    \hline
+    0.632 & 580.3 & \multirow{2}{*}{0.015} & \multirow{2}{*}{10.81} \\
+    0.637 & 584.5 & & \\
+    \hline
+    0.667 & 607.6 & \multirow{2}{*}{0.009} & \multirow{2}{*}{10.83} \\
+    0.670 & 610.3 & & \\
+    \hline
+    \multicolumn{3}{c}{Mittelwert für $\sigma_2$ =} & $\num{10.82 +- 0.01}$ \\
+    \hline
+    \multicolumn{4}{c}{Kalium} \\
+    \hline
+    0.532 & 498.7 & \multirow{2}{*}{0.007} & \multirow{2}{*}{18.80} \\
+    0.534 & 500.2 & & \\
+    \hline
+    0.534 & 500.2 & \multirow{2}{*}{0.008} & \multirow{2}{*}{18.80} \\
+    0.536 & 501.6 & & \\
+    \hline
+    0.620 & 570.6 & \multirow{2}{*}{0.005} & \multirow{2}{*}{18.82} \\
+    0.621 & 572.0 & & \\
+    \hline
+    0.623 & 573.4 & \multirow{2}{*}{0.005} & \multirow{2}{*}{18.82} \\
+    0.625 & 574.8 & & \\
+    \hline
+    \multicolumn{3}{c}{Mittelwert für $\sigma_2$ =} & $\num{18.808 +- 0.008}$ \\
+    \hline
+    \multicolumn{4}{c}{Rubidium} \\
+    \hline
+    0.675 & 614.3 & \multirow{2}{*}{0.034} & \multirow{2}{*}{36.65} \\
+    0.689 & 625.0 & & \\
+    \hline
+  \end{tabular}
+  \caption{Messwerte für die Bestimmung der inneren Abschirmungszahlen.}
+  \label{tab:Mess3}
+\end{table}
+
+\subsection{Bestimmung der Distanz zwischen den Dublettlinien}

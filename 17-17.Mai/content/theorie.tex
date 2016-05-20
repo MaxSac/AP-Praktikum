@@ -1,18 +1,18 @@
 \section{Theoretische Grundlage}
 \label{sec:Theorie}
-Ziel des Versuches ist es die innere Abschirmungszahlen verschiedener Alkali-Metalle anhand derer Emissionslinien zu bestimmen. 
-Alakli-Metalle bestizen nur komplett besetzte Schalen und  ein Valenzelektronen. Diese lassen sich mit Hilfe der Ein-Elektronen-Näherung recht einfach beschreiben. Der Anatz der Näherungberuht darauf, das die Ladungen der Elektronen welche die kompletten Schalen besetzen sich mit denen, der Protonen des Kerns kompensiert. Somit kann das Atom als Wasserstoffatom genähert werden. Das zwischen dem Proton und Neutron liegende Columbfeld, wird jedoch durch die inneren Elektronen abgeschirmt. Dies wird im weiteren Verlauf der Rechnung durch die Abschirmzahl $\sigma$ berücksichtigt. 
+Ziel des Versuches ist es die innere Abschirmungszahlen verschiedener Alkali-Metalle anhand derer Emissionslinien zu bestimmen.
+Alakli-Metalle bestizen nur komplett besetzte Schalen und  ein Valenzelektronen. Diese lassen sich mit Hilfe der Ein-Elektronen-Näherung recht einfach beschreiben. Der Anatz der Näherungberuht darauf, das die Ladungen der Elektronen welche die kompletten Schalen besetzen sich mit denen, der Protonen des Kerns kompensiert. Somit kann das Atom als Wasserstoffatom genähert werden. Das zwischen dem Proton und Neutron liegende Columbfeld, wird jedoch durch die inneren Elektronen abgeschirmt. Dies wird im weiteren Verlauf der Rechnung durch die Abschirmzahl $\sigma$ berücksichtigt.
 \begin{equation}
   z_\text{eff} = z - \sigma
   \label{eqn:zeff}
 \end{equation}
-Somit errechnet sich die effiktive Anzahl von Protonen entsprechend Gleichung \eqref{eqn:zeff}. 
+Somit errechnet sich die effiktive Anzahl von Protonen entsprechend Gleichung \eqref{eqn:zeff}.
 Um die Energieeigenwerte des Symstems zu berchnen wird zunächst die Schrödingergleichung aufgestellt,
 \begin{equation}
   \left( \sum_\text{i} \frac{P_\text{i}^2}{2 m_\text{i}} + U \right) \Psi = E \Psi
   \label{eqn:Sch}
 \end{equation}
-für die sich die Lösungen 
+für die sich die Lösungen
 \begin{equation}
   E(n) = R_{\infty} \frac{1}{n^2}, \. n =1, \, 2, \, \cdots
   \label{eqn:En}
@@ -32,15 +32,15 @@ ergeben. Dabei entspricht $\alpha$ der Sommerfeldschen Feinstrukturkonstante , $
   \alpha := \frac{e_0^2}{2 h c \varepsilon_0}
   \label{eqn:alpha}
 \end{equation}
-und $l$ ist die Bahndrehquantenzahl die beim lösen der Schrödingergleichung aus der Kugelflächenfunktion resultiert.  
-ergeben. Desweiteren muss die Spin-Bahn-Kopplung $S$ der Elektronen berücksichtigt werden. Sie ist neben dem aus den kugelsymetrischen Laplaceoperator folgender Drehimpuls $L$ ein weiterer. Mittels Störungstheorie wird der Einflusses des Spins berechnet. Es ergibt sich die Energieeigenwertgleichung 
+und $l$ ist die Bahndrehquantenzahl die beim lösen der Schrödingergleichung aus der Kugelflächenfunktion resultiert.
+ergeben. Desweiteren muss die Spin-Bahn-Kopplung $S$ der Elektronen berücksichtigt werden. Sie ist neben dem aus den kugelsymetrischen Laplaceoperator folgender Drehimpuls $L$ ein weiterer. Mittels Störungstheorie wird der Einflusses des Spins berechnet. Es ergibt sich die Energieeigenwertgleichung
 \begin{equation}
   E_\text{n,j} = -R_{\infty}\left( \frac{(z - \Sigma)^2}{n²} + \alpha^2 \frac{(z - \sigma)^4}{n^3} \left( \frac{1}{j + 0.5} - \frac{3}{4n} \right) \right)
   \label{<++>}
 \end{equation}
-wobei die Spinquantenzahl $j$ nur die Werte $l + \frac{1}{2}$ und $l - \frac{1}{2}$ annehmen kann. 
+wobei die Spinquantenzahl $j$ nur die Werte $l + \frac{1}{2}$ und $l - \frac{1}{2}$ annehmen kann.
 
-Angeregte Valenzelektronen haben bei den durch die ``Quantenzahlen $n ,l$ und $j$ gekennzeichneten Energieniveaus verschiedene Übergangswahrscheinlichkeiten``.	Die entsprechende Bahndrehquantenzahl $l$ ändert sich jeweils um $\delta l$ = $\pm 1$. Darüber hinaus ist ein Übergang der Spinquantenzahl $\delta j = 0$ zwar möglich, aber sehr unwahrscheinlich. Die Hauptquantenzahl n ist nicht eingeschränkt, wird jedoch mit steigendem n immer unwahrscheinlicher. Das Phänomen das bei gleicher Bahndrehquantenzahl und unterschiedlichen Spinquantenzahlen wei Spektrallinien dicht beieinadner liegen,wird als Doublett-Struktur bezeichnet. In Abbildung \ref{fig:ene} ist ein Beispiel für verschiedene Energieniveaus abgebildet.
+Angeregte Valenzelektronen haben bei den durch die "Quantenzahlen $n ,l$ und $j$ gekennzeichneten Energieniveaus verschiedene Übergangswahrscheinlichkeiten".	Die entsprechende Bahndrehquantenzahl $l$ ändert sich jeweils um $\delta l$ = $\pm 1$. Darüber hinaus ist ein Übergang der Spinquantenzahl $\delta j = 0$ zwar möglich, aber sehr unwahrscheinlich. Die Hauptquantenzahl n ist nicht eingeschränkt, wird jedoch mit steigendem n immer unwahrscheinlicher. Das Phänomen das bei gleicher Bahndrehquantenzahl und unterschiedlichen Spinquantenzahlen wei Spektrallinien dicht beieinadner liegen,wird als Doublett-Struktur bezeichnet. In Abbildung \ref{fig:ene} ist ein Beispiel für verschiedene Energieniveaus abgebildet.
 \begin{figure}
   \centering
   \includegraphics[height=6cm]{picture/eniv.png}
@@ -53,23 +53,18 @@ Um Schlussendlich die Energie des Leuchtelektron genau zu bestimmen wird die Abs
   \Delta E_\text{D} = \frac{R_{infty} \alpha^2}{n^3} \left( z - \sigma_2 \right)^2 \frac{1}{l(l+1)}
   \label{eqn:ded}
 \end{equation}
-indem die Gleichung nach der Abschirmkonstante aufgelöst wird. 
-\begin{equation}
-  \Delta E_\text{D} = h_\text{c}\left( \frac{1}{\lambda} - \frac{1}{\lambda'} \right)
-  \label{<++>}
-\end{equation}
-Um die Energiedifferenz zu bestimmen wird anhand des Wellenlängenunterschied der beiden Spektrallinien des Dubletts entsprechend der Gleichung
+indem die Gleichung nach der Abschirmkonstante aufgelöst wird. Um die Energiedifferenz zu bestimmen wird anhand des Wellenlängenunterschied der beiden Spektrallinien des Dubletts entsprechend der Gleichung
 \begin{equation}
   \Delta E_\text{D} = hc\left( \frac{1}{\lambda} - \frac{1}{\lambda'} \right)
   \label{eqn:ed}
 \end{equation}
-bestimmt. 
+bestimmt.
 Mit Hilfe der Interferenz an einem Gitter werden die Spektralien in ihre einzelnen Wellenlängen aufgespalten. Kunstruktive Interferens wird bei den Maximums $k$ter Ordung unter dem Winkel $\varphi$ beobachtet. Die Gitterkonstante wird als $g$ bezeichnet.
 \begin{equation}
   sin \, \varphi = k \frac{\lambda}{g}
   \label{eqn:phi}
 \end{equation}
-Für die Bestimmung der Wellenlängenunterschied der Dubletts das Okularmikrometer geeicht werden. Näheres zu dem Verfahren wird in der Durchführung erwähnt. Aus Trigonometrischen Überlegungegen ergibt sich die Formel 
+Für die Bestimmung der Wellenlängenunterschied der Dubletts das Okularmikrometer geeicht werden. Näheres zu dem Verfahren wird in der Durchführung erwähnt. Aus Trigonometrischen Überlegungegen ergibt sich die Formel
 \begin{equation}
   \delta\lambda = \frac{cos \, \varphi}{cos \, \varphi_{1,2}} \frac{\Delta s}{\Delta t}\left( \lambda_1 - \lambda_2 \right) \ .
   \label{eqn:dlam}
