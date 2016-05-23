@@ -10,9 +10,8 @@ from lmfit import minimize, Parameter, Model
 print('------------------------------------------------------------------')
 HM = 305.0 #Hauptmaximum
 g = 9.8257678973119135 * 10**(-7) #Gitterkonstante
-
-print('------------------------------------------------------------------')
 '''
+print('------------------------------------------------------------------')
 print('Nr. a: Berechnung der Gitterkonstanten g')
 
 Rad_H = np.sin((np.array([331.1, 331.7, 333.2, 334.6, 335.4, 335.6, 341.4, 347.3, 350.5]) - HM) * (math.pi/180))
@@ -36,7 +35,7 @@ plt.grid()
 plt.tight_layout()
 plt.savefig('build/Gitterkonstante.pdf')
 plt.close()
-
+'''
 print('------------------------------------------------------------------')
 print('Nr. c: Berechnung der Abschirmungszahl')
 def Abschirm(Winkel):
@@ -131,34 +130,31 @@ h = ufloat(9.83, 0.06)   * 10**(-7)
 Eichgrößen = np.array([a, b, c, d, e, f, g, h])
 Eich = np.mean(Eichgrößen)
 print('Mittelwert = ', Eich)
-'''
+
 print('------------------------------------------------------------------')
 print('Nr. d: Distanz zwischen Dublettlinien')
-h = 1.25 * 10**(-6)
-
+ds = 1.25
 
 print('----------')
 print('Eichung')
-N = (h / 0.003)
-print('N = ', N)
+r = (ds / 0.003)
+print('r = ', r * 10**(-6))
 
 print('----------')
 print('Natrium')
-print('rot = ', N/ 0.08)
-print('gelb = ', 0.18 * N)
-print('grüngelb = ', 0.24 * N)
+print('rot = ', 0.08 / r)
+print('gelb = ', 0.18 / r)
+print('grüngelb = ', 0.24 / r)
 
 print('----------')
 print('Kalium')
-print('gelb = ', 0.86 * N)
-print('gelb = ', 0.81 * N)
-print('grün = ', 0.89 * N)
-print('grün = ', 0.67 * N)
+print('gelb = ', 0.86 / r)
+print('gelb = ', 0.81 / r)
+print('grün = ', 0.89 / r)
+print('grün = ', 0.67 / r)
 
 print('----------')
 print('Kalium')
-print('rot = ', 2.92 * N)
+print('rot = ', 2.92 / r)
 
 print('------------------------------------------------------------------')
-print('Grad = ', h / 0.2)
-print('rad  = ', h / 0.003)
