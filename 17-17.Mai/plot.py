@@ -10,7 +10,7 @@ from lmfit import minimize, Parameter, Model
 print('------------------------------------------------------------------')
 HM = 305.0 #Hauptmaximum
 g = 9.8257678973119135 * 10**(-7) #Gitterkonstante
-'''
+
 print('------------------------------------------------------------------')
 print('Nr. a: Berechnung der Gitterkonstanten g')
 
@@ -35,7 +35,7 @@ plt.grid()
 plt.tight_layout()
 plt.savefig('build/Gitterkonstante.pdf')
 plt.close()
-'''
+
 print('------------------------------------------------------------------')
 print('Nr. c: Berechnung der Abschirmungszahl')
 def Abschirm(Winkel):
