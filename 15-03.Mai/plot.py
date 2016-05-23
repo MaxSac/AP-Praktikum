@@ -8,7 +8,7 @@ import math
 from lmfit import minimize, Parameter, Model
 
 print('-------------------------------------------------------------------')
-'''
+
 U_1, I1, I2 = np.loadtxt('Diode1.txt', unpack=True)
 U_2, I3, I4, I5 = np.loadtxt('Diode2.txt', unpack=True)
 U_heiz = np.array([6.2, 6.0, 5.0, 4.4, 4.0])
@@ -110,5 +110,5 @@ Phi = -(c.k*T)/c.e*np.log((I_s*c.h**3) / (4*math.pi*f2*c.e*c.m_e*c.k**2*T**2))
 print('Austrittsarbeit: ', Phi)
 print('Mittelwert: ', np.mean(Phi))
 print('Standardabweichung: ', np.std(Phi))
-'''
+
 print('-------------------------------------------------------------------')
