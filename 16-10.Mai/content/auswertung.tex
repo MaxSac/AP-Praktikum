@@ -2,7 +2,7 @@
 \label{sec:Auswertung}
 \subsection{Ablenkung von Elektronen durch das Magnetfeld}
 In Tabelle \ref{tab:DIS} sind die Stromstärken $I_\text{S}$ zu den entsprechenden Auslenkungen $D$ aufgetragen. In Klammern dahinter befinden sich die jeweiligen Angaben zur Beschleunigungsspannung.
-\begin{table}
+\begin{table}[H]
   \centering
   \begin{tabular}{c| c c c c c }
     \toprule
@@ -22,20 +22,49 @@ In Tabelle \ref{tab:DIS} sind die Stromstärken $I_\text{S}$ zu den entsprechend
   \caption{Auslenkung der Elektronen in Abhägigkeit des Spulenstroms bei unterschiedlichen Beschleunigungsspannungen}
   \label{tab:DIS}
 \end{table}
-Anhand derer lassen sich durch Verwendung von Gleichung \eqref{eqn:BH} die magnetischen Feldstärken errechnen. Diese werden in Diagramm \ref{fig:bfeld} gegen $D/(L^2+D^2)$ aufgetragen sowie ein linearer Fit durch die Messpunkte gelegt.
-\begin{figure}
+Anhand derer lassen sich durch Verwendung von Gleichung \eqref{eqn:BH} die magnetischen Feldstärken errechnen. Diese werden in Diagramm \ref{fig:bfeld1} bis \ref{fig:bfeld5} gegen $D/(L^2+D^2)$ aufgetragen sowie ein linearer Fit der Form 
+\begin{equation}
+  f(x) = a \cdot x + b
+  \label{eqn:fit}
+\end{equation}
+durch die Messpunkte gelegt.
+\begin{figure}[H]
   \centering
-  \includegraphics[height=7cm]{B-Feld.pdf}
+  \includegraphics[height=10cm]{B-Feld1.pdf}
   \caption{Diagramm zur Bestimmung der spezifischen Ladung}
-  \label{fig:bfeld}
+  \label{fig:bfeld1}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=10cm]{B-Feld2.pdf}
+  \caption{Diagramm zur Bestimmung der spezifischen Ladung} 
+  \label{fig:bfeld2}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=10cm]{B-Feld3.pdf}
+  \caption{Diagramm zur Bestimmung der spezifischen Ladung} 
+  \label{fig:bfeld3}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=10cm]{B-Feld4.pdf}
+  \caption{Diagramm zur Bestimmung der spezifischen Ladung} 
+  \label{fig:bfeld4}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=10cm]{B-Feld5.pdf}
+  \caption{Diagramm zur Bestimmung der spezifischen Ladung} 
+  \label{fig:bfeld5}
 \end{figure}
 Aus den Steigungen $a$ der Fits lassen sich durch Umformung der Gleichung \eqref{eqn:e0m} zu,
 \begin{equation}
   \frac{e_0}{m_0} = 8 U_\text{B} a^2 
   \label{eqn:e0m0}
 \end{equation}
-die spezifische Ladung der Elektronen berechnen. Diese sind mit den zugehörigen Beschleunigungspannungen und ihrer relativen Abweichung von ihrem Literaturwert (\cite{spez}) in Tabelle \ref{tab:e0m0} aufgetragen.
-\begin{table}
+die spezifische Ladung der Elektronen berechnen. Diese sind mit den zugehörigen Beschleunigungspannungen und ihrern Fitparametern in Tabelle \ref{tab:e0m0} aufgetragen. Die Abweichung der gemittelten spezifischen Ladung von dem Literaturwert \cite{e0m0} beträgt 1 \%.
+\begin{table}[H]
   \centering
   \begin{tabular}{c| c c c}
     \toprule
@@ -70,18 +99,18 @@ Mit Formel \eqref{eqn:BH} ergibt sich für den Strom $I_\text{K}$ ein magnetisch
   B_\text{Helm} = 1.72 \cdot 10^{-5} \, \text{T} \ .
   \label{eqn:Binc}
 \end{equation}
-Nach Bereinigung des magnetischen Feldes von dem Inklisationswinkel ergibt sich eine Totalintesistät von
+Unter Berücksichtigung des Inklinationswinkel des magnetischen Feldes ergibt sich eine Totalintesistät von
 \begin{equation}
-  B_\text{Erd} = 4.34 \cdot 10^{-5} \, \text{T} \ .
+  B_\text{Erd} = \frac{1.72}{\text{cos}(66)} 10^{-5} \, \text{T} = 4.34 \cdot 10^{-5} \, \text{T} \ .
   \label{eqn:Berd}
 \end{equation}
 \subsection{Empfindlichkeit der Braunschen Röhre}
-In einem linearen Diagramm werden die Ablenkspannungen $U_\text{d}$ aus Tabelle \ref{tab:DIS} gegen die Verschiebung $D$ des Leuchtflecks aufgetragen.
-\begin{table}
+In einem linearen Diagramm werden die Ablenkspannungen $U_\text{d}$ aus Tabelle \ref{tab:DIS} gegen die Verschiebung $D$ des Leuchtflecks aufgetragen. In den Klammern steht jeweils die Beschleunigungsspannung $U_\text{B}$ in Volt, damit die Messwerte zugeordnet werden können.
+\begin{table}[H]
   \centering
   \begin{tabular}{c| c c c c c }
     \toprule
-    $D / \frac{Zoll}{4}$ & $U_\text{B}$ = 180 V & $U_\text{B}$ = 230 V & $U_\text{B}$ = 260 V & $U_\text{B}$ = 300 V & $U_\text{B}$ = 350 V \\
+    $D / \frac{Zoll}{4}$ & $U_\text{D}$ / V (180) & $U_\text{D}$ / V (230) & $U_\text{D}$ / V (260) & $U_\text{D}$ /V (300) & $U_\text{D}$ / V (350) \\
     \midrule
     1 &	-20.02	&-25.21	&-28.00	&-32.19	&-28.00	\\
     2 &	-16.12	&-20.24	&-22.99	&-27.04	&-22.99	\\
@@ -97,16 +126,41 @@ In einem linearen Diagramm werden die Ablenkspannungen $U_\text{d}$ aus Tabelle 
   \caption{Auslenkung der Elektronen in Abhängigkeit der Ablenkspannung bei unterschiedlichen Beschleunigungsspannungen}
   \label{tab:DIS}
 \end{table}
-\begin{figure}
+\begin{figure}[H]
   \centering
-  \includegraphics[height=8cm]{E-Feld.pdf}
-  \caption{Empfindlichkeit der Braunschen Röhre}
+  \includegraphics[height=8cm]{E-Feld1.pdf}
+  \caption{Empfindlichkeit der Braunschen Röhre bei einer Beschleunigungsspannung von 180 V}
   \label{fig:empf}
 \end{figure}
-Es wird ein Fit durch die einzelnen Messpunkte gelegt anhand derer die Empfindlichkeit der Braunschen Röhre bestimmt wird (siehe Abbildung \ref{fig:empf}). Diese wird in einem weiterem Diagramm \ref{fig:K} gegen den Kehrwert der Beschleunigungsspannung aufgetragen.
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[height=8cm]{E-Feld2.pdf}
+  \caption{Empfindlichkeit der Braunschen Röhre bei einer Beschleunigungsspannung von 230 V}
+  \label{fig:empf}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=8cm]{E-Feld3.pdf}
+  \caption{Empfindlichkeit der Braunschen Röhre bei einer Beschleunigungsspannung von 260 V}
+  \label{fig:empf}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=8cm]{E-Feld4.pdf}
+  \caption{Empfindlichkeit der Braunschen Röhre bei einer Beschleunigungsspannung von 300 V}
+  \label{fig:empf}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=8cm]{E-Feld5.pdf}
+  \caption{Empfindlichkeit der Braunschen Röhre bei einer Beschleunigungsspannung von 350 V}
+  \label{fig:empf}
+\end{figure}
+
+Es wird jeweils ein Fit entsprechend Gleichung \ref{eqn:fit} durch die Messreihe gelegt, anhand derer die Empfindlichkeit der Braunschen Röhre bestimmt wird (siehe Abbildung \ref{fig:empf}). Diese wird in einem weiterem Diagramm \ref{fig:K} gegen den Kehrwert der Beschleunigungsspannung aufgetragen.
+\begin{figure}
+  \centering
+  \includegraphics[height=8cm]{E-Feld6.pdf}
   \caption{Bestimmtung der Kenngröße}
   \label{fig:K}
 \end{figure}

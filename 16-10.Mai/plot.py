@@ -30,6 +30,12 @@ zw_250 = ufloat(params_B_250[0], np.sqrt(np.diag(cov_B_250))[0])
 e_m_250 = (np.sqrt(8*250)*zw_250)**2
 print('Steigung des Graphens mit 250 V = ', zw_250)
 print('Spezifische Ladung', e_m_250, 'Prozentuelle Abwichung vom Theoriewert', (e_m- e_m_250)/e_m)
+plt.xlabel('B / µT')
+plt.ylabel('D/(L² + D²) / m')
+plt.legend(loc="best")
+plt.tight_layout()
+plt.savefig('build/B-Feld1.pdf')
+plt.close()
 
 
 #B_Feld mit 300 Volt Beschleunigungsspannung
@@ -41,6 +47,12 @@ zw_300 = ufloat(params_B_300[0], np.sqrt(np.diag(cov_B_300))[0])
 e_m_300 = (np.sqrt(8*300)*zw_300)**2
 print('Steigung des Graphens mit 300 V = ', zw_300)
 print('Spezifische Ladung', e_m_300, 'Prozentuelle Abweichung vom Theoriewert', (e_m- e_m_300)/e_m)
+plt.xlabel('B / µT')
+plt.ylabel('D/(L² + D²) / m')
+plt.legend(loc="best")
+plt.tight_layout()
+plt.savefig('build/B-Feld2.pdf')
+plt.close()
 
 
 #B_Feld mit 350 Volt Beschleunigungsspannung
@@ -52,6 +64,12 @@ zw_350 = ufloat(params_B_350[0], np.sqrt(np.diag(cov_B_350))[0])
 e_m_350 = (np.sqrt(8*350)*zw_350)**2
 print('Steigung des Graphens mit 350 V = ', zw_350)
 print('Spezifische Ladung', e_m_350, 'Prozentuelle Abweichung vom Theoriewert', (e_m- e_m_350)/e_m)
+plt.xlabel('B / µT')
+plt.ylabel('D/(L² + D²) / m')
+plt.legend(loc="best")
+plt.tight_layout()
+plt.savefig('build/B-Feld3.pdf')
+plt.close()
 
 r = np.delete(r,8)
 B_400 = np.delete(B_400, 8)
@@ -66,6 +84,12 @@ zw_400 = ufloat(params_B_400[0], np.sqrt(np.diag(cov_B_400))[0])
 e_m_400 = (np.sqrt(8*400)*zw_400)**2
 print('Steigung des Graphens mit 400 V = ', zw_400)
 print('Spezifische Ladung', e_m_400, 'Prozentuelle Abweichung vom Theoriewert', (e_m- e_m_400)/e_m)
+plt.xlabel('B / µT')
+plt.ylabel('D/(L² + D²) / m')
+plt.legend(loc="best")
+plt.tight_layout()
+plt.savefig('build/B-Feld4.pdf')
+plt.close()
 
 
 #B_Feld mit 450 Volt Beschleunigungsspannung
@@ -77,15 +101,16 @@ zw_450 = ufloat(params_B_450[0], np.sqrt(np.diag(cov_B_450))[0])
 e_m_450 = (np.sqrt(8*450)*zw_450)**2
 print('Steigung des Graphens mit 450 V = ', zw_450)
 print('Spezifische Ladung', e_m_450, 'Prozentuelle Abweichung vom Theoriewert', (e_m- e_m_450)/e_m)
+plt.xlabel('B / µT')
+plt.ylabel('D/(L² + D²) / m')
+plt.legend(loc="best")
+plt.tight_layout()
+plt.savefig('build/B-Feld5.pdf')
+plt.close()
+
 
 e_M = [e_m_250,e_m_300,e_m_350,e_m_400,e_m_450]
 print('Mittelwert der Spezifischen Ladung', np.mean(e_M), 'sem', stats.sem([1.77, 1.76,1.76,1.78,1.80]),  (e_m- 1.77*10**(11))/e_m)
-plt.xlabel('B / µT')
-plt.ylabel('D/(L² + D²) m')
-plt.legend(loc="best")
-plt.tight_layout()
-plt.savefig('build/B-Feld.pdf')
-plt.close()
 
 #Stärke des Erdmagnetfeldes
 print('Stärke des Erdmagnetfeldes', magfeld(0.27)/np.cos(math.pi/180*(70+60+70)/3))
@@ -105,27 +130,27 @@ def berechneEmpf(E, d, lab):
     plt.plot(E, lin(E, *params), label= lab)
     zw = params[0]
 '''
-def berechneEmpf(E, d, lab):
+def berechneEmpf(E, d, lab,i):
     params, cov = curve_fit(lin, E,d)
     plt.plot(E,d, 'x')
     plt.plot(E, lin(E, *params), label= lab)
     zw = params[0]
     print('Steigung des Graphens = ', params[0], '+-', np.sqrt(np.diag(cov))[0])
+    plt.xlabel('$U_d$ / V ')
+    plt.ylabel('D / m')
+    plt.legend(loc="best")
+    plt.tight_layout()
+    plt.savefig('build/E-Feld%s.pdf' %i)
+    plt.close()
     return zw
 
-zw_E_180 = berechneEmpf(E_180, D, r'$U_\text{B} =180 \text{V}$')
-zw_E_230 = berechneEmpf(E_230, D, r'$U_\text{B} =230 \text{V}$')
-zw_E_260 = berechneEmpf(E_260, D, r'$U_\text{B} =260 \text{V}$')
+zw_E_180 = berechneEmpf(E_180, D, r'$U_\text{B} =180 \text{V}$',1)
+zw_E_230 = berechneEmpf(E_230, D, r'$U_\text{B} =230 \text{V}$',2)
+zw_E_260 = berechneEmpf(E_260, D, r'$U_\text{B} =260 \text{V}$',3)
 print('Scheitelwert der Spannung D=1', 0.0063/zw_E_260)
 print('Scheitelwert der Spannung D=0.9', 0.0057/zw_E_260)
-zw_E_300 = berechneEmpf(E_300, D, r'$U_\text{B} =300 \text{V}$')
-zw_E_350 = berechneEmpf(E_350, Dn, r'$U_\text{B} =350 \text{V}$')
-plt.xlabel('$U_d$ / V ')
-plt.ylabel('D / m')
-plt.legend(loc="best")
-plt.tight_layout()
-plt.savefig('build/E-Feld.pdf')
-plt.close()
+zw_E_300 = berechneEmpf(E_300, D, r'$U_\text{B} =300 \text{V}$',4)
+zw_E_350 = berechneEmpf(E_350, Dn, r'$U_\text{B} =350 \text{V}$',5)
 
 x = [1/180, 1/230, 1/260, 1/300, 1/350]
 #y = [1.67*10**(-3), 1.38*10**(-3), 1.22*10**(-3), 1.09*10**(-3), 0.92*10**(-3)]
@@ -142,14 +167,14 @@ print('b =', params[1], '±', errors[1])
 
 x_plot = np.linspace(1/380, 1/175)
 
-plt.plot(x, y, 'rx', label="example data")
+plt.plot(x, y, 'rx')
 plt.plot(x_plot, f(x_plot, *params), label='linearer Fit', linewidth=1)
 plt.xlim(1/380,1/175)
 plt.xlabel(r'1/U V')
 plt.ylabel('a')
 plt.legend(loc="best")
 plt.tight_layout()
-plt.savefig('build/E-Feld2.pdf')
+plt.savefig('build/E-Feld6.pdf')
 plt.close()
 
 frequenz = [159.56/2, 79.75,39.87*2, 26.65*3]
