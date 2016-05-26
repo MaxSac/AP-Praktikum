@@ -1,14 +1,14 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Ablenkung von Elektronen durch das Magnetfeld}
-In Tabelle \ref{tab:DIS} sind die Stromstärken $I_\text{S}$ zu den Entsprechenden Auslenkungen $D$ aufgetragen.
+In Tabelle \ref{tab:DIS} sind die Stromstärken $I_\text{S}$ zu den entsprechenden Auslenkungen $D$ aufgetragen. In Klammern dahinter befinden sich die jeweiligen Angaben zur Beschleunigungsspannung.
 \begin{table}
   \centering
   \begin{tabular}{c| c c c c c }
     \toprule
-    $D / \frac{Zoll}{4}$ & $U_\text{B}$ = 250 V & $U_\text{B}$ = 300 V & $U_\text{B}$ = 350 V & $U_\text{B}$ = 400 V & $U_\text{B}$ = 450 V \\
+    $D / \frac{Zoll}{4}$ & $I$ / A (250 V) & $I$ / A (300 V) & $I$ / A (350 V) & $I$ / A (400 V) & $I$ / A (450 V) \\
     \midrule
-    1 &	0	&0	&0	&0	&0	\\
+    1 &	0.00	&0.00	&0.00	&0.00	&0.00	\\
     2 &	0.27	&0.34	&0.37	&0.42	&0.41	\\
     3 &	0.63	&0.70	&0.74	&0.83	&0.85	\\
     4 &	0.95	&1.05	&1.15	&1.25	&1.30	\\
@@ -16,43 +16,46 @@ In Tabelle \ref{tab:DIS} sind die Stromstärken $I_\text{S}$ zu den Entsprechend
     6 &	1.57	&1.76	&1.91	&2.01	&2.15	\\
     7 &	1.92	&2.11 	&2.27	&2.47	&2.59	\\
     8 &	2.23	&2.45	&2.67	&2.91	&3.02	\\
-    9 &	2.53	&2.81	&3.02	&/	&/	\\
+    9 &	2.53	&2.81	&3.02	&---	&---	\\
     \bottomrule
   \end{tabular}
   \caption{Auslenkung der Elektronen in Abhägigkeit des Spulenstroms bei unterschiedlichen Beschleunigungsspannungen}
   \label{tab:DIS}
 \end{table}
-Anhand derer lassen sich durch verwendung von Gleichung \eqref{eqn:BH} die magnetischen Feldstärken errechnen. Diese werden in Diagramm \ref{fig:bfeld} gegen $D/(L^2+D^2)$ aufgetragen sowie ein linearer Fit durch die Messpunkte gelegt.
+Anhand derer lassen sich durch Verwendung von Gleichung \eqref{eqn:BH} die magnetischen Feldstärken errechnen. Diese werden in Diagramm \ref{fig:bfeld} gegen $D/(L^2+D^2)$ aufgetragen sowie ein linearer Fit durch die Messpunkte gelegt.
 \begin{figure}
   \centering
   \includegraphics[height=7cm]{B-Feld.pdf}
   \caption{Diagramm zur Bestimmung der spezifischen Ladung}
   \label{fig:bfeld}
 \end{figure}
-Aus den Steigungen $a$ der Fitts lassen sich durch Umformung der Gleichung \eqref{eqn:e0m} zu,
+Aus den Steigungen $a$ der Fits lassen sich durch Umformung der Gleichung \eqref{eqn:e0m} zu,
 \begin{equation}
-  \frac{e_0}{m_0} = \left( a \cdot \sqrt{8 U_\text{B}} )^2 \right)
+  \frac{e_0}{m_0} = 8 U_\text{B} a^2 
   \label{eqn:e0m0}
 \end{equation}
 die spezifische Ladung der Elektronen berechnen. Diese sind mit den zugehörigen Beschleunigungspannungen und ihrer relativen Abweichung von ihrem Literaturwert (\cite{spez}) in Tabelle \ref{tab:e0m0} aufgetragen.
 \begin{table}
   \centering
-  \begin{tabular}{c| c c}
+  \begin{tabular}{c| c c c}
     \toprule
-    $U_\text{B}$  & $e_0/m_0$ praktisch & $\Delta e_0/m_0$ \\
+    $U_\text{B}$  & $e_0/(m_0 \cdot 10^{11}) $ experimentell & Fitparameter a / $10^3$ & Fitparameter b / $10^{-2}$\\
     \midrule
-    	250	& (\num{1.77 +- 0.05}) & 1 \% \\
-	300	& (\num{1.76 +- 0.05}) & 1 \% \\
-	350	& (\num{1.76 +- 0.04}) & 1 \% \\
-	400	& (\num{1.78 +- 0.07}) & 1 \% \\
-	450	& (\num{1.80 +- 0.04}) & 2 \% \\
+    250	& (\num{1.77 +- 0.05}) &(\num{9.4 +- 0.1}) & (\num{3 +- 1})	 \\
+    300	& (\num{1.76 +- 0.05}) &(\num{8.6 +- 0.1}) & (\num{3 +- 1})	 \\
+    350	& (\num{1.76 +- 0.04}) &(\num{7.9 +- 0.1}) & (\num{2 +- 1})	 \\
+    400	& (\num{1.78 +- 0.07}) &(\num{7.5 +- 0.1}) & (\num{2 +- 2})	 \\
+    450	& (\num{1.80 +- 0.04}) &(\num{7.1 +- 0.1}) & (\num{2 +- 1})	 \\
+    \midrule
+    --- 	& $\overline{(\num{1.78 +- 0.02})}$ & ---  & --- \\
+    %&\multicolumn{2}{l}{= Mittelwert $\pm$ Fehler des Mittelwertes}	\\
     \bottomrule
   \end{tabular}
-  \caption{spezifische Ladung und Abweichung vom Literaturwert}
+  \caption{spezifische Ladung und Fitparameter}
   \label{tab:e0m0}
 \end{table}
 \subsection{Intensität des Erdmagnetfeld}
-Für den Versuch wird ein Inktlisationswinkel von
+Für den Versuch wird ein Inklinationswinkel von
 \begin{equation}
   \Phi_\text{Inc} = (\num{66 +-3})°
   \label{eqn:Inc}

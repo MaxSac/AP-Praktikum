@@ -23,18 +23,20 @@ for x in range(9):
 
 #B_Feld mit 250 Volt Beschleunigungsspannung
 params_B_250, cov_B_250 = curve_fit(lin, magfeld(B_250),r)
-plt.plot(magfeld(B_250),r, 'x')
-plt.plot(magfeld(B_250), lin(magfeld(B_250), *params_B_250), label=r'$U_\text{B} =250 \text{V}$')
+print('b = ', params_B_250[1], np.sqrt(np.diag(cov_B_250))[1])
+plt.plot(magfeld(B_250*10**6),r, 'x')
+plt.plot(magfeld(B_250*10**6), lin(magfeld(B_250), *params_B_250), label=r'$U_\text{B} =250 \text{V}$')
 zw_250 = ufloat(params_B_250[0], np.sqrt(np.diag(cov_B_250))[0])
 e_m_250 = (np.sqrt(8*250)*zw_250)**2
 print('Steigung des Graphens mit 250 V = ', zw_250)
-print('Spezifische Ladung', e_m_250, 'Prozentuelle Abweichung vom Theoriewert', (e_m- e_m_250)/e_m)
+print('Spezifische Ladung', e_m_250, 'Prozentuelle Abwichung vom Theoriewert', (e_m- e_m_250)/e_m)
 
 
 #B_Feld mit 300 Volt Beschleunigungsspannung
 params_B_300, cov_B_300 = curve_fit(lin, magfeld(B_300),r)
-plt.plot(magfeld(B_300),r, 'x')
-plt.plot(magfeld(B_300), lin(magfeld(B_300), *params_B_300), label=r'$U_\text{B} =300 \text{V}$')
+print('b = ', params_B_300[1], np.sqrt(np.diag(cov_B_300))[1])
+plt.plot(magfeld(B_300*10**6),r, 'x')
+plt.plot(magfeld(B_300*10**6), lin(magfeld(B_300), *params_B_300), label=r'$U_\text{B} =300 \text{V}$')
 zw_300 = ufloat(params_B_300[0], np.sqrt(np.diag(cov_B_300))[0])
 e_m_300 = (np.sqrt(8*300)*zw_300)**2
 print('Steigung des Graphens mit 300 V = ', zw_300)
@@ -43,8 +45,9 @@ print('Spezifische Ladung', e_m_300, 'Prozentuelle Abweichung vom Theoriewert', 
 
 #B_Feld mit 350 Volt Beschleunigungsspannung
 params_B_350, cov_B_350 = curve_fit(lin, magfeld(B_350),r)
-plt.plot(magfeld(B_350),r, 'x')
-plt.plot(magfeld(B_350), lin(magfeld(B_350), *params_B_350), label=r'$U_\text{B} =350 \text{V}$')
+print('b = ', params_B_350[1], np.sqrt(np.diag(cov_B_350))[1])
+plt.plot(magfeld(B_350*10**6),r, 'x')
+plt.plot(magfeld(B_350*10**6), lin(magfeld(B_350), *params_B_350), label=r'$U_\text{B} =350 \text{V}$')
 zw_350 = ufloat(params_B_350[0], np.sqrt(np.diag(cov_B_350))[0])
 e_m_350 = (np.sqrt(8*350)*zw_350)**2
 print('Steigung des Graphens mit 350 V = ', zw_350)
@@ -56,8 +59,9 @@ B_450 = np.delete(B_450, 8)
 
 #B_Feld mit 400 Volt Beschleunigungsspannung
 params_B_400, cov_B_400 = curve_fit(lin, magfeld(B_400),r)
-plt.plot(magfeld(B_400),r, 'x')
-plt.plot(magfeld(B_400), lin(magfeld(B_400), *params_B_400), label=r'$U_\text{B}=400 \text{V}$')
+print('b = ', params_B_400[1], np.sqrt(np.diag(cov_B_400))[1])
+plt.plot(magfeld(B_400*10**6),r, 'x')
+plt.plot(magfeld(B_400*10**6), lin(magfeld(B_400), *params_B_400), label=r'$U_\text{B}=400 \text{V}$')
 zw_400 = ufloat(params_B_400[0], np.sqrt(np.diag(cov_B_400))[0])
 e_m_400 = (np.sqrt(8*400)*zw_400)**2
 print('Steigung des Graphens mit 400 V = ', zw_400)
@@ -66,16 +70,17 @@ print('Spezifische Ladung', e_m_400, 'Prozentuelle Abweichung vom Theoriewert', 
 
 #B_Feld mit 450 Volt Beschleunigungsspannung
 params_B_450, cov_B_450 = curve_fit(lin, magfeld(B_450),r)
-plt.plot(magfeld(B_450),r, 'x')
-plt.plot(magfeld(B_450), lin(magfeld(B_450), *params_B_450), label=r'$U_\text{B} =450 \text{V}$')
+print('b = ', params_B_450[1], np.sqrt(np.diag(cov_B_450))[1])
+plt.plot(magfeld(B_450*10**6),r, 'x')
+plt.plot(magfeld(B_450*10**6), lin(magfeld(B_450), *params_B_450), label=r'$U_\text{B} =450 \text{V}$')
 zw_450 = ufloat(params_B_450[0], np.sqrt(np.diag(cov_B_450))[0])
 e_m_450 = (np.sqrt(8*450)*zw_450)**2
 print('Steigung des Graphens mit 450 V = ', zw_450)
 print('Spezifische Ladung', e_m_450, 'Prozentuelle Abweichung vom Theoriewert', (e_m- e_m_450)/e_m)
 
 e_M = [e_m_250,e_m_300,e_m_350,e_m_400,e_m_450]
-print('Mittelwert der Spezifischen Ladung', np.mean(e_M), (e_m- 1.77*10**(11))/e_m)
-plt.xlabel('B / T')
+print('Mittelwert der Spezifischen Ladung', np.mean(e_M), 'sem', stats.sem([1.77, 1.76,1.76,1.78,1.80]),  (e_m- 1.77*10**(11))/e_m)
+plt.xlabel('B / µT')
 plt.ylabel('D/(L² + D²) m')
 plt.legend(loc="best")
 plt.tight_layout()
