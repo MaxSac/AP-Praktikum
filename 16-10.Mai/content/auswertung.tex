@@ -130,34 +130,51 @@ In einem linearen Diagramm werden die Ablenkspannungen $U_\text{d}$ aus Tabelle 
   \centering
   \includegraphics[height=8cm]{E-Feld1.pdf}
   \caption{Empfindlichkeit der Braunschen Röhre bei einer Beschleunigungsspannung von 180 V}
-  \label{fig:empf}
+  \label{fig:empf1}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[height=8cm]{E-Feld2.pdf}
   \caption{Empfindlichkeit der Braunschen Röhre bei einer Beschleunigungsspannung von 230 V}
-  \label{fig:empf}
+  \label{fig:empf2}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[height=8cm]{E-Feld3.pdf}
   \caption{Empfindlichkeit der Braunschen Röhre bei einer Beschleunigungsspannung von 260 V}
-  \label{fig:empf}
+  \label{fig:empf3}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[height=8cm]{E-Feld4.pdf}
   \caption{Empfindlichkeit der Braunschen Röhre bei einer Beschleunigungsspannung von 300 V}
-  \label{fig:empf}
+  \label{fig:empf4}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[height=8cm]{E-Feld5.pdf}
   \caption{Empfindlichkeit der Braunschen Röhre bei einer Beschleunigungsspannung von 350 V}
-  \label{fig:empf}
+  \label{fig:empf5}
 \end{figure}
 
-Es wird jeweils ein Fit entsprechend Gleichung \ref{eqn:fit} durch die Messreihe gelegt, anhand derer die Empfindlichkeit der Braunschen Röhre bestimmt wird (siehe Abbildung \ref{fig:empf}). Diese wird in einem weiterem Diagramm \ref{fig:K} gegen den Kehrwert der Beschleunigungsspannung aufgetragen.
+Es wird jeweils ein Fit entsprechend Gleichung \ref{eqn:fit} durch die Messreihe gelegt, anhand derer die Empfindlichkeit der Braunschen Röhre bestimmt wird (siehe Abbildung \ref{fig:empf1} bis \ref{fig:empf5}). Die Fitparameter zu den verschiedenen Beschleunigungsspannungen werden in Tabelle \ref{tab:fit} aufgeführt. 
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c| c c}
+    \toprule
+    &Fitparameter a / $10^{-3}$ & Fitparameter b / $10^{-2}$\\
+  \midrule
+    $U_\text{B}$ = 180 V & 1.67	& 3.37 	\\
+    $U_\text{B}$ = 230 V & 1.38	& 3.52	\\
+    $U_\text{B}$ = 260 V & 1.22	& 3.45	\\
+    $U_\text{B}$ = 300 V & 1.09	& 3.57	\\
+    $U_\text{B}$ = 350 V & 0.92	& 2.87	\\
+  \toprule
+  \end{tabular}
+  \caption{Fitparameter der Ausgleichsgraden aus Diagramm \ref{fig:empf1} bis \ref{fig:empf5}}
+  \label{tab:fit}
+\end{table}
+Diese werden in einem weiterem Diagramm \ref{fig:K} gegen den Kehrwert der Beschleunigungsspannung aufgetragen.
 \begin{figure}
   \centering
   \includegraphics[height=8cm]{E-Feld6.pdf}
@@ -166,7 +183,7 @@ Es wird jeweils ein Fit entsprechend Gleichung \ref{eqn:fit} durch die Messreihe
 \end{figure}
 Anhand der Steigung des weiteren Fits lässt sich die Kenngröße
 \begin{equation}
-  K_\text{theo} = \frac{p L}{2 d} = \frac{0.019 \, \text{m} \cdot 0.143 \, \text{m}}{2 \cdot 0.006 \, \text{m}} = 0.226 \, \frac{1}{\text{m}}
+  K_\text{theo} = \frac{p L}{2 d} = \frac{0.019 \, \text{m} \cdot 0.1533 \, \text{m}}{2 \cdot 0.0051 \, \text{m}} = 0.286 \, \frac{1}{\text{m}}
   \label{eqn:Ktheo}
 \end{equation}
 des Systems bestimmen. Der Fit liefert eine Kenngröße von
@@ -176,23 +193,23 @@ des Systems bestimmen. Der Fit liefert eine Kenngröße von
 \end{equation}
 \subsection{Kathodenstrahl-Oszillograph}
 Die gemessene Frequenzverhältnisse sind in Tabelle \ref{tab:sync} aufgeführt.
-\begin{table}
+\begin{table}[H]
   \centering
   \begin{tabular}{c c c}
     \toprule
-    Frequenzverhältniss & $\nu_\text{Messung}$ & $\nu_\text{Theoretisch}$ \\
+    Frequenzverhältnis $n$ & $\nu_\text{Messung}$ & $n \cdot \nu_\text{Theoretisch}$ \\
     \midrule
-    1:2	& 159.96& 160.00\\
-    1:1	& 79.75 & 80.00	\\
-    2:1	& 39.87 & 40.00	\\
-    3:1	& 26.65 & 26.67	\\
+    1:2	& 159.96& 79.98 \\
+    1:1	& 79.75 & 79.95	\\
+    2:1	& 39.87 & 79.74	\\
+    3:1	& 26.65 & 79.95	\\
     \bottomrule
   \end{tabular}
   \caption{Synchronisationsfrequenzen}
   \label{tab:sync}
 \end{table}
 Ein Bild einer stehenden Welle ist in Abbildung \ref{fig:pic} zu sehen.
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[height=7cm]{picture/sinus.png}
   \caption{Stehende Sinuswelle}
@@ -200,25 +217,25 @@ Ein Bild einer stehenden Welle ist in Abbildung \ref{fig:pic} zu sehen.
 \end{figure}
 Aus Mittelung der mit dem Frequenzverhältnis multiplizierten gemessenen Frequenzen ergibt sich eine mittlere Frequenz von
 \begin{equation}
-  \overline{\nu_\text{Messung}} = \num{79.81 +- 0.05} \text{Hz}
+  \overline{\nu_\text{Messung}} = \num{79.91 +- 0.05} \text{Hz}
   \label{eqn:numess}
 \end{equation}
-Desweiteren soll der Schwellwert der Spannung $U_\text{B}$ werden. Da die Empfindlichkeit der Röhre bereits bekannt ist, ergibt dieser sich durch Umformen der Gleichung \eqref{eqn:DUd} nach $U_d$ zu
+Desweiteren soll der Schwellwert der Spannung $U_\text{B}$ werden. Da die Empfindlichkeit der Röhre bereits aus den Fitparametern aus der Tabelle \ref{tab:fit} bekannt ist, ergibt dieser sich durch Umformen der Gleichung \eqref{eqn:DUd} nach $U_d$ zu
 \begin{equation}
-  U_\text{d} = \frac{D 2 d U_\text{B}}{p L} \ .
+  U_\text{d} = \frac{D 2 d U_\text{B}}{p L} = \frac{D}{E} \ .
   \label{eqn:dfs}
 \end{equation}
 Für die Beschleunigungsspannung von 260 V ergibt sich für die verschiedenen Verschiebungen $D$ auf dem Schirm die in der Tabelle \ref{tab:scheitel} aufgeführten Scheitelwerte.
-\begin{table}
+\begin{table}[H]
   \centering
   \begin{tabular}{c c c}
     \toprule
 	Frequenzverhältniss & D / mm & $U_\text{d}$ / V \\
     \midrule
-	1:2	& 6.3 & 5.2 	\\
-	1:1	& 6.3 & 5.2	\\
-	2:1	& 5.7 & 4.7	\\
-	3:1	& 5.7 & 4.7	\\
+	1:2	& 6.3 & 3.8 	\\
+	1:1	& 6.3 & 3.8	\\
+	2:1	& 5.7 & 3.4	\\
+	3:1	& 5.7 & 3.4	\\
     \bottomrule
   \end{tabular}
   \caption{Verschiebung und Scheitelwert der Spannung}

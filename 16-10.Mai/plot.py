@@ -136,6 +136,7 @@ def berechneEmpf(E, d, lab,i):
     plt.plot(E, lin(E, *params), label= lab)
     zw = params[0]
     print('Steigung des Graphens = ', params[0], '+-', np.sqrt(np.diag(cov))[0])
+    print('Schnittpunkt des Graphens = ', params[1], '+-', np.sqrt(np.diag(cov))[1])
     plt.xlabel('$U_d$ / V ')
     plt.ylabel('D / m')
     plt.legend(loc="best")
@@ -156,6 +157,10 @@ x = [1/180, 1/230, 1/260, 1/300, 1/350]
 #y = [1.67*10**(-3), 1.38*10**(-3), 1.22*10**(-3), 1.09*10**(-3), 0.92*10**(-3)]
 y = [zw_E_180, zw_E_230, zw_E_260, zw_E_300,zw_E_350]
 
+print('----------------------------------------')
+print(zw_E_260*(1/260), zw_E_260/(1/260))
+print('----------------------------------------')
+
 def f(x, a, b):
     return a * x + b
 
@@ -166,12 +171,11 @@ print('a =', params[0], '±', errors[0])
 print('b =', params[1], '±', errors[1])
 
 x_plot = np.linspace(1/380, 1/175)
-
 plt.plot(x, y, 'rx')
 plt.plot(x_plot, f(x_plot, *params), label='linearer Fit', linewidth=1)
 plt.xlim(1/380,1/175)
-plt.xlabel(r'1/U V')
-plt.ylabel('a')
+plt.xlabel(r'V/$U$')
+plt.ylabel(r'$\frac{pL}{2D} \cdot  \frac{1}{\text{m}}$')
 plt.legend(loc="best")
 plt.tight_layout()
 plt.savefig('build/E-Feld6.pdf')
