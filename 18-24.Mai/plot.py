@@ -7,21 +7,12 @@ import scipy.constants as c
 import math
 from lmfit import minimize, Parameter, Model
 
-x = np.linspace(0, 10, 1000)
-y = x ** np.sin(x)
+def w(T):
+    T += 273
+    return 0.0029*10**(-2)/((10**7*5.5)*math.exp((-6876/T)))
 
-plt.subplot(1, 2, 1)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
-
-plt.subplot(1, 2, 2)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
-
-# in matplotlibrc leider (noch) nicht möglich
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-plt.savefig('build/plot.pdf')
+print('Mittelere freie Wellenlänge T = 27 ', w(27), 0.01/w(27))
+print('Mittelere freie Wellenlänge T = 105 ', w(105), 0.01/w(105))
+print('Mittelere freie Wellenlänge T = 140 ', w(140), 0.01/w(140))
+print('Mittelere freie Wellenlänge T = 180 ', w(180), 0.01/w(180))
+print('Mittelere freie Wellenlänge T = 190 ', w(190), 0.01/w(190))
