@@ -80,10 +80,56 @@ Die Steigungen werden in den Diagrammen \ref{fig:Energie20} und \ref{fig:} gegen
   \caption{<+caption text+>}
   \label{fig:Energie20}
 \end{figure}
-
+Die Beschleunigungsspannung beträgt beträgt 11 V, woraus ein Kontaktpotential K von 1.58 V resultiert.
 \begin{figure}
   \centering
   \includegraphics[height=8cm]{140Grad.pdf}
   \caption{<+caption text+>}
   \label{fig:<+label+>}
 \end{figure}
+Desweiteren weisen die Peaks eine gewisse Unschärfe auf, was an der Fermi-Dirac-Statistik liegt. Bei der Kurve d 
+
+\subsection{Frank-Hertz Kurve}
+Analog zum vorhergegangenen Auswertungsteil wird zunächst der Kästchenmaßstab bestimmt. Dieser beträgt 
+\begin{equation}
+  K_3 = 2.43 V
+  \label{eqn:K3}
+\end{equation}
+beträgt. Die Distanzen zwischen den Maxima und dem Darauffolgenden werden mit dem Kästchenmaßstab $K2$ multipliziert und in Tabelle \ref{tab:Max} aufgetragen.
+\begin{table}
+  \centering
+  \begin{tabular}{c c}
+    \toprule
+    	k & $(U_{k+1} - U_k)$ / V \\
+    \midrule
+    	1 & 4.62	\\
+    	2 & 4.37	\\
+    	3 & 4.62	\\
+    	4 & 4.62	\\
+    	5 & 4.86	\\
+    	6 & 4.86	\\
+    	7 & 4.86	\\
+    	8 & 5.34	\\
+    \midrule
+    	$\overline{U}$  = & 4.76 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Abstand zu dem darauffolgendem Maxima}
+  \label{tab:Max}
+\end{table}
+Aus dem gemittelten Anregungsenergie ergibt sich nach umstellen der Formel \ref{eqn:} eine Wellenlänge des Lichtes von 
+\begin{equation}
+  \lambda = \frac{c \cdot h \cdot e_0}{\overline{U}} = 259 \, \text{nm} \ .
+  \label{eqn:spek}
+\end{equation}
+Somit liegt das Spektrum im Ultravioletten bereich und ist nicht für das Auge Sichtbar. Das erste Maximum wird bei einer Spannung von $U_{1 \text{Max}}$ = 6.80 V abgelesen. Aus Gleichung \ref{eqn:} folgt ein Kontaktpotential 
+\begin{equation}
+  K = 2.04 \, \text{V} \ .
+  \label{eqn:KonFr}
+\end{equation}
+\subsection{Ionisierungsenergie}
+Zur Bestimmung der Ionisierungsenergie wird Asymptote ins Diagramm gezeichnet und aus deren Schnittpunkt mit der Achse die Ionisierungsenergie abgelesen. Die Temperatur zum Zeitpunkt der Versuchsdurchführung im evakuierten Gefäß beträgt 105 °C. In dem Diagramm entspricht ein Kästchen 1 V und es wird ein Schnittpunkt $S$ von 11.8 cm abgelesen. Bereinigt man diesen Wert noch um das zuvor gemittelte Kontaktpotential ergibt sich eine Ionisierungsenergie von 
+\begin{equation}
+  E_\text{Io} = (S - \overline{K}) \cdot e_0 = 9.99 \, \text{eV} \ .
+  \label{eqn:EIo}
+\end{equation}
