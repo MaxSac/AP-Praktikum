@@ -98,6 +98,7 @@ def Psi(Winkel):
     b = np.std(Winkel)
     c = ufloat(np.cos(a), np.sin(a)*b)
     t = (Winkel[0] - Winkel[1])
+    t = 1.25
     lam = np.sin(Winkel) * g
     psi = (lam[0] - lam[1])/(c*t)
     print('Mittelwert = ', a, '+-', b)
@@ -106,6 +107,8 @@ def Psi(Winkel):
     print('Eichgröße = ', psi)
     print('----------')
 
+H_g = (np.array([335.4, 335.6]) - HM) * (math.pi/180)
+Psi(H_g)
 print('Beugungswinkel für Natrium')
 Psi(N_gg)
 Psi(N_g)
