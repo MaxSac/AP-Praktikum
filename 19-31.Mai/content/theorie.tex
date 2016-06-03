@@ -1,8 +1,8 @@
 \section{Theoretische Grundlage}
 \label{sec:Theorie}
-Ziel des Versuches ist es mit Hilfe der Doppler-Sonographie die Strömungsgeschwindigkeit, sowie das Strömungsprofil einer Flüssigkeit zu bestimmen. 	\\
-Als Ultraschall werden Frequenzen $\nu_0$ im Bereich von 20 kHz bis ca 1GHz bezeichnet. Diese können mithilfe des piezo-elektrischen Effekt erzeugt werden. Dafür werden Quarze mit Hilfe eine elektrischen Wechselfeld angeregt worauf diese Ultraschallwellen absenden. Quarze können ebenso eine Ultraschall- in ein Elektrischessignal umwandeln. Beides wird sich in einer Ultraschallsonde zu nutzen gemacht.	\\
-Bewegen sich Sender und Empfänger relativ zueinander kommt es zum Dopplereffekt. Dabei entsteht eine Frequenzverschiebung $\Delta \nu$. Befindet sich der Beobachter nun in Ruhe, so berechnet sich die um den Dopllereffekt verschobene Frequenz von 
+Ziel des Versuches ist es mit Hilfe der Doppler-Sonographie die Strömungsgeschwindigkeit, sowie das Strömungsprofil einer Flüssigkeit zu bestimmen. \\
+Als Ultraschall werden Frequenzen $\nu_0$ im Bereich von 20 kHz bis ca 1GHz bezeichnet. Diese können mithilfe des piezo-elektrischen Effekt erzeugt werden. Dafür werden Quarze mit Hilfe eines elektrischen Wechselfeldes angeregt, worauf diese Ultraschallwellen absenden. Quarze können ebenso ein Ultraschall- in ein Elektrischessignal umwandeln. Beides wird sich in einer Ultraschallsonde zu nutzen gemacht.	\\
+Bewegen sich Sender und Empfänger relativ zueinander kommt es zum Dopplereffekt. Dabei entsteht eine Frequenzverschiebung $\Delta \nu$. Befindet sich der Beobachter nun in Ruhe, so berechnet sich die verschobene Frequenz mit
 \begin{equation}
   \nu_0 + \Delta \nu = \nu_0 \left( 1 \pm \frac{v}{c} \right) \ .
   \label{}
@@ -13,17 +13,17 @@ Bewegen sich Sender und Empfänger relativ zueinander kommt es zum Dopplereffekt
   \caption{Frequenzverschiebung bedingt durch den Sondenwinkel}
   \label{fig:dFre}
 \end{figure}
-Dabei ist $v$ die Relativgeschwindigkeit zwischen Sender und Empfänger und c die Ausbreitungeschwindigkeit der Welle. Da der Empfänger in Form von einer Ultraschallsonde nicht Prarallel zur Strömung steht muss mit Hilfe von trigonometrischen Überlegungen die aus Abbildung \ref{fig:dFre} ersichtlich werden, die Frequenzverschiebung entsprechend Gleichung \eqref{eqn:dv} berechnet werden.
+Dabei ist $v$ die Relativgeschwindigkeit zwischen Sender und Empfänger und $c$ die Ausbreitungeschwindigkeit der Welle. Da der Empfänger in Form von einer Ultraschallsonde nicht Prarallel zur Strömung steht muss mit Hilfe von trigonometrischen Überlegungen die aus Abbildung \ref{fig:dFre} ersichtlich werden, die Frequenzverschiebung entsprechend Gleichung \eqref{eqn:dv} berechnet werden.
 \begin{equation}
   \Delta \nu = 2 \nu_0 \frac{v}{c} \cos (\alpha)
   \label{eqn:dv}
 \end{equation}
-Der Dopplerwinkel $\alpha$ berechnet sich in Abhängikeit des Winkels $\theta$ der auf das Prisma gesetzte Sonde zu 
+Der Dopplerwinkel $\alpha$ berechnet sich in Abhängikeit des Winkels $\theta$ der auf das Prisma gesetzten Sonde zu
 \begin{equation}
-  \alpha = 90° - /arcsin\left( \sin(\theta) \frac{c_\text{L}}{c_\text{P}} \right) \ .
+  \alpha = 90° - \arcsin\left( \sin(\theta) \frac{c_\text{L}}{c_\text{P}} \right) \ .
   \label{eqn:alpha}
 \end{equation}
-Dabei ist $c_\text{L}$ Schallgeschwindikeit der Phantomflüssigkeit und $c_\text{P}$ die des Doppelprismas. 
+Dabei ist $c_\text{L}$ die Schallgeschwindikeit in der Phantomflüssigkeit und $c_\text{P}$ die Schallgeschwindigkeit in dem Doppelprisma.
 \subsection{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
 \subsubsection{Mittelwert}
