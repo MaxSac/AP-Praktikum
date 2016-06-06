@@ -9,7 +9,7 @@ from lmfit import minimize, Parameter, Model
 
 #------------------------------------------------------------------
 HM = 305.0 #Hauptmaximum
-g = 9.8257678973119135 * 10**(-7) #Gitterkonstante
+g = 9.81462761080996 * 10**(-7) #Gitterkonstante
 
 #------------------------------------------------------------------
 #Messwerte
@@ -63,52 +63,52 @@ plt.close()
 '''
 print('------------------------------------------------------------------')
 print('Nr. b: Berechnung der Eichgröße')
-def Psi(Winkel, t):
+def Psi(Winkel):
     a = np.mean(Winkel)
     b = np.std(Winkel)
     cos = ufloat(np.cos(a), np.sin(a)*b)
     lam = np.sin(Winkel) * g
-    psi = (lam[0] - lam[1])/(cos*t)
+    psi = -(lam[0] - lam[1])/(cos*1.25)
     print('Mittelwert =', a, '+-', b)
     print('   cos     =', cos )
-    print('Delta t    =', t)
     print('Eichgröße  =', psi)
     print('--------------------')
     return psi
 
 psi = np.array([ufloat(1.0, 1.0), 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0])
 
-print('Beugungswinkel für Helium')
-psi[0] = Psi(H_g, tH_g)
-print('Beugungswinkel für Natrium')
-psi[1] = Psi(N_gg, tN_gg)
-psi[2] = Psi(N_g, tN_g)
-psi[3] = Psi(N_r, tN_r)
-print('Beugungswinkel für Kalium')
-psi[4] = Psi(K_gr1, tK_gr1)
-psi[5] = Psi(K_gr2, tK_gr2)
-psi[6] = Psi(K_g1, tK_g1)
-psi[7] = Psi(K_g2, tK_g2)
-print('Beugungswinkel für Rubidium')
-psi[8] = Psi(R_r, tR_r)
+print('Eichgröße für Helium')
+psi[0] = Psi(H_g)
+print('Eichgröße für Natrium')
+psi[1] = Psi(N_gg)
+psi[2] = Psi(N_g)
+psi[3] = Psi(N_r)
+print('Mittelwert der Eichgrößen', np.mean([psi[1], psi[2], psi[3]]))
+print('--------------------')
+print('Eichgröße für Kalium')
+psi[4] = Psi(K_gr1)
+psi[5] = Psi(K_gr2)
+psi[6] = Psi(K_g1)
+psi[7] = Psi(K_g2)
+print('Mittelwert der Eichgrößen', np.mean([psi[4], psi[5], psi[6], psi[7]]))
+print('--------------------')
+print('Eichgröße für Rubidium')
+psi[8] = Psi(R_r)
 
-Mpsi = np.mean(psi)
-print('Mittelwert der Eichgrößen', Mpsi)
-Mpsi = 11.31 * 10**(-9)
-
+print(np.mean(psi))
+Mpsi = 3.198 * 10**(-9)
 
 print('------------------------------------------------------------------')
 print('Nr. c: Berechnung der Abschirmungszahl')
 
-def Abschirm(Winkel, t):
+def Abschirm(Winkel, t, psi):
     cos = np.cos(np.mean(Winkel))
-    dLam = cos * t * Mpsi
+    psi = 3.198 * 10**(-9)
+    dLam = cos * t * psi
     qLam = np.mean(np.sin(Winkel) * g)**2
     E = (c.h * c.c * dLam / qLam)
-    S = z - ((2*E*n**3) / (13.6*c.alpha**2))**(1/4)
-    print(dLam)
-    print(qLam)
-    print(E)
+    S = z - (E * (2*137.06**2 * n**3)/(13.6*1.6022*10**(-19)))**(1/4)
+    print('Delta E =', E*6.242*10**18)
     print('Abschirmungszahl =', S)
     print('----------')
     return S
@@ -119,9 +119,9 @@ n = 3
 z = 11
 SN = np.array([1.0, 1.0, 1.0])
 print('----------')
-SN[0] = Abschirm(N_gg, tN_gg)
-SN[1] = Abschirm(N_g, tN_g)
-SN[2] = Abschirm(N_r, tN_r)
+SN[0] = Abschirm(N_gg, tN_gg, 2.7408*10**(-9))
+SN[1] = Abschirm(N_g, tN_g, 2.7408*10**(-9))
+SN[2] = Abschirm(N_r, tN_r, 4.111*10**(-9))
 SN = ufloat(np.mean(SN), np.std(SN))
 print('Mittelwert =', SN)
 
@@ -131,10 +131,10 @@ n = 4
 z = 19
 SN = np.array([1.0, 1.0, 1.0, 1.0])
 print('----------')
-SN[0] = Abschirm(K_gr1, tK_gr1)
-SN[1] = Abschirm(K_gr2, tK_gr2)
-SN[2] = Abschirm(K_g1, tK_g1)
-SN[3] = Abschirm(K_g2, tK_g2)
+SN[0] = Abschirm(K_gr1, tK_gr1, 1.3704*10**(-9))
+SN[1] = Abschirm(K_gr2, tK_gr2, 1.3704*10**(-9))
+SN[2] = Abschirm(K_g1, tK_g1, 1.3704*10**(-9))
+SN[3] = Abschirm(K_g2, tK_g2, 1.3704*10**(-9))
 SN = ufloat(np.mean(SN), np.std(SN))
 print('Mittelwert =', SN)
 
@@ -142,8 +142,7 @@ print('---------------------------------')
 print('Rubidium-Dubletspektrum')
 n = 5
 z = 37
-print('----------')
-Abschirm(R_r, tR_r)
+Abschirm(R_r, tR_r, 10.96*10**(-9))
 '''
 print('------------------------------------------------------------------')
 print('Nr. d: Distanz zwischen Dublettlinien')
