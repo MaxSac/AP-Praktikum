@@ -6,6 +6,7 @@ from uncertainties import ufloat
 import scipy.constants as c
 import math
 from lmfit import minimize, Parameter, Model
+from scipy import stats
 
 def w(T):
     T += 273
@@ -37,3 +38,6 @@ plt.ylabel(r'$\Delta x / \Delta y$')
 plt.tight_layout()
 plt.savefig('build/140Grad.pdf')
 plt.close()
+
+U = [4.62,4.37,4.62,4.62,4.86,4.86,4.86,5.34]
+print('Sem ( U ):',stats.sem(U))
