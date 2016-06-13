@@ -45,7 +45,8 @@ In einem Leiter ist das oberste Band nur teilweise besetzt, wodurch die hohe Lei
 \subsection{Herleitung der elektrischen Leitfähigkeit eines Metalles}
 Da sich die Leitungselektronen wie die Teilchen eines idealen Gases bewegen, stoßen sie mit den Fehlstellen des Gitters zusammen. Es kann nun über die Zeit zwischen zwei Zusammenstößen gemittelt werden. Daraus kann die mittlere Flugzeit $\overline{\tau}$ bestimmt werden. In der Zeit $\overline{\tau}$ führt das Elektron eine gleichmäßig beschleunigte Bewegung in die Richtung des elektrischen Feldes aus. Dadurch entsteht eine Geschwindigkeitsänderung $\Delta\overline{v}$ in Richtung des E-Feldes und daraus kann die mittlere Driftgeschwindigkeit $\overline{v}_\text{d}$ bestimmt werden.
 \begin{equation}
-	\overline{v}_\text{d} = \frac{\Delta\overline{v}}{2}
+	\overline{v}_\text{d} = \frac{\Delta\overline{v}}{2} = \frac{-\,e_0}{2\,m_0}\,\vec{E}\,\overline{\tau}
+	\label{eqn:drift}
 \end{equation}
 Nun kann der elektrische Widerstand eines homogenen Leiters berechnet werden. Dafür wird die Stromdichte $j$ benötigt.
 \begin{equation}
@@ -62,6 +63,7 @@ $Q$ entspricht dabei dem Leiterquerschnitt, $L$ entspricht der Leiterlänge und 
 Aus dem elektrischen Widerstand kann nun noch der spezifische Widerstand $\rho$ hergeleitet werden.
 \begin{equation}
 	\rho = \frac{2\,m_0}{e_0^2\,n\,\overline{\tau}}
+	\label{eqn:rho}
 \end{equation}
 
 
@@ -76,13 +78,18 @@ berechnen. "Hierin bedeutet $|v|$ die Totalgeschwindigkeit der Elektronen, die g
 \begin{equation}
 	f(E)\,dE = \frac{1}{\exp\left(\frac{E - E_\text{F}}{k\,T}\right) + 1}\,dE
 \end{equation}
-gegeben. Mit der Fermi-Energie $E_\text{F}$. Daraus folgt für die mittlere freie Weglänge der Ausdruck
+gegeben. Wobei $E_\text{F}$ die Fermi-Dirac-Energie ist.
+\begin{equation}
+	E_\text{F} = \frac{h^2}{2\,m_0}\,\left(\frac{3\,n}{8\,\pi} \right)^{\frac{3}{2}}
+\end{equation}
+Daraus folgt für die mittlere freie Weglänge der Ausdruck
 \begin{equation}
 	\overline{l} = \overline{\tau}\,|\overline{v}| \approx \overline{\tau}\,\sqrt{\frac{2\,E_\text{F}}{m_0}} \ .
 \end{equation}
 Aus der mittleren Flugzeit $\overline{\tau}$ lässt sich die Beweglichkeit $\mu$ der Ladungsträger herleiten. Die Beweglichkeit ist definiert als Proportionalitätsfakor zwischen Driftgeschwindigkeit und der äußeren Feldstärke.
 \begin{equation}
 	\overline{v}_\text{d} = \mu\,E
+	\label{eqn:Beweglichkeit}
 \end{equation}
 
 

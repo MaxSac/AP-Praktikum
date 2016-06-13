@@ -33,7 +33,7 @@ Zunächst wird die Dicke des vom B-Feld durchsetzten Plättchens berechent. Dies
 	6.5	& 64	& 98	& ---	& ---	\\
 	7	& 69	& 99	& 40  	& 57	\\
 	7.5	& 74	& 99	& ---	& ---	\\
-	8	& 79	& 99	& 46	& 57	\\	
+	8	& 79	& 99	& 46	& 57	\\
 	9	&	&	& 52	& 58	\\
 	10	&	&	& 58	& 58	\\
     \midrule
@@ -42,23 +42,23 @@ Zunächst wird die Dicke des vom B-Feld durchsetzten Plättchens berechent. Dies
   \end{tabular}
   \caption{Wiederstände von Zink und Kupfer}
   \label{tab:RZK}
-\end{table} 
-Anhand des berechneten Widerstand lässt sich nach Gleichung \ref{eqn:} die Dicke des Plättchens berechnen. Es ergibt sich für Zink eine Dicke von
+\end{table}
+Anhand des berechneten Widerstand lässt sich nach Gleichung \ref{eqn:R} die Dicke des Plättchens berechnen. Es ergibt sich für Zink eine Dicke von
 \begin{equation}
   d_\text{Zink} = (\num{4.52 +- 0.08}) \,  \text{µm}
   \label{eqn:dZ}
 \end{equation}
-und für Kupfer 
+und für Kupfer
 \begin{equation}
   d_\text{Kupfer} = (\num{6.19 +- 0.02}) \, \text{µm} \. .
   \label{eqn:dK}
 \end{equation}
-Über die Gemessene Hallspannung wird wird die Ladungsträgerdichte berechnet und in Tabelle \ref{tab:n} aufgeführt. 
+Über die Gemessene Hallspannung wird wird die Ladungsträgerdichte berechnet und in Tabelle \ref{tab:n} aufgeführt.
 \begin{table}
   \centering
   \begin{tabular}{c|c c c c}
     \toprule
-    $I$ \ A & $U_\text{Kupfer}$ / V & $n_\text{Kupfer}$ / $ \frac{10^{30} \text{C}}{\text{m}^3} $ & $U_\text{Zink}$ / V & $n_\text{Zink}$ / $\frac{10^{28}\text{C}}{\text{m}^3}$ \\  
+    $I$ \ A & $U_\text{Kupfer}$ / V & $n_\text{Kupfer}$ / $ \frac{10^{30} \text{C}}{\text{m}^3} $ & $U_\text{Zink}$ / V & $n_\text{Zink}$ / $\frac{10^{28}\text{C}}{\text{m}^3}$ \\
     \midrule
     0.5	& 0.000 & --- 	& 0.036	& 1.72 \\
     1	& 0.001 & 1.65	& 0.070	& 1.77 \\
@@ -87,7 +87,7 @@ und für Kupfer
   \caption{Ladungsträgerdichte von Zink und Kupfer}
   \label{tab:n}
 \end{table}
-Aus der Ladungsdichte wird nach Gleichung \ref{eqn:} die Mittlere Flugzeit für Zink
+Aus der Ladungsdichte wird nach Gleichung \ref{eqn:rho} die Mittlere Flugzeit für Zink
 \begin{equation}
   \overline{\tau_\text{Zink}} = 6.71 \cdot 10^{-14} \ \text{s}
   \label{eqn:tZ}
@@ -97,7 +97,7 @@ sowie Kupfer
   \overline{\tau_\text{Kupfer}} = 3.91 \cdot 10^{-15} \ \text{s}
     \label{eqn:tK}
 \end{equation}
-berechnet. Die mittlere Driftgeschwindigkeit  berechnet sich aus Gleichung \ref{eqn:} zu 
+berechnet. Die mittlere Driftgeschwindigkeit berechnet sich aus Gleichung \ref{eqn:drift} zu
 \begin{eqnarray}
   \overline{v_\text{Kupfer}} = 6.19 \frac{\text{µm}}{\text{s}} \ , \\
   \overline{v_\text{Zink}} = 0.354 \frac{\text{mm}}{\text{s}} \ .
@@ -107,21 +107,21 @@ und die Totalgeschwindigkeit $v$ nach Gleichung \ref{eqn:} zu
   v_\text{Kupfer} = 3.59 \cdot 10^7 \frac{\text{m}}{\text{s}} \ , \\
   v_\text{Zink} = 9.31 \cdot 10^6 \frac{\text{m}}{\text{s}} \ .
 \end{eqnarray}
-Aus dem Produkt der mittleren Fugzeit und der Totalgeschwindigkeit ergibt sich die mittlere freie Weglänge von 
+Aus dem Produkt der mittleren Fugzeit und der Totalgeschwindigkeit ergibt sich die mittlere freie Weglänge von
 \begin{eqnarray}
-  \overline{l_\text{Kupfer}} = 1.40 \cdot 10^{-8} \, \text{m} \, \text{und} \\
+  \overline{l_\text{Kupfer}} = 1.40 \cdot 10^{-8} \, \text{m} \ \text{und} \\
   \overline{l_\text{Zink}} = 6.25 \cdot 10^{-8} \, \text{m} \ .\\
 \end{eqnarray}
-Die Beweglichkeit $µ$ der Elektronen wird aus Gleichung \ref{eqn:} berechnet und beträgt für Kupfer 
+Die Beweglichkeit $µ$ der Elektronen wird aus Gleichung \ref{eqn:Beweglichkeit} berechnet und beträgt für Kupfer
 \begin{equation}
-  µ_\text{Kupfer} = 3.4 \cdot 10^{-4} \, \frac{\text{C s}}{kg}
+  µ_\text{Kupfer} = 3.4 \cdot 10^{-4} \, \frac{\text{C s}}{\text{kg}}
 \end{equation}
 und für Zink
 \begin{equation}
-  µ_\text{Zink} = 5.9 \cdot 10^{-3} \, \frac{\text{C s}}{kg}
+  µ_\text{Zink} = 5.9 \cdot 10^{-3} \, \frac{\text{C s}}{\text{kg}}
 \end{equation}
-Für die Anzahl wird zunächst die Anzahl der Atomdichte entsprechend Formel \ref{eqn:} berechnet und diese durch die Ladungsträgerdicht geteilt. Für Kupfer ergibt sich eine Atomdichte von 
+Für die Anzahl wird zunächst die Anzahl der Atomdichte entsprechend Formel \ref{eqn:} berechnet und diese durch die Ladungsträgerdicht geteilt. Für Kupfer ergibt sich eine Atomdichte von
 \begin{equation}
   \frac{8920 \frac{kg}{m^3}}{63.4 u} = 8.5 \cdot 10^{28} \, \frac{1}{\text{m}^3}
-\end{equation} 
+\end{equation}
 woraus aus dem Verhältniss Atomdichte durch Ladungsdichte sich eine Anzahl von 11.76 Ladungsträger pro Atom ergeben. Für Zink ergibt sich aus analoger Rechnung 0.27 Ladungsträger pro Atom.
