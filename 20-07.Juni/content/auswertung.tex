@@ -2,16 +2,20 @@
 \label{sec:Auswertung}
 \subsection{Hystereskurve}
 Die gegen den Spulenstrom aufgetragene Feldstärke ist in dem Diagramm \ref{fig:Hyst} aufgetragen.
-\begin{figure}
+
+\begin{figure}[H]
   \centering
   \includegraphics[height=8cm]{Hysterese.pdf}
   \caption{Hysteresekurve}
   \label{fig:Hyst}
 \end{figure}
-Es kann aus dem Diagramm eine Magnetisierung des Eisenkerns und die existens des B-Feld abgelesen werde.
+
+Es kann aus dem Diagramm eine Magnetisierung des Eisenkerns und die existenz des B-Feldes abgelesen werden.
+
 
 \subsection{Mikroskopische Leitfähigkeitsparameter}
-Zunächst wird die Dicke des vom B-Feld durchsetzten Plättchens berechent. Dies geschieht indem zunächst aus der in Tabelle \ref{tab:RZK} aufgetragenene Stromstärke und Spannung der Widerstand des Verwendeten Materials berechnet wird.
+Zunächst wird die Dicke des vom B-Feld durchsetzten Plättchens berechnet. Dies geschieht indem zunächst aus der in Tabelle \ref{tab:RZK} aufgetragenen Stromstärke und Spannung der Widerstand des verwendeten Materials berechnet wird.
+
 \begin{table}
   \centering
   \begin{tabular}{c|c c|c c}
@@ -40,20 +44,22 @@ Zunächst wird die Dicke des vom B-Feld durchsetzten Plättchens berechent. Dies
     \multicolumn{2}{c}{gemitteleter Widerstand:}& (\num{98.6 +- 0.03}) & --- & (\num{55 +- 1}) \\
     \bottomrule
   \end{tabular}
-  \caption{Wiederstände von Zink und Kupfer}
+  \caption{Widerstände von Zink und Kupfer}
   \label{tab:RZK}
 \end{table}
-Anhand des berechneten Widerstand lässt sich nach Gleichung \ref{eqn:R} die Dicke des Plättchens berechnen. Es ergibt sich für Zink eine Dicke von
+
+Anhand des berechneten Widerstands lässt sich nach Gleichung \ref{eqn:R} die Dicke des Plättchens berechnen. Es ergibt sich für Zink eine Dicke von
 \begin{equation}
-  d_\text{Zink} = (\num{4.52 +- 0.08}) \,  \text{µm}
+  d_\text{Zink} = (\num{4.52 +- 0.08}) \,\text{µm}
   \label{eqn:dZ}
 \end{equation}
 und für Kupfer
 \begin{equation}
-  d_\text{Kupfer} = (\num{6.19 +- 0.02}) \, \text{µm} \. .
+  d_\text{Kupfer} = (\num{6.19 +- 0.02}) \,\text{µm} \. .
   \label{eqn:dK}
 \end{equation}
-Über die Gemessene Hallspannung wird wird die Ladungsträgerdichte berechnet und in Tabelle \ref{tab:n} aufgeführt.
+Über die gemessene Hallspannung wird die Ladungsträgerdichte berechnet und in Tabelle \ref{tab:n} aufgeführt.
+
 \begin{table}
   \centering
   \begin{tabular}{c|c c c c}
@@ -87,9 +93,10 @@ und für Kupfer
   \caption{Ladungsträgerdichte von Zink und Kupfer}
   \label{tab:n}
 \end{table}
-Aus der Ladungsdichte wird nach Gleichung \ref{eqn:rho} die Mittlere Flugzeit für Zink
+
+Aus der Ladungsdichte wird nach Gleichung \ref{eqn:rho} die mittlere Flugzeit für Zink
 \begin{equation}
-  \overline{\tau_\text{Zink}} = 6.71 \cdot 10^{-14} \ \text{s}
+  \overline{\tau_\text{Zink}} = 6.71 \cdot 10^{-14} \ \text{s} \ ,
   \label{eqn:tZ}
 \end{equation}
 sowie Kupfer
@@ -102,7 +109,7 @@ berechnet. Die mittlere Driftgeschwindigkeit berechnet sich aus Gleichung \ref{e
   \overline{v_\text{Kupfer}} = 6.19 \frac{\text{µm}}{\text{s}} \ , \\
   \overline{v_\text{Zink}} = 0.354 \frac{\text{mm}}{\text{s}} \ .
 \end{eqnarray}
-und die Totalgeschwindigkeit $v$ nach Gleichung \ref{eqn:} zu
+und die Totalgeschwindigkeit $v$ nach Gleichung \ref{eqn:l} zu
 \begin{eqnarray}
   v_\text{Kupfer} = 3.59 \cdot 10^7 \frac{\text{m}}{\text{s}} \ , \\
   v_\text{Zink} = 9.31 \cdot 10^6 \frac{\text{m}}{\text{s}} \ .
@@ -112,13 +119,13 @@ Aus dem Produkt der mittleren Fugzeit und der Totalgeschwindigkeit ergibt sich d
   \overline{l_\text{Kupfer}} = 1.40 \cdot 10^{-8} \, \text{m} \ \text{und} \\
   \overline{l_\text{Zink}} = 6.25 \cdot 10^{-8} \, \text{m} \ .\\
 \end{eqnarray}
-Die Beweglichkeit $µ$ der Elektronen wird aus Gleichung \ref{eqn:Beweglichkeit} berechnet und beträgt für Kupfer
+Die Beweglichkeit $\mu$ der Elektronen wird aus Gleichung \ref{eqn:Beweglichkeit} berechnet und beträgt für Kupfer
 \begin{equation}
-  µ_\text{Kupfer} = 3.4 \cdot 10^{-4} \, \frac{\text{C s}}{\text{kg}}
+  \mu_\text{Kupfer} = 3.4 \cdot 10^{-4} \, \frac{\text{C s}}{\text{kg}}
 \end{equation}
 und für Zink
 \begin{equation}
-  µ_\text{Zink} = 5.9 \cdot 10^{-3} \, \frac{\text{C s}}{\text{kg}}
+  \mu_\text{Zink} = 5.9 \cdot 10^{-3} \, \frac{\text{C s}}{\text{kg}}
 \end{equation}
 Für die Anzahl wird zunächst die Anzahl der Atomdichte entsprechend Formel \ref{eqn:anzahl} berechnet und diese durch die Ladungsträgerdicht geteilt. Für Kupfer ergibt sich eine Atomdichte von
 \begin{equation}

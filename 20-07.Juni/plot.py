@@ -25,7 +25,7 @@ VHK *= 10**(-3); VHZ *= 10**(-3)
 AB, HB, ZB = np.loadtxt('data/hysterese.txt', unpack=True)
 HB /= 1000; ZB /= 1000
 
-#Berechnung des Wiederstandes
+#Berechnung des Widerstandes
 def widerstand(R,V,A,a):
     print('Einzelwiederstände:')
     for x in range(a):
@@ -45,10 +45,10 @@ def laddichte(I,U,d,a):
     n = [0]*a
     for x in range(a):
         #print(I[x], U[x],d,a, c.e)
-        n[x] = -1.194*I[x]/(U[x]*d*c.e) 
+        n[x] = -1.194*I[x]/(U[x]*d*c.e)
         print(x, 'Ladungsdichte', n[x])
     print('Die gemittelte Ladungsträgerdichte beträgt: ', np.mean(n),' +-', stats.sem(n))
-    return np.mean(n) 
+    return np.mean(n)
 
 #Berechnet mittlere Flugzeit
 def tau(n, spR):
@@ -76,7 +76,7 @@ def l(tau, v):
     print('Mittlere Freie Weglänge', l)
     return l
 
-#Berechnet beweglickeit 
+#Berechnet beweglickeit
 def my(tau):
     print('Berechnet Beweglichkeit')
     print(tau, c.e)
@@ -106,13 +106,12 @@ myZ = my(tZ)
 
 print('-------------------------------------------------------------')
 
-plt.plot(AB,HB, 'rx', label='Messwerte')
-plt.plot(AB,ZB, 'rx')
+plt.plot(AB, HB, 'rx', label='Messwerte')
+plt.plot(AB, ZB, 'rx')
 plt.xlabel(r'Spulenstrom / A')
 plt.ylabel(r'Feldstärke / T')
 plt.legend(loc="best")
-plt.xlim(-0.1,5.1)
-plt.ylim(-0.1,1.3)
 plt.tight_layout()
+plt.grid()
 plt.savefig('build/Hysterese.pdf')
 plt.close()
