@@ -23,6 +23,7 @@ VHK *= 10**(-3); VHZ *= 10**(-3)
 
 
 AB, HB, ZB = np.loadtxt('data/hysterese.txt', unpack=True)
+HB /= 1000; ZB /= 1000
 
 #Berechnung des Wiederstandes
 def widerstand(R,V,A,a):
@@ -110,6 +111,8 @@ plt.plot(AB,ZB, 'rx')
 plt.xlabel(r'Spulenstrom / A')
 plt.ylabel(r'Feldstärke / T')
 plt.legend(loc="best")
+plt.xlim(-0.1,5.1)
+plt.ylim(-0.1,1.3)
 plt.tight_layout()
 plt.savefig('build/Hysterese.pdf')
 plt.close()
