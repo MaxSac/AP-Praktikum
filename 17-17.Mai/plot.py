@@ -75,35 +75,15 @@ def Psi(Winkel):
     print('--------------------')
     return psi
 
-psi = np.array([ufloat(1.0, 1.0), 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0])
-
 print('Eichgröße für Helium')
-psi[0] = Psi(H_g)
-print('Eichgröße für Natrium')
-psi[1] = Psi(N_gg)
-psi[2] = Psi(N_g)
-psi[3] = Psi(N_r)
-print('Mittelwert der Eichgrößen', np.mean([psi[1], psi[2], psi[3]]))
-print('--------------------')
-print('Eichgröße für Kalium')
-psi[4] = Psi(K_gr1)
-psi[5] = Psi(K_gr2)
-psi[6] = Psi(K_g1)
-psi[7] = Psi(K_g2)
-print('Mittelwert der Eichgrößen', np.mean([psi[4], psi[5], psi[6], psi[7]]))
-print('--------------------')
-print('Eichgröße für Rubidium')
-psi[8] = Psi(R_r)
-
-print(np.mean(psi))
-Mpsi = 3.198 * 10**(-9)
+Psi(H_g)
 
 print('------------------------------------------------------------------')
 print('Nr. c: Berechnung der Abschirmungszahl')
+psi = 2.7408 * 10**(-9)
 
 def Abschirm(Winkel, t, psi):
     cos = np.cos(np.mean(Winkel))
-    psi = 3.198 * 10**(-9)
     dLam = cos * t * psi
     qLam = np.mean(np.sin(Winkel) * g)**2
     E = (c.h * c.c * dLam / qLam)
@@ -117,70 +97,29 @@ print('---------------------------------')
 print('Natrium-Dubletspektrum')
 n = 3
 z = 11
-SN = np.array([1.0, 1.0, 1.0])
 print('----------')
-SN[0] = Abschirm(N_gg, tN_gg, 2.7408*10**(-9))
-SN[1] = Abschirm(N_g, tN_g, 2.7408*10**(-9))
-SN[2] = Abschirm(N_r, tN_r, 4.111*10**(-9))
-SN = ufloat(np.mean(SN), np.std(SN))
-print('Mittelwert =', SN)
+SN1 = Abschirm(N_gg, tN_gg, psi)
+SN2 = Abschirm(N_g, tN_g, psi)
+SN3 = Abschirm(N_r, tN_r, psi)
+SN  = np.array([SN1, SN2, SN3])
+print('Mittelwert =', np.mean(SN), '+-', np.std(SN))
 
 print('---------------------------------')
 print('Kalium-Dubletspektrum')
 n = 4
 z = 19
-SN = np.array([1.0, 1.0, 1.0, 1.0])
 print('----------')
-SN[0] = Abschirm(K_gr1, tK_gr1, 1.3704*10**(-9))
-SN[1] = Abschirm(K_gr2, tK_gr2, 1.3704*10**(-9))
-SN[2] = Abschirm(K_g1, tK_g1, 1.3704*10**(-9))
-SN[3] = Abschirm(K_g2, tK_g2, 1.3704*10**(-9))
-SN = ufloat(np.mean(SN), np.std(SN))
-print('Mittelwert =', SN)
+SN1 = Abschirm(K_gr1, tK_gr1, psi)
+SN2 = Abschirm(K_gr2, tK_gr2, psi)
+SN3 = Abschirm(K_g1, tK_g1, psi)
+SN4 = Abschirm(K_g2, tK_g2, psi)
+SN  = np.array([SN1, SN2, SN3, SN4])
+print('Mittelwert =', np.mean(SN), '+-', np.std(SN))
 
 print('---------------------------------')
 print('Rubidium-Dubletspektrum')
 n = 5
 z = 37
-Abschirm(R_r, tR_r, 10.96*10**(-9))
-'''
+Abschirm(R_r, tR_r, psi)
+
 print('------------------------------------------------------------------')
-print('Nr. d: Distanz zwischen Dublettlinien')
-ds = 1.25
-
-print('----------')
-print('Eichung')
-r = (ds / 0.003)
-print('r = ', r * 10**(-6))
-
-print('----------')
-print('Natrium')
-print('rot = ', 0.08 / r)
-print('gelb = ', 0.18 / r)
-print('grüngelb = ', 0.24 / r)
-
-print('----------')
-print('Kalium')
-print('gelb = ', 0.86 / r)
-print('gelb = ', 0.81 / r)
-print('grün = ', 0.89 / r)
-print('grün = ', 0.67 / r)
-
-print('----------')
-print('Kalium')
-print('rot = ', 2.92 / r)
-'''
-print('------------------------------------------------------------------')
-
-'''
-def Abschirm(Winkel):
-    print('Winkel = ', Winkel)
-    W = np.sin(Winkel) * g
-    print('Lambda = ', W)
-    E = (c.h * c.c * (1/W[0] - 1/W[1])) / c.e
-    print('Energiedifferenz = ', E)
-    S = z - ( (2*E*n**3) / (13.6*c.alpha**2) )**(1/4)
-    print('Abschirmungszahl = ', S)
-    print('----------')
-    return S
-'''

@@ -44,65 +44,30 @@ Die Eichgröße $\Psi$ lässt sich mit
 \begin{align}
   \Psi = \frac{\lambda_1 - \lambda_2}{\cos(\overline{\phi}_{1, 2}) \Delta t}
 \end{align}
-berechnen. Die dafür benötigten Werte sind in den Tabellen \eqref{tab:Mess2} und \eqref{tab:Mess2.1} angegeben.
-
-\begin{table}[H]
-  \centering
-  \begin{tabular}{c|c|c|c|c}
-    & $\phi_1$ / rad & $\phi_2$ / rad & $\overline{\phi}_{1,2}$ / rad & $\cos(\overline{\phi}_{1,2})$ \\
-    \hline
-    Helium                  & 0.531 & 0.534 & $\num{0.532 +- 0.002}$ &
-                            $\num{0.862 +- 0.001}$ \\
-    \hline
-    \multirow{3}*{Natrium}  & 0.606 & 0.609 & $\num{0.607 +- 0.002}$ &
-                            $\num{0.821 +- 0.001}$ \\
-                            & 0.632 & 0.637 & $\num{0.634 +- 0.003}$ & $\num{0.805 +- 0.002}$ \\
-                            & 0.667 & 0.670 & $\num{0.668 +- 0.002}$ & $\num{0.785 +- 0.001}$ \\
-    \hline
-    \multirow{4}*{Kalium}   & 0.532 & 0.534 & $\num{0.533 +- 0.001}$ &
-                            $\num{0.8612 +- 0.0004}$ \\
-                            & 0.534 & 0.536 & $\num{0.535 +- 0.001}$ &
-                            $\num{0.8603 +- 0.0004}$ \\
-                            & 0.620 & 0.621 & $\num{0.620 +- 0.001}$ &
-                            $\num{0.814 +- 0.001}$ \\
-                            & 0.623 & 0.625 & $\num{0.624 +- 0.001}$ &
-                            $\num{0.812 +- 0.001}$ \\
-    \hline
-    Rubidium                & 0.675 & 0.689 & $\num{0.682 +- 0.007}$ &
-                            $\num{0.776 +- 0.004}$ \\
-    \hline
-  \end{tabular}
-  \caption{Messwerte zur Bestimmung der Eichgröße Teil 1}
-  \label{tab:Mess2}
-\end{table}
+berechnen. Die dafür benötigten Werte sind in Tabelle \eqref{tab:Mess2} angegeben.
 
 \begin{table}[H]
   \centering
   \begin{tabular}{c|c|c|c}
-    & $\lambda_1$ / $10^{-9}$ m & $\lambda_2$ / $10^{-9}$ m & $\Psi$ / $10^{-9} \cdot \frac{\text{m}}{\text{Skt}}$ \\
     \hline
-    Helium                  & 501.6 & 504.8 & $\num{2.741 +- 0.003}$ \\
+    $\phi_1$ / rad & $\phi_2$ / rad & $\overline{\phi}_{1,2}$ / rad & $\cos(\overline{\phi}_{1,2})$ \\
     \hline
-    \multirow{3}*{Natrium}  & 559.4 & 562.2 & $\num{2.741 +- 0.003}$ \\
-                            & 580.3 & 584.5 & $\num{4.111 +- 0.008}$ \\
-                            & 607.6 & 610.3 & $\num{2.741 +- 0.004}$ \\
+    0.531 & 0.534 & $\num{0.532 +- 0.002}$ & $\num{0.862 +- 0.001}$ \\
     \hline
-    \multirow{4}*{Kalium}   & 498.7 & 500.2 & $\num{1.3704 +- 0.0007}$ \\
-                            & 500.2 & 501.6 & $\num{1.3704 +- 0.0007}$ \\
-                            & 570.6 & 572.0 & $\num{1.3704 +- 0.0009}$ \\
-                            & 573.4 & 574.8 & $\num{1.3704 +- 0.0009}$ \\
     \hline
-    Rubidium                & 614.3 & 625.0 & $\num{10.96 +- 0.06}$ \\
+    $\lambda_1$ / $10^{-9}$ m & $\lambda_2$ / $10^{-9}$ m & $\Psi$ / $10^{-9} \cdot \frac{\text{m}}{\text{Skt}}$ \\
+    \hline
+    501.6 & 504.8 & $\num{2.741 +- 0.003}$ \\
     \hline
   \end{tabular}
-  \caption{Messwerte zur Bestimmung der Eichgröße Teil 2}
-  \label{tab:Mess2.1}
+  \caption{Messwerte von Helium zur Bestimmung der Eichgröße}
+  \label{tab:Mess2}
 \end{table}
 
-Der Mittelwert der Eichgrößen beträgt:
-\begin{align*}
-  \Psi = (\num{3.198 +- 0.007}) \cdot 10^{-9} \frac{\text{m}}{\text{Skt}}
-\end{align*}
+Die Eichgröße beträgt:
+\begin{equation*}
+  \Psi = (\num{2.741 +- 0.003}) \cdot 10^{-9} \frac{\text{m}}{\text{Skt}}
+\end{equation*}
 
 \subsection{Berechnung der Abschirmungszahl}
 Für die Berechnung der inneren Abschirmungszahl $\sigma_2$ werden mehrere Schritte benötigt. Zu Beginn muss die Wellenlänge der Dublettlinien mit Hilfe der gemessenen Beugungswinkel und der bereits bestimmten Gitterkonstante nach Gleichung \eqref{eqn:phi} bestimmt werden. Dann wird mit Gleichung \eqref{eqn:ed} die Energiedifferenz der Dublettlinien berechnet. Zu letzt soll die Gleichung \eqref{eqn:ded} nach $\sigma_2$ umgestellt werden
@@ -124,36 +89,36 @@ Für Natrium ist $n = 3$, für Kalium ist $n = 4$ und für Rubidium ist $n = 5$ 
     \hline
     \multicolumn{4}{c}{Natrium} \\
     \hline
-    0.606 & 559.4 & \multirow{2}{*}{0.0025} & \multirow{2}{*}{7.31} \\
+    0.606 & 559.4 & \multirow{2}{*}{0.0021} & \multirow{2}{*}{7.45} \\
     0.609 & 562.2 & & \\
     \hline
-    0.632 & 580.3 & \multirow{2}{*}{0.0017} & \multirow{2}{*}{7.65} \\
+    0.632 & 580.3 & \multirow{2}{*}{0.0015} & \multirow{2}{*}{7.77} \\
     0.637 & 584.5 & & \\
     \hline
-    0.667 & 607.6 & \multirow{2}{*}{0.0007} & \multirow{2}{*}{8.34} \\
+    0.667 & 607.6 & \multirow{2}{*}{0.0006} & \multirow{2}{*}{8.44} \\
     0.670 & 610.3 & & \\
     \hline
-    \multicolumn{3}{c}{Mittelwert für $\sigma_2$ =} & $\num{7.8 +- 0.4}$ \\
+    \multicolumn{3}{c}{Mittelwert für $\sigma_2$ =} & $\num{7.9 +- 0.4}$ \\
     \hline
     \multicolumn{4}{c}{Kalium} \\
     \hline
-    0.532 & 498.7 & \multirow{2}{*}{0.0122} & \multirow{2}{*}{12.18} \\
+    0.532 & 498.7 & \multirow{2}{*}{0.0104} & \multirow{2}{*}{12.44} \\
     0.534 & 500.2 & & \\
     \hline
-    0.534 & 500.2 & \multirow{2}{*}{0.0091} & \multirow{2}{*}{12.66} \\
+    0.534 & 500.2 & \multirow{2}{*}{0.0078} & \multirow{2}{*}{12.90} \\
     0.536 & 501.6 & & \\
     \hline
-    0.620 & 570.6 & \multirow{2}{*}{0.0085} & \multirow{2}{*}{12.77} \\
+    0.620 & 570.6 & \multirow{2}{*}{0.0073} & \multirow{2}{*}{13.01} \\
     0.621 & 572.0 & & \\
     \hline
-    0.623 & 573.4 & \multirow{2}{*}{0.0079} & \multirow{2}{*}{12.88} \\
+    0.623 & 573.4 & \multirow{2}{*}{0.0068} & \multirow{2}{*}{13.11} \\
     0.625 & 574.8 & & \\
     \hline
-    \multicolumn{3}{c}{Mittelwert für $\sigma_2$ =} & $\num{12.6 +- 0.3}$ \\
+    \multicolumn{3}{c}{Mittelwert für $\sigma_2$ =} & $\num{12.9 +- 0.3}$ \\
     \hline
     \multicolumn{4}{c}{Rubidium} \\
     \hline
-    0.675 & 614.3 & \multirow{2}{*}{0.0235} & \multirow{2}{*}{27.51} \\
+    0.675 & 614.3 & \multirow{2}{*}{0.0201} & \multirow{2}{*}{27.87} \\
     0.689 & 625.0 & & \\
     \hline
   \end{tabular}
