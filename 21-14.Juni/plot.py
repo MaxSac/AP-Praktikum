@@ -10,7 +10,6 @@ from lmfit import minimize, Parameter, Model
 #Messwerte
 U = np.array([310, 315, 325, 350, 375, 400, 450, 500, 550, 600, 625, 650, 675, 700, 705]) #Spannung in V
 A = np.array([4634, 5059, 5223, 5437, 5384, 5368, 5405, 5447, 5552, 5485, 5598, 5745, 6028, 6264, 6443]) #Impulsrate
-I = np.array([0.4, 0.6, 0.8, 1.2, 1.8, 2.4, 3.0, 3.6, 3.7, 4.0]) #Stromstärke in mikroA
 
 print('---------------------------------------------------------------------')
 i = 0
@@ -22,6 +21,7 @@ while i < 9:
 print(Af)
 
 print('---------------------------------------------------------------------')
+#Charakteristik
 Ux = U[3:12]
 Ax = A[3:12]
 def Fit(x, m, b):
@@ -50,17 +50,61 @@ plt.savefig('build/Plateau.pdf')
 plt.close()
 '''
 print('---------------------------------------------------------------------')
+#Totzeit Oszillograph
 T = np.array([ufloat(50, 2), ufloat(70, 2)])
 T = np.mean(T)
 print(T)
 print('---------------------------------------------------------------------')
-print('N1  =', ufloat(4250, math.sqrt(4250)/4250))
-print('N2  =', ufloat(3363, math.sqrt(3363)/3363))
-print('N12 =', ufloat(7035, math.sqrt(7035)/7035))
-N1  = ufloat(4250, math.sqrt(4250)/4250)
-N2  = ufloat(3363, math.sqrt(3363)/3363)
-N12 = ufloat(7035, math.sqrt(7035)/7035)
+#Totzeit 2-Quellen-Methode
+N1  = ufloat(4250, math.sqrt(4250)/10)
+N2  = ufloat(3363, math.sqrt(3363)/10)
+N12 = ufloat(7035, math.sqrt(7035)/10)
+print('N1  =', N1)
+print('N2  =', N2)
+print('N12 =', N12)
 T = (N1+N2-N12) / (2*N1*N2)
-print(T)
+print('T   =', T)
 print('---------------------------------------------------------------------')
+#Bestimmung der Ladungsmenge pro Teilchen
+t = 10
+U = np.array([310, 315, 325, 350, 375, 400, 450, 500, 550, 600, 625, 650, 675, 700, 705]) #Spannung in V
+
+I = np.array([0.2, 0.2, 0.4, 0.6, 0.8, 1.2, 1.8, 2.4, 3.0, 3.6, 3.7, 4.0, 4.4, 5.0, 5.0]) * 10**(-6) #Stromstärke in mikroA
+X = np.array([ufloat(0.0, 0.0), 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+i = 0
+while i < len(I):
+    X[i] = ufloat(I[i], 0.1*10**(-6))
+    i += 1
+print('I =', X)
+
+A = np.array([4634, 5059, 5223, 5437, 5384, 5368, 5405, 5447, 5552, 5485, 5598, 5745, 6028, 6264, 6443])
+X = np.array([ufloat(0.0, 0.0), 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+i = 0
+while i < len(A):
+    X[i] = ufloat(A[i], math.sqrt(A[i])/t)
+    i += 1
+print('A =', X)
+
+print('--------------------')
+Q = (I*t)/A
+print('Q   =', Q)
+print('--------------------')
+print('Q/e =', Q/c.e)
+
+plt.plot(U, Q*10**9, 'rx', label='Messwerte')
+plt.xlabel('$U$ / V')
+plt.ylabel('$Q$ / $10^{-9}$\,C')
+plt.legend(loc="best")
+plt.grid()
+plt.tight_layout()
+plt.savefig('build/Ladungsmenge.pdf')
+plt.close()
+
+
+
+
+
+
+
+
 print('---------------------------------------------------------------------')

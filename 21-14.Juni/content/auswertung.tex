@@ -63,13 +63,13 @@ Bei der ersten Methode wird die Totzeit gemäß der Abbildung \eqref{fig:} für 
 \end{align*}
 Der Mittelwert daraus beträgt
 \begin{align*}
-  T = (\num{60 +- 1})\,\mu\text{s}
+  T_\text{Osz} = (\num{60 +- 1})\,\mu\text{s}
 \end{align*}
 Die Messwerte für die zweite Messung sind im folgenden aufgelistet:
 \begin{align*}
-  N_1 = (\num{4250.00 +- 0.02})\,\frac{1}{\text{s}} \\
-  N_2 = (\num{3363.00 +- 0.02})\,\frac{1}{\text{s}} \\
-  N_{1+2} = (\num{7035.00 +- 0.01})\,\frac{1}{\text{s}} \\
+  N_1 = (\num{4250 +- 7})\,\frac{1}{\text{s}} \\
+  N_2 = (\num{3363 +- 6})\,\frac{1}{\text{s}} \\
+  N_{1+2} = (\num{7035 +- 8})\,\frac{1}{\text{s}} \\
 \end{align*}
 Daraus lässt sich mit
 \begin{align*}
@@ -77,32 +77,49 @@ Daraus lässt sich mit
 \end{align*}
 eine Totzeit von
 \begin{align*}
-  T = (\num{20.2200 +- 0.0008})\,\text{ms}
+  T_\text{2-Quellen} = (\num{20.2 +- 0.4})\,\mu\text{s}
 \end{align*}
 berechnen.
 
 
+\subsection{Bestimmung der pro Teilchen im Zählrohr freigesetzten Ladungsmenge}
+Mit Hilfe der Gleichung
+\begin{align*}
+  \overline{I} = \frac{\Delta Q\,Z}{\Delta t}
+\end{align*}
+und den Messwerten aus Tabelle \eqref{tab:Ladungsmenge} kann die pro Teilchen freigesetzte Ladungsmenge berechnet werden. Dabei bedeutet $\overline{I}$ den mittleren Strom, $\Delta Q$ die freigesetzte Ladungsmenge, $Z$ die Anzahl der Impulse und $\Delta t$ den Zeitraum.
 
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|c|c|c|c}
+    \hline
+    $U$ / V & $\overline{I}$ / $\mu$A & $Z$ & $\Delta Q$ / $10^{-9}$C & $\frac{\Delta Q}{e_0}\cdot10^{9}$ \\
+    \hline
+    310 & 0.2 & 4634 & 0.43 &  2.69 \\
+    315 & 0.2 & 5059 & 0.40 &  2.47 \\
+    325 & 0.4 & 5223 & 0.77 &  4.78 \\
+    350 & 0.6 & 5437 & 1.10 &  6.89 \\
+    375 & 0.8 & 5384 & 1.49 &  9.27 \\
+    400 & 1.2 & 5368 & 2.24 & 13.95 \\
+    450 & 1.8 & 5405 & 3.33 & 20.79 \\
+    500 & 2.4 & 5447 & 4.41 & 27.50 \\
+    550 & 3.0 & 5552 & 5.40 & 33.73 \\
+    600 & 3.6 & 5485 & 6.56 & 40.97 \\
+    625 & 3.7 & 5598 & 6.61 & 41.25 \\
+    650 & 4.0 & 5745 & 6.96 & 43.46 \\
+    675 & 4.4 & 6028 & 7.30 & 45.56 \\
+    700 & 5.0 & 6264 & 7.98 & 49.82 \\
+    705 & 5.0 & 6443 & 7.76 & 48.44 \\
+  \end{tabular}
+  \caption{Messwerte zur Bestimmung der Ladungsmenge die pro Teilchen freigesetzt wird.}
+  \label{tab:Ladungsmenge}
+\end{table}
 
+In Abbildung \eqref{fig:Ladungsmenge1} wird eine lineare Abhängigkeit zwischen der Spannung und der Ladungsmenge deutlich.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\subsection{}
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=10cm]{build/Ladungsmenge.pdf}
+  \caption{Spannung gegen die Ladungsmenge aufgetragen.}
+  \label{fig:Ladungsmenge1}
+\end{figure}
