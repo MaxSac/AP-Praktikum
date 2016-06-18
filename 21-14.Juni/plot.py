@@ -33,7 +33,7 @@ print('y-Achse =', 503.69013096345441, '+-', 11.4)
 Stei = (ufloat(0.090864197530844279, 0.0222)*100) / 545
 print('Steigung in Prozent =', Stei*100)
 print('---------------------------------------------------------------------')
-'''
+
 xWert = np.linspace(300, 750, 1000)
 plt.errorbar(Ux, Ax/10, yerr=Af, fmt='x', ecolor='b', label='relevante Messwerte')
 plt.plot(U[0:2], A[0:2]/10, 'gx')
@@ -48,7 +48,7 @@ plt.grid()
 plt.tight_layout()
 plt.savefig('build/Plateau.pdf')
 plt.close()
-'''
+
 print('---------------------------------------------------------------------')
 #Totzeit Oszillograph
 T = np.array([ufloat(50, 2), ufloat(70, 2)])
