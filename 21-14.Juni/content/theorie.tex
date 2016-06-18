@@ -49,6 +49,26 @@ Unter der Charakteristik eines Zählrohrsversteht wird das Plateau gemeint, das 
 \end{figure}
 Aufgrund der Nachentladung weist der Graph eines Geiger-Müller-Zählrohr im Gegensatz zum idealen eine Steigung des Plateaus auf welche der Nachentladungen geschuldet ist. Eine geringe Steigung spricht für ein qualitativ hochwertiges Geiger-Müller-Zählrohr.
 
+\subsection{Bestimmung der Totzeit mit der Zwei-Quellen-Methode}
+Aufgrund der Totzeit des Geigermüllerzählrohr wird das Phänomen beobachtet das die Summe der Impulsrate von zwei Präperaten ($N_1 + N_2$) größer, als wenn beide Präperate ($N_{1+2}$) gleichzeitig auf das Geiger-Müller-Zählrohr gerichtet werden, ist.
+\begin{equation}
+  	N_1 + N_2 > N_{1+2}
+  \label{eqn:ungl}
+\end{equation}
+Wird nun aus der Messung dedektierten Impulse $N_\text{r}$ berücksichtig das die Zählrate $N_\text{w}$ für den Momment der Totzeit $T$ keine Strahlung registiert ergibt sich die Gleichung
+\begin{equation}
+  N_\text{w} = \frac{N_\text{r}}{1 - T N_\text{r} } \ .
+  \label{eqn:zaelr}
+\end{equation}
+Aus der Forderung das im Mittel aus der Summe, als auch wenn beide Prääperate gleichzeitig auf das Geiger-Müller-Zählrohr gerichtet ist, genausoviele Impulse dedektiert werden sollen, ergibt sich die Gleichung
+\begin{equation}
+  \frac{N_{1+2}}{1-TN_{1+2}} = \frac{N_{1}}{1-TN_{1}} + \frac{N_{2}}{1-TN_{2}} \ .
+\end{equation}
+Durch umstellen der Gleichung nach $T$ lässt sich anhand der Messgrößen $N_1, N_2, N_{1+2}$ näherungsweise bestimmen.
+\begin{equation}
+  T ~ \frac{N_1 + N_2 + N_{1+2}}{2 N_1 N_2}
+  \label{eqn:T}
+\end{equation}
 \subsection{Fehlerrechnung}
 Sämtliche Fehler und Fehlerfortpflanzungen werden mit Hilfe des Paketes "uncertainties" \cite{uncertainties} aus Python berechnet. Mit ausnahme des Fehlers der Zählrate, dieser wird über
 \begin{align*}
