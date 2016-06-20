@@ -42,7 +42,7 @@ plt.plot(xWert, Fit(xWert, **result.params), 'r-', label='gefittete Messwerte')
 plt.plot((340, 340), (450, 700), 'g-')
 plt.plot((660, 660), (450, 700), 'g-')
 plt.xlabel('$U$ / V')
-plt.ylabel('Zählrate / 1/s')
+plt.ylabel('$N$ / 1/s')
 plt.legend(loc="best")
 plt.grid()
 plt.tight_layout()
@@ -91,6 +91,11 @@ print('Q   =', Q)
 print('--------------------')
 print('Q/e =', Q/c.e)
 
+model = Model(Fit, independent_vars=['x'])
+result = model.fit(Q, x=U, b=Parameter(value=1), m=Parameter(value=0.1))
+print(result.params)
+
+plt.plot(xWert, Fit(xWert, **result.params)*10**9, 'r-', label='gefittete Messwerte')
 plt.plot(U, Q*10**9, 'rx', label='Messwerte')
 plt.xlabel('$U$ / V')
 plt.ylabel('$Q$ / $10^{-9}$\,C')
@@ -99,7 +104,6 @@ plt.grid()
 plt.tight_layout()
 plt.savefig('build/Ladungsmenge.pdf')
 plt.close()
-
 
 
 
