@@ -46,27 +46,27 @@ In Diagramm \ref{fig:Blei} wird der Massenbelegung gegen die auf die logarithmie
 \end{equation} 
 wird ein Absorbtionskoeffizient µ von 
 \begin{equation}
-  \mu_\text{Kupfer} = (\num{47 +- 3}) \frac{1}{m}
+  \mu_\text{Blei} = (\num{106 +- 2}) \frac{1}{m}
   \label{eqn:absK}
 \end{equation}
 ermittelt so wie eine Anfangsaktivität $N(0)$ von 
 \begin{equation}
-  N(0) = \num{148 +- 6} \ .
+  N_\text{Blei}(0) = \num{148 +- 6} \ .
   \label{eqn:NBlei}
 \end{equation}
 \begin{figure}
   \centering
   \includegraphics[height=8cm]{Blei.pdf}
-  \caption{Absorption von Blei}
+  \caption{Zählrate in Abhängigkeit der Abschirmung durch Blei}
   \label{fig:Blei}
 \end{figure}
-Der mittels Formel \ref{eqn:} unf \ref{eqn:} berechnet Compton-Absorptionskoeffizient beträgt
+Der mittels Formel \ref{eqn:} und \ref{eqn:} berechnet Compton-Absorptionskoeffizient beträgt
 \begin{equation}
-  \mu_\text{com} =  \, \frac{1}{\text{m}}
+  \mu_\text{com} = 68.14 \, \frac{1}{\text{m}} \ .
   \label{eqn:}
 \end{equation}
-
-
+Bei der berechnung wurde eine Molvolumen von 18.26 $\text{cm}^3 / \text{mol}^{-1}$ (\cite{Kupfer}) angenommen.
+Die gemessenen Werte für Kupfer und die Zählrate sind in Tabelle \ref{tab:AKupfer} aufgetragen. Der Absorbtionskoeffizient sowie die Anfangsaktivität wird analog zum Blei aus den Fitts in Abbildung \ref{fig:Kupfer} berechnet. 
 \begin{table}
   \centering
   \begin{tabular}{c c c c}
@@ -100,16 +100,40 @@ Der mittels Formel \ref{eqn:} unf \ref{eqn:} berechnet Compton-Absorptionskoeffi
   \caption{Aktivität nach Abschirmung durch Kupfer}
   \label{tab:AKupfer}
 \end{table}
-
+Die Aktivität von Kupfer beträgt
+\begin{equation}
+  \mu_\text{Kupfer} = \num{ 47 +- 3 } \, \frac{1}{m}
+  \label{eqn:muku}
+\end{equation}
+und die Anfangsaktivität bestimmt über die Kupferabschirmung von
+\begin{equation}
+  N_\text{Kupfer}(0) = \num{134 +- 13} \, \frac{1}{s} \ .
+  \label{eqn:NKu}
+\end{equation}
 \begin{figure}
   \centering
   \includegraphics[height=8cm]{Kupfer.pdf}
-  \caption{<+caption text+>}
-  \label{fig:<+label+>}
-\end{figure}<++>
+  \caption{Zählrate in Abhängigkeit der Abschirmung durch Kupfer}
+  \label{fig:Kupfer}
+\end{figure}
+Der unter verwendung des Molvolumens von 7.11 (\cite{Kupfer}) berechnete theoretische Compton-Absorptionskoeffizient beträgt 
+\begin{equation}
+  \nu_\text{comp} = 61.89 \frac{1}{m} \ .
+  \label{eqn:Kc}
+\end{equation}
 \subsection{\texorpdfstring{$\beta$ -Strahlung }%
                                {beta -Strahlung}}
-
+Die Hintergrundstrahlung des $\beta$-Strahlungsversuch beträgt 
+\begin{equation}
+  (\num{248 +- 15}) \text{ cps in } 900 \text{s}
+  \label{eqn:hintb}
+\end{equation}
+woraus sich eine Hintergrundaktivität von 
+\begin{equation}
+  (\num{0.275 +- 0.004}) \frac{1}{s}
+  \label{eqn:HAB}
+\end{equation} 
+berechnet. Diese wird im weiteren Verlauf von den berechneten Aktivitäten abgezogen. Die gemessenen Zählraten zu den enstprechenden Dicken, sowie die berechneten Aktivitäten sind in Tabelle \ref{tab:AAlu} aufgelistet. 
 \begin{table}
   \centering
   \begin{tabular}{c c c c}
@@ -132,10 +156,21 @@ Der mittels Formel \ref{eqn:} unf \ref{eqn:} berechnet Compton-Absorptionskoeffi
   \caption{Aktivität nach Abschirmung durch Aluminium}
   \label{tab:AAlu}
 \end{table}
-
+In dem Diagramm \ref{fig:Alu} wird die Massenbelgung gegen die Zählrate aufgetragen. 
 \begin{figure}
   \centering
   \includegraphics[height=8cm]{Aluminium.pdf}
-  \caption{<+caption text+>}
-  \label{fig:<+label+>}
-\end{figure}<++>
+  \caption{Ausgleichungsrechnung zur Bestimmung der Gesamtenergie}
+  \label{fig:Alu}
+\end{figure}
+Mittels dem Schnittpunkt von zwei Linearen Fitts der From \eqref{eqn:fit} wird die Maximale Massenbelgeung berechnet. Sie beträgt 
+\begin{equation}
+  R_\text{Max} = \num{0.65 +- 0.07} \, \frac{\text{kg}}{\text{m}^2} \ . 
+  \label{eqn:Rmax}
+\end{equation}
+Aus der Maximalen Massenbelgung wird die freiwerdende Gesamtenergie mittels Formel \eqref{eqn:} berechnet und beträgt
+\begin{equation}
+  E_\text{max} = \num{1.4 +- 0.1} \, \text{MeV}
+  \label{}
+\end{equation}
+berechnet.
