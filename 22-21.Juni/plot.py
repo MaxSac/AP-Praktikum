@@ -6,7 +6,7 @@ from uncertainties import ufloat
 import scipy.constants as c
 import math
 from lmfit import minimize, Parameter, Model
-'''
+
 DA, ErrDA, IA, MA = np.loadtxt('data/Aluminium.txt', unpack=True)
 DB, IB, MB = np.loadtxt('data/Blei.txt', unpack=True)
 DK, IK, MK = np.loadtxt('data/Kupfer.txt', unpack=True)
@@ -96,4 +96,3 @@ plt.ylabel(r'Zaehlrate / $cps$')
 plt.tight_layout()
 plt.savefig('build/Kupfer.pdf')
 plt.close()
-'''
