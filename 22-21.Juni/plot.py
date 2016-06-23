@@ -6,7 +6,7 @@ from uncertainties import ufloat
 import scipy.constants as c
 import math
 from lmfit import minimize, Parameter, Model
-
+'''
 DA, ErrDA, IA, MA = np.loadtxt('data/Aluminium.txt', unpack=True)
 DB, IB, MB = np.loadtxt('data/Blei.txt', unpack=True)
 DK, IK, MK = np.loadtxt('data/Kupfer.txt', unpack=True)
@@ -16,7 +16,7 @@ DA *= (10**(-6)*2760); DB *= 0.001; DK *= 0.001;
 
 #Berechnet bereinigte Zählrate
 def berechneZaehlrate(Impulszahl, Zeit, Null, laenge):
-	Z = [0]*laenge	
+	Z = [0]*laenge
 	for x in range(laenge):
 	  Z[x] = Impulszahl[x]/Zeit[x] - Null
 	return np.array(Z)
@@ -38,7 +38,7 @@ def fitfunc(x,y,xdeff):
     #fx = np.exp(fx)
     ferr = np.sqrt(np.diag(ferr))
     plt.plot(xdeff, f(xdeff, *fx))
-    m = ufloat(fx[0],ferr[0]) 
+    m = ufloat(fx[0],ferr[0])
     b = ufloat(fx[1],ferr[0])
     print('Steigung', m, 'y-Achseschnitt', b)
     return m, b
@@ -96,4 +96,4 @@ plt.ylabel(r'Zaehlrate / $cps$')
 plt.tight_layout()
 plt.savefig('build/Kupfer.pdf')
 plt.close()
-
+'''
