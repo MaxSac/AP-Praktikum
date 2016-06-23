@@ -12,7 +12,7 @@ DB, IB, MB = np.loadtxt('data/Blei.txt', unpack=True)
 DK, IK, MK = np.loadtxt('data/Kupfer.txt', unpack=True)
 
 NullGamma = int(804/900); NullBeta = int(248/900)
-DA *= 10**(-6)*2710; DB *= 0.001; DK *= 0.001;
+DA *= (10**(-6)*2760); DB *= 0.001; DK *= 0.001;
 
 #Berechnet bereinigte Zählrate
 def berechneZaehlrate(Impulszahl, Zeit, Null, laenge):
@@ -55,7 +55,7 @@ xdeff = np.linspace(0,2,50)
 m1, b1 = fitfunc(DA[:5],ZA[:5],xdeff)
 m2, b2 = fitfunc(DA[5:],ZA[5:],xdeff)
 s = (b1-b2)/(m1-m2)
-Emax = 1.92*((s**2+0.22*s)**0.5)
+Emax = 1.92*(((s*0.10)**2+0.22*(s*0.10))**0.5)
 print('Schnittpunkt = ', s, "und Maximale Energie von: ", Emax)
 plt.xlim(0.2,1.4)
 plt.xlabel(r'Massenbelegung / $\frac{kg}{m^2}$')
