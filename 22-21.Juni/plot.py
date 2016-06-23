@@ -12,7 +12,7 @@ DB, IB, MB = np.loadtxt('data/Blei.txt', unpack=True)
 DK, IK, MK = np.loadtxt('data/Kupfer.txt', unpack=True)
 
 NullGamma = int(804/900); NullBeta = int(248/900)
-DA *= 10**(-6)*2710; DB *= 0.001*11340; DK *= 0.001*8940;
+DA *= 10**(-6)*2710; DB *= 0.001; DK *= 0.001;
 
 #Berechnet bereinigte Zählrate
 def berechneZaehlrate(Impulszahl, Zeit, Null, laenge):
@@ -48,7 +48,7 @@ print('--------------Aluminium-------------')
 #Berechnet Zählrate mit Fehler
 ZA = berechneZaehlrate(IA,MA,NullBeta, 11)
 ZAerr = calcerr(ZA,11)
-
+print(ZA, ZAerr)
 plt.semilogy(DA,ZA,'bx', label='Messwerte')
 plt.errorbar(DA, ZA, yerr=ZAerr, fmt='bx')
 xdeff = np.linspace(0,2,50)
@@ -68,11 +68,12 @@ plt.close()
 print('--------------Blei------------------')
 ZB = berechneZaehlrate(IB,MB,NullGamma, 15)
 ZBerr = calcerr(ZB, 15)
-
+#print(ZB, ZBerr)
 plt.semilogy(DB,ZB,'rx')
 plt.errorbar(DB,ZB, yerr=ZBerr, fmt='rx')
-xdeff = np.linspace(0, 700, 50)
+xdeff = np.linspace(0, 0.065, 50)
 fitfunc(DB,ZB,xdeff)
+plt.xlim(0,0.065)
 plt.xlabel(r'Massenbelegung / $\frac{kg}{m^2}$')
 plt.ylabel(r'Zaehlrate / $cps$')
 plt.tight_layout()
@@ -82,11 +83,12 @@ plt.close()
 print('--------------Kupfer----------------')
 ZK = berechneZaehlrate(IK,MK,NullGamma, 22)
 ZKerr = calcerr(ZK,22)
-
+#print(ZK, ZKerr)
 plt.semilogy(DK,ZK,'rx')
 plt.errorbar(DK, ZK, yerr=ZKerr, fmt='rx')
-xdeff= np.linspace(0, 600, 50)
+xdeff= np.linspace(0, 0.065, 50)
 fitfunc(DK,ZK, xdeff)
+plt.xlim(0,0.065)
 plt.xlabel(r'Massenbelegung / $\frac{kg}{m^2}$')
 plt.ylabel(r'Zaehlrate / $cps$')
 plt.tight_layout()

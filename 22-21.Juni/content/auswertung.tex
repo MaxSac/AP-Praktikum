@@ -1,3 +1,141 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+\subsection{\texorpdfstring{$\gamma$ -Strahlung }%
+                               {gamma -Strahlung}}
+Die Nullmessung ohne radiaktives Präperat ergibt eine Hintergrundstrahlung von 
+\begin{equation}
+  (\num{800 +- 30}) \text{ counts in } 900 \text{s} \ .
+  \label{eqn:gammacoun}
+\end{equation}
+Normiert man diese Impulszahl auf die Zählrate ergibt sich die Nullaktivität $A_0$ von
+\begin{equation}
+  A_0 = (\num{0.89 +- 0.03}) \, \text{cps} \ .
+  \label{eqn:A0}
+\end{equation}
+Im weiteren Verlauf werden von den gemessenene Messwerten die Zählraten der Hintergrund abgezogen. Die gemessenen Impulsraten in Abhängigkeit der Abschirmdicke für Blei, sind in Tabelle \ref{tab:ABlei} aufgetragen, sowie die bereinigte Zählrate.
+\begin{table}
+  \centering
+  \begin{tabular}{c c c c}
+    \toprule
+    Dicke d / $10^{-3}$ m & Zeit t / s & Zählrate N & Aktivität A / $\frac{1}{s}$ \\
+    \midrule
+    	1.2	&40 	&5276	&\num{130 +- 10} 	\\
+	2.4	&40 	&4776	&\num{120 +- 10}	\\
+	3.6	&40 	&4259	&\num{100 +- 10}	\\
+	10.0	&40 	&1907	&\num{48 +- 7}	\\
+	11.2	&40 	&1811	&\num{45 +- 7}	\\
+	12.4	&40 	&1644	&\num{41 +- 6}	\\
+	13.6	&40 	&1479	&\num{37 +- 6}	\\
+	20.0	&40 	&707	&\num{18 +- 4}	\\
+	21.2	&40 	&624	&\num{16 +- 4}	\\
+	22.4	&40 	&598	&\num{15 +- 4}	\\
+	23.4	&40 	&543	&\num{14 +- 4}	\\
+	30.0	&40 	&280	&\num{7 +- 3}	\\
+	40.0	&100	&292	&\num{3 +- 2}	\\
+	50.0	&200	&294	&\num{1 +- 1}	\\
+	60.0	&250	&304	&\num{1 +- 1}	\\
+    \bottomrule
+  \end{tabular}
+  \caption{Aktivität nach Abschirmung durch Blei}
+  \label{tab:ABlei}
+\end{table}
+In Diagramm \ref{fig:Blei} wird der Massenbelegung gegen die auf die logarithmierte y-Achse Zählrate aufgetragen. Anhand eines Fittes der Form 
+\begin{equation}
+  y_\text{fit} = \text{exp}(a \cdot x + b) 
+  \label{eqn:fit}
+\end{equation} 
+wird ein Absorbtionskoeffizient µ von 
+\begin{equation}
+  \mu_\text{Kupfer} = (\num{47 +- 3}) \frac{1}{m}
+  \label{eqn:absK}
+\end{equation}
+ermittelt so wie eine Anfangsaktivität $N(0)$ von 
+\begin{equation}
+  N(0) = \num{148 +- 6} \ .
+  \label{eqn:NBlei}
+\end{equation}
+\begin{figure}
+  \centering
+  \includegraphics[height=8cm]{Blei.pdf}
+  \caption{Absorption von Blei}
+  \label{fig:Blei}
+\end{figure}
+Der mittels Formel \ref{eqn:} unf \ref{eqn:} berechnet Compton-Absorptionskoeffizient beträgt
+\begin{equation}
+  \mu_\text{com} =  \, \frac{1}{\text{m}}
+  \label{eqn:}
+\end{equation}
 
+
+\begin{table}
+  \centering
+  \begin{tabular}{c c c c}
+    \toprule
+    Dicke d / $10^{-3}$ m & Zeit t / s & Zählrate N & Aktivität A / $\frac{1}{s}$ \\
+    \midrule
+    0.5		&40	&5484&	\num{140 +- 10} \\	
+    1.0		&40	&5459&	\num{140 +- 10} \\	
+    1.5		&40	&5314&	\num{130 +- 10} \\	
+    2.0		&40	&4413&	\num{110 +- 10} \\	
+    2.5		&40	&5168&	\num{130 +- 10} \\	
+    3.1		&40	&4982&	\num{120 +- 10} \\	
+    3.6		&40	&4682&	\num{120 +- 10} \\	
+    4.1		&40	&4351&	\num{110 +- 10} \\	
+    5.0		&40	&4498&	\num{110 +- 10} \\	
+    5.5		&40	&4165&	\num{100 +- 10} \\	
+    6.0		&40	&4383&	\num{110 +- 10} \\	
+    6.5		&40	&4192&	\num{100 +- 10} \\	
+    7.0		&40	&4444&	\num{110 +- 10} \\	
+    8.1		&40	&4169&	\num{100 +- 10} \\	
+    10.0	&40	&3475&	\num{90 +- 10} \\	
+    13.1	&40 	&2784&	\num{70 +- 9} \\   	  
+    18.1	&40	&2183&	\num{55 +- 8} \\	
+    20.0	&40	&2246&	\num{56 +- 7} \\	
+    30.0	&40 	&1319&	\num{34 +- 6} \\	     
+    40.0    	&40 	&719&	\num{18 +- 4} \\	 
+    50.0    	&40 	&601&	\num{15 +- 4} \\	 
+    60.0	&40 	&328&	\num{8 +- 3} \\	 
+    \bottomrule
+  \end{tabular}
+  \caption{Aktivität nach Abschirmung durch Kupfer}
+  \label{tab:AKupfer}
+\end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics[height=8cm]{Kupfer.pdf}
+  \caption{<+caption text+>}
+  \label{fig:<+label+>}
+\end{figure}<++>
+\subsection{\texorpdfstring{$\beta$ -Strahlung }%
+                               {beta -Strahlung}}
+
+\begin{table}
+  \centering
+  \begin{tabular}{c c c c}
+    \toprule
+    Dicke d / $10^{-6}$ m & Zeit t / s & Zählrate N & Aktivität A / $\frac{1}{s}$ \\
+    \midrule
+    102&	40 &	1374&	\num{34 +-6 } \\	
+    126&	40 &	719&	\num{18 +-4 } \\	
+    153&	40 &	297&	\num{7 +-3 } \\	
+    160&	80 &	360&	\num{5 +-2 } \\	
+    200&	150&	275&	\num{2 +-1 } \\	
+    253&	450&	268&	\num{0.6 +-0.8 } \\	
+    302&	600&	319&	\num{0.5 +-0.7 } \\	
+    338&	650&	336&	\num{0.5 +-0.7 } \\	
+    400&	650&	355&	\num{0.5 +-0.7 } \\	
+    444&	600&	315&	\num{0.5 +-0.7 } \\	
+    482&	600&	340&	\num{0.6 +-0.8 } \\	
+    \bottomrule
+  \end{tabular}
+  \caption{Aktivität nach Abschirmung durch Aluminium}
+  \label{tab:AAlu}
+\end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics[height=8cm]{Aluminium.pdf}
+  \caption{<+caption text+>}
+  \label{fig:<+label+>}
+\end{figure}<++>
