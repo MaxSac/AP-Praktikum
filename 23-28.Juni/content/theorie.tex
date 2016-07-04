@@ -1,9 +1,27 @@
 \section{Theoretische Grundlage}
 \label{sec:Theorie}
 
-
-
-
+Ziel des Versuches ist es die Reichweite von $\alpha$-Strahlung in Luft bei unterschiedlichen Drücken genauer zu bestimmen. $\alpha$-Strahlung wird bereits beim durchlaufen von Materie abgeschirmt. Dabei gibt es die Energie einerseits durch elastische Stöße, Ionisationzprozesse als auch Anregung und Dissoziation von Molekühlen ab. Dabei hängt der Energieverlust der $\alpha$-Strahlung primär von der Dichte des durchlaufendem Material ab. Die Energie $E$ der $\alpha$-Strahlung werden bei hinreichend großen Geschwindigkeiten $v$ durch die Bethe-Bloch-Gleichung beschrieben,
+\begin{equation}
+  -\frac{dE_\text{\alpha}}{dx} = \frac{z^3 e^4}{4 \pi \varepsilon_0 m_\text{e}} \frac{n Z}{v^2} \text{ln} \left( \frac{2 m_\text{e} v^2}{I} \right)
+  \label{eqn:Beate}
+\end{equation}
+wobei $Z$ die Ordunungszahl des Targetsgases, $n$ die Teilchendichte, und $I$ die Ionisationsenergie ist. Die Reichweite $R$ wird entsprechend der Gleichung 
+\begin{equation}
+  R = \int^{E_\alpha}_0 \frac{dE_{\alpha}}{-dE_{\alpha}/dx}
+  \label{eqn:Reich}
+\end{equation}
+beschrieben. Bei hinreichend kleinen Geschwindigkeiten verliert die Gleichung ihre Gültigkeit, da Ladungsaustauschprozesse auftreten, so dass die Reichweite durch eine empirisch gewonnen Kurve bestimmt werden muss. Es ist eine Reichweite von
+\begin{equation}
+  R_\text{m} = 3.1 \cdot E^{3/2}_\alpha \ \ \ \text{($R_\text{m}$ in mm, $E_\alpha$ in MeV)}
+  \label{}
+\end{equation} 
+zu erwarten. Die Reichweite von $\alpha$-Strahlung weist einen proportionalen Zusammenhang zum Druck $p$ auf. Zweckmäßigerweise, wird zur Absorptionsmessung der Abstand konstant gehalten und der Druck in dem Zylinder varriert. Es wird eine effiktive Länge 
+\begin{equation}
+  x = x_0 \frac{p}{p_0}
+  \label{eqn:laenge}
+\end{equation}
+eingeführt welche die Reichweite $x$ der Alphastrahlung entsprechend des normaldrucks $p_0$ berechnet. 
 \subsection{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
 \subsubsection{Mittelwert}
