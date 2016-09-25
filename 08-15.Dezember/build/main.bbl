@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.5 $
+% $ biblatex bbl format version 2.6 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,10 +18,14 @@
 
 
 \refsection{0}
-  \sortlist{nty}{nty}
+  \sortlist[entry]{nty/global}
     \entry{sample}{manual}{}
       \name{author}{1}{}{%
-        {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           family_i={D\bibinitperiod},
+           given={TU},
+           given_i={T\bibinitperiod}}}%
       }
       \list{location}{1}{%
         {http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/AP/SKRIPT/V302.pdf}%
