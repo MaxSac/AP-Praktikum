@@ -35,7 +35,7 @@ tK_g2 = 0.81
 #Auslenkung in Grad für Rubidium
 R_r = (np.array([343.7, 344.5]) - HM) * (math.pi/180)
 tR_r = 2.92
-'''
+
 print('------------------------------------------------------------------')
 print('Nr. a: Berechnung der Gitterkonstanten g')
 
@@ -60,7 +60,7 @@ plt.grid()
 plt.tight_layout()
 plt.savefig('build/Gitterkonstante.pdf')
 plt.close()
-'''
+
 print('------------------------------------------------------------------')
 print('Nr. b: Berechnung der Eichgröße')
 def Psi(Winkel):
